@@ -54,24 +54,34 @@ def history(now):
     file=ROOT/'game_logs.json'
     try:old=json.loads(file.read_text())
     except (OSError,ValueError):old={'games':{},'logs':[]}
-    cutoff=(now-timedelta(days=65)).strftime('%Y-%m-%d')
+    cutoff=(now-timedelta(days=220)).strftime('%Y-%m-%d')
     rows=[x for x in old.get('logs',[]) if x.get('date','')>=cutoff]
     games={k:v for k,v in old.get('games',{}).items() if v>=cutoff.replace('-','')}
-    for days in range(38,0,-1):
-        date=(now-timedelta(days=days)).strftime('%Y%m%d')
+    # Progressively backfill old NBA dates in manageable batches. No Odds API cost.
+    # Persist successful scans, including dates without a completed game.
+    scanned={d for d in old.get('scannedDates',[]) if d>=cutoff.replace('-','')}
+    recent=[(now-timedelta(days=day)).strftime('%Y%m%d') for day in range(4,-1,-1)]
+    older=[(now-timedelta(days=day)).strftime('%Y%m%d') for day in range(5,221)]
+    dates=recent+[date for date in older if date not in scanned][:20]
+    for date in dates:
         try:board=request(BASE+'/scoreboard?'+urllib.parse.urlencode({'dates':date,'limit':50}))
         except Exception as e:
             print('Scoreboard warning',date,e,file=sys.stderr);continue
+        ok=True
         for event in board.get('events',[]):
             eid=str(event.get('id',''))
             if not eid or eid in games or not (event.get('status',{}).get('type',{}).get('completed')):continue
             try:
                 found=boxscore(eid,date[:4]+'-'+date[4:6]+'-'+date[6:])
                 if found:rows.extend(found);games[eid]=date
-            except Exception as e:print('Boxscore warning',eid,e,file=sys.stderr)
+                else:ok=False
+            except Exception as e:
+                print('Boxscore warning',eid,e,file=sys.stderr)
+                ok=False
+        if ok:scanned.add(date)
     rows=list({(r['gameId'],r['playerId']):r for r in rows if r.get('playerId')}.values())
     rows.sort(key=lambda r:r['date'])
-    file.write_text(json.dumps({'games':games,'logs':rows},separators=(',',':'))+'\n')
+    file.write_text(json.dumps({'games':games,'logs':rows,'scannedDates':sorted(scanned)},separators=(',',':'))+'\n')
     return rows
 
 def odds(key,now):
@@ -115,10 +125,10 @@ def implied(price):
 
 def ranking_probability(prop, games):
     """Blend recent hit rate and a simple distribution estimate; both remain uncalibrated."""
-    eligible=[g for g in games if g.get('minutes',0)>=12 and g.get(prop['market']) is not None][:20]
+    eligible=[g for g in games if g.get('minutes',0)>=12 and g.get(prop['market']) is not None][:40]
     if len(eligible)<15:return None
     values=[float(g[prop['market']]) for g in eligible]
-    weights=[0.94**i for i in range(len(values))]
+    weights=[0.97**i for i in range(len(values))]
     total=sum(weights)
     mean=sum(w*v for v,w in zip(values,weights))/total
     variance=sum(w*(v-mean)**2 for v,w in zip(values,weights))/total
@@ -133,9 +143,14 @@ def ranking_probability(prop, games):
     probability=0.55*empirical+0.45*distribution
     # Shrink toward neutral probability, guarding against overconfident small samples.
     probability=0.5+0.8*(probability-0.5)
+    minutes=[g['minutes'] for g in eligible[:10]]
+    minutes_mean=sum(minutes)/len(minutes)
+    minutes_std=math.sqrt(sum((m-minutes_mean)**2 for m in minutes)/len(minutes))
     return {'probability':max(0.05,min(0.95,probability)),'projection':mean,
             'sample':len(values),'last5Hits':sum(v>prop['line'] if prop['side']=='Over' else v<prop['line'] for v in values[:5]),
-            'volatility':std,'recentMinutes':sum(g['minutes'] for g in eligible[:5])/min(5,len(eligible))}
+            'volatility':std,'recentMinutes':sum(g['minutes'] for g in eligible[:5])/min(5,len(eligible)),
+            'minutesCv':minutes_std/max(1,minutes_mean),
+            'oldGames':sum(g['date']<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
 def rank(props,logs):
     histories=defaultdict(list)
@@ -154,11 +169,26 @@ def rank(props,logs):
         edge=probability-implied(price)
         # Conservative research screen, not proof of a profitable bet.
         if ev<=0.045 or edge<=0.035:continue
-        confidence='B' if stats['sample']>=18 and stats['recentMinutes']>=24 and stats['volatility']<max(3,stats['projection']*.55) else 'C'
+        # Evidence quality is separate from projected value and is NOT an outcome guarantee.
+        # Old/offseason samples receive a large penalty, avoiding false confidence from
+        # reaching 40 games by mixing prior-season rotations with the current season.
+        sample_score=min(35,stats['sample']/40*35)
+        minutes_score=min(20,stats['recentMinutes']/32*20)
+        stability_score=max(0,20*(1-min(1,stats['minutesCv']/.35)))
+        relative_volatility=stats['volatility']/max(2,abs(stats['projection']))
+        variation_score=max(0,15*(1-min(1,relative_volatility)))
+        value_score=min(10,max(0,edge)*75)
+        age_penalty=min(25,stats['oldGames']*1.5)
+        evidence_score=max(0,min(100,round(sample_score+minutes_score+stability_score+variation_score+value_score-age_penalty)))
+        # A is withheld pending out-of-sample calibration with enough settled props.
+        confidence=('B' if evidence_score>=75 else
+                    'C' if evidence_score>=60 else
+                    'D' if evidence_score>=45 else 'F')
         candidates.append({**prop,'probability':round(probability,4),'implied':round(implied(price),4),
           'edge':round(edge,4),'ev':round(ev,4),'projection':round(stats['projection'],1),
           'sample':stats['sample'],'last5Hits':stats['last5Hits'],'recentMinutes':round(stats['recentMinutes'],1),
-          'volatility':round(stats['volatility'],1),'grade':confidence,'model':'Blended historical model (uncalibrated), no injury adjustment'})
+          'volatility':round(stats['volatility'],1),'grade':confidence,'evidenceScore':evidence_score,
+          'historyOlderThan90Days':stats['oldGames'],'model':'Blended historical model (uncalibrated), no injury adjustment'})
     # Keep highest expected value, but avoid overloading the same player's correlated outcomes.
     candidates.sort(key=lambda p:p['ev'],reverse=True)
     top=[];used=set()
@@ -248,7 +278,7 @@ def main():
               'ranked':picks,'propsScanned':len(props),'eventsChecked':events_checked,
               'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining,
               'playersInHistory':len({r['playerId'] for r in logs}),
-              'warnings':warnings,'modelVersion':'3.1-experimental','performance':performance}
+              'warnings':warnings,'modelVersion':'3.2-experimental','performance':performance}
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
     print('Games:',events_checked,'Props:',len(props),'Ranked:',len(picks),'Credits spent:',credits_used)
 
