@@ -62,7 +62,7 @@ def history(now):
     scanned={d for d in old.get('scannedDates',[]) if d>=cutoff.replace('-','')}
     recent=[(now-timedelta(days=day)).strftime('%Y%m%d') for day in range(4,-1,-1)]
     older=[(now-timedelta(days=day)).strftime('%Y%m%d') for day in range(5,221)]
-    dates=recent+[date for date in older if date not in scanned][:20]
+    dates=recent+[date for date in older if date not in scanned][:12]
     for date in dates:
         try:board=request(BASE+'/scoreboard?'+urllib.parse.urlencode({'dates':date,'limit':50}))
         except Exception as e:
@@ -150,7 +150,7 @@ def ranking_probability(prop, games):
             'sample':len(values),'last5Hits':sum(v>prop['line'] if prop['side']=='Over' else v<prop['line'] for v in values[:5]),
             'volatility':std,'recentMinutes':sum(g['minutes'] for g in eligible[:5])/min(5,len(eligible)),
             'minutesCv':minutes_std/max(1,minutes_mean),
-            'oldGames':sum(g['date']<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
+            'oldGames':sum(g.get('date','9999-12-31')<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
 def rank(props,logs):
     histories=defaultdict(list)
