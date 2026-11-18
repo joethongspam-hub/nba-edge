@@ -2,7 +2,8 @@ name: Refresh NBA EDGE picks
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 14,17,20,23 * * *'
+    - cron: '30 17 * * *'
+      timezone: 'America/Chicago'
 permissions:
   contents: write
 concurrency:
@@ -31,3 +32,12 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/data.json docs/game_logs.json docs/tracker.json
           git diff --cached --quiet || (git commit -m 'Refresh NBA EDGE data' && git push)
+      - name: Notify ntfy about workflow outcome
+        if: always()
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          WORKFLOW_STATUS: ${{ job.status }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/notify.py
