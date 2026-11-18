@@ -194,7 +194,7 @@ def track(top,logs,now):
             ledger[-1].update({'id':id,'slate':slate,'recordedAt':now.isoformat(),'result':'pending'})
     # Bound size, but keep records from recent seasons.
     ledger=[p for p in ledger if p.get('slate','')>=(now-timedelta(days=365)).strftime('%Y-%m-%d')]
-    file.write_text(json.dumps({'picks':ledger},separators=(',',':'))+'\\n')
+    file.write_text(json.dumps({'picks':ledger},separators=(',',':'))+'\n')
     finished=[p for p in ledger if p.get('result') in ('win','loss','push')]
     wins=sum(p['result']=='win' for p in finished)
     losses=sum(p['result']=='loss' for p in finished)
