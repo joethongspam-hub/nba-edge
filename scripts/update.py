@@ -2,6 +2,7 @@
 """NBA EDGE research screener. Published snapshots contain no API credentials."""
 import json, os, urllib.request, urllib.parse, sys, math
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from collections import defaultdict
 from pathlib import Path
 
@@ -75,12 +76,26 @@ def history(now):
 
 def odds(key,now):
     if not key:raise RuntimeError('Set ODDS_API_KEY in GitHub Actions secrets')
-    events=request(ODDS+'/events',key)
-    future=[e for e in events if e.get('commence_time','')>now.isoformat().replace('+00:00','Z')][:12]
+    events=request(ODDS+'/events',key)  # Free listing: no paid market query
+    local_day=now.astimezone(ZoneInfo('America/Chicago')).date()
+    future=[]
+    for event in events:
+        try:
+            start=datetime.fromisoformat(event['commence_time'].replace('Z','+00:00'))
+            if start>now and start.astimezone(ZoneInfo('America/Chicago')).date()==local_day:
+                future.append(event)
+        except (KeyError,ValueError):continue
     props=[];warnings=[]
+    credits_used=0;credits_remaining=None
     for event in future:
         args=urllib.parse.urlencode({'regions':'us','bookmakers':'draftkings,fanduel','markets':','.join(MARKETS),'oddsFormat':'american'})
-        try:detail=request(ODDS+'/events/'+urllib.parse.quote(event['id'])+'/odds?'+args,key)
+        try:
+            url=ODDS+'/events/'+urllib.parse.quote(event['id'])+'/odds?'+args
+            headers={'User-Agent':'NBA-EDGE/3.1','x-api-key':key}
+            with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=18) as response:
+                detail=json.load(response)
+                credits_used+=int(response.headers.get('x-requests-last','0'))
+                credits_remaining=response.headers.get('x-requests-remaining',credits_remaining)
         except Exception as e:
             warnings.append('Some events had unavailable odds');print('Odds warning',e,file=sys.stderr);continue
         for book in detail.get('bookmakers',[]):
@@ -92,7 +107,8 @@ def odds(key,now):
                     line=num(outcome.get('point'));price=num(outcome.get('price'))
                     if line is None or price is None or price==0:continue
                     props.append({'player':outcome['description'],'market':market['key'],'side':outcome['name'],'line':line,'odds':int(price),'book':BOOKS[book['key']],'event':event.get('away_team','')+' @ '+event.get('home_team',''),'startsAt':event.get('commence_time','')})
-    return props,warnings
+    if warnings:raise RuntimeError('One or more scheduled games failed to load; refresh aborted to avoid an incomplete slate.')
+    return props,warnings,len(future),credits_used,credits_remaining
 
 def implied(price):
     return 100/(100+price) if price>0 else -price/(100-price)
@@ -207,16 +223,33 @@ def track(top,logs,now):
 def main():
     ROOT.mkdir(parents=True,exist_ok=True)
     now=datetime.now(timezone.utc)
+    slate=now.astimezone(ZoneInfo('America/Chicago')).date().isoformat()
+    try:previous=json.loads((ROOT/'data.json').read_text())
+    except (OSError,ValueError):previous={}
+    # Re-runs on the same local day update settled results but never spend
+    # Odds API credits again after a successful full daily snapshot.
+    if previous.get('slateDate')==slate and previous.get('oddsFetched'):
+        logs=history(now)
+        performance=track([],logs,now)
+        previous['performance']=performance
+        previous['refreshStatus']='cached'
+        previous['updatedAt']=now.isoformat()
+        (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\n')
+        print('Using daily cached odds; 0 paid odds credits spent')
+        return
     key=os.environ.get('ODDS_API_KEY')
     if not key:raise RuntimeError('ODDS_API_KEY missing; snapshots unchanged')
-    # Retrieve odds first: do not spend 38 days of backfill requests if the key is missing/broken.
-    props,warnings=odds(key,now)
-    if not props:raise RuntimeError('No valid odds returned; do not publish an empty refresh')
+    props,warnings,events_checked,credits_used,credits_remaining=odds(key,now)
     logs=history(now)
     picks=rank(props,logs)
     performance=track(picks,logs,now)
-    snapshot={'updatedAt':now.isoformat(),'ranked':picks,'propsScanned':len(props),'playersInHistory':len({r['playerId'] for r in logs}),'warnings':warnings,'modelVersion':'3.0-experimental','performance':performance}
+    snapshot={'updatedAt':now.isoformat(),'slateDate':slate,'oddsFetched':bool(events_checked),
+              'refreshStatus':'success' if events_checked else 'no_games',
+              'ranked':picks,'propsScanned':len(props),'eventsChecked':events_checked,
+              'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining,
+              'playersInHistory':len({r['playerId'] for r in logs}),
+              'warnings':warnings,'modelVersion':'3.1-experimental','performance':performance}
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
-    print('Props:',len(props),'Ranked:',len(picks),'History rows:',len(logs))
+    print('Games:',events_checked,'Props:',len(props),'Ranked:',len(picks),'Credits spent:',credits_used)
 
 if __name__=='__main__':main()
