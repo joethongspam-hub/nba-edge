@@ -112,8 +112,8 @@ def rank(props,logs):
         probability=(hits+3)/(total+6)
         price=prop['odds']
         profit=price/100 if price>0 else 100/-price
-        ev=prob*profit-(1-prob)
-        edge=prob-implied(price)
+        ev=probability*profit-(1-probability)
+        edge=probability-implied(price)
         if ev<=0.025 or edge<=0.025:continue
         mean=sum(w*v for v,w in zip(values,weights))/total
         picks.append({**prop,'probability':round(probability,4),'implied':round(implied(price),4),'edge':round(edge,4),'ev':round(ev,4),'projection':round(mean,1),'sample':len(values),'last5Hits':sum(v>prop['line'] if prop['side']=='Over' else v<prop['line'] for v in values[:5]),'model':'Recent historical hits with Beta smoothing; uncalibrated'})
