@@ -53,6 +53,37 @@ class ModelTests(unittest.TestCase):
               "startsAt":(today+timedelta(days=1)).isoformat()}
         self.assertTrue(all(p["grade"]!="A" for p in update.rank([prop],logs)))
 
+    def test_cached_props_reuse_without_odds_api(self):
+        from datetime import datetime, timezone
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+        now=datetime(2026,11,18,23,13,tzinfo=timezone.utc)
+        props=[{"player":"Sample","market":"player_points","side":"Over",
+                "line":22.5,"odds":-110,"book":"FanDuel",
+                "event":"Away @ Home","startsAt":"2026-11-19T01:00:00Z"}]
+        with TemporaryDirectory() as temp:
+            with patch.object(update,'ROOT',Path(temp)):
+                update.write_odds_cache("2026-11-18",now,props,8,32,"1500")
+                with patch.object(update,'request',side_effect=AssertionError("Unexpected API request")):
+                    result=update.cached_props("2026-11-18")
+                self.assertEqual(result['props'],props)
+                self.assertEqual(result['eventsChecked'],8)
+                self.assertIsNone(update.cached_props("2026-11-19"))
+                self.assertEqual(result['oddsCreditsUsed'],32)
+
+    def test_recomputed_snapshot_uses_zero_new_paid_credits(self):
+        from datetime import datetime, timezone
+        now=datetime(2026,11,18,23,13,tzinfo=timezone.utc)
+        cache={'props':[{"player":"One"}],'eventsChecked':3,
+               'oddsCreditsUsed':12,'oddsCreditsRemaining':'800',
+               'fetchedAt':now.isoformat()}
+        result=update.build_snapshot(now,'2026-11-18',cache,[],[],{},
+                                     'recomputed_from_cache')
+        self.assertEqual(result['oddsCreditsUsed'],0)
+        self.assertEqual(result['propsScanned'],1)
+        self.assertEqual(result['oddsSnapshotAt'],now.isoformat())
+        self.assertEqual(result['modelVersion'],'3.2-experimental')
+
     def test_settlement_win_loss_push(self):
         from datetime import datetime, timezone
         now = datetime(2026, 11, 20, tzinfo=timezone.utc)
