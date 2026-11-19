@@ -32,7 +32,8 @@ def main():
     if run_url.startswith('https://github.com/'):
         message+='\nRun details: '+run_url
     headers={'Title':title,'Priority':'default' if success else 'high',
-             'Tags':'basketball,white_check_mark' if success else 'warning'}
+             'Tags':'basketball,white_check_mark' if success else 'warning',
+             'Click':'https://joethongspam-hub.github.io/nba-edge/'}
     token=os.environ.get('NTFY_TOKEN','').strip()
     if token:headers['Authorization']='Bearer '+token
     url='https://ntfy.sh/'+topic
