@@ -268,7 +268,7 @@ def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaini
     cache={'cacheVersion':1,'slateDate':slate,'fetchedAt':now.isoformat(),
            'props':props,'eventsChecked':events_checked,
            'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining}
-    (ROOT/'odds_cache.json').write_text(json.dumps(cache,separators=(',',':'))+'\\n')
+    (ROOT/'odds_cache.json').write_text(json.dumps(cache,separators=(',',':'))+'\n')
     return cache
 
 
@@ -299,7 +299,7 @@ def main():
             previous['performance']=track([],logs,now)
             previous['updatedAt']=now.isoformat()
             previous['refreshStatus']='legacy_cached'
-            (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\\n')
+            (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\n')
             print('Legacy daily cache has no raw props; 0 paid odds credits spent')
             return
         key=os.environ.get('ODDS_API_KEY')
@@ -314,7 +314,7 @@ def main():
     picks=rank(props,logs)
     performance=track(picks,logs,now)
     snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status)
-    (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\\n')
+    (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
     print('Source:',status,'Games:',cache['eventsChecked'],'Props:',len(props),
           'Ranked:',len(picks),'Paid credits this run:',0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'])
 
