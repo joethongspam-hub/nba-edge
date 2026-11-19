@@ -250,36 +250,72 @@ def track(top,logs,now):
             'units':units,'roi':round(units/graded,4) if graded else None,'winRate':round(wins/graded,4) if graded else None,
             'settled':len(finished),'recorded':len(ledger)}
 
+def cached_props(slate):
+    """Return previously captured full-slate props; no Odds API traffic."""
+    try:
+        cache=json.loads((ROOT/'odds_cache.json').read_text())
+    except (OSError,ValueError):
+        return None
+    if cache.get('slateDate')!=slate or cache.get('cacheVersion')!=1:
+        return None
+    if not isinstance(cache.get('props'),list) or not isinstance(cache.get('eventsChecked'),int):
+        return None
+    return cache
+
+
+def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining):
+    # This file contains only public sportsbook lines, never the API key.
+    cache={'cacheVersion':1,'slateDate':slate,'fetchedAt':now.isoformat(),
+           'props':props,'eventsChecked':events_checked,
+           'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining}
+    (ROOT/'odds_cache.json').write_text(json.dumps(cache,separators=(',',':'))+'\\n')
+    return cache
+
+
+def build_snapshot(now,slate,cache,logs,picks,performance,status):
+    return {'updatedAt':now.isoformat(),'slateDate':slate,
+            'oddsFetched':cache['eventsChecked']>0,'refreshStatus':status,
+            'ranked':picks,'propsScanned':len(cache['props']),
+            'eventsChecked':cache['eventsChecked'],
+            'oddsCreditsUsed':0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'],
+            'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
+            'oddsSnapshotAt':cache['fetchedAt'],
+            'playersInHistory':len({r['playerId'] for r in logs}),
+            'warnings':[],'modelVersion':'3.2-experimental','performance':performance}
+
+
 def main():
     ROOT.mkdir(parents=True,exist_ok=True)
     now=datetime.now(timezone.utc)
     slate=now.astimezone(ZoneInfo('America/Chicago')).date().isoformat()
-    try:previous=json.loads((ROOT/'data.json').read_text())
-    except (OSError,ValueError):previous={}
-    # Re-runs on the same local day update settled results but never spend
-    # Odds API credits again after a successful full daily snapshot.
-    if previous.get('slateDate')==slate and previous.get('oddsFetched'):
-        logs=history(now)
-        performance=track([],logs,now)
-        previous['performance']=performance
-        previous['refreshStatus']='cached'
-        previous['updatedAt']=now.isoformat()
-        (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\n')
-        print('Using daily cached odds; 0 paid odds credits spent')
-        return
-    key=os.environ.get('ODDS_API_KEY')
-    if not key:raise RuntimeError('ODDS_API_KEY missing; snapshots unchanged')
-    props,warnings,events_checked,credits_used,credits_remaining=odds(key,now)
+    cache=cached_props(slate)
+    if cache is None:
+        # Legacy snapshots lack raw props. Do not burn paid credits just to
+        # migrate the same-day cache; collect odds normally next local day.
+        try:previous=json.loads((ROOT/'data.json').read_text())
+        except (OSError,ValueError):previous={}
+        if previous.get('slateDate')==slate and previous.get('oddsFetched'):
+            logs=history(now)
+            previous['performance']=track([],logs,now)
+            previous['updatedAt']=now.isoformat()
+            previous['refreshStatus']='legacy_cached'
+            (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\\n')
+            print('Legacy daily cache has no raw props; 0 paid odds credits spent')
+            return
+        key=os.environ.get('ODDS_API_KEY')
+        if not key:raise RuntimeError('ODDS_API_KEY missing; snapshots unchanged')
+        props,warnings,events_checked,credits_used,credits_remaining=odds(key,now)
+        cache=write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining)
+        status='success' if events_checked else 'no_games'
+    else:
+        props=cache['props']
+        status='recomputed_from_cache'
     logs=history(now)
     picks=rank(props,logs)
     performance=track(picks,logs,now)
-    snapshot={'updatedAt':now.isoformat(),'slateDate':slate,'oddsFetched':bool(events_checked),
-              'refreshStatus':'success' if events_checked else 'no_games',
-              'ranked':picks,'propsScanned':len(props),'eventsChecked':events_checked,
-              'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining,
-              'playersInHistory':len({r['playerId'] for r in logs}),
-              'warnings':warnings,'modelVersion':'3.2-experimental','performance':performance}
-    (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
-    print('Games:',events_checked,'Props:',len(props),'Ranked:',len(picks),'Credits spent:',credits_used)
+    snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status)
+    (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\\n')
+    print('Source:',status,'Games:',cache['eventsChecked'],'Props:',len(props),
+          'Ranked:',len(picks),'Paid credits this run:',0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'])
 
 if __name__=='__main__':main()
