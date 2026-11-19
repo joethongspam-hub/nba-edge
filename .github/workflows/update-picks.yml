@@ -30,7 +30,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data.json docs/game_logs.json docs/tracker.json docs/odds_cache.json
+          git add docs/data.json docs/game_logs.json docs/tracker.json
+          if [ -f docs/odds_cache.json ]; then git add docs/odds_cache.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh NBA EDGE data' && git push)
       - name: Notify ntfy about workflow outcome
         if: always()
