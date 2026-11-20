@@ -37,7 +37,7 @@ def get_status(item):
 
 def extract_injuries(payload):
     """Accept ESPN team-grouped or flat injury lists; reject unknown shapes."""
-    groups = payload.get("injuries", []) if isinstance(payload, dict) else []
+    groups = payload.get("injuries") if isinstance(payload, dict) else None
     if not isinstance(groups, list):
         return [], False
     candidates = []
