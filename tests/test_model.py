@@ -82,21 +82,22 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(result['oddsCreditsUsed'],0)
         self.assertEqual(result['propsScanned'],1)
         self.assertEqual(result['oddsSnapshotAt'],now.isoformat())
-        self.assertEqual(result['modelVersion'],'3.2-experimental')
+        self.assertEqual(result['modelVersion'],'3.3-experimental')
 
     def test_settlement_win_loss_push(self):
         from datetime import datetime, timezone
         now = datetime(2026, 11, 20, tzinfo=timezone.utc)
         base = {"player": "Example Player", "market": "player_points",
                 "line": 20.5, "startsAt": "2026-11-19T01:00:00Z",
-                "odds": -110, "result": "pending"}
+                "odds": -110, "result": "pending", "event": "Away Team @ Home Team"}
         entries = [{**base, "side": "Over"}, {**base, "side": "Under"}]
-        logs = [{"player": "Example Player", "date": "2026-11-19", "player_points": 22}]
+        logs = [{"player": "Example Player", "date": "2026-11-19", "player_points": 22, "gameId": "401", "playerId": "12", "event": "Away Team @ Home Team", "startsAt": "2026-11-19T01:10:00Z"}]
         update.settle_picks(entries, logs, now)
         self.assertEqual(entries[0]["result"], "win")
         self.assertEqual(entries[1]["result"], "loss")
         self.assertAlmostEqual(entries[0]["units"], 100/110, places=4)
         self.assertEqual(entries[1]["units"], -1)
+        self.assertEqual(entries[0]["verifiedGameId"], "401")
 
 if __name__ == "__main__":
     unittest.main()
