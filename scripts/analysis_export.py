@@ -9,6 +9,7 @@ import math
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from calibration_audit import audit
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -96,6 +97,7 @@ def build(snapshot, ledger, generated_at):
         "modelVersion": snapshot.get("modelVersion"),
         "modelStatus": "uncalibrated",
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
+        "walkForwardBacktest": audit(picks),
         "calibration": {
             "overall": summarize(picks),
             "verifiedOnly": summarize(verified),
