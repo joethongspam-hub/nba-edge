@@ -30,12 +30,9 @@ Suggested ChatGPT prompt:
 
 **Do not interpret these results as out-of-sample calibration.** The current
 sample is small, picks are selected by the same model being evaluated, and
-the historical tracker matches by player/date rather than guaranteed event ID.
+historical legacy outcomes were settled by player/date without guaranteed event identity.
 The exporter intentionally leaves probabilities and grades unchanged and sets
-`sufficientForCalibration` to false. A follow-up version should save stable event
-identifiers on each pick, validate settlement, collect larger out-of-sample
-histories, and only then fit and evaluate probability calibrators with
-chronological holdouts.
+`sufficientForCalibration` to false. New settlements use matchup/time verification; a future version should audit older legacy outcomes, collect larger out-of-sample histories, and only then fit probability calibrators with chronological holdouts.
 
 To reproduce without network usage:
 
@@ -43,3 +40,23 @@ To reproduce without network usage:
 python scripts/analysis_export.py
 python -m unittest discover -s tests -v
 ```
+
+## Verified settlement (Upgrade 2)
+
+New sportsbook picks save `oddsEventId` for traceability. ESPN boxscore rows
+include an ESPN `gameId`, matchup and scheduled start time. A pending pick
+is settled only if the player's unique boxscore row has a matching away/home
+matchup and a start time within 18 hours of the sportsbook event. Otherwise
+it remains pending with `settlementStatus=awaiting_verified_game`.
+
+Successful matches record `verifiedGameId`, `verifiedPlayerId`,
+`verifiedGameStart` and `settlementStatus=verified_matchup_and_start`.
+This is cross-provider evidence, not direct equality of vendor event IDs.
+
+The ChatGPT export now separates `calibration.verifiedOnly` from
+`calibration.legacyUnverified`, retaining the historical overall figures.
+Previously settled picks are NOT silently rewritten or called verified.
+Review legacy figures separately until manually audited.
+
+This upgrade uses the ESPN scoreboard and boxscore endpoints already queried
+during historical refresh. It makes no additional Odds API requests.

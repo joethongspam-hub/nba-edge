@@ -83,8 +83,11 @@ def build(snapshot, ledger, generated_at):
     by_market = defaultdict(list)
     for p in picks:
         by_market[str(p.get("market", "unknown"))].append(p)
+    verified = [p for p in picks if p.get("settlementStatus") == "verified_matchup_and_start"]
+    legacy = [p for p in picks if p.get("result") in VALID
+              and p.get("settlementStatus") != "verified_matchup_and_start"]
     report = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "generatedAt": generated_at,
         "slateDate": snapshot.get("slateDate"),
         "snapshotUpdatedAt": snapshot.get("updatedAt"),
@@ -95,10 +98,14 @@ def build(snapshot, ledger, generated_at):
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
         "calibration": {
             "overall": summarize(picks),
+            "verifiedOnly": summarize(verified),
+            "legacyUnverified": summarize(legacy),
+            "verifiedSettledCount": sum(p.get("result") in VALID for p in verified),
+            "legacySettledCount": len(legacy),
             "byMarket": {k: summarize(v) for k, v in sorted(by_market.items())},
             "minimumSuggestedSettledSample": 200,
             "sufficientForCalibration": False,
-            "note": "Diagnostics describe only frozen, selected historical picks. They do not prove positive EV. Do not fit or grade with in-sample results.",
+            "note": "Overall and by-market summaries include older legacy settlements. Use verifiedOnly for event-confirmed outcomes. Neither proves positive EV; do not train on in-sample data.",
         },
         "today": {
             "eventsChecked": snapshot.get("eventsChecked"),
@@ -113,7 +120,7 @@ def build(snapshot, ledger, generated_at):
             "Recalculate EV if odds change; probability is uncalibrated.",
             "Flag correlated props and insufficient history; passing is acceptable.",
         ],
-        "settlementCaveat": "Current tracker matches a player's boxscore within +/-1 UTC day; event-id validation is not yet implemented.",
+        "settlementCaveat": "New settlements require a matching matchup, game start time and unique ESPN game boxscore. Older results remain unverified legacy records; sportsbook and ESPN event IDs come from different providers and are not directly equal.",
         "isBettingAdvice": False,
     }
     return report
