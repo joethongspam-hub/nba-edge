@@ -60,3 +60,24 @@ Review legacy figures separately until manually audited.
 
 This upgrade uses the ESPN scoreboard and boxscore endpoints already queried
 during historical refresh. It makes no additional Odds API requests.
+
+## Upgrade 3: walk-forward calibration readiness
+
+The daily JSON now includes `walkForwardBacktest` for verified outcomes.
+It groups by frozen slate date and fits a simple probability shrinkage
+weight using **only earlier slate dates**. Historical same-day picks never
+train each other. It compares the original model with an experimental
+shrinkage-to-50%-baseline diagnostic, scored by Brier error on later slates.
+
+Each overall/market backtest requires at least 100 earlier verified
+win/loss predictions before evaluating a slate, plus at least 30 evaluated
+picks before publishing diagnostic scores. Legacy or incomplete/invalid
+records do not count. Missing data returns
+`status=insufficient_verified_history` and null diagnostic scores.
+
+**No production calibration is enabled.** The existing model probability,
+EV calculation, filtering, A/B/C grades, odds selection, and 5:13 PM Central
+schedule are unchanged. This small experimental benchmark does not establish
+betting profitability or overcome selection bias. A future upgrade can
+evaluate multiple model families and tune thresholds on independent, more
+numerous prospective samples.
