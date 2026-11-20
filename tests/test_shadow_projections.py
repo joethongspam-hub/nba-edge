@@ -30,10 +30,18 @@ class ShadowProjectionTests(unittest.TestCase):
     def test_minutes_change_is_flagged(self):
         rows=history()
         for r in rows[-8:]:
-            r["minutes"]=38
+            r["minutes"]=40
         p=project(rows,"player_points")
         self.assertIn("recent_minutes_shift",p["flags"])
         self.assertGreater(p["projectedMinutes"],30)
+
+    def test_subthreshold_minutes_change_is_not_flagged(self):
+        rows=history()
+        for r in rows[-8:]:
+            r["minutes"]=38
+        p=project(rows,"player_points")
+        self.assertNotIn("recent_minutes_shift",p["flags"])
+        self.assertLess(abs(p["roleChangePct"]),15)
 
     def test_future_games_never_affect_prediction(self):
         rows=history(20)
