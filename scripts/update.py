@@ -5,6 +5,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from collections import defaultdict
 from pathlib import Path
+from settlement import unique_verified_log
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 ODDS='https://api.the-odds-api.com/v4/sports/basketball_nba'
@@ -70,10 +71,27 @@ def history(now):
         ok=True
         for event in board.get('events',[]):
             eid=str(event.get('id',''))
-            if not eid or eid in games or not (event.get('status',{}).get('type',{}).get('completed')):continue
+            if not eid or not (event.get('status',{}).get('type',{}).get('completed')):continue
+            competitors=(event.get('competitions') or [{}])[0].get('competitors',[])
+            home=next((c.get('team',{}).get('displayName') for c in competitors if c.get('homeAway')=='home'),None)
+            away=next((c.get('team',{}).get('displayName') for c in competitors if c.get('homeAway')=='away'),None)
+            matchup=(away+' @ '+home) if away and home else None
+            scheduled=event.get('date')
+            # Enrich even older saved boxscores with scoreboard event identity.
+            if matchup and scheduled:
+                for row in rows:
+                    if row.get('gameId')==eid:
+                        row['event']=matchup
+                        row['startsAt']=scheduled
+            if eid in games:continue
             try:
                 found=boxscore(eid,date[:4]+'-'+date[4:6]+'-'+date[6:])
-                if found:rows.extend(found);games[eid]=date
+                if found:
+                    if matchup and scheduled:
+                        for row in found:
+                            row['event']=matchup
+                            row['startsAt']=scheduled
+                    rows.extend(found);games[eid]=date
                 else:ok=False
             except Exception as e:
                 print('Boxscore warning',eid,e,file=sys.stderr)
@@ -116,7 +134,7 @@ def odds(key,now):
                     if outcome.get('name') not in ('Over','Under') or not outcome.get('description'):continue
                     line=num(outcome.get('point'));price=num(outcome.get('price'))
                     if line is None or price is None or price==0:continue
-                    props.append({'player':outcome['description'],'market':market['key'],'side':outcome['name'],'line':line,'odds':int(price),'book':BOOKS[book['key']],'event':event.get('away_team','')+' @ '+event.get('home_team',''),'startsAt':event.get('commence_time','')})
+                    props.append({'player':outcome['description'],'market':market['key'],'side':outcome['name'],'line':line,'odds':int(price),'book':BOOKS[book['key']],'event':event.get('away_team','')+' @ '+event.get('home_team',''),'startsAt':event.get('commence_time',''),'oddsEventId':event.get('id','')})
     if warnings:raise RuntimeError('One or more scheduled games failed to load; refresh aborted to avoid an incomplete slate.')
     return props,warnings,len(future),credits_used,credits_remaining
 
@@ -209,18 +227,18 @@ def settle_picks(ledger,logs,now):
         except (ValueError,KeyError):continue
         if now<game_time+timedelta(hours=4):continue
         key=''.join(c for c in p['player'].casefold() if c.isalnum())
-        games=by_name[key]
-        # Date +/- one day covers UTC times near midnight; only accept a game
-        # whose date is the scheduled UTC day or immediate neighboring date.
-        found=[g for g in games if abs((datetime.strptime(g['date'],'%Y-%m-%d').date()-game_time.date()).days)<=1
-               and g.get(p['market']) is not None]
-        if not found:continue
-        # Avoid ambiguous games rather than settling the wrong event.
-        if len(found)!=1:continue
-        actual=float(found[0][p['market']])
+        verified=unique_verified_log(p,by_name[key])
+        if verified is None:
+            p['settlementStatus']='awaiting_verified_game'
+            continue
+        actual=float(verified[p['market']])
         p['actual']=actual
         p['result']='push' if actual==p['line'] else ('win' if ((actual>p['line'])==(p['side']=='Over')) else 'loss')
         p['settledAt']=now.isoformat()
+        p['settlementStatus']='verified_matchup_and_start'
+        p['verifiedGameId']=verified['gameId']
+        p['verifiedPlayerId']=verified.get('playerId')
+        p['verifiedGameStart']=verified['startsAt']
         p['units']=round((p['odds']/100 if p['odds']>0 else 100/-p['odds']) if p['result']=='win' else (0 if p['result']=='push' else -1),4)
 
 def track(top,logs,now):
@@ -237,6 +255,7 @@ def track(top,logs,now):
             id='|'.join([slate,p['player'],p['market'],p['side'],str(p['line']),p['book']])
             if id in existing:continue
             ledger.append({k:p[k] for k in ('player','market','side','line','book','odds','event','startsAt','probability','edge','ev','grade')})
+            if p.get('oddsEventId'):ledger[-1]['oddsEventId']=p['oddsEventId']
             ledger[-1].update({'id':id,'slate':slate,'recordedAt':now.isoformat(),'result':'pending'})
     # Bound size, but keep records from recent seasons.
     ledger=[p for p in ledger if p.get('slate','')>=(now-timedelta(days=365)).strftime('%Y-%m-%d')]
@@ -281,7 +300,7 @@ def build_snapshot(now,slate,cache,logs,picks,performance,status):
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
             'oddsSnapshotAt':cache['fetchedAt'],
             'playersInHistory':len({r['playerId'] for r in logs}),
-            'warnings':[],'modelVersion':'3.2-experimental','performance':performance}
+            'warnings':[],'modelVersion':'3.3-experimental','performance':performance}
 
 
 def main():
