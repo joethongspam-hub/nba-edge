@@ -30,12 +30,9 @@ Suggested ChatGPT prompt:
 
 **Do not interpret these results as out-of-sample calibration.** The current
 sample is small, picks are selected by the same model being evaluated, and
-the historical tracker matches by player/date rather than guaranteed event ID.
+historical legacy outcomes were settled by player/date without guaranteed event identity.
 The exporter intentionally leaves probabilities and grades unchanged and sets
-`sufficientForCalibration` to false. A follow-up version should save stable event
-identifiers on each pick, validate settlement, collect larger out-of-sample
-histories, and only then fit and evaluate probability calibrators with
-chronological holdouts.
+`sufficientForCalibration` to false. New settlements use matchup/time verification; a future version should audit older legacy outcomes, collect larger out-of-sample histories, and only then fit probability calibrators with chronological holdouts.
 
 To reproduce without network usage:
 
