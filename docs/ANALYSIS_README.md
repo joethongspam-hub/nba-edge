@@ -81,3 +81,23 @@ schedule are unchanged. This small experimental benchmark does not establish
 betting profitability or overcome selection bias. A future upgrade can
 evaluate multiple model families and tune thresholds on independent, more
 numerous prospective samples.
+
+## Upgrade 4: shadow role-and-minutes projection research
+
+`shadowProjectionResearch` is built from existing ESPN game logs after
+each run, without Odds API requests. It predicts projected minutes from
+recent and longer trends and a winsorized per-minute production rate.
+For each current ranked prop it exports `shadowProjection`, sample size,
+role-change percentage, and warnings such as unstable playing time.
+
+The `historicalStatError` section uses strictly earlier dates for each
+completed game, comparing shadow-projection MAE/RMSE against a simple
+weighted-average stat baseline. This is a **stat-error** replay, not a
+backtest of betting edges or model probability calibration. Same-date
+games do not train predictions for one another.
+
+**Shadow mode only:** it does not alter live rankings, EV, probability
+estimates, or grade thresholds. Injury feed and opponent adjustment
+are explicitly marked disconnected. Projected minutes are heuristic
+and can be wrong after injuries, trades or rotation changes. Do not
+interpret a lower historical MAE as profitable betting evidence.
