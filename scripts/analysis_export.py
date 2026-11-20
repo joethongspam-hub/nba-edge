@@ -10,6 +10,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from calibration_audit import audit
+from shadow_projections import report as shadow_report
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -79,7 +80,7 @@ def summarize(picks):
             "calibrationBuckets": buckets}
 
 
-def build(snapshot, ledger, generated_at):
+def build(snapshot, ledger, generated_at, logs=None):
     picks = ledger.get("picks", [])
     by_market = defaultdict(list)
     for p in picks:
@@ -98,6 +99,7 @@ def build(snapshot, ledger, generated_at):
         "modelStatus": "uncalibrated",
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
         "walkForwardBacktest": audit(picks),
+        "shadowProjectionResearch": shadow_report(snapshot, logs or []),
         "calibration": {
             "overall": summarize(picks),
             "verifiedOnly": summarize(verified),
@@ -131,7 +133,8 @@ def build(snapshot, ledger, generated_at):
 def main():
     snapshot = read_json(DOCS / "data.json", {})
     ledger = read_json(DOCS / "tracker.json", {"picks": []})
-    report = build(snapshot, ledger, datetime.now(timezone.utc).isoformat())
+    logs = read_json(DOCS / "game_logs.json", {"logs": []}).get("logs", [])
+    report = build(snapshot, ledger, datetime.now(timezone.utc).isoformat(), logs)
     (DOCS / "daily_analysis.json").write_text(
         json.dumps(report, ensure_ascii=False, separators=(",", ":"), allow_nan=False) + "\n",
         encoding="utf-8")
