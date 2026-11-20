@@ -101,3 +101,36 @@ estimates, or grade thresholds. Injury feed and opponent adjustment
 are explicitly marked disconnected. Projected minutes are heuristic
 and can be wrong after injuries, trades or rotation changes. Do not
 interpret a lower historical MAE as profitable betting evidence.
+
+## Upgrade 5: free ESPN injury review + Odds API quota reserve
+
+The daily refresh adds `docs/injury_review.json` from the public ESPN NBA
+injury endpoint. Entries are also included as `injuryReview` in the
+ChatGPT-ready daily report. A matching listed injury is **not** an official
+game-day designation, and a player *not listed* is **not** necessarily healthy.
+Unavailable or malformed feeds result in explicit unavailable flags.
+Every pick requires independent official injury/lineup confirmation.
+
+This is shadow-only. NBA EDGE does not change the production projections,
+probabilities, rankings, or grades based on ESPN injury feed results.
+
+### Live credit guard
+
+Before any paid odds call, the updater reads `x-requests-remaining`
+from a free Odds API event-listing call. It reserves 2,000 credits plus a
+conservative **8 credits per remaining game** (4 player markets with US
+bookmakers). If the live response lacks the quota header or cannot cover
+**every scheduled game**, it **aborts the odds refresh** and sends a failure
+notification rather than paying for a partial slate or running below the
+reserve. It checks the remaining quota again before each paid game query.
+
+This guard has no new paid quota calls and preserves every game and market
+when budget permits. Credit counts are from the actual API headers, not the
+historical cached balance. External tools using the same API key concurrently
+could affect the balance, and an unexpectedly priced API query could still
+use more credits than predicted; do not treat the guard as a mathematically
+absolute spending guarantee.
+
+Same-day cached reruns skip the paid odds path entirely. If a new day's
+quota is insufficient, the workflow intentionally fails closed and leaves
+the previous published snapshot intact.

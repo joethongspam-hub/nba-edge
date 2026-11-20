@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 from collections import defaultdict
 from pathlib import Path
 from settlement import unique_verified_log
+from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 ODDS='https://api.the-odds-api.com/v4/sports/basketball_nba'
@@ -104,7 +105,13 @@ def history(now):
 
 def odds(key,now):
     if not key:raise RuntimeError('Set ODDS_API_KEY in GitHub Actions secrets')
-    events=request(ODDS+'/events',key)  # Free listing: no paid market query
+    # The free event listing provides a live quota header. If unavailable,
+    # fail closed rather than guess and risk a paid credit overrun.
+    req=urllib.request.Request(ODDS+'/events',
+        headers={'User-Agent':'NBA-EDGE/3.4','x-api-key':key})
+    with urllib.request.urlopen(req,timeout=18) as response:
+        events=json.load(response)
+        remaining=remaining_from_headers(response.headers)
     local_day=now.astimezone(ZoneInfo('America/Chicago')).date()
     future=[]
     for event in events:
@@ -113,17 +120,30 @@ def odds(key,now):
             if start>now and start.astimezone(ZoneInfo('America/Chicago')).date()==local_day:
                 future.append(event)
         except (KeyError,ValueError):continue
+    # All games or none. Never silently omit a game because of the quota.
+    check_budget(remaining,len(future))
     props=[];warnings=[]
-    credits_used=0;credits_remaining=None
-    for event in future:
+    credits_used=0;credits_remaining=str(remaining)
+    for index,event in enumerate(future):
+        # Recheck after every paid request in case the live balance changed.
+        check_budget(remaining,len(future)-index)
         args=urllib.parse.urlencode({'regions':'us','bookmakers':'draftkings,fanduel','markets':','.join(MARKETS),'oddsFormat':'american'})
         try:
             url=ODDS+'/events/'+urllib.parse.quote(event['id'])+'/odds?'+args
             headers={'User-Agent':'NBA-EDGE/3.1','x-api-key':key}
             with urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=18) as response:
                 detail=json.load(response)
-                credits_used+=int(response.headers.get('x-requests-last','0'))
-                credits_remaining=response.headers.get('x-requests-remaining',credits_remaining)
+                cost_header=response.headers.get('x-requests-last')
+                if cost_header is None:
+                    raise OddsBudgetError('Missing per-request quota cost; stopping paid calls')
+                cost=int(cost_header)
+                credits_used+=cost
+                remaining=remaining_from_headers(response.headers)
+                credits_remaining=str(remaining)
+                if cost>MAX_EVENT_COST:
+                    raise OddsBudgetError('Unexpected Odds API event cost; stopping paid calls')
+        except OddsBudgetError:
+            raise  # Do not swallow budget violations and continue scanning.
         except Exception as e:
             warnings.append('Some events had unavailable odds');print('Odds warning',e,file=sys.stderr);continue
         for book in detail.get('bookmakers',[]):
