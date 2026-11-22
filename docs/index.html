@@ -14,6 +14,7 @@
 <select id="book" aria-label="Book"><option value="all">Both sportsbooks</option><option>DraftKings</option><option>FanDuel</option></select>
 </div><div class="table-scroll"><table><thead><tr><th>RANK</th><th>GRADE</th><th>PLAYER / GAME</th><th>PROP</th><th>SPORTSBOOK</th><th>ODDS</th><th>PROJ / LINE</th><th>GAP</th><th>EVIDENCE</th><th>DETAILS</th></tr></thead><tbody id="rows"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody></table></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">TOP 10 SELECTION DIAGNOSTICS · NO EXTRA ODDS CALLS</div><h2>Why props did or didn't qualify</h2><p>Shows the first rule that excluded each DraftKings/FanDuel prop after the latest refresh. Counts are sequential and add up to all props scanned. A rejected prop might also fail later tests; this is not a list of independent reasons.</p><p id="filterSummary" class="muted">Waiting for a fresh filter report…</p></div><div class="table-scroll"><table style="min-width:580px"><thead><tr><th>CHECK</th><th>PROPS REMAINING / REJECTED</th></tr></thead><tbody id="filterRows"><tr><td colspan="2" class="empty">No diagnostic results yet</td></tr></tbody></table></div><div class="heading"><p class="muted">These are research diagnostics; the eligibility thresholds, Top 10 rankings, and sportsbook quota protections are unchanged.</p></div></section>
+<section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">EVIDENCE-SCORE WHAT-IF RESEARCH · LIVE RULES UNCHANGED</div><h2>Are our confidence requirements too strict?</h2><p>Compares alternative evidence scores and minimum-history requirements against the same cached DraftKings/FanDuel props. All other projection-gap checks remain the same. This measures <strong>how many picks would qualify</strong>, not whether those picks would win.</p><p id="evidenceSummary" class="muted">Waiting for evidence sensitivity report…</p></div><div class="table-scroll"><table style="min-width:690px"><thead><tr><th>WHAT-IF SCENARIO</th><th>ELIGIBLE PROPS</th><th>UNIQUE PLAYERS</th><th>TOP 10 SIZE</th><th>AVG TOP-10 EVIDENCE</th></tr></thead><tbody id="evidenceRows"><tr><td colspan="5" class="empty">No results yet</td></tr></tbody></table></div><div class="heading"><h3>Where the evidence points come from</h3><p>Average points for props with at least 20 eligible historical games; compare with the subset that also meets both projection-gap checks. The age penalty is subtracted from the score.</p></div><div class="table-scroll"><table style="min-width:540px"><thead><tr><th>COMPONENT</th><th>ALL 20+ GAME PROPS</th><th>STRONG PROJECTION GAPS</th></tr></thead><tbody id="evidenceComponents"><tr><td colspan="3" class="empty">No results yet</td></tr></tbody></table></div><div class="heading"><p class="muted">Alternatives are exploratory and were examined after seeing a zero-pick slate. Lower thresholds or different weights will not be promoted until they demonstrate reliable prospective performance. No new paid odds requests.</p></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">AUTOMATIC PAPER TRACKER</div><h2>Historical performance</h2><p>Tracks published picks at 1 unit per selection; no real bets are placed.</p><div class="stats" style="margin-top:16px"><div class="stat"><label>WINS / LOSSES</label><strong id="record">—</strong></div><div class="stat"><label>UNITS</label><strong id="units">—</strong></div><div class="stat"><label>ROI</label><strong id="roi">—</strong></div><div class="stat"><label>PENDING</label><strong id="pending">—</strong></div></div><p id="trackingNote">Performance begins when daily picks are first recorded. Prior bets are not reconstructed.</p></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">BACKTEST / OUTCOME AUDIT · RESEARCH ONLY</div><h2>Where the picks win and lose</h2><p>Settled picks by market and bet direction. Compare recorded win rate with the average estimated win probability. Small samples are unreliable; historical legacy settlements are separately audited.</p><p id="auditStatus" class="muted">Loading diagnostics…</p></div>
 <div class="table-scroll"><table><thead><tr><th>GROUP</th><th>RECORD</th><th>WIN RATE</th><th>EST. HIT %</th><th>UNITS</th><th>ROI</th></tr></thead><tbody id="auditRows"><tr><td colspan="6" class="empty">Loading diagnostics…</td></tr></tbody></table></div>
@@ -62,6 +63,28 @@ $('filterRows').innerHTML=labels.map(([key,label])=>{
  return '<tr><td>'+clean(label)+'</td><td><strong>'+count+'</strong>'+(key!=='qualified'?' excluded · '+remaining+' remaining':' qualified')+'</td></tr>';
 }).join('');
 $('filterSummary').textContent=(x.totalProps??0)+' props screened · '+(x.eligibleBeforePlayerDedup??0)+' passed checks · '+(x.distinctEligiblePlayers??0)+' unique player/dates · '+(x.selectedTop10??0)+' selected for Top 10';
+}
+function drawEvidenceResearch(){
+const x=snapshot?.evidenceResearch;
+if(!x||x.status!=='offline_same_slate_sensitivity_only'){
+ $('evidenceSummary').textContent='No same-slate evidence report yet. Run the normal refresh with a valid cached slate.';
+ $('evidenceRows').innerHTML='<tr><td colspan="5" class="empty">No evidence study yet</td></tr>';
+ $('evidenceComponents').innerHTML='<tr><td colspan="3" class="empty">No score breakdown yet</td></tr>';
+ return;
+}
+$('evidenceSummary').textContent=(x.totalProps??0)+' props · '+(x.with20GamesAndFreshness??0)+' with 20+ fresh-history eligibility · '+(x.strongGapRegardlessOfEvidence??0)+' strong directional gaps independent of evidence score';
+const scenarios=x.scenarios||{};
+const keys=['current','evidence_55','evidence_50','evidence_45','minutes_cv_050','games_15_evidence_55'];
+$('evidenceRows').innerHTML=keys.map(key=>{
+ const r=scenarios[key]||{};
+ return '<tr><td><strong>'+clean(r.label||key)+'</strong>'+(key==='current'?'<small>Current live rules — reference</small>':'<small>Research only</small>')+'</td><td>'+(r.eligibleProps??'—')+'</td><td>'+(r.uniquePlayerDates??'—')+'</td><td>'+(r.top10Count??'—')+'</td><td>'+(r.meanEvidenceTop10??'—')+'</td></tr>';
+}).join('');
+const cols=[['sample','Historical sample (max 35)'],['minutes','Recent minutes (max 20)'],['minutesStability','Minutes consistency (max 20)'],['statConsistency','Stat consistency (max 15)'],['agePenalty','Old-game penalty (subtract up to 25)'],['evidence','Final evidence score']];
+const components=x.scoreComponents||{};
+$('evidenceComponents').innerHTML=cols.map(([k,name])=>{
+const r=components[k]||{};
+return '<tr><td>'+clean(name)+'</td><td>'+(r.allWith20GamesMean??'—')+'</td><td>'+(r.strongGapPoolMean??'—')+'</td></tr>';
+}).join('');
 }
 function drawComparison(){
 const info=analysis?.modelHeadToHead;
@@ -121,6 +144,7 @@ drawComparison();
 drawContext();
 drawRankingExperiment();
 drawSelectionDiagnostics();
+drawEvidenceResearch();
 $('nPicks').textContent=(snapshot.ranked||[]).length;
 const perf=snapshot.performance||{};
 $('record').textContent=(perf.wins??0)+' / '+(perf.losses??0);

@@ -9,6 +9,7 @@ from settlement import unique_verified_log
 from prop_markets import MARKETS, stat_value
 from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
 from ranking_experiment import update_file as update_ranking_experiment
+from evidence_research import analyze as analyze_evidence
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 ODDS='https://api.the-odds-api.com/v4/sports/basketball_nba'
@@ -436,11 +437,12 @@ def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaini
     return cache
 
 
-def build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics=None):
+def build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics=None,evidence_research=None):
     return {'updatedAt':now.isoformat(),'slateDate':slate,
             'oddsFetched':cache['eventsChecked']>0,'refreshStatus':status,
             'ranked':picks,'propsScanned':len(cache['props']),
-            'selectionDiagnostics':filter_diagnostics if filter_diagnostics is not None else {'status':'not_collected'}, 
+            'selectionDiagnostics':filter_diagnostics if filter_diagnostics is not None else {'status':'not_collected'},
+            'evidenceResearch':evidence_research if evidence_research is not None else {'status':'not_collected'},  
             'eventsChecked':cache['eventsChecked'],
             'oddsCreditsUsed':0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'],
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
@@ -479,9 +481,10 @@ def main():
     logs=history(now)
     filter_diagnostics={}
     picks,candidates=rank(props,logs,return_candidates=True,diagnostics=filter_diagnostics)
+    evidence_study=analyze_evidence(props,logs,ranking_probability,now.isoformat())
     update_ranking_experiment(ROOT/'ranking_experiment.json',candidates,logs,now,slate)
     performance=track(picks,logs,now)
-    snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics)
+    snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics,evidence_study)
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
     print('Source:',status,'Games:',cache['eventsChecked'],'Props:',len(props),
           'Ranked:',len(picks),'Paid credits this run:',0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'])
