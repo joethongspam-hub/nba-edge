@@ -28,6 +28,9 @@ def boxscore(event,date):
     body=request(BASE+'/summary?'+urllib.parse.urlencode({'event':event}))
     rows=[]
     for team in body.get('boxscore',{}).get('players',[]):
+        team_info=team.get('team') or {}
+        own_team=str(team_info.get('displayName') or team_info.get('name') or '')
+        own_team_id=str(team_info.get('id') or '')
         for group in team.get('statistics',[]):
             labels=[str(x).lower() for x in group.get('labels',[])]
             def column(*names):
@@ -45,6 +48,10 @@ def boxscore(event,date):
                 pts=num(value('player_points'));reb=num(value('player_rebounds'));ast=num(value('player_assists'))
                 if not name or minutes is None or pts is None or reb is None or ast is None:continue
                 record={'player':name,'playerId':str(player.get('id','')),'gameId':event,'date':date,'minutes':minutes,'player_points':pts,'player_rebounds':reb,'player_assists':ast}
+                if own_team:record['team']=own_team
+                if own_team_id:record['teamId']=own_team_id
+                pos=(player.get('position') or {}).get('abbreviation')
+                if pos:record['position']=str(pos).upper()
                 threes=value('player_threes')
                 if threes is not None:
                     parsed=num(str(threes).split('-')[0])
@@ -79,19 +86,24 @@ def history(now):
             matchup=(away+' @ '+home) if away and home else None
             scheduled=event.get('date')
             # Enrich even older saved boxscores with scoreboard event identity.
+            # Only infer opponent for logs with an explicit team identity.
+            def attach_context(row):
+                if matchup: row['event']=matchup
+                if scheduled: row['startsAt']=scheduled
+                named=row.get('team')
+                if named and named==home:row['opponent']=away
+                elif named and named==away:row['opponent']=home
             if matchup and scheduled:
                 for row in rows:
                     if row.get('gameId')==eid:
-                        row['event']=matchup
-                        row['startsAt']=scheduled
+                        attach_context(row)
             if eid in games:continue
             try:
                 found=boxscore(eid,date[:4]+'-'+date[4:6]+'-'+date[6:])
                 if found:
                     if matchup and scheduled:
                         for row in found:
-                            row['event']=matchup
-                            row['startsAt']=scheduled
+                            attach_context(row)
                     rows.extend(found);games[eid]=date
                 else:ok=False
             except Exception as e:
