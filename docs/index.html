@@ -17,6 +17,9 @@
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">BACKTEST / OUTCOME AUDIT · RESEARCH ONLY</div><h2>Where the picks win and lose</h2><p>Settled picks by market and bet direction. Compare recorded win rate with the average estimated win probability. Small samples are unreliable; historical legacy settlements are separately audited.</p><p id="auditStatus" class="muted">Loading diagnostics…</p></div>
 <div class="table-scroll"><table><thead><tr><th>GROUP</th><th>RECORD</th><th>WIN RATE</th><th>EST. HIT %</th><th>UNITS</th><th>ROI</th></tr></thead><tbody id="auditRows"><tr><td colspan="6" class="empty">Loading diagnostics…</td></tr></tbody></table></div>
 <div class="heading"><p id="projectionAudit" class="muted">Historical shadow projection error is being reviewed.</p><p class="muted">Not a probability-calibrated model. Legacy settlement matches and recreated projections do not replace the original saved betting record.</p></div></section>
+<section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">PAIRED HISTORICAL REPLAY · NO LIVE MODEL CHANGES</div><h2>NBA EDGE vs Claude-style core</h2><p>Both approaches predict each player's stats from the same prior games. Lower mean absolute error (MAE) is better. This is a statistical projection comparison—not a verified sportsbook betting backtest.</p><p id="compareSummary">Waiting for comparison report…</p></div>
+<div class="table-scroll"><table><thead><tr><th>MARKET</th><th>GAMES</th><th>EDGE MAE</th><th>CLAUDE-STYLE MAE</th><th>LOWER ERROR</th></tr></thead><tbody id="compareRows"><tr><td colspan="5" class="empty">No results yet</td></tr></tbody></table></div>
+<div class="heading"><p class="muted">The challenger reproduces only the season/recent-minutes × per-minute-production core of Claude's model. It excludes matchup, injury, and sportsbook adjustments. No model is automatically promoted; historical wins do not establish future betting value.</p></div></section>
 <div class="note"><strong>Important model limitations.</strong> Rankings are experimental blended historical estimates—not calibrated probabilities or verified betting edges. Grades B/C/D/F reflect an experimental evidence score, not proven likelihood of winning. Grade A is withheld until sufficient out-of-sample calibration is available. Historical logs progressively grow toward 40 games per player; prior-season data is downweighted by an age penalty. Injury status, starting lineups, defensive matchups and changing odds are not independently verified. Results are not guaranteed; no shortlist means there were no qualifying props or current feed data. The tracker settles only when a corresponding player game log is found; missed games can remain pending. The refresh button reloads the latest published snapshot, not the sportsbook feed.</div>
 <footer>NBA EDGE 3.2 · Research only · Prices change · Bet responsibly</footer></main>
 <script>
@@ -30,6 +33,18 @@ const q=$('search').value.toLowerCase(),market=$('market').value,side=$('side').
 const items=(snapshot.ranked||[]).filter(p=>(p.player+' '+p.event).toLowerCase().includes(q)&&(market==='all'||market===p.market)&&(side==='all'||side===p.side)&&(book==='all'||book===p.book)).slice(0,50);
 $('rows').innerHTML=items.length?items.map((p,i)=>`<tr><td class="positive">${i+1}</td><td><strong>${clean(p.grade||"—")}</strong></td><td><strong>${clean(p.player)}</strong><small>${clean(p.event)}</small></td><td><span class="${p.side==='Under'?'under':'over'}">${clean(p.side)}</span> ${p.line} ${clean(labels[p.market]||p.market)}</td><td>${clean(p.book)}</td><td>${p.odds>0?'+':''}${p.odds}</td><td><strong>${pct(p.probability)}</strong></td><td class="positive">+${pct(p.edge)}</td><td class="positive">+${pct(p.ev)}</td><td><button class="details" data-index="${i}">Why?</button></td></tr><tr class="explain" id="explain${i}"><td colspan="10">Historical average: ${p.projection} ${clean(labels[p.market]||p.market)} · Last 5 hits: ${p.last5Hits}/5 · Evidence score: ${p.evidenceScore??'—'}/100 · Games older than 90 days: ${p.historyOlderThan90Days??'—'} · Sample: ${p.sample} games · Recent minutes: ${p.recentMinutes??"—"} · Std. deviation: ${p.volatility??"—"} · Break-even probability: ${pct(p.implied)}. ${clean(p.model)}.</td></tr>`).join(''):'<tr><td colspan="10" class="empty">No qualifying props for the current filters. No picks are invented when data is unavailable.</td></tr>';
 document.querySelectorAll('.details').forEach(btn=>btn.onclick=()=>$('explain'+btn.dataset.index).classList.toggle('open'));
+}
+function drawComparison(){
+const info=analysis?.modelHeadToHead;
+if(!info){$('compareSummary').textContent='No head-to-head research data available yet.';return;}
+const hold=info.lastQuarterHoldout||{},total=info.allWalkForward||{};
+$('compareSummary').textContent='Matched historical projections: '+(total.n??0)+' · Last-quarter holdout: '+(hold.n??0)+' across '+(hold.distinctDates??0)+' dates · '+(hold.sufficientForReview?'Review sample threshold met':'Still collecting sufficient holdout sample')+' · Research only';
+const marketRows=hold.byMarket||{};
+$('compareRows').innerHTML=Object.keys(labels).map(k=>{
+ const r=marketRows[k]||{};
+ const win=r.winner==='claude_core'?'Claude-style':r.winner==='nba_edge'?'NBA EDGE':r.winner==='tie'?'Tie':'—';
+ return '<tr><td><strong>'+clean(labels[k])+'</strong></td><td>'+(r.n??0)+'</td><td>'+(r.edgeMAE??'—')+'</td><td>'+(r.claudeCoreMAE??'—')+'</td><td>'+clean(win)+'</td></tr>';
+}).join('');
 }
 function drawDiagnostics(){
 const cal=analysis?.calibration;
@@ -53,6 +68,7 @@ try{
  analysis=response.ok?await response.json():null;
 }catch(_){analysis=null;}
 drawDiagnostics();
+drawComparison();
 $('nPicks').textContent=(snapshot.ranked||[]).length;
 const perf=snapshot.performance||{};
 $('record').textContent=(perf.wins??0)+' / '+(perf.losses??0);

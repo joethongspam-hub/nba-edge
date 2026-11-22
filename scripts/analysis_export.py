@@ -12,6 +12,7 @@ from pathlib import Path
 from calibration_audit import audit
 from shadow_projections import report as shadow_report
 from performance_diagnostics import inspect_settlements, projection_replay, frozen_projection_accuracy
+from model_comparison import compare as compare_models
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -114,6 +115,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
         "settlementAudit": inspect_settlements(picks, logs or []),
         "historicalPickProjectionReplay": projection_replay(picks, logs or []),
         "frozenProjectionAccuracy": frozen_projection_accuracy(picks),
+        "modelHeadToHead": compare_models(logs or []),
         "injuryReview": injury_review if injury_review is not None else {"reportingStatus":"unavailable","productionChanges":False,"picks":[]},
         "calibration": {
             "overall": summarize(picks),
