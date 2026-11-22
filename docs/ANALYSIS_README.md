@@ -206,3 +206,34 @@ validation with independently frozen sportsbook prices is required.
 
 Unit tests validate identical historical inputs, combo support and
 same-day chronological isolation. GitHub Actions PR CI runs offline tests.
+
+## Upgrade 19: opponent-defense and rotation shadow study
+
+The offline daily export now includes `contextResearch`, a strictly historical
+paired four-way study: NBA EDGE's stat-mean baseline; the Claude-inspired
+minutes-and-rate projection; an opponent-position defensive residual adjustment;
+and a combination of minutes-rate and defense. All four are scored on the
+**same context-qualified completed player-games** using MAE.
+
+**Coverage and leakage rules:** Defense is keyed by the opponent's full ESPN
+team name, the player's recorded ESPN position (PG, SG, SF, PF, C), and market.
+A defensive ratio from earlier observed-versus-individual-baseline production
+is shrunk toward 1.0 with a fixed strength of 60 game-equivalents and capped
+at 0.85–1.15. At least 15 prior qualified matchup observations are required.
+Same-date games only contribute AFTER every game on that date is predicted.
+No lineup, injury, or position is imputed from player names or the current
+opponent. Older history without explicit team, position and scoreboard-consistent
+opponent is excluded; the report shows coverage skips.
+
+The ESPN boxscore ingest now saves the team's display name, team ID and ESPN
+listed player position, and derives the opponent *only if* the scoreboard's
+home/away matchup confirms the saved team name. Previously collected
+boxscores without team context are not silently retroactively rewritten.
+Team/position availability will improve with new ESPN data as it is collected.
+
+The last-quarter window reports a chronological slice of qualified dates;
+a minimum of 200 samples spanning 20 dates is needed to flag a review-ready
+window. That does not demonstrate statistically significant improvement or
+profitable bets. Existing grades, production model, cached sportsbook odds,
+5:13 PM Central schedule, ntfy notification, and Odds API credit safeguards
+are unchanged. This research makes zero additional paid API requests.
