@@ -82,7 +82,7 @@ class ModelTests(unittest.TestCase):
         self.assertEqual(result['oddsCreditsUsed'],0)
         self.assertEqual(result['propsScanned'],1)
         self.assertEqual(result['oddsSnapshotAt'],now.isoformat())
-        self.assertEqual(result['modelVersion'],'3.4-combo-experimental')
+        self.assertEqual(result['modelVersion'],'3.5-projection-confidence')
 
     def test_settlement_win_loss_push(self):
         from datetime import datetime, timezone

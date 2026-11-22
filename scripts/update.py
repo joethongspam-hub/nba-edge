@@ -228,7 +228,8 @@ def rank(props,logs,return_candidates=False):
     histories=defaultdict(list)
     for row in logs:
         histories[''.join(c for c in row['player'].casefold() if c.isalnum())].append(row)
-    candidates=[]
+    candidates=[]  # Keep original EV-qualified pool for the frozen paper experiment.
+    projection_candidates=[]
     for prop in props:
         name=''.join(c for c in prop['player'].casefold() if c.isalnum())
         games=sorted(histories[name],key=lambda g:g['date'],reverse=True)
@@ -239,8 +240,8 @@ def rank(props,logs,return_candidates=False):
         profit=price/100 if price>0 else 100/-price
         ev=probability*profit-(1-probability)
         edge=probability-implied(price)
-        # Conservative research screen, not proof of a profitable bet.
-        if ev<=0.045 or edge<=0.035:continue
+        # EV is retained only for the legacy paper comparison; it is NOT
+        # a requirement or sorting input for the new production Top 10.
         # Evidence quality is separate from projected value and is NOT an outcome guarantee.
         # Old/offseason samples receive a large penalty, avoiding false confidence from
         # reaching 40 games by mixing prior-season rotations with the current season.
@@ -256,15 +257,43 @@ def rank(props,logs,return_candidates=False):
         confidence=('B' if evidence_score>=75 else
                     'C' if evidence_score>=60 else
                     'D' if evidence_score>=45 else 'F')
-        candidates.append({**prop,'probability':round(probability,4),'implied':round(implied(price),4),
+        candidate={**prop,'probability':round(probability,4),'implied':round(implied(price),4),
           'edge':round(edge,4),'ev':round(ev,4),'projection':round(stats['projection'],1),
           'sample':stats['sample'],'last5Hits':stats['last5Hits'],'recentMinutes':round(stats['recentMinutes'],1),
           'volatility':round(stats['volatility'],1),'grade':confidence,'evidenceScore':evidence_score,
-          'historyOlderThan90Days':stats['oldGames'],'model':'Blended historical model (uncalibrated), no injury adjustment'})
-    # Keep highest expected value, but avoid overloading the same player's correlated outcomes.
-    candidates.sort(key=lambda p:p['ev'],reverse=True)
+          'historyOlderThan90Days':stats['oldGames'],'model':'Historical weighted projection (uncalibrated; no injury adjustment)'}
+        if ev>0.045 and edge>0.035:
+            # Preserve legacy paper-experiment inputs and their original
+            # evidence scoring for an apples-to-apples prospective replay.
+            candidates.append(candidate.copy())
+        # Separate *purely historical* evidence from the 10-point bookmaker
+        # edge term; no EV, odds payout or hit-probability ranking inputs.
+        pure_evidence=max(0,min(100,round(sample_score+minutes_score+
+            stability_score+variation_score-age_penalty)))
+        signed_gap=(stats['projection']-prop['line']) * (1 if prop['side']=='Over' else -1)
+        normalized_gap=signed_gap/max(stats['volatility'],1e-9)
+        # Require 20+ usable games, at least Grade C evidence, a meaningful
+        # correctly-directed gap of 0.75 observed stat deviations, and a
+        # minimum 0.5 physical stat gap. Under and Over are treated equally.
+        if (stats['sample']<20 or stats['oldGames']>20 or pure_evidence<60
+                or signed_gap<0.5 or normalized_gap<0.75):
+            continue
+        score=normalized_gap*(pure_evidence/100)**2
+        model_grade=('B' if pure_evidence>=75 else 'C')
+        projection_candidates.append({
+            **candidate,'evidenceScore':pure_evidence,'grade':model_grade,
+            'projectionGap':round(signed_gap,2),
+            'normalizedGap':round(normalized_gap,3),
+            'rankingScore':round(score,4),
+            'rankingMethod':'projection_gap_evidence_v1',
+        })
+    # Compare across markets by gap / historical stat volatility; raw points
+    # alone would otherwise swamp rebounds, assists and three-point props.
+    projection_candidates.sort(key=lambda p:(-p['rankingScore'],
+        -p['evidenceScore'],-p['normalizedGap'],p['player'].casefold(),
+        p['market'],p['book']))
     top=[];used=set()
-    for p in candidates:
+    for p in projection_candidates:
         key=(p['player'].casefold(),p['startsAt'][:10])
         if key in used:continue
         used.add(key);top.append(p)
@@ -314,7 +343,8 @@ def track(top,logs,now):
             ledger.append({k:p[k] for k in ('player','market','side','line','book','odds','event','startsAt','probability','edge','ev','grade')})
             # Freeze model diagnostics with the original line for true forward evaluation.
             # Previously recorded picks remain unchanged; no retroactive reconstruction.
-            for field in ('projection','sample','evidenceScore','recentMinutes','volatility','implied'):
+            for field in ('projection','sample','evidenceScore','recentMinutes','volatility','implied',
+                          'projectionGap','normalizedGap','rankingScore','rankingMethod'):
                 if p.get(field) is not None:ledger[-1][field]=p[field]
             if p.get('oddsEventId'):ledger[-1]['oddsEventId']=p['oddsEventId']
             ledger[-1].update({'id':id,'slate':slate,'recordedAt':now.isoformat(),'result':'pending'})
@@ -361,7 +391,7 @@ def build_snapshot(now,slate,cache,logs,picks,performance,status):
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
             'oddsSnapshotAt':cache['fetchedAt'],
             'playersInHistory':len({r['playerId'] for r in logs}),
-            'warnings':[],'modelVersion':'3.4-combo-experimental','performance':performance}
+            'warnings':[],'modelVersion':'3.5-projection-confidence','performance':performance}
 
 
 def main():
