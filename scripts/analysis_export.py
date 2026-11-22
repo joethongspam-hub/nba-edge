@@ -16,6 +16,7 @@ from model_comparison import compare as compare_models
 from context_research import compare_context
 from ranking_experiment import report as ranking_report
 from projection_shadow import report as projection_shadow_report
+from gap_threshold_experiment import report as gap_threshold_report
 from evidence_walkforward import report as evidence_walkforward_report
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
@@ -86,7 +87,7 @@ def summarize(picks):
             "calibrationBuckets": buckets}
 
 
-def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context_backfill=None, ranking_state=None, projection_shadow_state=None):
+def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context_backfill=None, ranking_state=None, projection_shadow_state=None, gap_threshold_state=None):
     picks = ledger.get("picks", [])
     by_market = defaultdict(list)
     by_side = defaultdict(list)
@@ -126,6 +127,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context
         "contextResearch": compare_context(logs or []),
         "rankingExperiment": ranking_report(ranking_state or {}),
         "projectionShadow": projection_shadow_report(projection_shadow_state or {}),
+        "normalizedGapExperiment": gap_threshold_report(gap_threshold_state or {}),
         "contextBackfill": context_backfill if context_backfill is not None else {"status":"not_started"},
         "injuryReview": injury_review if injury_review is not None else {"reportingStatus":"unavailable","productionChanges":False,"picks":[]},
         "calibration": {
@@ -173,8 +175,9 @@ def main():
     injury_review = read_json(DOCS / "injury_review.json", None)
     ranking_state = read_json(DOCS / "ranking_experiment.json", {"slates":{}})
     projection_state = read_json(DOCS / "projection_shadow.json", {"slates":{}})
+    gap_state = read_json(DOCS / "gap_threshold_experiment.json", {"slates":{}})
     report = build(snapshot, ledger, datetime.now(timezone.utc).isoformat(),
-                   logs, injury_review, game_data.get("contextBackfill"), ranking_state, projection_state)
+                   logs, injury_review, game_data.get("contextBackfill"), ranking_state, projection_state, gap_state)
     (DOCS / "daily_analysis.json").write_text(
         json.dumps(report, ensure_ascii=False, separators=(",", ":"), allow_nan=False) + "\n",
         encoding="utf-8")
