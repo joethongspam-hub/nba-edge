@@ -8,6 +8,7 @@ from pathlib import Path
 from settlement import unique_verified_log
 from prop_markets import MARKETS, stat_value
 from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
+from ranking_experiment import update_file as update_ranking_experiment
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 ODDS='https://api.the-odds-api.com/v4/sports/basketball_nba'
@@ -223,7 +224,7 @@ def ranking_probability(prop, games):
             'minutesCv':minutes_std/max(1,minutes_mean),
             'oldGames':sum(g.get('date','9999-12-31')<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
-def rank(props,logs):
+def rank(props,logs,return_candidates=False):
     histories=defaultdict(list)
     for row in logs:
         histories[''.join(c for c in row['player'].casefold() if c.isalnum())].append(row)
@@ -268,7 +269,7 @@ def rank(props,logs):
         if key in used:continue
         used.add(key);top.append(p)
         if len(top)==10:break
-    return top
+    return (top,candidates) if return_candidates else top
 
 def settle_picks(ledger,logs,now):
     by_name=defaultdict(list)
@@ -376,6 +377,7 @@ def main():
         if previous.get('slateDate')==slate and previous.get('oddsFetched'):
             logs=history(now)
             previous['performance']=track([],logs,now)
+            update_ranking_experiment(ROOT/'ranking_experiment.json',[],logs,now,slate)
             previous['updatedAt']=now.isoformat()
             previous['refreshStatus']='legacy_cached'
             (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\n')
@@ -390,7 +392,8 @@ def main():
         props=cache['props']
         status='recomputed_from_cache'
     logs=history(now)
-    picks=rank(props,logs)
+    picks,candidates=rank(props,logs,return_candidates=True)
+    update_ranking_experiment(ROOT/'ranking_experiment.json',candidates,logs,now,slate)
     performance=track(picks,logs,now)
     snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status)
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
