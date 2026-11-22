@@ -9,6 +9,7 @@ from settlement import unique_verified_log
 from prop_markets import MARKETS, stat_value
 from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
 from ranking_experiment import update_file as update_ranking_experiment
+from projection_shadow import update_file as update_projection_shadow
 from evidence_research import analyze as analyze_evidence
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
@@ -225,7 +226,7 @@ def ranking_probability(prop, games):
             'minutesCv':minutes_std/max(1,minutes_mean),
             'oldGames':sum(g.get('date','9999-12-31')<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
-def rank(props,logs,return_candidates=False,diagnostics=None):
+def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=None):
     # Sequential funnel counts are mutually exclusive first failures; their
     # sum plus qualified candidates must equal the number of scanned props.
     # Never spend an odds credit or re-query an external service for this.
@@ -308,6 +309,19 @@ def rank(props,logs,return_candidates=False,diagnostics=None):
             stability_score+variation_score-age_penalty)))
         signed_gap=(stats['projection']-prop['line']) * (1 if prop['side']=='Over' else -1)
         normalized_gap=signed_gap/max(stats['volatility'],1e-9)
+        # Shadow ranking uses the same historical projections but does not
+        # apply the live evidence>=60 barrier. The prospective study is
+        # restricted to non-stale, correct-direction, sizable stat gaps.
+        if (paper_candidates is not None and stats['sample']>=15 and
+                stats['oldGames']<=20 and signed_gap>=0.5 and normalized_gap>=0.75):
+            strength=normalized_gap*(0.5+pure_evidence/200)
+            paper_candidates.append({**candidate,
+                'evidenceScore':pure_evidence,
+                'projectionGap':round(signed_gap,2),
+                'normalizedGap':round(normalized_gap,3),
+                'paperRankingScore':round(strength,5),
+                'paperEvidenceLabel':('strong' if pure_evidence>=60 else
+                                      'moderate' if pure_evidence>=45 else 'limited')})
         # Require 20+ usable games, at least Grade C evidence, a meaningful
         # correctly-directed gap of 0.75 observed stat deviations, and a
         # minimum 0.5 physical stat gap. Under and Over are treated equally.
@@ -480,9 +494,12 @@ def main():
         status='recomputed_from_cache'
     logs=history(now)
     filter_diagnostics={}
-    picks,candidates=rank(props,logs,return_candidates=True,diagnostics=filter_diagnostics)
+    paper_candidates=[]
+    picks,candidates=rank(props,logs,return_candidates=True,diagnostics=filter_diagnostics,
+                          paper_candidates=paper_candidates)
     evidence_study=analyze_evidence(props,logs,ranking_probability,now.isoformat())
     update_ranking_experiment(ROOT/'ranking_experiment.json',candidates,logs,now,slate)
+    update_projection_shadow(ROOT/'projection_shadow.json',paper_candidates,logs,now,slate)
     performance=track(picks,logs,now)
     snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics,evidence_study)
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
