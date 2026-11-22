@@ -5,6 +5,7 @@ never changes live grade/thresholds, historical outcomes, or frozen picks.
 """
 from collections import defaultdict
 from datetime import datetime, timezone
+from evidence_walkforward import score as redesigned_score
 
 VERSION = 1
 SCENARIOS = (
@@ -32,17 +33,18 @@ def components(stats, minutes_cv_tolerance=0.35):
             "evidence":pure}
 
 
-def _select(rows, threshold, min_games, cv_tolerance):
+def _select(rows, threshold, min_games, cv_tolerance, scoring_method='current'):
     qualifying=[]
     markets=defaultdict(int)
     for p,stats,gap,normalized in rows:
         if stats["sample"]<min_games or stats["oldGames"]>20:
             continue
-        c=components(stats,cv_tolerance)
-        if c["evidence"]<threshold or gap<0.5 or normalized<0.75:
+        evidence=(redesigned_score(stats,'candidate') if scoring_method=='candidate'
+                  else components(stats,cv_tolerance)['evidence'])
+        if evidence<threshold or gap<0.5 or normalized<0.75:
             continue
-        score=normalized*(c["evidence"]/100)**2
-        qualifying.append((score,c["evidence"],normalized,p))
+        score=normalized*(evidence/100)**2
+        qualifying.append((score,evidence,normalized,p))
         markets[p["market"]]+=1
     qualifying.sort(key=lambda x:(-x[0],-x[1],-x[2],
                                  x[3]["player"].casefold(),x[3]["market"],x[3]["book"]))
@@ -106,6 +108,10 @@ def analyze(props,logs,stats_for_prop,generated_at=None):
                         "minimumGames":min_games,
                         "minutesCvTolerance":tolerance,
                         **_select(observed,threshold,min_games,tolerance)}
+    scenarios['redesigned_60']={'label':'Redesigned sample/age score >=60, 20 games',
+        'minimumEvidence':60,'minimumGames':20,'minutesCvTolerance':0.45,
+        'researchOnly':True,
+        **_select(observed,60,20,0.45,scoring_method='candidate')}
     mean=lambda arr,key:(round(sum(x[key] for x in arr)/len(arr),2)
                          if arr else None)
     breakdown={}
