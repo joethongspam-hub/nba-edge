@@ -15,15 +15,15 @@ class BudgetGuardTests(unittest.TestCase):
         self.assertEqual(remaining_from_headers({"x-requests-remaining": "19020"}), 19020)
 
     def test_preserve_full_slate_and_reserve(self):
-        self.assertTrue(check_budget(2080, 10))
+        self.assertTrue(check_budget(2120, 10))
         with self.assertRaises(OddsBudgetError):
-            check_budget(2079, 10)
+            check_budget(2119, 10)
 
     def test_zero_games_spends_nothing(self):
         self.assertTrue(check_budget(2000, 0))
 
     def test_never_continue_after_limit(self):
-        for remaining in (0, 1999, 2030):
+        for remaining in (0, 1999, 2100):
             with self.assertRaises(OddsBudgetError):
                 check_budget(remaining, 9)
 
