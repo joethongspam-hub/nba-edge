@@ -47,7 +47,7 @@ def project(games, market, before_date=None):
     # Minutes capture role changes; rate estimate is winsorized to stop
     # low-minute outliers from dominating per-minute expectations.
     minutes = [float(g["minutes"]) for g in rows]
-    stats = [float(g[market]) for g in rows]
+    stats = [stat_value(g, market) for g in rows]
     recent_minutes = weighted_mean(minutes[:8], 0.83)
     baseline_minutes = weighted_mean(minutes, 0.96)
     projected_minutes = min(42.0, max(8.0, 0.75*recent_minutes+0.25*baseline_minutes))
@@ -100,7 +100,7 @@ def compare_history(logs, min_previous=12):
                 if prediction is None or stat_value(g,market) is None:
                     continue
                 try:
-                    actual=float(g[market])
+                    actual=stat_value(g,market)
                 except (TypeError,ValueError):
                     continue
                 if not math.isfinite(actual):
