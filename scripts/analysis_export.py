@@ -15,6 +15,7 @@ from performance_diagnostics import inspect_settlements, projection_replay, froz
 from model_comparison import compare as compare_models
 from context_research import compare_context
 from ranking_experiment import report as ranking_report
+from evidence_walkforward import report as evidence_walkforward_report
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -112,6 +113,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context
         "modelVersion": snapshot.get("modelVersion"),
         "selectionDiagnostics": snapshot.get("selectionDiagnostics", {"status":"not_collected"}),
         "evidenceResearch": snapshot.get("evidenceResearch", {"status":"not_collected"}),
+        "evidenceScoreWalkForward": evidence_walkforward_report(logs or []),
         "modelStatus": "uncalibrated",
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
         "walkForwardBacktest": audit(picks),
