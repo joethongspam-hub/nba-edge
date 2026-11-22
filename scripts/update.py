@@ -275,7 +275,8 @@ def rank(props,logs,return_candidates=False):
         # Require 20+ usable games, at least Grade C evidence, a meaningful
         # correctly-directed gap of 0.75 observed stat deviations, and a
         # minimum 0.5 physical stat gap. Under and Over are treated equally.
-        if stats['sample']<20 or pure_evidence<60 or signed_gap<0.5 or normalized_gap<0.75:
+        if (stats['sample']<20 or stats['oldGames']>20 or pure_evidence<60
+                or signed_gap<0.5 or normalized_gap<0.75):
             continue
         score=normalized_gap*(pure_evidence/100)**2
         model_grade=('B' if pure_evidence>=75 else 'C')
