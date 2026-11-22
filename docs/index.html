@@ -51,7 +51,9 @@ function drawContext(){
 const study=analysis?.contextResearch;
 if(!study){$('contextSummary').textContent='Context study not yet generated.';return;}
 const h=study.lastQuarterHoldout||{},coverage=study.contextCoverage||{};
-$('contextSummary').textContent='Context-qualified samples: '+(study.allHistorical?.n??0)+' · Recent holdout: '+(h.n??0)+' from '+(h.distinctDates??0)+' dates · '+(h.sufficientForReview?'Review threshold met':'Not enough distinct dates for review')+' · Missing opponent or position: '+(coverage.missingOpponentOrPosition??0);
+const backfill=analysis?.contextBackfill?.lastRun||{};
+const progress=analysis?.contextBackfill?.lastRunAt?' · Backfill: '+(backfill.successfulGames??0)+' games checked last run; '+(backfill.remainingUnattemptedGames??0)+' awaiting review':' · Backfill not yet started';
+$('contextSummary').textContent='Context-qualified samples: '+(study.allHistorical?.n??0)+' · Recent holdout: '+(h.n??0)+' from '+(h.distinctDates??0)+' dates · '+(h.sufficientForReview?'Review threshold met':'Not enough distinct dates for review')+' · Missing opponent or position: '+(coverage.missingOpponentOrPosition??0)+progress;
 const methods=[['NBA EDGE baseline',h.baseMAE],['Minutes-rate model',h.rotationMAE],['Defense-only model',h.defenseMAE],['Combined defense + rotation',h.defenseAndRotationMAE]];
 $('contextRows').innerHTML=methods.map(([name,mae])=>'<tr><td>'+clean(name)+'</td><td>'+(mae??'—')+'</td></tr>').join('');
 }

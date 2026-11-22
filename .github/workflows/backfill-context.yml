@@ -1,0 +1,47 @@
+name: ESPN history context backfill (no odds)
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Completed ESPN games to review this run (1-120)'
+        required: false
+        default: '48'
+        type: string
+  schedule:
+    # Off-peak UTC batch, separate from 5:13 PM Central picks refresh.
+    - cron: '27 8 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: nba-edge-refresh
+  cancel-in-progress: false
+jobs:
+  context-backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate offline Python tests
+        run: |
+          python -m compileall -q scripts tests
+          python -m unittest discover -s tests -v
+      - name: Backfill historical player team, opponent and position (ESPN only)
+        env:
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '48' }}
+        run: |
+          python scripts/context_backfill.py --limit "$BATCH_SIZE"
+      - name: Regenerate offline model comparison
+        run: python scripts/analysis_export.py
+      - name: Commit backfill and analysis (no API secrets)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/game_logs.json docs/daily_analysis.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Backfill ESPN opponent and position context'
+            git pull --rebase
+            git push
+          fi

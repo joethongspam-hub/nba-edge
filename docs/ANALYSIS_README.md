@@ -237,3 +237,51 @@ window. That does not demonstrate statistically significant improvement or
 profitable bets. Existing grades, production model, cached sportsbook odds,
 5:13 PM Central schedule, ntfy notification, and Odds API credit safeguards
 are unchanged. This research makes zero additional paid API requests.
+
+## Upgrade 20: resumable historical ESPN opponent and position backfill
+
+The research comparison previously reported zero opponent-defense evaluations
+because older ESPN player-game logs lack verified team/opponent/position context.
+`scripts/context_backfill.py` retrieves **existing completed game IDs only**
+from ESPN's free game-summary/boxscore endpoint and augments **only** contextual
+fields on rows with exactly matching ESPN game and player IDs. Original points,
+rebounds, assists, minutes, settled-pick outcomes, and recorded odds are never
+overwritten.
+
+Team/opponent labels are cross-checked against the saved scoreboard matchup;
+known aliases such as `LA Clippers` vs `Los Angeles Clippers` are normalized.
+If a saved matchup contradicts the freshly retrieved ESPN summary, context is
+**not** updated. Player positions require explicit PG/SG/SF/PF/C data from the
+ESPN athlete entry; missing context is still reported as missing.
+
+### Running the backfill
+
+Use GitHub **Actions → ESPN history context backfill (no odds) → Run workflow**.
+Default batch: 48 completed games. A configurable manual batch supports 1–120.
+The workflow also runs in bounded off-peak UTC batches at `08:27 UTC` daily
+until the game backlog has been inspected. It uses a maximum of 3 concurrent
+requests to ESPN's public game-summary endpoint, **never The Odds API**.
+The existing `Refresh NBA EDGE picks` workflow keeps its 5:13 PM Central
+schedule; both share a concurrency lock to avoid committing snapshots at the
+same moment.
+
+Successfully fetched game IDs are stored as
+`docs/game_logs.json.contextBackfill.attemptedGameIds`, so games without
+a position are not fetched repeatedly. Failed games are retried at most
+three times and then flagged for manual review rather than blocking the
+rest of the backlog. The source file contains a progress count and most
+recent batch summary; `docs/daily_analysis.json.contextBackfill` and
+the dashboard display progress. A normal odds/picks refresh preserves the
+backfill state rather than resetting it. Runs with no remaining work do
+not rewrite the state just to change a timestamp.
+
+Each batch runs the existing **four-way historical model comparison** again,
+using only then-available verified context and strictly earlier dates for
+opponent-specific signals. Initial batches may still show insufficient
+coverage and null MAE values. No adjustment is automatically applied to
+production probabilities or betting picks, and this feature makes **zero
+additional paid odds requests**.
+
+This uses undocumented public ESPN summary fields; if they change, the
+context backfill will leave rows unchanged or flag errors rather than
+inventing missing positions/opponents.
