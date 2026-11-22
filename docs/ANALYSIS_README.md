@@ -506,3 +506,42 @@ It makes **zero** additional Odds API calls and zero ESPN network
 requests; the daily refresh already had the necessary inputs.
 Production grades, Top 10, tracker, previous paper experiment,
 quota/caching protections, ntfy, and schedule are unmodified.
+
+## Upgrade 26: prospective paper-only projection-first Top 10
+
+Following the zero-production-pick slate, a separate **projection-first**
+research list tests selecting the largest player-stat vs sportsbook-line
+discrepancies without the live evidence-score >=60 hard cutoff or any
+estimated-EV filter. This is a paper simulation; it does **not** replace
+the production Top 10 or modify historical published tracker rows.
+
+Each eligible sportsbook prop uses the existing projection and historical
+evidence calculation, then must have at least 15 usable history games,
+at most 20 games older than 90 days, a correctly directed Over/Under
+projection gap of at least 0.5 stat units, and a volatility-standardized
+gap of at least 0.75 historical standard deviations. Rank by
+`normalizedGap * (0.5 + evidenceScore/200)`; compare different
+markets using standardized gaps, not raw points, and use score quality
+as a ranking adjustment (not an exclusion at 60). The paper board shows
+`limited` (score <45), `moderate` (45–59) or `strong` (60+)
+historical *evidence labels*, not validated bet-hit probabilities or A/B
+confidence grades. Maximum one prop per player/game date and ten props
+per slate; fewer when no meaningful projection gaps are present.
+
+Prospective selections are frozen before tipoff in
+`docs/projection_shadow.json` with the original model inputs, line,
+book, price, projected gap, evidence, and time. Later refreshes cannot
+reprice, replace or retroactively synthesize an old slate. The same
+unique player/matchup/game-time ESPN matching used by the existing
+paper EV experiment grades win/loss/push and tracks one-unit paper
+performance; a minimum of 100 verified non-push decisions is required
+even to consider review. Overlapping selections and combo markets are
+correlated, and this ranking is not a profitability guarantee.
+
+The export reads the paper archive into
+`docs/daily_analysis.json.projectionShadow`. A separate dashboard
+table displays its latest frozen Top 10 and verified paper record. The
+regular 5:13 PM CT refresh commits the archive; rerunning with
+existing same-day cached odds costs **zero** additional paid credits.
+Production Top 10 selection, grades, betting tracker, prior EV study,
+data caching, quota protections, ntfy and schedule remain unchanged.
