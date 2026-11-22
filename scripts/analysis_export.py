@@ -83,7 +83,7 @@ def summarize(picks):
             "calibrationBuckets": buckets}
 
 
-def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
+def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context_backfill=None):
     picks = ledger.get("picks", [])
     by_market = defaultdict(list)
     by_side = defaultdict(list)
@@ -118,6 +118,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
         "frozenProjectionAccuracy": frozen_projection_accuracy(picks),
         "modelHeadToHead": compare_models(logs or []),
         "contextResearch": compare_context(logs or []),
+        "contextBackfill": context_backfill if context_backfill is not None else {"status":"not_started"},
         "injuryReview": injury_review if injury_review is not None else {"reportingStatus":"unavailable","productionChanges":False,"picks":[]},
         "calibration": {
             "overall": summarize(picks),
@@ -159,9 +160,11 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
 def main():
     snapshot = read_json(DOCS / "data.json", {})
     ledger = read_json(DOCS / "tracker.json", {"picks": []})
-    logs = read_json(DOCS / "game_logs.json", {"logs": []}).get("logs", [])
+    game_data = read_json(DOCS / "game_logs.json", {"logs": []})
+    logs = game_data.get("logs", [])
     injury_review = read_json(DOCS / "injury_review.json", None)
-    report = build(snapshot, ledger, datetime.now(timezone.utc).isoformat(), logs, injury_review)
+    report = build(snapshot, ledger, datetime.now(timezone.utc).isoformat(),
+                   logs, injury_review, game_data.get("contextBackfill"))
     (DOCS / "daily_analysis.json").write_text(
         json.dumps(report, ensure_ascii=False, separators=(",", ":"), allow_nan=False) + "\n",
         encoding="utf-8")
