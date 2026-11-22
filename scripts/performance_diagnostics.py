@@ -81,6 +81,43 @@ def inspect_settlements(picks, logs):
     }
 
 
+def frozen_projection_accuracy(picks):
+    """Only use projections frozen at initial publication, never reconstructed."""
+    rows = []
+    for p in picks:
+        if p.get("result") not in ("win", "loss"):
+            continue
+        projection = finite(p.get("projection"))
+        actual = finite(p.get("actual"))
+        if projection is None or actual is None:
+            continue
+        rows.append({
+            "slate": p.get("slate"), "player": p.get("player"),
+            "market": p.get("market"), "side": p.get("side"),
+            "projection": projection, "actual": actual,
+            "error": round(projection - actual, 3),
+        })
+    by_market = defaultdict(list)
+    by_side = defaultdict(list)
+    for row in rows:
+        by_market[row["market"]].append(row)
+        by_side[row["side"]].append(row)
+    def summary(group):
+        n = len(group)
+        return {
+            "n": n,
+            "MAE": round(sum(abs(x["error"]) for x in group) / n, 3) if n else None,
+            "meanSignedError": round(sum(x["error"] for x in group) / n, 3) if n else None,
+        }
+    return {
+        "status": "frozen_pregame_projection_diagnostic",
+        "overall": summary(rows),
+        "byMarket": {k: summary(v) for k, v in sorted(by_market.items())},
+        "bySide": {k: summary(v) for k, v in sorted(by_side.items())},
+        "note": "Only projections stored at publication are counted. Legacy picks without frozen projections are excluded.",
+    }
+
+
 def projection_replay(picks, logs):
     """As-of-slate shadow projection audit for settled picks, not stored forecasts."""
     by_player = defaultdict(list)
