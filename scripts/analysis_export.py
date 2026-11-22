@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from calibration_audit import audit
 from shadow_projections import report as shadow_report
+from performance_diagnostics import inspect_settlements, projection_replay
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -83,13 +84,23 @@ def summarize(picks):
 def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
     picks = ledger.get("picks", [])
     by_market = defaultdict(list)
+    by_side = defaultdict(list)
+    by_grade = defaultdict(list)
+    by_slate = defaultdict(list)
+    by_market_side = defaultdict(list)
     for p in picks:
-        by_market[str(p.get("market", "unknown"))].append(p)
+        market = str(p.get("market", "unknown"))
+        side = str(p.get("side", "unknown"))
+        by_market[market].append(p)
+        by_side[side].append(p)
+        by_grade[str(p.get("grade", "unknown"))].append(p)
+        by_slate[str(p.get("slate", "unknown"))].append(p)
+        by_market_side[(market, side)].append(p)
     verified = [p for p in picks if p.get("settlementStatus") == "verified_matchup_and_start"]
     legacy = [p for p in picks if p.get("result") in VALID
               and p.get("settlementStatus") != "verified_matchup_and_start"]
     report = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "generatedAt": generated_at,
         "slateDate": snapshot.get("slateDate"),
         "snapshotUpdatedAt": snapshot.get("updatedAt"),
@@ -100,6 +111,8 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
         "walkForwardBacktest": audit(picks),
         "shadowProjectionResearch": shadow_report(snapshot, logs or []),
+        "settlementAudit": inspect_settlements(picks, logs or []),
+        "historicalPickProjectionReplay": projection_replay(picks, logs or []),
         "injuryReview": injury_review if injury_review is not None else {"reportingStatus":"unavailable","productionChanges":False,"picks":[]},
         "calibration": {
             "overall": summarize(picks),
@@ -108,6 +121,11 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
             "verifiedSettledCount": sum(p.get("result") in VALID for p in verified),
             "legacySettledCount": len(legacy),
             "byMarket": {k: summarize(v) for k, v in sorted(by_market.items())},
+            "bySide": {k: summarize(v) for k, v in sorted(by_side.items())},
+            "byGrade": {k: summarize(v) for k, v in sorted(by_grade.items())},
+            "bySlate": {k: summarize(v) for k, v in sorted(by_slate.items())},
+            "byMarketAndSide": {m: {side: summarize(v) for (market, side), v in sorted(by_market_side.items()) if market == m}
+                                for m in sorted(by_market)},
             "minimumSuggestedSettledSample": 200,
             "sufficientForCalibration": False,
             "note": "Overall and by-market summaries include older legacy settlements. Use verifiedOnly for event-confirmed outcomes. Neither proves positive EV; do not train on in-sample data.",
@@ -124,6 +142,8 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
             "Confirm live bookmaker price and line; this export may contain stale odds.",
             "Recalculate EV if odds change; probability is uncalibrated.",
             "Flag correlated props and insufficient history; passing is acceptable.",
+            "Check bySide/byMarketAndSide for directional model bias; small samples are inconclusive.",
+            "Review settlementAudit discrepancies before trusting historical win rates.",
         ],
         "settlementCaveat": "New settlements require a matching matchup, game start time and unique ESPN game boxscore. Older results remain unverified legacy records; sportsbook and ESPN event IDs come from different providers and are not directly equal.",
         "isBettingAdvice": False,
