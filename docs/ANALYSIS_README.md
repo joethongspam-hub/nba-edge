@@ -452,3 +452,57 @@ prospective EV-ranking paper experiment, ntfy, schedule, ESPN history
 backfill, cached odds behavior, and minimum Odds API balance reserve are
 **unchanged**. Rerunning the standard refresh with a valid same-slate
 cache recomputes this study with **zero extra paid odds calls**.
+
+## Upgrade 25: pregame-causal evidence redesign benchmark
+
+The production evidence/grades and projection Top 10 remain **unchanged**.
+The alternative evidence model is shadow-only. The redesigned rule is
+deliberately simple and predeclared: sample credit
+`35*n/(n+4)` rather than linear `35*n/40`, penalty
+`15*(oldGames/n)` rather than `1.5*oldGames`, and minutes CV
+tolerance `.45` rather than `.35`. The recent minutes and
+stat-consistency terms are unchanged. The redesign is not a new hit
+probability and does not automatically raise grades.
+
+The same-slate evidence sensitivity study includes a new
+**Redesigned-score 60 / 20 games** scenario; all directional-gap
+and volatility-normalized-gap checks remain identical. The scenario
+reports hypothetical eligible sportsbook rows and one-per-player Top 10
+size but does not record picks as bets.
+
+For a **historical projection-error reliability study**, the new
+`scripts/evidence_walkforward.py` processes all eight supported
+markets, each player, and each game date chronologically. For each
+target game, it looks back to **strictly earlier dates**, recomputes
+the same 40-game recency-weighted projection and evidence inputs,
+and compares its forecast with the actual ESPN boxscore value.
+The same prediction/error is attributed to each evidence formula.
+Old-game penalties are anchored to the *historical target date*,
+not the day the analysis happens. Current-day games never appear
+in another same-day game's training history. The final quarter
+of distinct observed dates is held out for descriptive reporting,
+with at least **20 dates and 200 player-game-market outcomes**
+required for a minimum-sample review flag.
+
+The report includes overall and last-quarter paired sample sizes,
+score-60 coverage, raw and volatility-normalized MAE within selected
+groups, and score-bucket diagnostics. The benchmark may identify
+whether higher evidence scores correlate with lower errors, but
+**changing evidence scores does not itself improve projected stat
+accuracy**. As higher scores select a different collection of
+historical games, subgroup MAE comparisons cannot establish causal
+superiority. Eight combo/stat markets from one player game are
+correlated and must not be interpreted as independent bets.
+Retrospective boxscores contain no historical sportsbook closing
+lines, so this is **not a bet-selection profit or ROI backtest**.
+Changes prompted by a zero-pick slate are exploratory; meaningful
+out-of-sample and prospective frozen-prop evidence would be required
+before promoting the new evidence system.
+
+`docs/daily_analysis.json.evidenceScoreWalkForward` and a new
+dashboard panel expose the analysis. The report uses existing saved
+ESPN history only, including data added by the free context backfill.
+It makes **zero** additional Odds API calls and zero ESPN network
+requests; the daily refresh already had the necessary inputs.
+Production grades, Top 10, tracker, previous paper experiment,
+quota/caching protections, ntfy, and schedule are unmodified.
