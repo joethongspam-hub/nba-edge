@@ -27,6 +27,18 @@ def num(v):
 def boxscore(event,date):
     body=request(BASE+'/summary?'+urllib.parse.urlencode({'event':event}))
     rows=[]
+    # The event-specific ESPN summary can supply a verified matchup for
+    # older rows where the saved scoreboard event label is incomplete.
+    competitions=(body.get('header') or {}).get('competitions') or []
+    competition=competitions[0] if competitions else {}
+    sides=competition.get('competitors') or []
+    def side_name(home_away):
+        match=next((x for x in sides if x.get('homeAway')==home_away),None)
+        info=(match or {}).get('team') or {}
+        return info.get('displayName') or info.get('name')
+    away_name,home_name=side_name('away'),side_name('home')
+    verified_event=(away_name+' @ '+home_name) if away_name and home_name else None
+    verified_start=competition.get('date')
     for team in body.get('boxscore',{}).get('players',[]):
         team_info=team.get('team') or {}
         own_team=str(team_info.get('displayName') or team_info.get('name') or '')
@@ -48,6 +60,8 @@ def boxscore(event,date):
                 pts=num(value('player_points'));reb=num(value('player_rebounds'));ast=num(value('player_assists'))
                 if not name or minutes is None or pts is None or reb is None or ast is None:continue
                 record={'player':name,'playerId':str(player.get('id','')),'gameId':event,'date':date,'minutes':minutes,'player_points':pts,'player_rebounds':reb,'player_assists':ast}
+                if verified_event:record['event']=verified_event
+                if verified_start:record['startsAt']=verified_start
                 if own_team:record['team']=own_team
                 if own_team_id:record['teamId']=own_team_id
                 pos=entry.get('position') or player.get('position') or {}
