@@ -50,8 +50,10 @@ def boxscore(event,date):
                 record={'player':name,'playerId':str(player.get('id','')),'gameId':event,'date':date,'minutes':minutes,'player_points':pts,'player_rebounds':reb,'player_assists':ast}
                 if own_team:record['team']=own_team
                 if own_team_id:record['teamId']=own_team_id
-                pos=(player.get('position') or {}).get('abbreviation')
-                if pos:record['position']=str(pos).upper()
+                pos=entry.get('position') or player.get('position') or {}
+                if isinstance(pos,dict):pos=pos.get('abbreviation') or ''
+                if isinstance(pos,str) and pos.upper() in ('PG','SG','SF','PF','C'):
+                    record['position']=pos.upper()
                 threes=value('player_threes')
                 if threes is not None:
                     parsed=num(str(threes).split('-')[0])
@@ -112,7 +114,12 @@ def history(now):
         if ok:scanned.add(date)
     rows=list({(r['gameId'],r['playerId']):r for r in rows if r.get('playerId')}.values())
     rows.sort(key=lambda r:r['date'])
-    file.write_text(json.dumps({'games':games,'logs':rows,'scannedDates':sorted(scanned)},separators=(',',':'))+'\n')
+    # Preserve separately collected free-ESPN context progress across normal
+    # refreshes. The scheduled picks workflow must not reset the backfill.
+    payload={'games':games,'logs':rows,'scannedDates':sorted(scanned)}
+    if isinstance(old.get('contextBackfill'),dict):
+        payload['contextBackfill']=old['contextBackfill']
+    file.write_text(json.dumps(payload,separators=(',',':'))+'\n')
     return rows
 
 def odds(key,now):
