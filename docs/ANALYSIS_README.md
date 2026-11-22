@@ -134,3 +134,38 @@ absolute spending guarantee.
 Same-day cached reruns skip the paid odds path entirely. If a new day's
 quota is insufficient, the workflow intentionally fails closed and leaves
 the previous published snapshot intact.
+
+## Upgrade 7: outcome audit, direction bias and frozen projection tracking
+
+The scheduled export now includes:
+
+- `calibration.bySide`, `byGrade`, `bySlate`, and `byMarketAndSide` for
+  wins, losses, ROI, mean stated hit probability, and Brier score.
+- `settlementAudit`: a read-only comparison of **all settled picks** with
+  unique game logs matching player name, matchup and start time. Older legacy
+  outcomes may be `legacy_corroborated` retrospectively, but **are not**
+  promoted to the `verified_matchup_and_start` training subset. Missing,
+  mismatched and ambiguous cases require manual review. Existing recorded
+  outcomes are never changed.
+- `historicalPickProjectionReplay`: reconstructed minutes-aware shadow stat
+  estimates using logs with dates **strictly before the saved slate date**.
+  Its MAE and directional mean error are not original pregame forecasts and
+  cannot prove profitable odds.
+- `frozenProjectionAccuracy`: for **new** tracked picks, the screen saves the
+  selected pregame model projection and supporting sample/evidence fields in
+  `docs/tracker.json`. Once those picks settle, their original frozen
+  projections can be compared with actual stats. Older picks without these
+  fields are excluded, not guessed.
+
+The GitHub Pages dashboard now shows per-market and Over/Under performance and
+settlement-audit warnings. These diagnostics require only ESPN history and
+local snapshots and **do not issue additional Odds API queries**.
+
+No grade A promotion, probability recalibration, automatic market suppression,
+injury-based adjustment, or live EV threshold change is introduced here.
+Current samples are too small to justify such tuning; use prospective verified
+records and out-of-sample evaluation before changing production picks.
+
+The live quota guard now allows for **eight** player markets, reserving 2,000
+credits and preflighting a conservative 12 credits per game, rather than the
+previous four-market estimate documented above.

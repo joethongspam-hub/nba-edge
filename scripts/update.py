@@ -278,6 +278,10 @@ def track(top,logs,now):
             id='|'.join([slate,p['player'],p['market'],p['side'],str(p['line']),p['book']])
             if id in existing:continue
             ledger.append({k:p[k] for k in ('player','market','side','line','book','odds','event','startsAt','probability','edge','ev','grade')})
+            # Freeze model diagnostics with the original line for true forward evaluation.
+            # Previously recorded picks remain unchanged; no retroactive reconstruction.
+            for field in ('projection','sample','evidenceScore','recentMinutes','volatility','implied'):
+                if p.get(field) is not None:ledger[-1][field]=p[field]
             if p.get('oddsEventId'):ledger[-1]['oddsEventId']=p['oddsEventId']
             ledger[-1].update({'id':id,'slate':slate,'recordedAt':now.isoformat(),'result':'pending'})
     # Bound size, but keep records from recent seasons.
