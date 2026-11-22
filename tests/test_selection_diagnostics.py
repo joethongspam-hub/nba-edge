@@ -57,7 +57,7 @@ class ProjectionFunnelTests(unittest.TestCase):
         games+=records("Small",[21+i%3 for i in range(40)])
         props=[prop("LowEvidence",line=10.5),
                prop("Wrong",side="Under",line=20.5),
-               prop("Small",line=21.5)]
+               prop("Small",line=21.7)]
         diag={}
         rank(props,games,diagnostics=diag)
         self.assertEqual(diag["stages"]["low_evidence"],1)
