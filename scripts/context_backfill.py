@@ -96,6 +96,15 @@ def backfill(data, fetcher=boxscore, limit=DEFAULT_BATCH, workers=3):
     if not (1 <= limit <= MAX_BATCH):
         raise ValueError("Batch limit must be between 1 and 120")
     selected, remaining_before = candidate_game_ids(data, limit)
+    if not selected:
+        # Do not commit a changing timestamp forever after the backlog is done.
+        state = data.get("contextBackfill") or {}
+        return {"selectedGames":0,"successfulGames":0,"updatedRows":0,
+                "contextQualifiedRows":sum(not needs_context(r) for r in data.get("logs",[])),
+                "remainingUnattemptedGames":remaining_before,
+                "permanentlyFailedGames":sum(v>=MAX_ATTEMPTS for v in
+                                              (state.get("failedGames") or {}).values()),
+                "noOddsApiRequests":True}
     state = data.setdefault("contextBackfill", {})
     if state.get("version") not in (None, CONTEXT_VERSION):
         raise ValueError("Unsupported contextBackfill state version")
