@@ -169,3 +169,40 @@ records and out-of-sample evaluation before changing production picks.
 The live quota guard now allows for **eight** player markets, reserving 2,000
 credits and preflighting a conservative 12 credits per game, rather than the
 previous four-market estimate documented above.
+
+## Upgrade 18A: same-game NBA EDGE vs Claude-inspired model comparison
+
+Each daily `scripts/analysis_export.py` run now publishes `modelHeadToHead`.
+No additional API requests or changed production rankings are involved.
+
+For each player and completed date, both models use **exactly the same ESPN
+historical game logs dated strictly before that date**. All 8 player prop
+markets (including derived combination stats) are included:
+
+- **NBA EDGE**: the existing production model's recency-weighted (0.97) mean
+  statistic from up to 40 eligible games, using only games with 12+ minutes.
+- **Claude-inspired core**: a reproduction of the NBA-Picks model's core
+  blended per-minute current/previous-season and last-10 production rates,
+  multiplied by projected minutes from the last five games and season history.
+
+This is **not** the complete Claude NBA-Picks model: opponent defense by
+position, injury effects, Vegas team totals, rest and probability blending
+cannot be reproduced faithfully from NBA EDGE's current game-log fields.
+The benchmark makes no claims of testing those omitted adjustments.
+
+The `allWalkForward` section shows paired historical MAE/RMSE over all
+eligible predictions. `lastQuarterHoldout` shows those same paired metrics
+over the last quarter of the *distinct eligible calendar dates*, chosen
+chronologically; model constants are **not** tuned to this segment.
+The dashboard lists per-market results from that segment. Comparison uses
+the same sample for both models and excludes same-day outcomes from training.
+
+The holdout is only flagged as sufficiently populated once it has at least
+200 paired projections from at least 20 distinct dates; this is a **review
+threshold**, not statistical proof, and comparisons among markets need their
+own sample review. Do not equate better stat MAE with higher prop profitability.
+No automatic model promotion or calibration occurs; further prospective
+validation with independently frozen sportsbook prices is required.
+
+Unit tests validate identical historical inputs, combo support and
+same-day chronological isolation. GitHub Actions PR CI runs offline tests.
