@@ -24,8 +24,10 @@ def main():
          +'Games checked: '+str(snapshot.get('eventsChecked','?'))+'\n'
          +'Props scanned: '+str(snapshot.get('propsScanned','?'))+'\n'
          +'Top picks: '+str(len(snapshot.get('ranked',[])))+'\n'
-         +'Odds credits used: '+str(snapshot.get('oddsCreditsUsed','?'))+'\n'
-         +'Credits remaining: '+str(snapshot.get('oddsCreditsRemaining') or 'unknown'))
+         +'Odds credits this run: '+str(snapshot.get('oddsCreditsUsed','?'))+'\n'
+         +'Credits spent today: '+str(snapshot.get('oddsCreditsToday','?'))+'\n'
+         +'Paid refreshes today: '+str(snapshot.get('oddsRefreshCount','?'))+'/2\n'
+         +'Credits remaining: '+str(snapshot.get('oddsCreditsRemaining') or 'unknown')+' (2,000 reserve)')
         if success else 'The refresh did not complete successfully. See the workflow logs.'
     )
     run_url=os.environ.get('RUN_URL','')
