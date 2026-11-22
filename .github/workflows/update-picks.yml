@@ -1,8 +1,15 @@
 name: Refresh NBA EDGE picks
 on:
   workflow_dispatch:
+    inputs:
+      refresh_odds:
+        description: 'Use the one allowed second paid refresh today (if eligible)'
+        type: boolean
+        default: false
   schedule:
-    - cron: '13 17 * * *'
+    # Hourly free NBA scoreboard checks; early games trigger the first paid
+    # fetch up to 2 hours before tipoff. 5:13 PM CT remains the late fallback.
+    - cron: '13 9-17 * * *'
       timezone: 'America/Chicago'
 permissions:
   contents: write
@@ -18,19 +25,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify Python syntax
+      - name: Check schedule using free ESPN NBA scoreboard
+        id: gate
+        env:
+          MANUAL_ODDS_REFRESH: ${{ inputs.refresh_odds || 'false' }}
+        run: python scripts/adaptive_schedule.py
+      - name: Verify Python syntax and run offline tests
+        if: steps.gate.outputs.should_run == 'true'
         run: |
-          python -m py_compile scripts/update.py scripts/analysis_export.py scripts/credit_budget.py scripts/injury_review.py
+          python -m py_compile scripts/*.py
           python -m unittest discover -s tests -v
       - name: Refresh historical logs and sportsbook props
+        if: steps.gate.outputs.should_run == 'true'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          NBA_EDGE_ODDS_REFRESH: ${{ steps.gate.outputs.refresh_odds }}
         run: python scripts/update.py
       - name: Free ESPN injury flags (best effort, shadow only)
+        if: steps.gate.outputs.should_run == 'true'
         run: python scripts/injury_review.py
       - name: Export daily analysis and historical calibration diagnostics
+        if: steps.gate.outputs.should_run == 'true'
         run: python scripts/analysis_export.py
       - name: Commit only public snapshots
+        if: steps.gate.outputs.should_run == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -38,7 +56,7 @@ jobs:
           if [ -f docs/odds_cache.json ]; then git add docs/odds_cache.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh NBA EDGE data' && git push)
       - name: Notify ntfy about workflow outcome
-        if: always()
+        if: always() && steps.gate.outputs.should_run == 'true'
         continue-on-error: true
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}

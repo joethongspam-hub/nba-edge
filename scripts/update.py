@@ -442,10 +442,15 @@ def cached_props(slate):
     return cache
 
 
-def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining):
+def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining,previous=None):
     # This file contains only public sportsbook lines, never the API key.
+    # At most one controlled second paid snapshot per Central calendar day.
+    previous=previous or {}
+    count=int(previous.get('refreshCount',1)) + 1 if previous else 1
+    total=int(previous.get('oddsCreditsToday',previous.get('oddsCreditsUsed',0)))+credits_used if previous else credits_used
     cache={'cacheVersion':2,'slateDate':slate,'fetchedAt':now.isoformat(),
            'props':props,'eventsChecked':events_checked,
+           'refreshCount':count,'oddsCreditsToday':total,
            'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining}
     (ROOT/'odds_cache.json').write_text(json.dumps(cache,separators=(',',':'))+'\n')
     return cache
@@ -460,6 +465,9 @@ def build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnost
             'eventsChecked':cache['eventsChecked'],
             'oddsCreditsUsed':0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'],
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
+            'oddsCreditsToday':cache.get('oddsCreditsToday',cache['oddsCreditsUsed']),
+            'oddsRefreshCount':cache.get('refreshCount',1),
+            'oddsReserve':2000,
             'oddsSnapshotAt':cache['fetchedAt'],
             'playersInHistory':len({r['playerId'] for r in logs}),
             'warnings':[],'modelVersion':'3.5-projection-confidence','performance':performance}
@@ -470,6 +478,12 @@ def main():
     now=datetime.now(timezone.utc)
     slate=now.astimezone(ZoneInfo('America/Chicago')).date().isoformat()
     cache=cached_props(slate)
+    # Only the schedule gate/manual opt-in may authorize a second paid
+    # fetch. Never exceed two paid pulls per Central day even if retriggered.
+    paid_refresh=os.environ.get('NBA_EDGE_ODDS_REFRESH','false').lower()=='true'
+    if paid_refresh and cache is not None and int(cache.get('refreshCount',1))>=2:
+        print('Second paid refresh already used today; using cached odds')
+        paid_refresh=False
     if cache is None:
         # Legacy snapshots lack raw props. Do not burn paid credits just to
         # migrate the same-day cache; collect odds normally next local day.
@@ -490,6 +504,15 @@ def main():
         props,warnings,events_checked,credits_used,credits_remaining=odds(key,now)
         cache=write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining)
         status='success' if events_checked else 'no_games'
+    elif paid_refresh:
+        key=os.environ.get('ODDS_API_KEY')
+        if not key:raise RuntimeError('ODDS_API_KEY missing; cached snapshot preserved')
+        # odds() only fetches games which have NOT started. Today's earlier
+        # frozen tracked selections remain in the independent pick ledgers.
+        props,warnings,events_checked,credits_used,credits_remaining=odds(key,now)
+        cache=write_odds_cache(slate,now,props,events_checked,credits_used,
+                               credits_remaining,previous=cache)
+        status='late_slate_refresh'
     else:
         props=cache['props']
         status='recomputed_from_cache'
