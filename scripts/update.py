@@ -313,9 +313,8 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
         # Shadow ranking uses the same historical projections but does not
         # apply the live evidence>=60 barrier. The prospective study is
         # restricted to non-stale, correct-direction, sizable stat gaps.
-        if ((paper_candidates is not None or threshold_candidates is not None) and
-                stats['sample']>=15 and stats['oldGames']<=20 and
-                signed_gap>=0.5 and normalized_gap>=0.60):
+        if (paper_candidates is not None and stats['sample']>=15 and
+                stats['oldGames']<=20 and signed_gap>=0.5 and normalized_gap>=0.75):
             strength=normalized_gap*(0.5+pure_evidence/200)
             paper_row={**candidate,
                 'evidenceScore':pure_evidence,
@@ -324,8 +323,7 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
                 'paperRankingScore':round(strength,5),
                 'paperEvidenceLabel':('strong' if pure_evidence>=60 else
                                       'moderate' if pure_evidence>=45 else 'limited')}
-            if threshold_candidates is not None:threshold_candidates.append(paper_row)
-            if paper_candidates is not None and normalized_gap>=0.75:paper_candidates.append(paper_row)
+            paper_candidates.append(paper_row)
         # Require 20+ usable games, at least Grade C evidence, a meaningful
         # correctly-directed gap of 0.75 observed stat deviations, and a
         # minimum 0.5 physical stat gap. Under and Over are treated equally.
@@ -346,6 +344,14 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
         if signed_gap<0.5:
             mark(prop,'small_raw_gap')
             continue
+        # Research comparison mirrors all LIVE gates except the gap floor.
+        # Compute once from current cached props; no historical line replay.
+        if threshold_candidates is not None and normalized_gap>=0.60:
+            threshold_candidates.append({**candidate,'evidenceScore':pure_evidence,
+                'projectionGap':round(signed_gap,2),
+                'normalizedGap':round(normalized_gap,3),
+                'paperRankingScore':round(normalized_gap*(pure_evidence/100)**2,5),
+                'paperEvidenceLabel':'strong' if pure_evidence>=60 else 'limited'})
         if normalized_gap<0.75:
             mark(prop,'small_normalized_gap')
             continue
