@@ -9,7 +9,7 @@
 <section class="stats"><div class="stat"><label>TOP PICKS</label><strong id="nPicks">—</strong></div><div class="stat"><label>PROPS SCANNED</label><strong id="nProps">—</strong></div><div class="stat"><label>PLAYERS IN HISTORY</label><strong id="nPlayers">—</strong></div><div class="stat"><label>SNAPSHOT UPDATED</label><strong id="updated" style="font-size:16px">—</strong></div></section>
 <section class="panel"><div class="heading"><div class="eyebrow">EXPERIMENTAL TOP 10 · ONE PER PLAYER</div><h2>Top daily picks</h2><p>Grades rate sample quality and model uncertainty separately from estimated betting value. A is currently reserved pending validation.</p><p id="status">Loading latest published snapshot…</p></div><div class="filters">
 <input id="search" placeholder="Search player or matchup" aria-label="Search player or matchup">
-<select id="market" aria-label="Market"><option value="all">All markets</option><option value="player_points">Points</option><option value="player_rebounds">Rebounds</option><option value="player_assists">Assists</option><option value="player_threes">3-pointers</option></select>
+<select id="market" aria-label="Market"><option value="all">All markets</option><option value="player_points">Points</option><option value="player_rebounds">Rebounds</option><option value="player_assists">Assists</option><option value="player_threes">3-pointers</option><option value="player_points_rebounds">Points + Rebounds</option><option value="player_points_assists">Points + Assists</option><option value="player_rebounds_assists">Rebounds + Assists</option><option value="player_points_rebounds_assists">Points + Rebounds + Assists</option></select>
 <select id="side" aria-label="Side"><option value="all">Over + Under</option><option>Over</option><option>Under</option></select>
 <select id="book" aria-label="Book"><option value="all">Both sportsbooks</option><option>DraftKings</option><option>FanDuel</option></select>
 </div><div class="table-scroll"><table><thead><tr><th>RANK</th><th>GRADE</th><th>PLAYER / GAME</th><th>PROP</th><th>SPORTSBOOK</th><th>ODDS</th><th>EST. HIT %</th><th>EDGE</th><th>EST. EV</th><th>DETAILS</th></tr></thead><tbody id="rows"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody></table></div></section>
@@ -18,7 +18,7 @@
 <footer>NBA EDGE 3.2 · Research only · Prices change · Bet responsibly</footer></main>
 <script>
 const $=id=>document.getElementById(id);let snapshot;
-const labels={player_points:'PTS',player_rebounds:'REB',player_assists:'AST',player_threes:'3PM'};
+const labels={player_points:'PTS',player_rebounds:'REB',player_assists:'AST',player_threes:'3PM',player_points_rebounds:'PR',player_points_assists:'PA',player_rebounds_assists:'RA',player_points_rebounds_assists:'PRA'};
 const clean=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=x=>(100*x).toFixed(1)+'%';
 function draw(){

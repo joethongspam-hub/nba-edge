@@ -6,12 +6,12 @@ from zoneinfo import ZoneInfo
 from collections import defaultdict
 from pathlib import Path
 from settlement import unique_verified_log
+from prop_markets import MARKETS, stat_value
 from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
 
 BASE='https://site.api.espn.com/apis/site/v2/sports/basketball/nba'
 ODDS='https://api.the-odds-api.com/v4/sports/basketball_nba'
 ROOT=Path(__file__).resolve().parents[1]/'docs'
-MARKETS=('player_points','player_rebounds','player_assists','player_threes')
 BOOKS={'draftkings':'DraftKings','fanduel':'FanDuel'}
 
 def request(url,key=None):
@@ -163,9 +163,9 @@ def implied(price):
 
 def ranking_probability(prop, games):
     """Blend recent hit rate and a simple distribution estimate; both remain uncalibrated."""
-    eligible=[g for g in games if g.get('minutes',0)>=12 and g.get(prop['market']) is not None][:40]
+    eligible=[g for g in games if g.get('minutes',0)>=12 and stat_value(g, prop['market']) is not None][:40]
     if len(eligible)<15:return None
-    values=[float(g[prop['market']]) for g in eligible]
+    values=[stat_value(g, prop['market']) for g in eligible]
     weights=[0.97**i for i in range(len(values))]
     total=sum(weights)
     mean=sum(w*v for v,w in zip(values,weights))/total
@@ -251,7 +251,10 @@ def settle_picks(ledger,logs,now):
         if verified is None:
             p['settlementStatus']='awaiting_verified_game'
             continue
-        actual=float(verified[p['market']])
+        actual=stat_value(verified,p['market'])
+        if actual is None:
+            p['settlementStatus']='awaiting_verified_stat'
+            continue
         p['actual']=actual
         p['result']='push' if actual==p['line'] else ('win' if ((actual>p['line'])==(p['side']=='Over')) else 'loss')
         p['settledAt']=now.isoformat()
@@ -295,7 +298,7 @@ def cached_props(slate):
         cache=json.loads((ROOT/'odds_cache.json').read_text())
     except (OSError,ValueError):
         return None
-    if cache.get('slateDate')!=slate or cache.get('cacheVersion')!=1:
+    if cache.get('slateDate')!=slate or cache.get('cacheVersion')!=2:
         return None
     if not isinstance(cache.get('props'),list) or not isinstance(cache.get('eventsChecked'),int):
         return None
@@ -304,7 +307,7 @@ def cached_props(slate):
 
 def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaining):
     # This file contains only public sportsbook lines, never the API key.
-    cache={'cacheVersion':1,'slateDate':slate,'fetchedAt':now.isoformat(),
+    cache={'cacheVersion':2,'slateDate':slate,'fetchedAt':now.isoformat(),
            'props':props,'eventsChecked':events_checked,
            'oddsCreditsUsed':credits_used,'oddsCreditsRemaining':credits_remaining}
     (ROOT/'odds_cache.json').write_text(json.dumps(cache,separators=(',',':'))+'\n')
@@ -320,7 +323,7 @@ def build_snapshot(now,slate,cache,logs,picks,performance,status):
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
             'oddsSnapshotAt':cache['fetchedAt'],
             'playersInHistory':len({r['playerId'] for r in logs}),
-            'warnings':[],'modelVersion':'3.3-experimental','performance':performance}
+            'warnings':[],'modelVersion':'3.4-combo-experimental','performance':performance}
 
 
 def main():

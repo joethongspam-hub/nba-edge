@@ -6,8 +6,8 @@ adjustments are claimed; no odds API calls and no changes to betting picks.
 from collections import defaultdict
 from datetime import datetime, timezone
 import math
+from prop_markets import MARKETS, stat_value
 
-MARKETS = ("player_points", "player_rebounds", "player_assists", "player_threes")
 
 
 def name_key(name):
@@ -17,12 +17,12 @@ def name_key(name):
 def eligible_games(games, market, before_date=None):
     eligible = []
     for g in games:
-        if market not in g or not g.get("date") or g.get("minutes") is None:
+        if stat_value(g, market) is None or not g.get("date") or g.get("minutes") is None:
             continue
         if before_date is not None and g["date"] >= before_date:
             continue
         try:
-            minutes, actual = float(g["minutes"]), float(g[market])
+            minutes, actual = float(g["minutes"]), stat_value(g, market)
         except (TypeError, ValueError):
             continue
         if not all(math.isfinite(x) for x in (minutes, actual)):
@@ -97,7 +97,7 @@ def compare_history(logs, min_previous=12):
                 continue
             for market in MARKETS:
                 prediction=project(previous,market,before_date=g["date"])
-                if prediction is None or g.get(market) is None:
+                if prediction is None or stat_value(g,market) is None:
                     continue
                 try:
                     actual=float(g[market])
@@ -105,7 +105,7 @@ def compare_history(logs, min_previous=12):
                     continue
                 if not math.isfinite(actual):
                     continue
-                baseline_values=[float(v[market]) for v in eligible_games(previous,market,g["date"])[:30]]
+                baseline_values=[stat_value(v,market) for v in eligible_games(previous,market,g["date"])[:30]]
                 if not baseline_values:
                     continue
                 baseline=weighted_mean(baseline_values,0.96)

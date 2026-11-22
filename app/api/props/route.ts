@@ -3,7 +3,7 @@ import type { Prop, PropsPayload } from '../../../lib/types';
 
 export const dynamic = 'force-dynamic';
 const ROOT = 'https://api.the-odds-api.com/v4/sports/basketball_nba';
-const MARKETS = ['player_points', 'player_rebounds', 'player_assists', 'player_threes'];
+const MARKETS = ['player_points', 'player_rebounds', 'player_assists', 'player_threes', 'player_points_rebounds', 'player_points_assists', 'player_rebounds_assists', 'player_points_rebounds_assists'];
 const BOOKS: Record<string, Prop['book']> = { draftkings: 'DraftKings', fanduel: 'FanDuel' };
 type Event = { id: string; home_team: string; away_team: string; commence_time: string };
 type Outcome = { name: string; description?: string; point?: number; price?: number };

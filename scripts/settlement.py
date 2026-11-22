@@ -4,6 +4,7 @@ Only settle when the matchup, game start, and unique player row agree.
 Never guess from a name + adjacent calendar date alone.
 """
 from datetime import datetime, timedelta, timezone
+from prop_markets import stat_value
 
 ALIASES = {
     "la clippers": "los angeles clippers",
@@ -51,7 +52,7 @@ def matching_logs(pick, logs, max_start_difference=timedelta(hours=18)):
         row_start = parse_time(row.get("startsAt"))
         if row_start is None or abs(row_start - pick_start) > max_start_difference:
             continue
-        if row.get(pick.get("market")) is None or not row.get("gameId"):
+        if stat_value(row, pick.get("market")) is None or not row.get("gameId"):
             continue
         matches.append(row)
     return matches
