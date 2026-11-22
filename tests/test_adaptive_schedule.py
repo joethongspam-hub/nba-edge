@@ -3,6 +3,9 @@ import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+import update
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -53,6 +56,19 @@ class AdaptiveScheduleTests(unittest.TestCase):
     def test_timezone_and_date_filter(self):
         board = {"events": [{"date": local(12).isoformat()}, {"date": (local(12) + timedelta(days=1)).isoformat()}]}
         self.assertEqual(today_games(board, local(9)), [local(12)])
+
+    def test_daily_credit_aggregation_and_refresh_cap_metadata(self):
+        now = local(17)
+        with TemporaryDirectory() as tmp, patch.object(update, "ROOT", Path(tmp)):
+            first = update.write_odds_cache("2026-11-22", now - timedelta(hours=4),
+                                                 [{"player": "Example"}], 7, 56, "18944")
+            self.assertEqual(first["refreshCount"], 1)
+            second = update.write_odds_cache("2026-11-22", now,
+                                                  [{"player": "Later"}], 3, 24, "18920", previous=first)
+            self.assertEqual(second["refreshCount"], 2)
+            self.assertEqual(second["oddsCreditsToday"], 80)
+            self.assertEqual(second["oddsCreditsRemaining"], "18920")
+            self.assertEqual(update.cached_props("2026-11-22")["props"][0]["player"], "Later")
 
     def test_missing_timestamp_blocks_second(self):
         now = local(17)
