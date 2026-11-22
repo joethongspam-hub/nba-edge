@@ -111,6 +111,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context
         "refreshStatus": snapshot.get("refreshStatus"),
         "modelVersion": snapshot.get("modelVersion"),
         "selectionDiagnostics": snapshot.get("selectionDiagnostics", {"status":"not_collected"}),
+        "evidenceResearch": snapshot.get("evidenceResearch", {"status":"not_collected"}),
         "modelStatus": "uncalibrated",
         "calibrationMethod": "diagnostic_only_no_probability_adjustment",
         "walkForwardBacktest": audit(picks),
