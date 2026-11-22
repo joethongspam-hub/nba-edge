@@ -328,3 +328,51 @@ schedule, paid-credit reserve, ntfy behavior, and historical tracker are
 unchanged. If the first run is already after all game starts, no new
 slate is synthesized: the next pregame refresh can freeze the first
 eligible comparison.
+
+## Upgrade 22: projection-gap confidence Top 10 (live ranking)
+
+The public **Top daily picks** now prioritizes stats the model projects
+**materially above or below the listed sportsbook line**, supported by
+historical sample quality and stability, not estimated EV.
+
+After the existing 40-game recency-weighted historical stat projection,
+each player/book/market/side gets:
+
+- Signed directional gap: `projection - line` for an **Over**, or
+  `line - projection` for an **Under**. A wrong-direction gap is excluded.
+- Volatility-normalized gap: directional gap / historical weighted stat
+  deviation. A larger raw points gap must overcome larger points volatility
+  before outranking a stable 2-rebound gap.
+- **Pure historical evidence**: sample size (35 points), recent minutes (20),
+  minutes stability (20), stat consistency (15), minus up to 25 points for
+  games older than 90 days. Unlike the earlier grade calculation, it
+  **excludes** the bookmaker-implied edge score entirely.
+- Ranking strength: `normalizedGap * (evidenceScore / 100)²`. This
+  deterministic research ranking score is **not** a hit probability, EV,
+  statistical confidence interval, or guaranteed advantage.
+
+To qualify, a pick needs **at least 20** usable historical games, **at most
+20** games older than 90 days among its last 40, evidence score **≥60**
+(Grade C or B; A remains unavailable), a directional raw discrepancy of
+**≥0.5 stat units**, and a normalized gap of **≥0.75 standard deviations**.
+The app picks at most ten ranked candidates and keeps only one prop per
+player per game date. It displays fewer than ten when fewer qualify.
+All eight supported player and combo markets are scanned, with no
+favorite/Over/Under restrictions.
+
+The Top 10 table now shows **projected stat / sportsbook line**, signed
+projected gap, and evidence score instead of estimated hit percentage,
+edge, or estimated EV. FanDuel/DraftKings odds remain as informational
+line metadata. This does **not** imply that a large gap is a profitable bet
+at any available price. Historical projections do not fully account for
+injuries, matchup, lineup changes, or rotations.
+
+**Continuity:** The independent, already-frozen Upgrade 21 paper experiment
+keeps its original EV-only and evidence-weighted EV cohorts and original
+thresholds, unaffected by the new live ranking. Original historical tracker
+outcomes are never rewritten; new tracker rows freeze projection, gap,
+normalized gap, evidence, and ranking method. Internal probability/EV
+diagnostics remain available for audit; they do not choose today's Top 10.
+The schedule, ntfy, cache, free ESPN backfill, quota guard, and paid odds
+request count are unchanged. Old cached `docs/data.json` snapshots will
+show their original picks until the next full recomputation.
