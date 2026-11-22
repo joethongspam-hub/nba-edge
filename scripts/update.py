@@ -479,6 +479,7 @@ def main():
             logs=history(now)
             previous['performance']=track([],logs,now)
             update_ranking_experiment(ROOT/'ranking_experiment.json',[],logs,now,slate)
+            update_projection_shadow(ROOT/'projection_shadow.json',[],logs,now,slate)
             previous['updatedAt']=now.isoformat()
             previous['refreshStatus']='legacy_cached'
             (ROOT/'data.json').write_text(json.dumps(previous,separators=(',',':'))+'\n')
