@@ -21,6 +21,7 @@
 <div class="table-scroll"><table><thead><tr><th>MARKET</th><th>GAMES</th><th>EDGE MAE</th><th>CLAUDE-STYLE MAE</th><th>LOWER ERROR</th></tr></thead><tbody id="compareRows"><tr><td colspan="5" class="empty">No results yet</td></tr></tbody></table></div>
 <div class="heading"><p class="muted">The challenger reproduces only the season/recent-minutes × per-minute-production core of Claude's model. It excludes matchup, injury, and sportsbook adjustments. No model is automatically promoted; historical wins do not establish future betting value.</p></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">CONTEXT RESEARCH · SHADOW ONLY</div><h2>Opponent defense + rotation</h2><p>Matched historical player-games with reliable team, opponent and position information. Lower mean absolute error is better. Missing context is excluded rather than guessed.</p><p id="contextSummary">Loading contextual study…</p></div><div class="table-scroll"><table><thead><tr><th>METHOD</th><th>HOLDOUT MAE</th></tr></thead><tbody id="contextRows"><tr><td colspan="2" class="empty">Loading…</td></tr></tbody></table></div><div class="heading"><p class="muted">Opponent adjustment is learned from earlier games by defensive team and player position; injury and lineup effects are not modeled. This does not affect NBA EDGE picks or grades.</p></div></section>
+<section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">PROSPECTIVE PAPER TEST · PICKS UNCHANGED</div><h2>Highest EV vs risk-adjusted Top 10</h2><p>Two independent ranking methods, applied to the same qualifying sportsbook props and frozen before tipoff. Both groups are tracked at their saved prices. Overlapping picks appear in both groups and are not independent evidence.</p><p id="rankingSummary" class="muted">Waiting for first frozen pregame comparison…</p></div><div class="table-scroll"><table><thead><tr><th>RANKING METHOD</th><th>TRACKED</th><th>W–L</th><th>PENDING</th><th>WIN RATE</th><th>UNITS</th><th>ROI</th></tr></thead><tbody id="rankingRows"><tr><td colspan="7" class="empty">No paper comparison yet</td></tr></tbody></table></div><div class="heading"><p class="muted">Risk-adjusted score = estimated EV × (Evidence Score ÷ 100)². This score changes only selection order, not model win probabilities or EV. Results require substantial prospective verified samples; neither list is automatically promoted.</p></div></section>
 <div class="note"><strong>Important model limitations.</strong> Rankings are experimental blended historical estimates—not calibrated probabilities or verified betting edges. Grades B/C/D/F reflect an experimental evidence score, not proven likelihood of winning. Grade A is withheld until sufficient out-of-sample calibration is available. Historical logs progressively grow toward 40 games per player; prior-season data is downweighted by an age penalty. Injury status, starting lineups, defensive matchups and changing odds are not independently verified. Results are not guaranteed; no shortlist means there were no qualifying props or current feed data. The tracker settles only when a corresponding player game log is found; missed games can remain pending. The refresh button reloads the latest published snapshot, not the sportsbook feed.</div>
 <footer>NBA EDGE 3.2 · Research only · Prices change · Bet responsibly</footer></main>
 <script>
@@ -57,6 +58,16 @@ $('contextSummary').textContent='Context-qualified samples: '+(study.allHistoric
 const methods=[['NBA EDGE baseline',h.baseMAE],['Minutes-rate model',h.rotationMAE],['Defense-only model',h.defenseMAE],['Combined defense + rotation',h.defenseAndRotationMAE]];
 $('contextRows').innerHTML=methods.map(([name,mae])=>'<tr><td>'+clean(name)+'</td><td>'+(mae??'—')+'</td></tr>').join('');
 }
+function drawRankingExperiment(){
+const x=analysis?.rankingExperiment;
+if(!x){$('rankingSummary').textContent='The ranking experiment is not available yet.';return;}
+const v=x.results||{};
+$('rankingSummary').textContent='Frozen slates: '+(x.slatesCompared??0)+' · Shared picks across both lists: '+(x.overlappingSelections??0)+' · '+(x.sufficientForReview?'Review threshold met':'Collecting verified paper results; at least 100 settled per group required')+' · No changes to published picks';
+const fmt=n=>n==null?'—':pct(n);
+$('rankingRows').innerHTML=[['Highest estimated EV',v.ev],['Evidence-adjusted EV',v.risk]].map(([label,z])=>{
+ const r=z||{};return '<tr><td><strong>'+clean(label)+'</strong></td><td>'+(r.selections??0)+'</td><td>'+(r.wins??0)+'–'+(r.losses??0)+'</td><td>'+(r.pending??0)+'</td><td>'+fmt(r.winRate)+'</td><td>'+(r.units??'—')+'</td><td>'+fmt(r.roi)+'</td></tr>';
+}).join('');
+}
 function drawDiagnostics(){
 const cal=analysis?.calibration;
 if(!cal){$('auditStatus').textContent='Diagnostic export unavailable; the picks board remains usable.';$('auditRows').innerHTML='<tr><td colspan="6" class="empty">No diagnostic data available</td></tr>';return;}
@@ -81,6 +92,7 @@ try{
 drawDiagnostics();
 drawComparison();
 drawContext();
+drawRankingExperiment();
 $('nPicks').textContent=(snapshot.ranked||[]).length;
 const perf=snapshot.performance||{};
 $('record').textContent=(perf.wins??0)+' / '+(perf.losses??0);

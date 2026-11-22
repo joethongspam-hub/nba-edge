@@ -285,3 +285,46 @@ additional paid odds requests**.
 This uses undocumented public ESPN summary fields; if they change, the
 context backfill will leave rows unchanged or flag errors rather than
 inventing missing positions/opponents.
+
+## Upgrade 21: prospective EV-only vs risk-adjusted Top 10 research
+
+A **paper-only**, predeclared ranking comparison tests the hypothesis that
+our historical Evidence Score might identify exaggerated estimated EV.
+Both methods receive the exact same qualifying props from
+`scripts/update.py.rank(..., return_candidates=True)`, after existing
+minimum historical sample, >4.5% estimated EV, and >3.5 percentage-point
+estimated edge screens. Both keep the best one prop per player per game
+date and select at most 10.
+
+The original live method ranks purely by descending **estimated EV**.
+The challenger ranks by **estimated EV × (Evidence Score / 100)²**.
+That formula is deliberately fixed in advance; it is not claimed to be a
+calibrated probability, corrected EV, or profitable strategy. Ties use
+EV, player, market, and book for deterministic ordering.
+
+Both paper portfolios are frozen together in
+`docs/ranking_experiment.json`, at their **original pregame sportsbook
+prices**; started games cannot be added, old slates cannot be reconstructed,
+and later odds refreshes never replace a saved slate. This is a new
+prospective study: no legacy 2026 picks are relabeled as if they were
+risk-ranked. Picks overlapping both portfolios share a *single archived
+pick and settlement*, and dashboard overlap counts make their dependence
+visible. Eligible selections remain paper-only: no bets are placed.
+
+The existing validated ESPN matcher settles each paper selection only on
+a **unique matching player, matchup, and game-start window**. Without
+that match, a row stays pending; draws at integer lines are pushes.
+Recorded 1-unit paper ROI, win rate, and result counts are compared on
+`daily_analysis.json.rankingExperiment` and in a new dashboard panel.
+At least **100 settled non-push bets in each group** are required even
+to flag the study for review; such a sample alone does not demonstrate
+statistical superiority because both rankings share selections and
+sportsbook probabilities are uncalibrated.
+
+The experiment makes **no additional Odds API queries**: same cached
+FanDuel/DraftKings props, same ranking computation, same normal nightly
+workflow. Production Top 10, grades, EV thresholds, 5:13 PM Central
+schedule, paid-credit reserve, ntfy behavior, and historical tracker are
+unchanged. If the first run is already after all game starts, no new
+slate is synthesized: the next pregame refresh can freeze the first
+eligible comparison.
