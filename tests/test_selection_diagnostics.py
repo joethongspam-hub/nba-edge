@@ -52,7 +52,7 @@ class ProjectionFunnelTests(unittest.TestCase):
         self.assertEqual(len(candidates),3)
 
     def test_low_evidence_and_gap_filters(self):
-        games=records("LowEvidence",[20+(i%10)*4 for i in range(20),minutes=12)
+        games=records("LowEvidence",[20+(i%10)*4 for i in range(20)],minutes=12)
         games+=records("Wrong",[29+i%3 for i in range(40)])
         games+=records("Small",[21+i%3 for i in range(40)])
         props=[prop("LowEvidence",line=10.5),
