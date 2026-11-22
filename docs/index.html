@@ -14,10 +14,13 @@
 <select id="book" aria-label="Book"><option value="all">Both sportsbooks</option><option>DraftKings</option><option>FanDuel</option></select>
 </div><div class="table-scroll"><table><thead><tr><th>RANK</th><th>GRADE</th><th>PLAYER / GAME</th><th>PROP</th><th>SPORTSBOOK</th><th>ODDS</th><th>EST. HIT %</th><th>EDGE</th><th>EST. EV</th><th>DETAILS</th></tr></thead><tbody id="rows"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody></table></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">AUTOMATIC PAPER TRACKER</div><h2>Historical performance</h2><p>Tracks published picks at 1 unit per selection; no real bets are placed.</p><div class="stats" style="margin-top:16px"><div class="stat"><label>WINS / LOSSES</label><strong id="record">—</strong></div><div class="stat"><label>UNITS</label><strong id="units">—</strong></div><div class="stat"><label>ROI</label><strong id="roi">—</strong></div><div class="stat"><label>PENDING</label><strong id="pending">—</strong></div></div><p id="trackingNote">Performance begins when daily picks are first recorded. Prior bets are not reconstructed.</p></div></section>
+<section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">BACKTEST / OUTCOME AUDIT · RESEARCH ONLY</div><h2>Where the picks win and lose</h2><p>Settled picks by market and bet direction. Compare recorded win rate with the average estimated win probability. Small samples are unreliable; historical legacy settlements are separately audited.</p><p id="auditStatus" class="muted">Loading diagnostics…</p></div>
+<div class="table-scroll"><table><thead><tr><th>GROUP</th><th>RECORD</th><th>WIN RATE</th><th>EST. HIT %</th><th>UNITS</th><th>ROI</th></tr></thead><tbody id="auditRows"><tr><td colspan="6" class="empty">Loading diagnostics…</td></tr></tbody></table></div>
+<div class="heading"><p id="projectionAudit" class="muted">Historical shadow projection error is being reviewed.</p><p class="muted">Not a probability-calibrated model. Legacy settlement matches and recreated projections do not replace the original saved betting record.</p></div></section>
 <div class="note"><strong>Important model limitations.</strong> Rankings are experimental blended historical estimates—not calibrated probabilities or verified betting edges. Grades B/C/D/F reflect an experimental evidence score, not proven likelihood of winning. Grade A is withheld until sufficient out-of-sample calibration is available. Historical logs progressively grow toward 40 games per player; prior-season data is downweighted by an age penalty. Injury status, starting lineups, defensive matchups and changing odds are not independently verified. Results are not guaranteed; no shortlist means there were no qualifying props or current feed data. The tracker settles only when a corresponding player game log is found; missed games can remain pending. The refresh button reloads the latest published snapshot, not the sportsbook feed.</div>
 <footer>NBA EDGE 3.2 · Research only · Prices change · Bet responsibly</footer></main>
 <script>
-const $=id=>document.getElementById(id);let snapshot;
+const $=id=>document.getElementById(id);let snapshot,analysis;
 const labels={player_points:'PTS',player_rebounds:'REB',player_assists:'AST',player_threes:'3PM',player_points_rebounds:'PR',player_points_assists:'PA',player_rebounds_assists:'RA',player_points_rebounds_assists:'PRA'};
 const clean=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=x=>(100*x).toFixed(1)+'%';
@@ -28,12 +31,28 @@ const items=(snapshot.ranked||[]).filter(p=>(p.player+' '+p.event).toLowerCase()
 $('rows').innerHTML=items.length?items.map((p,i)=>`<tr><td class="positive">${i+1}</td><td><strong>${clean(p.grade||"—")}</strong></td><td><strong>${clean(p.player)}</strong><small>${clean(p.event)}</small></td><td><span class="${p.side==='Under'?'under':'over'}">${clean(p.side)}</span> ${p.line} ${clean(labels[p.market]||p.market)}</td><td>${clean(p.book)}</td><td>${p.odds>0?'+':''}${p.odds}</td><td><strong>${pct(p.probability)}</strong></td><td class="positive">+${pct(p.edge)}</td><td class="positive">+${pct(p.ev)}</td><td><button class="details" data-index="${i}">Why?</button></td></tr><tr class="explain" id="explain${i}"><td colspan="10">Historical average: ${p.projection} ${clean(labels[p.market]||p.market)} · Last 5 hits: ${p.last5Hits}/5 · Evidence score: ${p.evidenceScore??'—'}/100 · Games older than 90 days: ${p.historyOlderThan90Days??'—'} · Sample: ${p.sample} games · Recent minutes: ${p.recentMinutes??"—"} · Std. deviation: ${p.volatility??"—"} · Break-even probability: ${pct(p.implied)}. ${clean(p.model)}.</td></tr>`).join(''):'<tr><td colspan="10" class="empty">No qualifying props for the current filters. No picks are invented when data is unavailable.</td></tr>';
 document.querySelectorAll('.details').forEach(btn=>btn.onclick=()=>$('explain'+btn.dataset.index).classList.toggle('open'));
 }
+function drawDiagnostics(){
+const cal=analysis?.calibration;
+if(!cal){$('auditStatus').textContent='Diagnostic export unavailable; the picks board remains usable.';$('auditRows').innerHTML='<tr><td colspan="6" class="empty">No diagnostic data available</td></tr>';return;}
+const groups=[['All settled',cal.overall],...Object.entries(cal.bySide||{}).map(([k,v])=>['Side · '+k,v]),...Object.entries(cal.byMarket||{}).map(([k,v])=>[labels[k]||k,v])];
+const fmt=x=>x==null?'—':pct(x);
+$('auditRows').innerHTML=groups.map(([name,v])=>'<tr><td><strong>'+clean(name)+'</strong></td><td>'+v.wins+'–'+v.losses+'</td><td>'+fmt(v.winRate)+'</td><td>'+fmt(v.meanPredictedProbability)+'</td><td>'+String(v.units??'—')+'</td><td>'+fmt(v.roi)+'</td></tr>').join('');
+const audit=analysis.settlementAudit||{},counts=audit.statusCounts||{},verified=cal.verifiedOnly||{},legacy=cal.legacyUnverified||{};
+$('auditStatus').textContent='Verified: '+(verified.graded??0)+' graded ('+fmt(verified.winRate)+') · Legacy: '+(legacy.graded??0)+' graded ('+fmt(legacy.winRate)+') · Retrospective mismatches/missing: '+(audit.issuesForManualReview??'—')+' · Audit generated: '+(analysis.generatedAt?new Date(analysis.generatedAt).toLocaleString():'unknown');
+const replay=analysis.historicalPickProjectionReplay||{};
+$('projectionAudit').textContent='Pre-slate shadow replay: '+(replay.sample??0)+' settled picks with sufficient prior history · Mean absolute error: '+(replay.overall?.MAE??'—')+' stats · Signed error: '+(replay.overall?.meanSignedError??'—')+' stats. These are reconstructed research projections, not the original saved predictions.';
+}
 async function load(){
 $('status').textContent='Checking published snapshot…';
 try{
 const res=await fetch('./data.json?cache='+Date.now(),{cache:'no-store'});
 if(!res.ok)throw new Error('Snapshot unavailable');
 snapshot=await res.json();
+try{
+ const response=await fetch('./daily_analysis.json?cache='+Date.now(),{cache:'no-store'});
+ analysis=response.ok?await response.json():null;
+}catch(_){analysis=null;}
+drawDiagnostics();
 $('nPicks').textContent=(snapshot.ranked||[]).length;
 const perf=snapshot.performance||{};
 $('record').textContent=(perf.wins??0)+' / '+(perf.losses??0);
