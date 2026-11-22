@@ -376,3 +376,36 @@ diagnostics remain available for audit; they do not choose today's Top 10.
 The schedule, ntfy, cache, free ESPN backfill, quota guard, and paid odds
 request count are unchanged. Old cached `docs/data.json` snapshots will
 show their original picks until the next full recomputation.
+
+## Upgrade 23: explain every projection-based Top 10 rejection
+
+The normal refresh now attaches `selectionDiagnostics` to
+`docs/data.json` and `docs/daily_analysis.json`, and displays a
+**Why props did or didn't qualify** panel on the public dashboard.
+This information comes from the **exact same** iteration of cached
+DraftKings/FanDuel props and player histories used to create the live
+Top 10. No extra Odds API or ESPN requests are made.
+
+The diagnostic uses **sequential, mutually exclusive first-failure**
+categories: (1) fewer than 15 usable games; (2) only 15–19 usable
+games; (3) more than 20 games older than 90 days; (4) pure historical
+evidence score under 60; (5) projection on the wrong side of the line;
+(6) positive directional gap under 0.5 stat units; (7) directional
+gap under 0.75 historical standard deviations; or (8) qualified.
+Each prop is counted exactly once and the category totals must
+equal the input prop count. A prop excluded early could also fail
+later checks; the categories are **not** independent rejection totals.
+
+The report also includes counts **by prop market**, the number of
+qualified sportsbook props before one-per-player/date deduplication,
+the number of eligible player/date pairs, and the final Top 10 count.
+No threshold, Top 10 selection, existing EV paper experiment,
+odds budget/reserve, schedule, ntfy notification, or historical
+betting result was altered.
+
+If a prior slate only has a legacy snapshot with no original
+full-slate prop cache, the app **does not** re-request paid odds solely
+to fill in this diagnostic. Such a slate reports
+`selectionDiagnostics.status = not_collected` until the next
+eligible refresh with available raw cached prop lines. Historical
+slates cannot be retroactively diagnosed without their inputs.

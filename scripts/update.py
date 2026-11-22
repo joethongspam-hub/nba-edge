@@ -224,17 +224,52 @@ def ranking_probability(prop, games):
             'minutesCv':minutes_std/max(1,minutes_mean),
             'oldGames':sum(g.get('date','9999-12-31')<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
-def rank(props,logs,return_candidates=False):
+def rank(props,logs,return_candidates=False,diagnostics=None):
+    # Sequential funnel counts are mutually exclusive first failures; their
+    # sum plus qualified candidates must equal the number of scanned props.
+    # Never spend an odds credit or re-query an external service for this.
+    stages=('insufficient_history','under_20_games','stale_history',
+            'low_evidence','wrong_direction','small_raw_gap',
+            'small_normalized_gap','qualified')
+    failures={k:0 for k in stages}
+    by_market=defaultdict(lambda:{k:0 for k in stages})
+    scanned_by_market=defaultdict(int)
+    def mark(prop,stage):
+        failures[stage]+=1
+        by_market[prop['market']][stage]+=1
+    def debug_snapshot(selected,eligible):
+        if diagnostics is None:return
+        diagnostics.update({
+            'version':1,
+            'status':'projection_filter_funnel',
+            'rules':{'minimumHistoryForProjection':15,'minimumHistoryForPick':20,
+                     'maximumGamesOlderThan90Days':20,'minimumEvidence':60,
+                     'minimumDirectionalGap':0.5,'minimumNormalizedGap':0.75,
+                     'onePerPlayerPerGameDate':True},
+            'totalProps':len(props),
+            'stages':dict(failures),
+            'byMarket':{market:{'totalProps':scanned_by_market[market],
+                    **dict(stages_count)} for market,stages_count in sorted(by_market.items())},
+            'eligibleBeforePlayerDedup':eligible,
+            'selectedTop10':len(selected),
+            'distinctEligiblePlayers':len({(p['player'].casefold(),p['startsAt'][:10])
+                                            for p in projection_candidates}),
+            'note':'Counts are sequential first-failure categories, evaluated on each sportsbook prop. No thresholds were changed; no additional odds requests.'
+        })
+
     histories=defaultdict(list)
     for row in logs:
         histories[''.join(c for c in row['player'].casefold() if c.isalnum())].append(row)
     candidates=[]  # Keep original EV-qualified pool for the frozen paper experiment.
     projection_candidates=[]
     for prop in props:
+        scanned_by_market[prop['market']]+=1
         name=''.join(c for c in prop['player'].casefold() if c.isalnum())
         games=sorted(histories[name],key=lambda g:g['date'],reverse=True)
         stats=ranking_probability(prop,games)
-        if not stats:continue
+        if not stats:
+            mark(prop,'insufficient_history')
+            continue
         price=prop['odds']
         probability=stats['probability']
         profit=price/100 if price>0 else 100/-price
@@ -275,9 +310,27 @@ def rank(props,logs,return_candidates=False):
         # Require 20+ usable games, at least Grade C evidence, a meaningful
         # correctly-directed gap of 0.75 observed stat deviations, and a
         # minimum 0.5 physical stat gap. Under and Over are treated equally.
-        if (stats['sample']<20 or stats['oldGames']>20 or pure_evidence<60
-                or signed_gap<0.5 or normalized_gap<0.75):
+        # Record the first disqualifying rule, in exactly the same order as
+        # the production gate. The stages make 0-pick slates auditable.
+        if stats['sample']<20:
+            mark(prop,'under_20_games')
             continue
+        if stats['oldGames']>20:
+            mark(prop,'stale_history')
+            continue
+        if pure_evidence<60:
+            mark(prop,'low_evidence')
+            continue
+        if signed_gap<=0:
+            mark(prop,'wrong_direction')
+            continue
+        if signed_gap<0.5:
+            mark(prop,'small_raw_gap')
+            continue
+        if normalized_gap<0.75:
+            mark(prop,'small_normalized_gap')
+            continue
+        mark(prop,'qualified')
         score=normalized_gap*(pure_evidence/100)**2
         model_grade=('B' if pure_evidence>=75 else 'C')
         projection_candidates.append({
@@ -298,6 +351,7 @@ def rank(props,logs,return_candidates=False):
         if key in used:continue
         used.add(key);top.append(p)
         if len(top)==10:break
+    debug_snapshot(top,len(projection_candidates))
     return (top,candidates) if return_candidates else top
 
 def settle_picks(ledger,logs,now):
@@ -382,10 +436,11 @@ def write_odds_cache(slate,now,props,events_checked,credits_used,credits_remaini
     return cache
 
 
-def build_snapshot(now,slate,cache,logs,picks,performance,status):
+def build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics=None):
     return {'updatedAt':now.isoformat(),'slateDate':slate,
             'oddsFetched':cache['eventsChecked']>0,'refreshStatus':status,
             'ranked':picks,'propsScanned':len(cache['props']),
+            'selectionDiagnostics':filter_diagnostics if filter_diagnostics is not None else {'status':'not_collected'}, 
             'eventsChecked':cache['eventsChecked'],
             'oddsCreditsUsed':0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'],
             'oddsCreditsRemaining':cache['oddsCreditsRemaining'],
@@ -422,10 +477,11 @@ def main():
         props=cache['props']
         status='recomputed_from_cache'
     logs=history(now)
-    picks,candidates=rank(props,logs,return_candidates=True)
+    filter_diagnostics={}
+    picks,candidates=rank(props,logs,return_candidates=True,diagnostics=filter_diagnostics)
     update_ranking_experiment(ROOT/'ranking_experiment.json',candidates,logs,now,slate)
     performance=track(picks,logs,now)
-    snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status)
+    snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics)
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
     print('Source:',status,'Games:',cache['eventsChecked'],'Props:',len(props),
           'Ranked:',len(picks),'Paid credits this run:',0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'])

@@ -13,6 +13,7 @@
 <select id="side" aria-label="Side"><option value="all">Over + Under</option><option>Over</option><option>Under</option></select>
 <select id="book" aria-label="Book"><option value="all">Both sportsbooks</option><option>DraftKings</option><option>FanDuel</option></select>
 </div><div class="table-scroll"><table><thead><tr><th>RANK</th><th>GRADE</th><th>PLAYER / GAME</th><th>PROP</th><th>SPORTSBOOK</th><th>ODDS</th><th>PROJ / LINE</th><th>GAP</th><th>EVIDENCE</th><th>DETAILS</th></tr></thead><tbody id="rows"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody></table></div></section>
+<section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">TOP 10 SELECTION DIAGNOSTICS · NO EXTRA ODDS CALLS</div><h2>Why props did or didn't qualify</h2><p>Shows the first rule that excluded each DraftKings/FanDuel prop after the latest refresh. Counts are sequential and add up to all props scanned. A rejected prop might also fail later tests; this is not a list of independent reasons.</p><p id="filterSummary" class="muted">Waiting for a fresh filter report…</p></div><div class="table-scroll"><table style="min-width:580px"><thead><tr><th>CHECK</th><th>PROPS REMAINING / REJECTED</th></tr></thead><tbody id="filterRows"><tr><td colspan="2" class="empty">No diagnostic results yet</td></tr></tbody></table></div><div class="heading"><p class="muted">These are research diagnostics; the eligibility thresholds, Top 10 rankings, and sportsbook quota protections are unchanged.</p></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">AUTOMATIC PAPER TRACKER</div><h2>Historical performance</h2><p>Tracks published picks at 1 unit per selection; no real bets are placed.</p><div class="stats" style="margin-top:16px"><div class="stat"><label>WINS / LOSSES</label><strong id="record">—</strong></div><div class="stat"><label>UNITS</label><strong id="units">—</strong></div><div class="stat"><label>ROI</label><strong id="roi">—</strong></div><div class="stat"><label>PENDING</label><strong id="pending">—</strong></div></div><p id="trackingNote">Performance begins when daily picks are first recorded. Prior bets are not reconstructed.</p></div></section>
 <section class="panel" style="margin-top:22px"><div class="heading"><div class="eyebrow">BACKTEST / OUTCOME AUDIT · RESEARCH ONLY</div><h2>Where the picks win and lose</h2><p>Settled picks by market and bet direction. Compare recorded win rate with the average estimated win probability. Small samples are unreliable; historical legacy settlements are separately audited.</p><p id="auditStatus" class="muted">Loading diagnostics…</p></div>
 <div class="table-scroll"><table><thead><tr><th>GROUP</th><th>RECORD</th><th>WIN RATE</th><th>EST. HIT %</th><th>UNITS</th><th>ROI</th></tr></thead><tbody id="auditRows"><tr><td colspan="6" class="empty">Loading diagnostics…</td></tr></tbody></table></div>
@@ -35,6 +36,32 @@ const q=$('search').value.toLowerCase(),market=$('market').value,side=$('side').
 const items=(snapshot.ranked||[]).filter(p=>(p.player+' '+p.event).toLowerCase().includes(q)&&(market==='all'||market===p.market)&&(side==='all'||side===p.side)&&(book==='all'||book===p.book)).slice(0,50);
 $('rows').innerHTML=items.length?items.map((p,i)=>`<tr><td class="positive">${i+1}</td><td><strong>${clean(p.grade||"—")}</strong></td><td><strong>${clean(p.player)}</strong><small>${clean(p.event)}</small></td><td><span class="${p.side==='Under'?'under':'over'}">${clean(p.side)}</span> ${p.line} ${clean(labels[p.market]||p.market)}</td><td>${clean(p.book)}</td><td>${p.odds>0?'+':''}${p.odds}</td><td><strong>${p.projection==null?"—":Number(p.projection).toFixed(1)} / ${p.line}</strong></td><td class="positive">${p.projectionGap==null?"—":(p.side==="Under"?"−":"+")+Number(p.projectionGap).toFixed(1)}</td><td><strong>${p.evidenceScore??"—"}/100</strong></td><td><button class="details" data-index="${i}">Why?</button></td></tr><tr class="explain" id="explain${i}"><td colspan="10">Historical average: ${p.projection} ${clean(labels[p.market]||p.market)} · Last 5 hits: ${p.last5Hits}/5 · Evidence score: ${p.evidenceScore??'—'}/100 · Games older than 90 days: ${p.historyOlderThan90Days??'—'} · Sample: ${p.sample} games · Recent minutes: ${p.recentMinutes??"—"} · Std. deviation: ${p.volatility??"—"} · Gap in historical standard deviations: ${p.normalizedGap??"—"} · Ranking strength: ${p.rankingScore??"—"} · ${clean(p.model)}.</td></tr>`).join(''):'<tr><td colspan="10" class="empty">No qualifying props for the current filters. No picks are invented when data is unavailable.</td></tr>';
 document.querySelectorAll('.details').forEach(btn=>btn.onclick=()=>$('explain'+btn.dataset.index).classList.toggle('open'));
+}
+function drawSelectionDiagnostics(){
+const x=snapshot?.selectionDiagnostics;
+if(!x||x.status!=='projection_filter_funnel'){
+ $('filterSummary').textContent='Diagnostics not yet available: run the normal picks refresh from cached odds or wait for the scheduled refresh.';
+ $('filterRows').innerHTML='<tr><td colspan="2" class="empty">No filter report in this snapshot</td></tr>';
+ return;
+}
+const stages=x.stages||{};
+const labels=[
+ ['insufficient_history','Fewer than 15 historical games'],
+ ['under_20_games','15–19 eligible games'],
+ ['stale_history','More than 20 old games'],
+ ['low_evidence','Evidence score below 60'],
+ ['wrong_direction','Projection on wrong side of line'],
+ ['small_raw_gap','Directional stat gap below 0.5'],
+ ['small_normalized_gap','Normalized gap below 0.75'],
+ ['qualified','Passed all projection checks']
+];
+let remaining=x.totalProps||0;
+$('filterRows').innerHTML=labels.map(([key,label])=>{
+ const count=stages[key]||0;
+ if(key!=='qualified')remaining-=count;
+ return '<tr><td>'+clean(label)+'</td><td><strong>'+count+'</strong>'+(key!=='qualified'?' excluded · '+remaining+' remaining':' qualified')+'</td></tr>';
+}).join('');
+$('filterSummary').textContent=(x.totalProps??0)+' props screened · '+(x.eligibleBeforePlayerDedup??0)+' passed checks · '+(x.distinctEligiblePlayers??0)+' unique player/dates · '+(x.selectedTop10??0)+' selected for Top 10';
 }
 function drawComparison(){
 const info=analysis?.modelHeadToHead;
@@ -93,6 +120,7 @@ drawDiagnostics();
 drawComparison();
 drawContext();
 drawRankingExperiment();
+drawSelectionDiagnostics();
 $('nPicks').textContent=(snapshot.ranked||[]).length;
 const perf=snapshot.performance||{};
 $('record').textContent=(perf.wins??0)+' / '+(perf.losses??0);
