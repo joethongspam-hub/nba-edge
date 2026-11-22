@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 
 from context_research import _clean_opponent, _position
-from settlement import team_name
+from settlement import team_name, matchup_from_string
 from update import ROOT, boxscore
 
 CONTEXT_VERSION = 1
@@ -67,9 +67,18 @@ def merge_game_context(data, game_id, refreshed):
         new = by_id.get(str(old.get("playerId")))
         if not new:
             continue
-        before = {k: old.get(k) for k in ("team", "teamId", "position", "opponent")}
-        # Use original scoreboard event only; never guess an opponent from
-        # game ID, opposing stat totals, or player names.
+        before = {k: old.get(k) for k in
+                  ("event","startsAt","team","teamId","position","opponent")}
+        # Never use a new summary if it contradicts a previously matched
+        # scoreboard. Only the same identified player/game may be enriched.
+        old_matchup=matchup_from_string(old.get("event"))
+        new_matchup=matchup_from_string(new.get("event"))
+        if old_matchup and new_matchup and old_matchup != new_matchup:
+            continue
+        if not old_matchup and new_matchup:
+            old["event"]=new["event"]
+            if new.get("startsAt") and not old.get("startsAt"):
+                old["startsAt"]=new["startsAt"]
         matched = matched_side(old.get("event"), new.get("team"))
         if matched:
             old["team"], old["opponent"] = matched
