@@ -4,8 +4,8 @@ The live remaining quota is obtained from a *free* /events request.
 We reserve credits and preflight the WHOLE slate (no partial game scanning).
 """
 DEFAULT_RESERVE = 2000
-# 4 player prop markets in one US region. Extra headroom vs typical charge.
-MAX_EVENT_COST = 8
+# 8 player prop markets in one US region; 4 credits of per-event headroom.
+MAX_EVENT_COST = 12
 
 
 class OddsBudgetError(RuntimeError):
