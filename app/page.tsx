@@ -3,7 +3,7 @@ import {useEffect,useMemo,useState} from 'react';
 import {Activity,ArrowDownUp,RefreshCw,Search,SlidersHorizontal,TrendingUp} from 'lucide-react';
 import type {Prop, PropsPayload} from '../lib/types';
 
-const LABELS:Record<string,string>={player_points:'Points',player_rebounds:'Rebounds',player_assists:'Assists',player_threes:'3-Pointers'};
+const LABELS:Record<string,string>={player_points:'Points',player_rebounds:'Rebounds',player_assists:'Assists',player_threes:'3-Pointers',player_points_rebounds:'Points + Rebounds',player_points_assists:'Points + Assists',player_rebounds_assists:'Rebounds + Assists',player_points_rebounds_assists:'Points + Rebounds + Assists'};
 const implied=(odds:number)=>odds<0 ? -odds/(-odds+100) : 100/(odds+100);
 const displayOdds=(odds:number)=> odds>0?`+${odds}`:String(odds);
 function dateTime(iso:string){return new Date(iso).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'});}
