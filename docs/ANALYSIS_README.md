@@ -545,3 +545,30 @@ regular 5:13 PM CT refresh commits the archive; rerunning with
 existing same-day cached odds costs **zero** additional paid credits.
 Production Top 10 selection, grades, betting tracker, prior EV study,
 data caching, quota protections, ntfy and schedule remain unchanged.
+
+
+## Upgrade 28: prospective normalized-gap threshold sensitivity
+
+The new `normalizedGapExperiment` in `docs/daily_analysis.json` compares
+**0.60, 0.65, 0.70** against unchanged **0.75**. All variants use the
+**same live production eligibility checks** before the gap rule: 20+ usable
+historical games, <=20 old games, historical evidence >=60, correctly directed
+stat gap >=0.5, and one pick per player per date. They use the unchanged
+production ranking formula `normalizedGap * (evidenceScore / 100)^2`.
+The sole tested difference is the normalized-gap cutoff.
+
+A new independent `docs/gap_threshold_experiment.json` ledger freezes
+the top ten per group with their original pregame odds and lines and settles
+only verified matching player/matchup/start-time ESPN outcomes. Frozen slates
+are never backfilled from later odds, and a repeated run cannot overwrite them.
+Shared selections across groups are settled once and counted for each group,
+not interpreted as independent evidence. No previous .75 shadow study rows
+are reused because their eligibility rules differ.
+
+The dashboard displays graded, win rate, units, paper ROI and pending per group.
+At least 100 verified non-push decisions per threshold are required even for
+preliminary review; evaluate on *future* dates before changing production.
+If all live evidence gates still reject all props, lowering the gap floor
+alone will not create picks. Production Top 10, existing shadow studies,
+Odds API quota/schedule, and ntfy are unchanged. The comparison makes zero
+additional paid odds requests.
