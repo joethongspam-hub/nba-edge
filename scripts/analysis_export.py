@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from calibration_audit import audit
 from shadow_projections import report as shadow_report
-from performance_diagnostics import inspect_settlements, projection_replay
+from performance_diagnostics import inspect_settlements, projection_replay, frozen_projection_accuracy
 
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 VALID = {"win", "loss", "push"}
@@ -113,6 +113,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None):
         "shadowProjectionResearch": shadow_report(snapshot, logs or []),
         "settlementAudit": inspect_settlements(picks, logs or []),
         "historicalPickProjectionReplay": projection_replay(picks, logs or []),
+        "frozenProjectionAccuracy": frozen_projection_accuracy(picks),
         "injuryReview": injury_review if injury_review is not None else {"reportingStatus":"unavailable","productionChanges":False,"picks":[]},
         "calibration": {
             "overall": summarize(picks),
