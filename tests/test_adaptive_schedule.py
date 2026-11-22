@@ -5,11 +5,11 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
-import update
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from adaptive_schedule import today_games, cache_state, decide
+import update
 
 CT = ZoneInfo("America/Chicago")
 
