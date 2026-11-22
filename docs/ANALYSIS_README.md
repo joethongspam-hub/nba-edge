@@ -409,3 +409,46 @@ to fill in this diagnostic. Such a slate reports
 `selectionDiagnostics.status = not_collected` until the next
 eligible refresh with available raw cached prop lines. Historical
 slates cannot be retroactively diagnosed without their inputs.
+
+## Upgrade 24: evidence-score sensitivity research (no live changes)
+
+The `scripts/evidence_research.py` module runs **offline during the normal
+picks refresh**, using the **same saved sportsbook props**, the **same ESPN
+player logs**, and the **existing `ranking_probability` implementation**.
+It performs no paid/free network requests of its own. Results are saved to
+`docs/data.json.evidenceResearch`, copied into
+`docs/daily_analysis.json.evidenceResearch`, and shown on the dashboard.
+
+It examines how much of the current historical evidence score comes from
+sample size (maximum 35), recent playing minutes (20), minutes consistency
+(20), stat consistency (15), and age penalty (up to 25 deducted). The
+study reports average component points across props with 20+ games and
+no more than 20 old games, and within that pool those meeting the fixed
+directional projection gap tests. It also reports evidence-score bands.
+
+A **predeclared what-if table** compares:
+- Current production rules: 20 games, evidence >=60, minutes CV tolerance .35
+- Evidence cutoffs 55, 50, and 45 (all else unchanged)
+- Higher minutes CV tolerance .50 (but still 60 evidence and 20 games)
+- 15 minimum games and evidence >=55
+
+All scenarios still enforce <=20 historical games older than 90 days,
+correct Over/Under direction, at least a 0.5-unit gap, a normalized
+gap >=0.75 of the stat's historical variability, and one prop per player
+per game date. The table shows qualified prop rows, unique player/game
+dates, hypothetical Top 10 size, and average evidence of those ten.
+The **current** scenario is regression-tested to yield the exact same
+qualifying count, unique-player count, and Top 10 size as the production
+ranker, so the what-if study is not a second incompatible projection model.
+
+**Important limitations:** These are *same-slate selection counts*, NOT
+predictions graded against future outcomes. Multiple sportsbook
+offerings for the same player/game are correlated; the output does not
+claim independent evidence or a realized win rate. Alternatives were
+considered after inspecting a zero-pick slate, so they must not be
+promoted based solely on generating more picks. The existing production
+thresholds, grade calculation, ranking, prior tracker's records,
+prospective EV-ranking paper experiment, ntfy, schedule, ESPN history
+backfill, cached odds behavior, and minimum Odds API balance reserve are
+**unchanged**. Rerunning the standard refresh with a valid same-slate
+cache recomputes this study with **zero extra paid odds calls**.
