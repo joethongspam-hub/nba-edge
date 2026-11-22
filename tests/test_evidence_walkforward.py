@@ -76,7 +76,8 @@ class WalkForwardEvidenceTests(unittest.TestCase):
         date20=data[-1]["date"]
         data.append({**data[-1],"gameId":"second","player_points":500})
         r=report(data)
-        self.assertEqual(r["methods"]["current"]["allHistorical"]["n"],2*8)
+        # Days 16–20 are eligible (5 x 8), plus the added same-day game (8).
+        self.assertEqual(r["methods"]["current"]["allHistorical"]["n"],6*8)
 
     def test_same_slate_redesign_only_changes_shadow_counts(self):
         data=games("A",40,start=date.today()-timedelta(days=40))
