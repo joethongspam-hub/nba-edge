@@ -572,3 +572,22 @@ If all live evidence gates still reject all props, lowering the gap floor
 alone will not create picks. Production Top 10, existing shadow studies,
 Odds API quota/schedule, and ntfy are unchanged. The comparison makes zero
 additional paid odds requests.
+
+
+## Upgrade 29: daily raw normalized-gap qualification counts
+
+The threshold comparison now freezes **raw sportsbook-prop counts** at each
+of the four cutoffs (.60/.65/.70/.75), after applying the same non-gap live
+evidence/history/directional filters. The count is before deduplication;
+`distinctPlayerDates` reports unique players/game dates, and
+`top10Selected` reports independently ranked paper selections (up to 10).
+These are three different quantities, not interchangeable.
+
+See `normalizedGapExperiment.latestSlateCounts` in the daily analysis JSON,
+and **Today's threshold qualification counts** on the dashboard. The raw
+counts are captured at the original eligible pregame freeze and cannot be
+rewritten after tipoff. Existing immutable 2026-11-22 slates lack these raw
+counts and therefore display an unavailable dash; the corresponding already
+frozen Top 10 counts remain visible. Future eligible pregame slates record all
+three columns automatically. No new odds requests, live threshold/ranking
+changes, or history rewrites.

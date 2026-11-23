@@ -32,6 +32,16 @@ def freeze(state,candidates,now,slate):
     available=[p for p in candidates if eligible(p,now)]
     if not available:return False
     selections={f"{t:.2f}":select(available,now,t) for t in THRESHOLDS}
+    # Snapshot *all* qualifying sportsbook rows, before player dedup and Top 10.
+    # Do not reconstruct these counts from later cached/live odds.
+    qualifying_counts={}
+    distinct_counts={}
+    for threshold in THRESHOLDS:
+        name=f"{threshold:.2f}"
+        rows=[p for p in available if float(p["normalizedGap"])>=threshold]
+        qualifying_counts[name]=len(rows)
+        distinct_counts[name]=len({(normalize(p["player"]),p["startsAt"][:10])
+                                    for p in rows})
     frozen={}
     for rows in selections.values():
         for row in rows:
@@ -46,6 +56,8 @@ def freeze(state,candidates,now,slate):
                               "result":"pending"})
     slates[slate]={"recordedAt":now.isoformat(),
                    "candidateCount":len(available),
+                   "qualifyingCounts":qualifying_counts,
+                   "distinctPlayerDateCounts":distinct_counts,
                    "groups":{k:[key_for(p) for p in v] for k,v in selections.items()},
                    "picks":frozen}
     return True
@@ -64,14 +76,29 @@ def report(state):
                                   set(s.get("groups",{}).get("0.75",[])))
                                 for s in slates.values())
     summaries={k:aggregate(v) for k,v in grouped.items()}
+    latest_date=max(slates) if slates else None
+    latest=slates[latest_date] if latest_date else {}
+    latest_counts={
+        "slateDate":latest_date,
+        "recordedAt":latest.get("recordedAt"),
+        "totalPregameCandidatesAt060":latest.get("candidateCount"),
+        "qualifyingProps":{f"{t:.2f}":latest.get("qualifyingCounts",{}).get(f"{t:.2f}")
+                           for t in THRESHOLDS},
+        "distinctPlayerDates":{f"{t:.2f}":latest.get("distinctPlayerDateCounts",{}).get(f"{t:.2f}")
+                                for t in THRESHOLDS},
+        "top10Selected":{f"{t:.2f}":len(latest.get("groups",{}).get(f"{t:.2f}",[]))
+                          for t in THRESHOLDS},
+        "countsRecordedAtFreeze":bool(latest.get("qualifyingCounts")),
+    }
     return {"status":"prospective_normalized_gap_paper_comparison",
             "thresholds":[f"{t:.2f}" for t in THRESHOLDS],
             "productionChanges":False,"extraOddsApiCalls":0,
             "slatesRecorded":len(slates),"results":summaries,
+            "latestSlateCounts":latest_counts,
             "overlapWithBaseline":overlaps,
             "minimumGradedPerThreshold":MIN_GRADED,
             "sufficientForReview":all(v["graded"]>=MIN_GRADED for v in summaries.values()),
-            "note":"Identical pregame candidate pools, ranking weights, evidence eligibility and frozen odds; thresholds differ only by normalized gap. One player per game date, top 10 per group. Overlap is not independent data. No historical sportsbook lines reconstructed. Review later out-of-sample dates before any production change."}
+            "note":"Identical pregame candidate pools, ranking weights, evidence eligibility and frozen odds; thresholds differ only by normalized gap. One player per game date, top 10 per group. Overlap is not independent data. Raw qualifying counts are frozen alongside selections; missing legacy counts stay unavailable, never inferred. No historical sportsbook lines reconstructed. Review later out-of-sample dates before any production change."}
 
 def update_file(path,candidates,logs,now,slate):
     path=Path(path)

@@ -37,11 +37,35 @@ class ThresholdExperimentTests(unittest.TestCase):
         self.assertFalse(freeze(state,[candidate(5,.95)],NOW,"2026-11-23"))
         self.assertEqual(original,state["slates"]["2026-11-23"]["picks"])
         r=report(state)
+        daily=r["latestSlateCounts"]
+        self.assertEqual([daily["qualifyingProps"][t] for t in ("0.60","0.65","0.70","0.75")],[4,3,2,1])
+        self.assertEqual([daily["distinctPlayerDates"][t] for t in ("0.60","0.65","0.70","0.75")],[4,3,2,1])
+        self.assertEqual([daily["top10Selected"][t] for t in ("0.60","0.65","0.70","0.75")],[4,3,2,1])
+        self.assertTrue(daily["countsRecordedAtFreeze"])
         self.assertEqual([r["results"][t]["selections"] for t in ("0.60","0.65","0.70","0.75")],[4,3,2,1])
         self.assertEqual(r["overlapWithBaseline"]["0.60"],1)
         self.assertFalse(r["sufficientForReview"])
         for p in state["slates"]["2026-11-23"]["picks"].values():
             self.assertEqual(p["selectionRecordedAt"],NOW.isoformat())
+
+    def test_raw_props_exceed_deduped_selections(self):
+        rows=[candidate(1,.70,player="Same"),candidate(2,.66,player="Same"),candidate(3,.61,player="Other")]
+        state={}
+        self.assertTrue(freeze(state,rows,NOW,"2026-11-23"))
+        daily=report(state)["latestSlateCounts"]
+        self.assertEqual(daily["qualifyingProps"]["0.60"],3)
+        self.assertEqual(daily["distinctPlayerDates"]["0.60"],2)
+        self.assertEqual(daily["top10Selected"]["0.60"],2)
+
+    def test_old_frozen_slate_does_not_invent_counts(self):
+        state={"slates":{"2026-11-22":{"recordedAt":"2026-11-22T23:57:15+00:00",
+                                          "candidateCount":3,
+                                          "groups":{"0.60":[],"0.65":[],"0.70":[],"0.75":[]},
+                                          "picks":{}}}}
+        daily=report(state)["latestSlateCounts"]
+        self.assertFalse(daily["countsRecordedAtFreeze"])
+        self.assertIsNone(daily["qualifyingProps"]["0.60"])
+        self.assertEqual(daily["top10Selected"]["0.60"],0)
 
     def test_no_past_backfill(self):
         state={}
