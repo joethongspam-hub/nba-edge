@@ -47,6 +47,8 @@ def matching_logs(pick, logs, max_start_difference=timedelta(hours=18)):
         return []
     matches = []
     for row in logs:
+        if pick.get('playerId') and str(row.get('playerId',''))!=str(pick['playerId']):
+            continue
         if matchup_from_string(row.get("event")) != pick_matchup:
             continue
         row_start = parse_time(row.get("startsAt"))

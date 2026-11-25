@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 from collections import defaultdict
 from pathlib import Path
 from settlement import unique_verified_log
+from roster_validation import validate_props, history_index, player_history, role_context
 from prop_markets import MARKETS, stat_value
 from credit_budget import check_budget, remaining_from_headers, MAX_EVENT_COST, OddsBudgetError
 from ranking_experiment import update_file as update_ranking_experiment
@@ -260,15 +261,13 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
             'note':'Counts are sequential first-failure categories, evaluated on each sportsbook prop. No thresholds were changed; no additional odds requests.'
         })
 
-    histories=defaultdict(list)
-    for row in logs:
-        histories[''.join(c for c in row['player'].casefold() if c.isalnum())].append(row)
+    histories=history_index(logs)
     candidates=[]  # Keep original EV-qualified pool for the frozen paper experiment.
     projection_candidates=[]
     for prop in props:
         scanned_by_market[prop['market']]+=1
         name=''.join(c for c in prop['player'].casefold() if c.isalnum())
-        games=sorted(histories[name],key=lambda g:g['date'],reverse=True)
+        games=player_history(prop,histories)
         stats=ranking_probability(prop,games)
         if not stats:
             mark(prop,'insufficient_history')
@@ -300,6 +299,8 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
           'sample':stats['sample'],'last5Hits':stats['last5Hits'],'recentMinutes':round(stats['recentMinutes'],1),
           'volatility':round(stats['volatility'],1),'grade':confidence,'evidenceScore':evidence_score,
           'historyOlderThan90Days':stats['oldGames'],'model':'Historical weighted projection (uncalibrated; no injury adjustment)'}
+        if prop.get('playerId'):
+            candidate.update(role_context(prop,games))
         if ev>0.045 and edge>0.035:
             # Preserve legacy paper-experiment inputs and their original
             # evidence scoring for an apples-to-apples prospective replay.
@@ -432,6 +433,7 @@ def track(top,logs,now):
                           'projectionGap','normalizedGap','rankingScore','rankingMethod'):
                 if p.get(field) is not None:ledger[-1][field]=p[field]
             if p.get('oddsEventId'):ledger[-1]['oddsEventId']=p['oddsEventId']
+            if p.get('playerId'):ledger[-1]['playerId']=p['playerId']
             ledger[-1].update({'id':id,'slate':slate,'recordedAt':now.isoformat(),'result':'pending'})
     # Bound size, but keep records from recent seasons.
     ledger=[p for p in ledger if p.get('slate','')>=(now-timedelta(days=365)).strftime('%Y-%m-%d')]
@@ -533,6 +535,7 @@ def main():
         props=cache['props']
         status='recomputed_from_cache'
     logs=history(now)
+    props,roster_report=validate_props(props,request,BASE,now)
     filter_diagnostics={}
     paper_candidates=[]
     threshold_candidates=[]
@@ -545,6 +548,9 @@ def main():
     update_gap_threshold_experiment(ROOT/'gap_threshold_experiment.json',threshold_candidates,logs,now,slate)
     performance=track(picks,logs,now)
     snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics,evidence_study)
+    snapshot['rosterValidation']=roster_report
+    if roster_report['excludedProps']:
+        snapshot['warnings'].append('Some props excluded by roster validation; see roster audit.')
     from balanced_selection import update_file as update_balanced
     snapshot['watchlist'],snapshot['balancedResearch']=update_balanced(
         ROOT/'balanced_selection.json',balanced_candidates,picks,logs,now,slate)
