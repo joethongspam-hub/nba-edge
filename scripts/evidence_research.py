@@ -4,6 +4,7 @@ Retrospective same-slate *eligibility yield only*: not a betting backtest and
 never changes live grade/thresholds, historical outcomes, or frozen picks.
 """
 from collections import defaultdict
+from roster_validation import history_index, player_history
 from datetime import datetime, timezone
 from evidence_walkforward import score as redesigned_score
 
@@ -74,14 +75,7 @@ def analyze(props,logs,stats_for_prop,generated_at=None):
     avoid maintaining a second projection model. Calculations use only saved
     current-slate prop odds-cache records and ESPN history.
     """
-    histories=defaultdict(list)
-    for g in logs:
-        name=g.get("player")
-        if name:
-            key="".join(c for c in name.casefold() if c.isalnum())
-            histories[key].append(g)
-    for rows in histories.values():
-        rows.sort(key=lambda g:g.get("date",""),reverse=True)
+    histories=history_index(logs)
     observed=[]
     scored=[]
     gap_pool=[]
@@ -89,7 +83,7 @@ def analyze(props,logs,stats_for_prop,generated_at=None):
         name="".join(c for c in str(p.get("player","")).casefold() if c.isalnum())
         if not name or p.get("side") not in ("Over","Under"):
             continue
-        stats=stats_for_prop(p,histories[name])
+        stats=stats_for_prop(p,player_history(p,histories))
         if stats is None:
             continue
         gap=(stats["projection"]-p["line"])*(1 if p["side"]=="Over" else -1)

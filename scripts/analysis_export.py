@@ -113,6 +113,8 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context
         "oddsSnapshotAt": snapshot.get("oddsSnapshotAt"),
         "refreshStatus": snapshot.get("refreshStatus"),
         "modelVersion": snapshot.get("modelVersion"),
+        "rosterValidation": snapshot.get("rosterValidation", {"status":"not_collected"}),
+        "watchlist": snapshot.get("watchlist", []),
         "selectionDiagnostics": snapshot.get("selectionDiagnostics", {"status":"not_collected"}),
         "evidenceResearch": snapshot.get("evidenceResearch", {"status":"not_collected"}),
         "evidenceScoreWalkForward": evidence_walkforward_report(logs or []),
