@@ -86,7 +86,11 @@ def validate_props(props,request,base,now):
             teams=matchup.split(' @ ')
             if any(t not in rosters for t in teams):reason='roster_unavailable'
             else:
-                hits={(t,i) for t in teams for i in rosters[t].get(norm(p.get('player')),set())}
+                key=norm(p.get('player'))
+                hits={(t,i) for t in teams for i in rosters[t].get(key,set())}
+                # Only a specific suffix variant, still requiring a unique current roster match.
+                if not hits and key=='derrickjones':
+                    hits={(t,i) for t in teams for i in rosters[t].get('derrickjonesjr',set())}
                 if len(hits)==1:
                     team,pid=next(iter(hits))
                     out.append({**p,'playerId':pid,'rosterTeam':directory[team][1],'rosterStatus':'verified'})
