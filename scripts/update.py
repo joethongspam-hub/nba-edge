@@ -227,7 +227,7 @@ def ranking_probability(prop, games):
             'minutesCv':minutes_std/max(1,minutes_mean),
             'oldGames':sum(g.get('date','9999-12-31')<(datetime.now(timezone.utc)-timedelta(days=90)).strftime('%Y-%m-%d') for g in eligible)}
 
-def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=None,threshold_candidates=None):
+def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=None,threshold_candidates=None,balanced_candidates=None):
     # Sequential funnel counts are mutually exclusive first failures; their
     # sum plus qualified candidates must equal the number of scanned props.
     # Never spend an odds credit or re-query an external service for this.
@@ -310,6 +310,12 @@ def rank(props,logs,return_candidates=False,diagnostics=None,paper_candidates=No
             stability_score+variation_score-age_penalty)))
         signed_gap=(stats['projection']-prop['line']) * (1 if prop['side']=='Over' else -1)
         normalized_gap=signed_gap/max(stats['volatility'],1e-9)
+        if (balanced_candidates is not None and stats['sample']>=15 and
+                stats['oldGames']<=20 and signed_gap>=0.5 and normalized_gap>=0.60 and pure_evidence>=45):
+            balanced_candidates.append({**candidate,'evidenceScore':pure_evidence,
+                'projectionGap':round(signed_gap,2),'normalizedGap':round(normalized_gap,3),
+                'exactNormalizedGap':normalized_gap,
+                'rankingScore':normalized_gap*(pure_evidence/100)**2})
         # Shadow ranking uses the same historical projections but does not
         # apply the live evidence>=60 barrier. The prospective study is
         # restricted to non-stale, correct-direction, sizable stat gaps.
@@ -530,14 +536,18 @@ def main():
     filter_diagnostics={}
     paper_candidates=[]
     threshold_candidates=[]
+    balanced_candidates=[]
     picks,candidates=rank(props,logs,return_candidates=True,diagnostics=filter_diagnostics,
-                          paper_candidates=paper_candidates,threshold_candidates=threshold_candidates)
+                          paper_candidates=paper_candidates,threshold_candidates=threshold_candidates,balanced_candidates=balanced_candidates)
     evidence_study=analyze_evidence(props,logs,ranking_probability,now.isoformat())
     update_ranking_experiment(ROOT/'ranking_experiment.json',candidates,logs,now,slate)
     update_projection_shadow(ROOT/'projection_shadow.json',paper_candidates,logs,now,slate)
     update_gap_threshold_experiment(ROOT/'gap_threshold_experiment.json',threshold_candidates,logs,now,slate)
     performance=track(picks,logs,now)
     snapshot=build_snapshot(now,slate,cache,logs,picks,performance,status,filter_diagnostics,evidence_study)
+    from balanced_selection import update_file as update_balanced
+    snapshot['watchlist'],snapshot['balancedResearch']=update_balanced(
+        ROOT/'balanced_selection.json',balanced_candidates,picks,logs,now,slate)
     (ROOT/'data.json').write_text(json.dumps(snapshot,separators=(',',':'))+'\n')
     print('Source:',status,'Games:',cache['eventsChecked'],'Props:',len(props),
           'Ranked:',len(picks),'Paid credits this run:',0 if status=='recomputed_from_cache' else cache['oddsCreditsUsed'])
