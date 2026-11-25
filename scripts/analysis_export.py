@@ -13,6 +13,7 @@ from calibration_audit import audit
 from shadow_projections import report as shadow_report
 from performance_diagnostics import inspect_settlements, projection_replay, frozen_projection_accuracy
 from model_comparison import compare as compare_models
+from team_role_shadow import report as team_role_report
 from context_research import compare_context
 from ranking_experiment import report as ranking_report
 from projection_shadow import report as projection_shadow_report
@@ -126,6 +127,7 @@ def build(snapshot, ledger, generated_at, logs=None, injury_review=None, context
         "historicalPickProjectionReplay": projection_replay(picks, logs or []),
         "frozenProjectionAccuracy": frozen_projection_accuracy(picks),
         "modelHeadToHead": compare_models(logs or []),
+        "teamRoleShadow": team_role_report(snapshot, logs or []),
         "contextResearch": compare_context(logs or []),
         "rankingExperiment": ranking_report(ranking_state or {}),
         "projectionShadow": projection_shadow_report(projection_shadow_state or {}),
