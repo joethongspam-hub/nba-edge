@@ -27,7 +27,7 @@ class DashboardLayoutTests(unittest.TestCase):
         html=PAGE.read_text(encoding="utf-8")
         parser=DashboardParser()
         parser.feed(html)
-        self.assertEqual(parser.panels,12)
+        self.assertEqual(parser.panels,13)
         self.assertEqual(parser.details,4)
         self.assertEqual(parser.summaries,4)
         self.assertEqual(len(parser.ids),len(set(parser.ids)),"Duplicate element IDs")
@@ -35,7 +35,7 @@ class DashboardLayoutTests(unittest.TestCase):
                        "units","roi","pending","shadowRows","filterRows",
                        "evidenceRows","walkForwardRows","auditRows","compareRows",
                        "contextRows","rankingRows","oddsBudget","search","market",
-                       "side","book","refresh"):
+                       "side","book","refresh","teamRoleSummary","teamRoleRows","teamRoleToday"):
             with self.subTest(target=target):
                 self.assertIn(target,parser.ids)
         self.assertLess(html.index('id="daily-picks"'),
