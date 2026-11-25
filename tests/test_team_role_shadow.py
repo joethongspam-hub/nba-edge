@@ -15,6 +15,9 @@ class TeamRoleTests(unittest.TestCase):
         result=report({},rows)
         self.assertEqual(result['all']['n'],5)
         self.assertFalse(result['productionChanges'])
+    def test_incomplete_snapshot(self):
+        result=report({'ranked':[{'player':'Example','grade':'C'}]},[])
+        self.assertEqual(result['today'],[])
     def test_missing_team(self):
         self.assertIsNone(project([], 'player_points',None))
     def test_suffix(self):

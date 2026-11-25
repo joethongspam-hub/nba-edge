@@ -44,7 +44,9 @@ def report(snapshot,logs):
     index=history_index(logs)
     today=[]
     for p in snapshot.get('ranked',[])+snapshot.get('watchlist',[]):
-        prior=[g for g in player_history(p,index) if g.get('date','')<snapshot.get('slateDate','')]
+        if p.get('market') not in MARKETS or not p.get('rosterTeam') or not snapshot.get('slateDate'):
+            continue
+        prior=[g for g in player_history(p,index) if g.get('date','')<snapshot['slateDate']]
         result=project(prior,p['market'],p.get('rosterTeam'))
         if result:today.append({'player':p['player'],'market':p['market'],**{k:round(v,3) for k,v in result.items()}})
     observations=[]
