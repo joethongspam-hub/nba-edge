@@ -14,16 +14,20 @@ def fetch(url, limit=4000000):
 def probe():
     report={"updated":datetime.now(timezone.utc).isoformat(),"sources":[],"research_only":True}
     urls=[
-        "https://moneypuck.com/moneypuck/playerData/careers/gameByGame/goalies/8478402.csv",
-        "https://moneypuck.com/moneypuck/playerData/season/2025/regular/goalies.csv",
-        "https://moneypuck.com/moneypuck/playerData/season/2024/regular/goalies.csv",
+        "https://moneypuck.com/moneypuck/playerData/careers/gameByGame/regular/goalies/8480045.csv",
+        "https://moneypuck.com/moneypuck/playerData/careers/gameByGame/regular/goalies/8475683.csv",
+        "https://moneypuck.com/moneypuck/playerData/careers/gameByGame/regular/goalies/8474593.csv",
     ]
     for url in urls:
         entry={"url":url}
         try:
             reader=csv.DictReader(io.StringIO(fetch(url).decode("utf-8-sig")))
             entry["fields"]=reader.fieldnames
-            row=next(reader,None)
+            rows=list(reader)
+            row=next((r for r in rows if r.get("situation")=="all"),None)
+            entry["all_situation_rows"]=sum(r.get("situation")=="all" for r in rows)
+            entry["dates"]=sorted({r.get("gameDate") for r in rows if r.get("gameDate")})[::100]
+            entry["season_counts"]={str(y):sum(r.get("situation")=="all" and str(r.get("season"))==str(y) for r in rows) for y in (2023,2024,2025,2026)}
             entry["sample"]={k:row.get(k) for k in ("gameId","gameDate","playerId","name","playerTeam","team","situation","icetime","xGoals","goals") if k in row} if row else None
             entry["game_level"]=bool({"gameId","gameDate","icetime","xGoals","goals"}.issubset(reader.fieldnames or []))
         except HTTPError as e:entry["error"]="HTTP_"+str(e.code)
