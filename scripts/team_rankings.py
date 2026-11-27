@@ -1,8 +1,36 @@
 """Research rankings, not calibrated confidence grades or betting recommendations."""
 from collections import defaultdict
+from zoneinfo import ZoneInfo
 from nba_team_model import parse_time
 
 ADVANCED={"NBA":"efficiency_probability","NFL":"epa_probability","NHL":"xg_probability"}
+
+CENTRAL = ZoneInfo("America/Chicago")
+
+def retain_started(snapshot, previous):
+    """Carry forward only same-day, genuinely pregame rows and rankings."""
+    now = parse_time(snapshot["updated"])
+    def started_today(row):
+        start = parse_time(row["start"])
+        return start <= now and start.astimezone(CENTRAL).date() == now.astimezone(CENTRAL).date()
+    for sport, rows in snapshot["sports"].items():
+        old_rows = previous.get("sports", {}).get(sport, [])
+        frozen = [dict(r, archived_pregame=True) for r in old_rows
+                  if started_today(r) and (r.get("archived_pregame") or
+                      parse_time(previous["updated"]) < parse_time(r["start"]))]
+        snapshot["sports"][sport] = [r for r in rows if parse_time(r["start"]) > now] + frozen
+        for market, entries in snapshot["rankings"].get(sport, {}).items():
+            old_entries = previous.get("rankings", {}).get(sport, {}).get(market, [])
+            frozen_ranks = [dict(r, archived_pregame=True) for r in old_entries
+                            if started_today(r) and (r.get("archived_pregame") or
+                                parse_time(previous["updated"]) < parse_time(r["start"]))]
+            combined = {r["event_id"]: r for r in entries if parse_time(r["start"]) > now}
+            combined.update({r["event_id"]: r for r in frozen_ranks})
+            snapshot["rankings"][sport][market] = sorted(combined.values(),
+                key=lambda r: (r["models"], r["lower_probability"], r["line_gap"], r["odds"]),
+                reverse=True)
+    return snapshot
+
 
 def rankings(snapshot):
     now=parse_time(snapshot["updated"])

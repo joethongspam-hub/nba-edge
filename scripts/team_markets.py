@@ -255,6 +255,10 @@ def main():
     except Exception as exc:
         snapshot["nhl_goalie_changes"] = {"error": type(exc).__name__}
     snapshot["rankings"] = team_rankings.rankings(snapshot)
+    previous_path = Path("docs/team_markets.json")
+    if previous_path.exists():
+        previous = json.loads(previous_path.read_text(encoding="utf-8"))
+        team_rankings.retain_started(snapshot, previous)
     if snapshot["odds_mode"] == "cached":
         target = Path("docs/team_context_refresh.json")
         temp = target.with_suffix(".tmp")

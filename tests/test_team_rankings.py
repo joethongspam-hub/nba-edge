@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from team_rankings import rankings
+from team_rankings import rankings, retain_started
 
 class RankingTest(unittest.TestCase):
     def test_agreement_and_dedup(self):
@@ -20,3 +20,19 @@ class RankingTest(unittest.TestCase):
         snapshot["sports"]["NBA"]=[a,b]
         snapshot["updated"]="2026-11-28T00:00:00Z"
         self.assertEqual(rankings(snapshot)["NBA"]["h2h"],[])
+
+    def test_retention_until_central_midnight(self):
+        row = dict(event_id="a", start="2026-11-27T23:00:00Z", models=2,
+                   lower_probability=.6, line_gap=2, odds=-110)
+        previous = dict(updated="2026-11-27T22:00:00Z", sports={"NBA":[row]},
+                        rankings={"NBA":{"h2h":[row]}})
+        current = dict(updated="2026-11-28T03:00:00Z", sports={"NBA":[]},
+                       rankings={"NBA":{"h2h":[]}})
+        retain_started(current, previous)
+        self.assertTrue(current["sports"]["NBA"][0]["archived_pregame"])
+        self.assertEqual(len(current["rankings"]["NBA"]["h2h"]), 1)
+        later = dict(updated="2026-11-28T06:00:00Z", sports={"NBA":[]},
+                     rankings={"NBA":{"h2h":[]}})
+        retain_started(later, current)
+        self.assertEqual(later["sports"]["NBA"], [])
+        self.assertEqual(later["rankings"]["NBA"]["h2h"], [])
