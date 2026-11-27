@@ -12,6 +12,7 @@ import nhl_context_shadow
 import nhl_efficiency
 import espn_starters
 import nhl_goalie_ratings
+import nhl_goalie_model
 import team_tracker
 import team_analysis_export
 import team_rankings
@@ -228,6 +229,17 @@ def main():
             snapshot["sports"]["NHL"], datetime.now(timezone.utc))
     except Exception as exc:
         snapshot["nhl_goalie_rating_health"] = {"error": type(exc).__name__, "research_only": True}
+    snapshot["updated"] = datetime.now(timezone.utc).isoformat()
+    if "NHL" in histories:
+        try:
+            snapshot["nhl_goalie_model_health"] = nhl_goalie_model.annotate(
+                snapshot["sports"]["NHL"], histories["NHL"], datetime.now(timezone.utc))
+        except Exception as exc:
+            snapshot["nhl_goalie_model_health"] = {"error": type(exc).__name__, "research_only": True}
+            for row in snapshot["sports"]["NHL"]:
+                for key in tuple(row):
+                    if key.startswith("goalie_") and key not in ("goalie_home", "goalie_away"):
+                        row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     snapshot["rankings"] = team_rankings.rankings(snapshot)
     if snapshot["odds_mode"] == "cached":
