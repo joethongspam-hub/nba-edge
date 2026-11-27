@@ -166,7 +166,7 @@ def load_seasons(now):
     if players and not errors and teams:
         temp = CACHE.with_suffix(".tmp")
         temp.write_text(json.dumps({"date":today.isoformat(),"year":year,"players":players,
-                                    "teams":teams,"health":health},indent=2)+"\\n",encoding="utf-8")
+                                    "teams":teams,"health":health},indent=2)+"\n",encoding="utf-8")
         temp.replace(CACHE)
     return players,teams,health
 
