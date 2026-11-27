@@ -11,6 +11,7 @@ import nhl_team_model
 import nhl_context_shadow
 import nhl_efficiency
 import espn_starters
+import nhl_goalie_ratings
 import team_tracker
 import team_analysis_export
 import team_rankings
@@ -221,6 +222,12 @@ def main():
             snapshot["sports"]["NHL"], datetime.now(timezone.utc))
     except Exception as exc:
         snapshot["nhl_goalie_health"] = {"error": type(exc).__name__, "research_only": True}
+    snapshot["updated"] = datetime.now(timezone.utc).isoformat()
+    try:
+        snapshot["nhl_goalie_rating_health"] = nhl_goalie_ratings.annotate(
+            snapshot["sports"]["NHL"], datetime.now(timezone.utc))
+    except Exception as exc:
+        snapshot["nhl_goalie_rating_health"] = {"error": type(exc).__name__, "research_only": True}
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     snapshot["rankings"] = team_rankings.rankings(snapshot)
     if snapshot["odds_mode"] == "cached":
