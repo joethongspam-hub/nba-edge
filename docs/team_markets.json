@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-27T05:12:35.331058+00:00",
-  "method": "Sportsbook no-vig baseline; NBA and NFL experimental independent models where available",
+  "updated": "2026-11-27T05:14:02.448150+00:00",
+  "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
       {
@@ -1158,8 +1158,8 @@
         "market": "h2h",
         "team": "Denver Broncos",
         "line": null,
-        "odds": -248,
-        "market_probability": 0.684897,
+        "odds": -247,
+        "market_probability": 0.684646,
         "model_status": "NFL history unavailable"
       },
       {
@@ -1172,7 +1172,7 @@
         "team": "Pittsburgh Steelers",
         "line": null,
         "odds": 205,
-        "market_probability": 0.315103,
+        "market_probability": 0.315354,
         "model_status": "NFL history unavailable"
       },
       {
@@ -2398,6 +2398,214 @@
         "model_status": "NFL history unavailable"
       },
       {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Atlanta Falcons",
+        "line": null,
+        "odds": 160,
+        "market_probability": 0.369477,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Detroit Lions",
+        "line": null,
+        "odds": -191,
+        "market_probability": 0.630523,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Atlanta Falcons",
+        "line": 3.5,
+        "odds": -115,
+        "market_probability": 0.512003,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Detroit Lions",
+        "line": -3.5,
+        "odds": -104,
+        "market_probability": 0.487997,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Atlanta Falcons",
+        "line": null,
+        "odds": 176,
+        "market_probability": 0.348471,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Detroit Lions",
+        "line": null,
+        "odds": -210,
+        "market_probability": 0.651529,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Atlanta Falcons",
+        "line": 3.5,
+        "odds": -105,
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "c94419ba8fb818fc36a5b21b526aab75",
+        "home": "Atlanta Falcons",
+        "away": "Detroit Lions",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Detroit Lions",
+        "line": -3.5,
+        "odds": -115,
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Chicago Bears",
+        "line": null,
+        "odds": -154,
+        "market_probability": 0.582374,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Jacksonville Jaguars",
+        "line": null,
+        "odds": 130,
+        "market_probability": 0.417626,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Chicago Bears",
+        "line": -3.0,
+        "odds": -104,
+        "market_probability": 0.487997,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Jacksonville Jaguars",
+        "line": 3.0,
+        "odds": -115,
+        "market_probability": 0.512003,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Chicago Bears",
+        "line": null,
+        "odds": -142,
+        "market_probability": 0.563492,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Jacksonville Jaguars",
+        "line": null,
+        "odds": 120,
+        "market_probability": 0.436508,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Chicago Bears",
+        "line": -2.5,
+        "odds": -115,
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
+        "home": "Chicago Bears",
+        "away": "Jacksonville Jaguars",
+        "start": "2026-12-06T18:00:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Jacksonville Jaguars",
+        "line": 2.5,
+        "odds": -105,
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
+      },
+      {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
         "home": "Cleveland Browns",
         "away": "Cincinnati Bengals",
@@ -3241,7 +3449,8 @@
         "team": "Boston Bruins",
         "line": null,
         "odds": -156,
-        "market_probability": 0.583604
+        "market_probability": 0.583604,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3253,7 +3462,8 @@
         "team": "Toronto Maple Leafs",
         "line": null,
         "odds": 130,
-        "market_probability": 0.416396
+        "market_probability": 0.416396,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3265,7 +3475,8 @@
         "team": "Boston Bruins",
         "line": -1.5,
         "odds": 152,
-        "market_probability": 0.378072
+        "market_probability": 0.378072,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3277,7 +3488,8 @@
         "team": "Toronto Maple Leafs",
         "line": 1.5,
         "odds": -188,
-        "market_probability": 0.621928
+        "market_probability": 0.621928,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3289,7 +3501,8 @@
         "team": "Boston Bruins",
         "line": null,
         "odds": -155,
-        "market_probability": 0.582993
+        "market_probability": 0.582993,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3301,7 +3514,8 @@
         "team": "Toronto Maple Leafs",
         "line": null,
         "odds": 130,
-        "market_probability": 0.417007
+        "market_probability": 0.417007,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3313,7 +3527,8 @@
         "team": "Boston Bruins",
         "line": -1.5,
         "odds": 150,
-        "market_probability": 0.383562
+        "market_probability": 0.383562,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -3325,7 +3540,8 @@
         "team": "Toronto Maple Leafs",
         "line": 1.5,
         "odds": -180,
-        "market_probability": 0.616438
+        "market_probability": 0.616438,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3337,7 +3553,8 @@
         "team": "Calgary Flames",
         "line": null,
         "odds": 220,
-        "market_probability": 0.298805
+        "market_probability": 0.298805,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3349,7 +3566,8 @@
         "team": "New Jersey Devils",
         "line": null,
         "odds": -275,
-        "market_probability": 0.701195
+        "market_probability": 0.701195,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3361,7 +3579,8 @@
         "team": "Calgary Flames",
         "line": 1.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3373,7 +3592,8 @@
         "team": "New Jersey Devils",
         "line": -1.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3385,7 +3605,8 @@
         "team": "Calgary Flames",
         "line": null,
         "odds": 230,
-        "market_probability": 0.290456
+        "market_probability": 0.290456,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3397,7 +3618,8 @@
         "team": "New Jersey Devils",
         "line": null,
         "odds": -285,
-        "market_probability": 0.709544
+        "market_probability": 0.709544,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3409,7 +3631,8 @@
         "team": "Calgary Flames",
         "line": 1.5,
         "odds": -112,
-        "market_probability": 0.50433
+        "market_probability": 0.50433,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -3421,7 +3644,8 @@
         "team": "New Jersey Devils",
         "line": -1.5,
         "odds": -108,
-        "market_probability": 0.49567
+        "market_probability": 0.49567,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3433,7 +3657,8 @@
         "team": "Nashville Predators",
         "line": null,
         "odds": 100,
-        "market_probability": 0.478261
+        "market_probability": 0.478261,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3445,7 +3670,8 @@
         "team": "Utah Mammoth",
         "line": null,
         "odds": -120,
-        "market_probability": 0.521739
+        "market_probability": 0.521739,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3457,7 +3683,8 @@
         "team": "Nashville Predators",
         "line": 1.5,
         "odds": -250,
-        "market_probability": 0.680365
+        "market_probability": 0.680365,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3469,7 +3696,8 @@
         "team": "Utah Mammoth",
         "line": -1.5,
         "odds": 198,
-        "market_probability": 0.319635
+        "market_probability": 0.319635,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3481,7 +3709,8 @@
         "team": "Nashville Predators",
         "line": null,
         "odds": -102,
-        "market_probability": 0.482636
+        "market_probability": 0.482636,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3493,7 +3722,8 @@
         "team": "Utah Mammoth",
         "line": null,
         "odds": -118,
-        "market_probability": 0.517364
+        "market_probability": 0.517364,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3505,7 +3735,8 @@
         "team": "Nashville Predators",
         "line": 1.5,
         "odds": -258,
-        "market_probability": 0.690793
+        "market_probability": 0.690793,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -3517,7 +3748,8 @@
         "team": "Utah Mammoth",
         "line": -1.5,
         "odds": 210,
-        "market_probability": 0.309207
+        "market_probability": 0.309207,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3529,7 +3761,8 @@
         "team": "Dallas Stars",
         "line": null,
         "odds": -138,
-        "market_probability": 0.554891
+        "market_probability": 0.554891,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3541,7 +3774,8 @@
         "team": "St Louis Blues",
         "line": null,
         "odds": 115,
-        "market_probability": 0.445109
+        "market_probability": 0.445109,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3553,7 +3787,8 @@
         "team": "Dallas Stars",
         "line": -1.5,
         "odds": 194,
-        "market_probability": 0.323852
+        "market_probability": 0.323852,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3565,7 +3800,8 @@
         "team": "St Louis Blues",
         "line": 1.5,
         "odds": -245,
-        "market_probability": 0.676148
+        "market_probability": 0.676148,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3577,7 +3813,8 @@
         "team": "Dallas Stars",
         "line": null,
         "odds": -142,
-        "market_probability": 0.563492
+        "market_probability": 0.563492,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3589,7 +3826,8 @@
         "team": "St Louis Blues",
         "line": null,
         "odds": 120,
-        "market_probability": 0.436508
+        "market_probability": 0.436508,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3601,7 +3839,8 @@
         "team": "Dallas Stars",
         "line": -1.5,
         "odds": 180,
-        "market_probability": 0.342525
+        "market_probability": 0.342525,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -3613,7 +3852,8 @@
         "team": "St Louis Blues",
         "line": 1.5,
         "odds": -218,
-        "market_probability": 0.657475
+        "market_probability": 0.657475,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3625,7 +3865,8 @@
         "team": "Columbus Blue Jackets",
         "line": null,
         "odds": -138,
-        "market_probability": 0.554891
+        "market_probability": 0.554891,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3637,7 +3878,8 @@
         "team": "Detroit Red Wings",
         "line": null,
         "odds": 115,
-        "market_probability": 0.445109
+        "market_probability": 0.445109,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3649,7 +3891,8 @@
         "team": "Columbus Blue Jackets",
         "line": -1.5,
         "odds": 184,
-        "market_probability": 0.337137
+        "market_probability": 0.337137,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3661,7 +3904,8 @@
         "team": "Detroit Red Wings",
         "line": 1.5,
         "odds": -225,
-        "market_probability": 0.662863
+        "market_probability": 0.662863,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3673,7 +3917,8 @@
         "team": "Columbus Blue Jackets",
         "line": null,
         "odds": -130,
-        "market_probability": 0.542744
+        "market_probability": 0.542744,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3685,7 +3930,8 @@
         "team": "Detroit Red Wings",
         "line": null,
         "odds": 110,
-        "market_probability": 0.457256
+        "market_probability": 0.457256,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3697,7 +3943,8 @@
         "team": "Columbus Blue Jackets",
         "line": -1.5,
         "odds": 195,
-        "market_probability": 0.324969
+        "market_probability": 0.324969,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -3709,7 +3956,8 @@
         "team": "Detroit Red Wings",
         "line": 1.5,
         "odds": -238,
-        "market_probability": 0.675031
+        "market_probability": 0.675031,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3721,7 +3969,8 @@
         "team": "Florida Panthers",
         "line": null,
         "odds": -120,
-        "market_probability": 0.521739
+        "market_probability": 0.521739,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3733,7 +3982,8 @@
         "team": "Washington Capitals",
         "line": null,
         "odds": 100,
-        "market_probability": 0.478261
+        "market_probability": 0.478261,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3745,7 +3995,8 @@
         "team": "Florida Panthers",
         "line": -1.5,
         "odds": 198,
-        "market_probability": 0.319635
+        "market_probability": 0.319635,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3757,7 +4008,8 @@
         "team": "Washington Capitals",
         "line": 1.5,
         "odds": -250,
-        "market_probability": 0.680365
+        "market_probability": 0.680365,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3769,7 +4021,8 @@
         "team": "Florida Panthers",
         "line": null,
         "odds": -118,
-        "market_probability": 0.517364
+        "market_probability": 0.517364,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3781,7 +4034,8 @@
         "team": "Washington Capitals",
         "line": null,
         "odds": -102,
-        "market_probability": 0.482636
+        "market_probability": 0.482636,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3793,7 +4047,8 @@
         "team": "Florida Panthers",
         "line": -1.5,
         "odds": 205,
-        "market_probability": 0.314607
+        "market_probability": 0.314607,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -3805,7 +4060,8 @@
         "team": "Washington Capitals",
         "line": 1.5,
         "odds": -250,
-        "market_probability": 0.685393
+        "market_probability": 0.685393,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3817,7 +4073,8 @@
         "team": "Ottawa Senators",
         "line": null,
         "odds": 115,
-        "market_probability": 0.445109
+        "market_probability": 0.445109,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3829,7 +4086,8 @@
         "team": "Tampa Bay Lightning",
         "line": null,
         "odds": -138,
-        "market_probability": 0.554891
+        "market_probability": 0.554891,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3841,7 +4099,8 @@
         "team": "Ottawa Senators",
         "line": 1.5,
         "odds": -220,
-        "market_probability": 0.654875
+        "market_probability": 0.654875,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3853,7 +4112,8 @@
         "team": "Tampa Bay Lightning",
         "line": -1.5,
         "odds": 176,
-        "market_probability": 0.345125
+        "market_probability": 0.345125,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3865,7 +4125,8 @@
         "team": "Ottawa Senators",
         "line": null,
         "odds": 120,
-        "market_probability": 0.436508
+        "market_probability": 0.436508,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3877,7 +4138,8 @@
         "team": "Tampa Bay Lightning",
         "line": null,
         "odds": -142,
-        "market_probability": 0.563492
+        "market_probability": 0.563492,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3889,7 +4151,8 @@
         "team": "Ottawa Senators",
         "line": 1.5,
         "odds": -218,
-        "market_probability": 0.657475
+        "market_probability": 0.657475,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "e455a88aa787a29717a862a536046895",
@@ -3901,7 +4164,8 @@
         "team": "Tampa Bay Lightning",
         "line": -1.5,
         "odds": 180,
-        "market_probability": 0.342525
+        "market_probability": 0.342525,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3913,7 +4177,8 @@
         "team": "Philadelphia Flyers",
         "line": null,
         "odds": -245,
-        "market_probability": 0.6791
+        "market_probability": 0.6791,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3925,7 +4190,8 @@
         "team": "Vancouver Canucks",
         "line": null,
         "odds": 198,
-        "market_probability": 0.3209
+        "market_probability": 0.3209,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3937,7 +4203,8 @@
         "team": "Philadelphia Flyers",
         "line": -1.5,
         "odds": 104,
-        "market_probability": 0.466143
+        "market_probability": 0.466143,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3949,7 +4216,8 @@
         "team": "Vancouver Canucks",
         "line": 1.5,
         "odds": -128,
-        "market_probability": 0.533857
+        "market_probability": 0.533857,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3961,7 +4229,8 @@
         "team": "Philadelphia Flyers",
         "line": null,
         "odds": -245,
-        "market_probability": 0.680556
+        "market_probability": 0.680556,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3973,7 +4242,8 @@
         "team": "Vancouver Canucks",
         "line": null,
         "odds": 200,
-        "market_probability": 0.319444
+        "market_probability": 0.319444,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3985,7 +4255,8 @@
         "team": "Philadelphia Flyers",
         "line": -1.5,
         "odds": 105,
-        "market_probability": 0.467532
+        "market_probability": 0.467532,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -3997,7 +4268,8 @@
         "team": "Vancouver Canucks",
         "line": 1.5,
         "odds": -125,
-        "market_probability": 0.532468
+        "market_probability": 0.532468,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4009,7 +4281,8 @@
         "team": "Anaheim Ducks",
         "line": null,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4021,7 +4294,8 @@
         "team": "Los Angeles Kings",
         "line": null,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4033,7 +4307,8 @@
         "team": "Anaheim Ducks",
         "line": 1.5,
         "odds": -258,
-        "market_probability": 0.690793
+        "market_probability": 0.690793,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4045,7 +4320,8 @@
         "team": "Los Angeles Kings",
         "line": -1.5,
         "odds": 210,
-        "market_probability": 0.309207
+        "market_probability": 0.309207,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4057,7 +4333,8 @@
         "team": "Anaheim Ducks",
         "line": null,
         "odds": 100,
-        "market_probability": 0.478261
+        "market_probability": 0.478261,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4069,7 +4346,8 @@
         "team": "Los Angeles Kings",
         "line": null,
         "odds": -120,
-        "market_probability": 0.521739
+        "market_probability": 0.521739,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4081,7 +4359,8 @@
         "team": "Anaheim Ducks",
         "line": 1.5,
         "odds": -265,
-        "market_probability": 0.692373
+        "market_probability": 0.692373,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "634c54722c6860c9773604c369f6e062",
@@ -4093,7 +4372,8 @@
         "team": "Los Angeles Kings",
         "line": -1.5,
         "odds": 210,
-        "market_probability": 0.307627
+        "market_probability": 0.307627,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4105,7 +4385,8 @@
         "team": "Colorado Avalanche",
         "line": null,
         "odds": 110,
-        "market_probability": 0.457256
+        "market_probability": 0.457256,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4117,7 +4398,8 @@
         "team": "Minnesota Wild",
         "line": null,
         "odds": -130,
-        "market_probability": 0.542744
+        "market_probability": 0.542744,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4129,7 +4411,8 @@
         "team": "Colorado Avalanche",
         "line": 1.5,
         "odds": -230,
-        "market_probability": 0.669007
+        "market_probability": 0.669007,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4141,7 +4424,8 @@
         "team": "Minnesota Wild",
         "line": -1.5,
         "odds": 190,
-        "market_probability": 0.330993
+        "market_probability": 0.330993,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4153,7 +4437,8 @@
         "team": "Colorado Avalanche",
         "line": null,
         "odds": 106,
-        "market_probability": 0.463716
+        "market_probability": 0.463716,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4165,7 +4450,8 @@
         "team": "Minnesota Wild",
         "line": null,
         "odds": -128,
-        "market_probability": 0.536284
+        "market_probability": 0.536284,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4177,7 +4463,8 @@
         "team": "Colorado Avalanche",
         "line": 1.5,
         "odds": -250,
-        "market_probability": 0.680365
+        "market_probability": 0.680365,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "d86dc755fe06568141403800fce290fb",
@@ -4189,7 +4476,8 @@
         "team": "Minnesota Wild",
         "line": -1.5,
         "odds": 198,
-        "market_probability": 0.319635
+        "market_probability": 0.319635,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4201,7 +4489,8 @@
         "team": "San Jose Sharks",
         "line": null,
         "odds": 180,
-        "market_probability": 0.342525
+        "market_probability": 0.342525,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4213,7 +4502,8 @@
         "team": "Vegas Golden Knights",
         "line": null,
         "odds": -218,
-        "market_probability": 0.657475
+        "market_probability": 0.657475,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4225,7 +4515,8 @@
         "team": "San Jose Sharks",
         "line": 1.5,
         "odds": -142,
-        "market_probability": 0.563492
+        "market_probability": 0.563492,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4237,7 +4528,8 @@
         "team": "Vegas Golden Knights",
         "line": -1.5,
         "odds": 120,
-        "market_probability": 0.436508
+        "market_probability": 0.436508,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4249,7 +4541,8 @@
         "team": "San Jose Sharks",
         "line": null,
         "odds": 168,
-        "market_probability": 0.356976
+        "market_probability": 0.356976,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4261,7 +4554,8 @@
         "team": "Vegas Golden Knights",
         "line": null,
         "odds": -205,
-        "market_probability": 0.643024
+        "market_probability": 0.643024,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4273,7 +4567,8 @@
         "team": "San Jose Sharks",
         "line": 1.5,
         "odds": -152,
-        "market_probability": 0.574669
+        "market_probability": 0.574669,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -4285,7 +4580,8 @@
         "team": "Vegas Golden Knights",
         "line": -1.5,
         "odds": 124,
-        "market_probability": 0.425331
+        "market_probability": 0.425331,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4297,7 +4593,8 @@
         "team": "Chicago Blackhawks",
         "line": null,
         "odds": 145,
-        "market_probability": 0.390764
+        "market_probability": 0.390764,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4309,7 +4606,8 @@
         "team": "New York Rangers",
         "line": null,
         "odds": -175,
-        "market_probability": 0.609236
+        "market_probability": 0.609236,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4321,7 +4619,8 @@
         "team": "Chicago Blackhawks",
         "line": 1.5,
         "odds": -175,
-        "market_probability": 0.609236
+        "market_probability": 0.609236,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4333,7 +4632,8 @@
         "team": "New York Rangers",
         "line": -1.5,
         "odds": 145,
-        "market_probability": 0.390764
+        "market_probability": 0.390764,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4345,7 +4645,8 @@
         "team": "Chicago Blackhawks",
         "line": null,
         "odds": 146,
-        "market_probability": 0.389303
+        "market_probability": 0.389303,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4357,7 +4658,8 @@
         "team": "New York Rangers",
         "line": null,
         "odds": -176,
-        "market_probability": 0.610697
+        "market_probability": 0.610697,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4369,7 +4671,8 @@
         "team": "Chicago Blackhawks",
         "line": 1.5,
         "odds": -178,
-        "market_probability": 0.609726
+        "market_probability": 0.609726,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -4381,7 +4684,8 @@
         "team": "New York Rangers",
         "line": -1.5,
         "odds": 144,
-        "market_probability": 0.390274
+        "market_probability": 0.390274,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4393,7 +4697,8 @@
         "team": "New York Islanders",
         "line": null,
         "odds": -135,
-        "market_probability": 0.551441
+        "market_probability": 0.551441,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4405,7 +4710,8 @@
         "team": "Winnipeg Jets",
         "line": null,
         "odds": 114,
-        "market_probability": 0.448559
+        "market_probability": 0.448559,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4417,7 +4723,8 @@
         "team": "New York Islanders",
         "line": -1.5,
         "odds": 185,
-        "market_probability": 0.336352
+        "market_probability": 0.336352,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4429,7 +4736,8 @@
         "team": "Winnipeg Jets",
         "line": 1.5,
         "odds": -225,
-        "market_probability": 0.663648
+        "market_probability": 0.663648,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4441,7 +4749,8 @@
         "team": "New York Islanders",
         "line": null,
         "odds": -132,
-        "market_probability": 0.544383
+        "market_probability": 0.544383,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4453,7 +4762,8 @@
         "team": "Winnipeg Jets",
         "line": null,
         "odds": 110,
-        "market_probability": 0.455617
+        "market_probability": 0.455617,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4465,7 +4775,8 @@
         "team": "New York Islanders",
         "line": -1.5,
         "odds": 186,
-        "market_probability": 0.332638
+        "market_probability": 0.332638,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -4477,7 +4788,8 @@
         "team": "Winnipeg Jets",
         "line": 1.5,
         "odds": -235,
-        "market_probability": 0.667362
+        "market_probability": 0.667362,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4489,7 +4801,8 @@
         "team": "Buffalo Sabres",
         "line": null,
         "odds": -155,
-        "market_probability": 0.582993
+        "market_probability": 0.582993,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4501,7 +4814,8 @@
         "team": "Pittsburgh Penguins",
         "line": null,
         "odds": 130,
-        "market_probability": 0.417007
+        "market_probability": 0.417007,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4513,7 +4827,8 @@
         "team": "Buffalo Sabres",
         "line": -1.5,
         "odds": 164,
-        "market_probability": 0.363096
+        "market_probability": 0.363096,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4525,7 +4840,8 @@
         "team": "Pittsburgh Penguins",
         "line": 1.5,
         "odds": -198,
-        "market_probability": 0.636904
+        "market_probability": 0.636904,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4537,7 +4853,8 @@
         "team": "Buffalo Sabres",
         "line": null,
         "odds": -152,
-        "market_probability": 0.57684
+        "market_probability": 0.57684,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4549,7 +4866,8 @@
         "team": "Pittsburgh Penguins",
         "line": null,
         "odds": 126,
-        "market_probability": 0.42316
+        "market_probability": 0.42316,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4561,7 +4879,8 @@
         "team": "Buffalo Sabres",
         "line": -1.5,
         "odds": 154,
-        "market_probability": 0.374513
+        "market_probability": 0.374513,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "3553bd967a739912ede178eb373433b8",
@@ -4573,7 +4892,8 @@
         "team": "Pittsburgh Penguins",
         "line": 1.5,
         "odds": -192,
-        "market_probability": 0.625487
+        "market_probability": 0.625487,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4585,7 +4905,8 @@
         "team": "Edmonton Oilers",
         "line": null,
         "odds": -218,
-        "market_probability": 0.657475
+        "market_probability": 0.657475,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4597,7 +4918,8 @@
         "team": "Seattle Kraken",
         "line": null,
         "odds": 180,
-        "market_probability": 0.342525
+        "market_probability": 0.342525,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4609,7 +4931,8 @@
         "team": "Edmonton Oilers",
         "line": -1.5,
         "odds": 120,
-        "market_probability": 0.436508
+        "market_probability": 0.436508,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4621,7 +4944,8 @@
         "team": "Seattle Kraken",
         "line": 1.5,
         "odds": -142,
-        "market_probability": 0.563492
+        "market_probability": 0.563492,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4633,7 +4957,8 @@
         "team": "Edmonton Oilers",
         "line": null,
         "odds": -220,
-        "market_probability": 0.65812
+        "market_probability": 0.65812,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4645,7 +4970,8 @@
         "team": "Seattle Kraken",
         "line": null,
         "odds": 180,
-        "market_probability": 0.34188
+        "market_probability": 0.34188,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4657,7 +4983,8 @@
         "team": "Edmonton Oilers",
         "line": -1.5,
         "odds": 118,
-        "market_probability": 0.437339
+        "market_probability": 0.437339,
+        "model_status": "NHL history unavailable"
       },
       {
         "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -4669,7 +4996,8 @@
         "team": "Seattle Kraken",
         "line": 1.5,
         "odds": -144,
-        "market_probability": 0.562661
+        "market_probability": 0.562661,
+        "model_status": "NHL history unavailable"
       }
     ]
   }
