@@ -2,6 +2,7 @@
 import json
 import nba_team_model
 import nfl_team_model
+import nhl_team_model
 import os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -57,7 +58,7 @@ def main():
             active.append((name, key))
     check_budget(remaining, len(active), worst_cost=2)
     snapshot = {"updated": datetime.now(timezone.utc).isoformat(),
-                "method": "Sportsbook no-vig baseline; NBA and NFL experimental independent models where available", "sports": {n: [] for n in SPORTS}}
+                "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available", "sports": {n: [] for n in SPORTS}}
     for index, (name, key) in enumerate(active):
         check_budget(remaining, len(active)-index, worst_cost=2)
         events, headers = fetch(key, "odds", regions="us", markets="h2h,spreads",
@@ -80,6 +81,15 @@ def main():
     except Exception:
         for row in snapshot["sports"]["NFL"]:
             row["model_status"] = "NFL history unavailable"
+            for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
+                row.pop(key, None)
+    try:
+        now = datetime.now(timezone.utc)
+        if snapshot["sports"]["NHL"]:
+            nhl_team_model.annotate(snapshot["sports"]["NHL"], nhl_team_model.history(now), now)
+    except Exception:
+        for row in snapshot["sports"]["NHL"]:
+            row["model_status"] = "NHL history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
                 row.pop(key, None)
     target = Path("docs/team_markets.json")
