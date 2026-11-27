@@ -29,7 +29,7 @@ class Visible(HTMLParser):
         if not self.hidden and data.strip():
             self.parts.append(" ".join(data.split()))
 
-def parse(html, source, now):
+def parse(html, source, now, diagnostics=None):
     parser = Visible()
     parser.feed(html)
     # Match explicit team names, game time, then exactly two explicit
@@ -37,18 +37,36 @@ def parse(html, source, now):
     names = {norm(n): n for n in NAMES.values()}
     names[norm("St Louis Blues")] = "St. Louis Blues"
     headings = []
-    for i, part in enumerate(parser.parts):
-        bits = part.split(" at ")
-        if len(bits) == 2 and all(norm(b) in names for b in bits):
-            headings.append((i, names[norm(bits[0])], names[norm(bits[1])]))
+    i = 0
+    while i < len(parser.parts):
+        found = False
+        for width in range(1, min(12, len(parser.parts)-i)+1):
+            text = " ".join(parser.parts[i:i+width])
+            bits = re.split(r"\s+at\s+", text, flags=re.I)
+            if len(bits) == 2 and all(norm(b) in names for b in bits):
+                headings.append((i, i+width, names[norm(bits[0])], names[norm(bits[1])]))
+                i += width
+                found = True
+                break
+        if not found:
+            i += 1
+    if diagnostics is not None:
+        diagnostics.update(text_nodes=len(parser.parts), headings=len(headings),
+                           status_nodes=sum(p.lower() in STATUS for p in parser.parts),
+                           iso_nodes=sum(bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}T\S+", p))
+                                         for p in parser.parts),
+                           sample=parser.parts[:50])
     results = {}
-    for j, (i, away, home) in enumerate(headings):
+    for j, (i, after, away, home) in enumerate(headings):
         end = headings[j+1][0] if j+1 < len(headings) else len(parser.parts)
-        parts = parser.parts[i+1:end]
+        parts = parser.parts[after:end]
         if not parts:
             continue
+        timestamps = [p for p in parts[:8] if re.fullmatch(r"\d{4}-\d{2}-\d{2}T\S+", p)]
+        if not timestamps:
+            continue
         try:
-            start = parse_time(parts[0])
+            start = parse_time(timestamps[0])
         except (ValueError, TypeError):
             continue
         if start <= now:
@@ -86,12 +104,16 @@ def parse(html, source, now):
 def annotate(rows, now):
     dates = {parse_time(r["start"]).astimezone(ZoneInfo("America/New_York")).date()
              for r in rows if now < parse_time(r["start"]) <= now + timedelta(hours=36)}
-    entries, errors = {}, []
+    entries, errors, diagnostics = {}, [], {}
     for day in sorted(dates):
         source = BASE + day.isoformat()
         try:
             with urlopen(Request(source, headers={"User-Agent": "Sports Edge research"}), timeout=15) as response:
-                parsed = parse(response.read(4000000).decode("utf-8"), source, now)
+                raw = response.read(8000000)
+                detail = {"bytes": len(raw), "url": response.geturl()}
+                diagnostics[day.isoformat()] = detail
+                parsed = parse(raw.decode("utf-8"), source, now, detail)
+                detail["matched_cards"] = len(parsed)
             if not parsed:
                 errors.append(day.isoformat()+": no recognized future cards")
             entries.update(parsed)
@@ -114,4 +136,4 @@ def annotate(rows, now):
     return {"source": BASE, "checked_at": now.isoformat(), "matched_games": len(matched),
             "eligible_games": len({(r["home"],r["away"],r["start"]) for r in rows
                                    if now < parse_time(r["start"]) <= now+timedelta(hours=36)}),
-            "errors": errors, "research_only": True}
+            "errors": errors, "diagnostics": diagnostics, "research_only": True}

@@ -24,3 +24,12 @@ class StarterTests(unittest.TestCase):
         self.assertEqual(parse(HTML + "<div>Another Goalie</div><div>Projected</div>", "source", NOW), {})
     def test_started(self):
         self.assertEqual(parse(HTML.replace("T18:00:00Z", "T15:00:00Z"), "source", NOW), {})
+
+    def test_split_heading_and_diagnostics(self):
+        html = HTML.replace("Toronto Maple Leafs at Boston Bruins",
+            "<span>Toronto Maple Leafs</span><span>at</span><span>Boston Bruins</span>")
+        detail = {}
+        results = parse(html, "source", NOW, detail)
+        self.assertEqual(len(results), 1)
+        self.assertEqual(detail["headings"], 1)
+        self.assertEqual(detail["status_nodes"], 2)
