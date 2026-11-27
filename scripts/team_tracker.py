@@ -20,6 +20,12 @@ def archive(tracker, snapshot):
             # One model-direction forecast per book and market, not a bet recommendation.
             chosen=max(candidates,key=lambda r:(r["model_probability"],r["team"]))
             entry=dict(chosen,sport=sport,captured=snapshot["updated"],result="pending")
+            other=next(c for c in candidates if c is not chosen)
+            fields=("shadow_probability", {"NBA":"efficiency_probability","NFL":"epa_probability","NHL":"xg_probability"}.get(sport))
+            comparisons=[chosen[k]-other[k] for k in fields if k and chosen.get(k) is not None and other.get(k) is not None]
+            if comparisons:
+                entry["archived_agreement"]="All agree" if all(x>0 for x in comparisons) else "All disagree" if all(x<0 for x in comparisons) else "Mixed or tied"
+                entry["archived_challenger_count"]=len(comparisons)
             if all(c.get("market_probability") is not None for c in candidates):
                 reference=max(candidates,key=lambda c:(c["market_probability"],c["team"]))
                 entry["market_reference"]={k:reference[k] for k in ("team","line","odds","market_probability")}
