@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T16:16:56.192484+00:00",
+  "updated": "2026-11-27T21:08:21.170949+00:00",
   "sports": [
     {
       "sport": "NBA",
@@ -3057,12 +3057,12 @@
     },
     {
       "sport": "NHL",
-      "games": 262,
-      "available_games": 399,
-      "decisive": 262,
-      "accuracy": 0.5229007633587787,
-      "brier": 0.4987715141974962,
-      "margin_mae": 2.1550000000000002,
+      "games": 265,
+      "available_games": 402,
+      "decisive": 265,
+      "accuracy": 0.5207547169811321,
+      "brier": 0.500048688399019,
+      "margin_mae": 2.151660377358491,
       "calibration": [
         {
           "low": 0,
@@ -3081,9 +3081,9 @@
         {
           "low": 0.6,
           "high": 0.7,
-          "n": 70,
-          "predicted": 0.6417683,
-          "observed": 0.6142857142857143
+          "n": 73,
+          "predicted": 0.6423776301369862,
+          "observed": 0.6027397260273972
         },
         {
           "low": 0.7,
@@ -5982,6 +5982,39 @@
           "correct": true,
           "brier": 0.32146086348800007,
           "margin_error": 6.3100000000000005
+        },
+        {
+          "time": "2026-11-27T18:00:00+00:00",
+          "home": "Boston Bruins",
+          "away": "Toronto Maple Leafs",
+          "home_probability": 0.660066,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.8713742487120001,
+          "margin_error": 3.08
+        },
+        {
+          "time": "2026-11-27T18:00:00+00:00",
+          "home": "Nashville Predators",
+          "away": "Utah Mammoth",
+          "home_probability": 0.620549,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.770162122802,
+          "margin_error": 1.77
+        },
+        {
+          "time": "2026-11-27T18:00:00+00:00",
+          "home": "New Jersey Devils",
+          "away": "Calgary Flames",
+          "home_probability": 0.689171,
+          "tie_probability": 0,
+          "actual": "win",
+          "correct": true,
+          "brier": 0.19322933448200003,
+          "margin_error": 0.73
         }
       ],
       "calibration_holdout": {
@@ -5990,28 +6023,28 @@
         "split": "2026-11-12",
         "training_games": 155,
         "baseline": {
-          "games": 107,
-          "brier": 0.5165175923016823,
-          "log_loss": 0.7125557394171579,
-          "accuracy": 0.5046728971962616
+          "games": 110,
+          "brier": 0.5191104371116,
+          "log_loss": 0.7151251234202317,
+          "accuracy": 0.5
         },
         "challenger": {
-          "games": 107,
-          "brier": 0.5069499470715659,
-          "log_loss": 0.700979485924621,
-          "accuracy": 0.5046728971962616
+          "games": 110,
+          "brier": 0.5087840140570937,
+          "log_loss": 0.7028043529004705,
+          "accuracy": 0.5
         },
         "coin_flip": {
-          "games": 107,
+          "games": 110,
           "brier": 0.5,
-          "log_loss": 0.693147180559946,
-          "accuracy": 0.4205607476635514
+          "log_loss": 0.6931471805599461,
+          "accuracy": 0.41818181818181815
         },
-        "home_only_accuracy": 0.4205607476635514
+        "home_only_accuracy": 0.41818181818181815
       },
       "parameter_holdout": {
         "status": "Experimental holdout",
-        "games": 262,
+        "games": 265,
         "training_games": 155,
         "split": "2026-11-12",
         "tested": 9,
@@ -6030,16 +6063,16 @@
           "margin_sd": null
         },
         "baseline": {
-          "games": 107,
-          "brier": 0.5165176079724202,
-          "mae": 2.2315857248645123,
-          "accuracy": 0.5046728971962616
+          "games": 110,
+          "brier": 0.5191104490191544,
+          "mae": 2.221449361527711,
+          "accuracy": 0.5
         },
         "challenger": {
-          "games": 107,
-          "brier": 0.5131084247546938,
-          "mae": 2.2349045616777947,
-          "accuracy": 0.4953271028037383
+          "games": 110,
+          "brier": 0.5152012118591711,
+          "mae": 2.224105610948918,
+          "accuracy": 0.4909090909090909
         },
         "training": [
           {
