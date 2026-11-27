@@ -13,6 +13,7 @@ import nhl_efficiency
 import espn_starters
 import nhl_goalie_ratings
 import nhl_goalie_model
+import nhl_goalie_validation
 import team_tracker
 import team_analysis_export
 import team_rankings
@@ -241,6 +242,12 @@ def main():
                     if key.startswith("goalie_") and key not in ("goalie_home", "goalie_away"):
                         row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
+    if "NHL" in histories:
+        try:
+            snapshot["nhl_goalie_validation"] = nhl_goalie_validation.update(
+                snapshot["sports"]["NHL"], histories["NHL"], datetime.now(timezone.utc))
+        except Exception as exc:
+            snapshot["nhl_goalie_validation"] = {"error": type(exc).__name__}
     snapshot["rankings"] = team_rankings.rankings(snapshot)
     if snapshot["odds_mode"] == "cached":
         target = Path("docs/team_context_refresh.json")
