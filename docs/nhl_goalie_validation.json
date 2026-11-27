@@ -341,11 +341,104 @@
           "margin": 0.02566573732043886
         }
       }
+    },
+    "New York Islanders|Winnipeg Jets|2026-11-28T00:30:00+00:00": {
+      "home": "New York Islanders",
+      "away": "Winnipeg Jets",
+      "start": "2026-11-28T00:30:00+00:00",
+      "observed_at": "2026-11-27T19:24:42.550231+00:00",
+      "home_goalie": "Semyon Varlamov",
+      "away_goalie": "Stuart Skinner",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5485706318449396,
+          "margin": 0.315953322602867
+        },
+        "0.25": {
+          "probability": 0.5373333512879024,
+          "margin": 0.2427033226028671
+        },
+        "0.5": {
+          "probability": 0.5260758868477002,
+          "margin": 0.16945332260286697
+        },
+        "0.75": {
+          "probability": 0.5148062190057836,
+          "margin": 0.09620332260286713
+        },
+        "1.0": {
+          "probability": 0.5035323374724275,
+          "margin": 0.02295332260286724
+        }
+      }
+    },
+    "Buffalo Sabres|Pittsburgh Penguins|2026-11-28T01:00:00+00:00": {
+      "home": "Buffalo Sabres",
+      "away": "Pittsburgh Penguins",
+      "start": "2026-11-28T01:00:00+00:00",
+      "observed_at": "2026-11-27T19:24:42.550231+00:00",
+      "home_goalie": "Ukko-Pekka Luukkonen",
+      "away_goalie": "Sergei Murashov",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6680179919737984,
+          "margin": 1.1231772036767598
+        },
+        "0.25": {
+          "probability": 0.6740059496795715,
+          "margin": 1.1619272036767598
+        },
+        "0.5": {
+          "probability": 0.6799949661849678,
+          "margin": 1.2006772036767592
+        },
+        "0.75": {
+          "probability": 0.685983697046903,
+          "margin": 1.23942720367676
+        },
+        "1.0": {
+          "probability": 0.6919707711245189,
+          "margin": 1.2781772036767591
+        }
+      }
+    },
+    "Edmonton Oilers|Seattle Kraken|2026-11-28T01:00:00+00:00": {
+      "home": "Edmonton Oilers",
+      "away": "Seattle Kraken",
+      "start": "2026-11-28T01:00:00+00:00",
+      "observed_at": "2026-11-27T19:24:42.550231+00:00",
+      "home_goalie": "Tristan Jarry",
+      "away_goalie": "Philipp Grubauer",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6720997099642165,
+          "margin": 1.1442290357264324
+        },
+        "0.25": {
+          "probability": 0.6670729802659338,
+          "margin": 1.1062290357264324
+        },
+        "0.5": {
+          "probability": 0.6619958351860417,
+          "margin": 1.0682290357264321
+        },
+        "0.75": {
+          "probability": 0.6568684421234726,
+          "margin": 1.030229035726432
+        },
+        "1.0": {
+          "probability": 0.6516909901369342,
+          "margin": 0.9922290357264322
+        }
+      }
     }
   },
-  "updated": "2026-11-27T17:55:17.902270+00:00",
+  "updated": "2026-11-27T19:24:42.550231+00:00",
   "summary": {
-    "recorded": 11,
+    "recorded": 14,
     "settled": 0,
     "all": {
       "0.0": {
