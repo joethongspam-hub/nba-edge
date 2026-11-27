@@ -9,6 +9,15 @@ on:
           - cached
           - live
         default: cached
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/team_markets.py'
+      - 'scripts/nhl_*.py'
+      - 'scripts/espn_starters.py'
+      - 'scripts/propline_starters.py'
+      - 'scripts/team_history.py'
+      - '.github/workflows/team-markets.yml'
   schedule:
     # Central time: morning slate, afternoon refresh and evening refresh.
     - cron: '13 9,14,17 * * *'
@@ -20,6 +29,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   refresh:
+    env:
+      TEAM_REFRESH_MODE: ${{ github.event_name == 'push' && 'cached' || github.event.inputs.refresh_mode || 'live' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -31,15 +42,14 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Fetch team markets
         env:
-          TEAM_REFRESH_MODE: ${{ github.event.inputs.refresh_mode || 'live' }}
           PROPLINE_API_KEY: ${{ secrets.PROPLINE_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/team_markets.py
       - name: Generate experimental paper parlay export
-        if: github.event.inputs.refresh_mode != 'cached'
+        if: env.TEAM_REFRESH_MODE != 'cached'
         run: python scripts/paper_parlay_analysis.py docs/team_daily_analysis.json docs/paper_parlay_analysis.json
       - name: Archive and settle paper parlays
-        if: github.event.inputs.refresh_mode != 'cached'
+        if: env.TEAM_REFRESH_MODE != 'cached'
         run: python scripts/paper_parlay_tracker.py
       - name: Publish snapshot
         run: |
@@ -50,6 +60,7 @@ jobs:
           if [ -f docs/team_context_refresh.json ]; then git add docs/team_context_refresh.json; fi
           if [ -f docs/nhl_goalie_ratings_cache.json ]; then git add docs/nhl_goalie_ratings_cache.json; fi
           if [ -f docs/nhl_goalie_validation.json ]; then git add docs/nhl_goalie_validation.json; fi
+          if [ -f docs/nhl_goalie_changes.json ]; then git add docs/nhl_goalie_changes.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
       - name: Notify ntfy about team-market refresh
         if: always()
