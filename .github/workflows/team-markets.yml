@@ -1,6 +1,14 @@
 name: Refresh SPORTS EDGE team markets
 on:
   workflow_dispatch:
+    inputs:
+      refresh_mode:
+        description: 'Cached context (zero credits) or live odds'
+        type: choice
+        options:
+          - cached
+          - live
+        default: cached
   schedule:
     # Central time: morning slate, afternoon refresh and evening refresh.
     - cron: '13 9,14,17 * * *'
@@ -23,11 +31,14 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Fetch team markets
         env:
+          TEAM_REFRESH_MODE: ${{ github.event.inputs.refresh_mode || 'live' }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/team_markets.py
       - name: Generate experimental paper parlay export
+        if: github.event.inputs.refresh_mode != 'cached'
         run: python scripts/paper_parlay_analysis.py docs/team_daily_analysis.json docs/paper_parlay_analysis.json
       - name: Archive and settle paper parlays
+        if: github.event.inputs.refresh_mode != 'cached'
         run: python scripts/paper_parlay_tracker.py
       - name: Publish snapshot
         run: |
@@ -35,6 +46,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/team_markets.json docs/team_tracker.json docs/team_backtest.json docs/team_daily_analysis.json docs/paper_parlay_analysis.json docs/paper_parlay_tracker.json
           if [ -f docs/nba_efficiency_cache.json ]; then git add docs/nba_efficiency_cache.json; fi
+          if [ -f docs/team_context_refresh.json ]; then git add docs/team_context_refresh.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
       - name: Notify ntfy about team-market refresh
         if: always()
