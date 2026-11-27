@@ -135,6 +135,10 @@
           "probability": 0.6243738322382342,
           "margin": 0.7784291693102553
         }
+      },
+      "result": {
+        "home_goals": 5,
+        "away_goals": 3
       }
     },
     "Columbus Blue Jackets|Detroit Red Wings|2026-11-27T20:00:00+00:00": {
@@ -166,6 +170,10 @@
           "probability": 0.4965250697935906,
           "margin": -0.020150082796187598
         }
+      },
+      "result": {
+        "home_goals": 0,
+        "away_goals": 2
       }
     },
     "Washington Capitals|Florida Panthers|2026-11-27T20:00:00+00:00": {
@@ -197,6 +205,10 @@
           "probability": 0.5128854052850039,
           "margin": 0.08884967896999464
         }
+      },
+      "result": {
+        "home_goals": 2,
+        "away_goals": 3
       }
     },
     "Tampa Bay Lightning|Ottawa Senators|2026-11-27T20:00:00+00:00": {
@@ -228,6 +240,10 @@
           "probability": 0.5990208908325675,
           "margin": 0.6255691006933064
         }
+      },
+      "result": {
+        "home_goals": 2,
+        "away_goals": 6
       }
     },
     "Anaheim Ducks|Los Angeles Kings|2026-11-27T21:00:00+00:00": {
@@ -259,6 +275,10 @@
           "probability": 0.6263656035113805,
           "margin": 0.8272401910373928
         }
+      },
+      "result": {
+        "home_goals": 3,
+        "away_goals": 5
       }
     },
     "Minnesota Wild|Colorado Avalanche|2026-11-27T21:00:00+00:00": {
@@ -321,6 +341,10 @@
           "probability": 0.3650374788208652,
           "margin": -0.9198774366511212
         }
+      },
+      "result": {
+        "home_goals": 4,
+        "away_goals": 1
       }
     },
     "Chicago Blackhawks|New York Rangers|2026-11-27T22:30:00+00:00": {
@@ -446,42 +470,135 @@
           "margin": 0.9922290357264322
         }
       }
+    },
+    "New York Islanders|Winnipeg Jets|2026-11-28T00:40:00+00:00": {
+      "home": "New York Islanders",
+      "away": "Winnipeg Jets",
+      "start": "2026-11-28T00:40:00+00:00",
+      "observed_at": "2026-11-27T23:52:31.734175+00:00",
+      "home_goalie": "Semyon Varlamov",
+      "away_goalie": "Stuart Skinner",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5556280464438813,
+          "margin": 0.36171912377980725
+        },
+        "0.25": {
+          "probability": 0.5443973208648105,
+          "margin": 0.2884691237798073
+        },
+        "0.5": {
+          "probability": 0.5331413751978902,
+          "margin": 0.21521912377980695
+        },
+        "0.75": {
+          "probability": 0.5218681965961712,
+          "margin": 0.14196912377980728
+        },
+        "1.0": {
+          "probability": 0.5105857905946489,
+          "margin": 0.06871912377980754
+        }
+      }
+    },
+    "Buffalo Sabres|Pittsburgh Penguins|2026-11-28T01:10:00+00:00": {
+      "home": "Buffalo Sabres",
+      "away": "Pittsburgh Penguins",
+      "start": "2026-11-28T01:10:00+00:00",
+      "observed_at": "2026-11-27T23:52:31.734175+00:00",
+      "home_goalie": "Ukko-Pekka Luukkonen",
+      "away_goalie": "Sergei Murashov",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6665903684217453,
+          "margin": 1.1104555862638967
+        },
+        "0.25": {
+          "probability": 0.6725985551323991,
+          "margin": 1.1492055862638966
+        },
+        "0.5": {
+          "probability": 0.6786082775872847,
+          "margin": 1.1879555862638966
+        },
+        "0.75": {
+          "probability": 0.684618187013155,
+          "margin": 1.226705586263897
+        },
+        "1.0": {
+          "probability": 0.6906269074620963,
+          "margin": 1.2654555862638963
+        }
+      }
+    },
+    "Edmonton Oilers|Seattle Kraken|2026-11-28T01:10:00+00:00": {
+      "home": "Edmonton Oilers",
+      "away": "Seattle Kraken",
+      "start": "2026-11-28T01:10:00+00:00",
+      "observed_at": "2026-11-27T23:52:31.734175+00:00",
+      "home_goalie": "Tristan Jarry",
+      "away_goalie": "Philipp Grubauer",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6721198628252386,
+          "margin": 1.144506517147977
+        },
+        "0.25": {
+          "probability": 0.6670938531231513,
+          "margin": 1.1065065171479769
+        },
+        "0.5": {
+          "probability": 0.6620174396039474,
+          "margin": 1.0685065171479768
+        },
+        "0.75": {
+          "probability": 0.6568907896129416,
+          "margin": 1.030506517147977
+        },
+        "1.0": {
+          "probability": 0.6517140921458566,
+          "margin": 0.9925065171479773
+        }
+      }
     }
   },
-  "updated": "2026-11-27T21:25:56.390428+00:00",
+  "updated": "2026-11-27T23:52:31.734175+00:00",
   "summary": {
-    "recorded": 14,
-    "settled": 3,
+    "recorded": 17,
+    "settled": 9,
     "all": {
       "0.0": {
-        "games": 3,
-        "brier": 0.3054831503502257,
+        "games": 9,
+        "brier": 0.2931190616586391,
         "accuracy": 0.3333333333333333,
-        "margin_mae": 1.8593801446015998
+        "margin_mae": 2.3085108432277965
       },
       "0.25": {
-        "games": 3,
-        "brier": 0.301796173000446,
+        "games": 9,
+        "brier": 0.2940939059067284,
         "accuracy": 0.3333333333333333,
-        "margin_mae": 1.8330884779349328
+        "margin_mae": 2.3126497321166855
       },
       "0.5": {
-        "games": 3,
-        "brier": 0.2981438674884483,
+        "games": 9,
+        "brier": 0.2951558901179893,
         "accuracy": 0.3333333333333333,
-        "margin_mae": 1.8067968112682664
+        "margin_mae": 2.3167886210055744
       },
       "0.75": {
-        "games": 3,
-        "brier": 0.2945276703298078,
+        "games": 9,
+        "brier": 0.2963049597090442,
         "accuracy": 0.3333333333333333,
-        "margin_mae": 1.7805051446015998
+        "margin_mae": 2.3209275098944633
       },
       "1.0": {
-        "games": 3,
-        "brier": 0.29094899609534425,
+        "games": 9,
+        "brier": 0.29754087669994417,
         "accuracy": 0.3333333333333333,
-        "margin_mae": 1.7542134779349332
+        "margin_mae": 2.325066398783352
       }
     },
     "both_confirmed": {
@@ -518,34 +635,34 @@
     },
     "projected": {
       "0.0": {
-        "games": 2,
-        "brier": 0.2408105439045361,
-        "accuracy": 0.5,
-        "margin_mae": 1.2532376940454195
+        "games": 8,
+        "brier": 0.27540539896076843,
+        "accuracy": 0.375,
+        "margin_mae": 2.2131165679170266
       },
       "0.25": {
-        "games": 2,
-        "brier": 0.2348885146228972,
-        "accuracy": 0.5,
-        "margin_mae": 1.2125501940454195
+        "games": 8,
+        "brier": 0.27640420792562653,
+        "accuracy": 0.375,
+        "margin_mae": 2.2174603179170265
       },
       "0.5": {
-        "games": 2,
-        "brier": 0.22901686795911935,
-        "accuracy": 0.5,
-        "margin_mae": 1.1718626940454198
+        "games": 8,
+        "brier": 0.27750064306434974,
+        "accuracy": 0.375,
+        "margin_mae": 2.2218040679170263
       },
       "0.75": {
-        "games": 2,
-        "brier": 0.22319774702520181,
-        "accuracy": 0.5,
-        "margin_mae": 1.1311751940454198
+        "games": 8,
+        "brier": 0.2786946400552973,
+        "accuracy": 0.375,
+        "margin_mae": 2.226147817917026
       },
       "1.0": {
-        "games": 2,
-        "brier": 0.21743326189643408,
-        "accuracy": 0.5,
-        "margin_mae": 1.0904876940454196
+        "games": 8,
+        "brier": 0.2799859282257916,
+        "accuracy": 0.375,
+        "margin_mae": 2.2304915679170265
       }
     }
   }

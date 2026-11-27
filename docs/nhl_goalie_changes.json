@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-27T21:25:56.403989+00:00",
+  "updated": "2026-11-27T23:52:31.750722+00:00",
   "games": {
-    "Chicago Blackhawks|New York Rangers|2026-11-27T22:30:00+00:00": {
-      "start": "2026-11-27T22:30:00+00:00",
-      "home": {
-        "name": "Spencer Knight",
-        "status": "projected"
-      },
-      "away": {
-        "name": "Dylan Garand",
-        "status": "confirmed"
-      },
-      "probability": 0.494982,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.007727
-    },
     "New York Islanders|Winnipeg Jets|2026-11-28T00:30:00+00:00": {
       "start": "2026-11-28T00:30:00+00:00",
       "home": {
@@ -62,7 +48,7 @@
       "home": {},
       "away": {},
       "probability": null,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
       "effect": null
     },
     "Florida Panthers|Tampa Bay Lightning|2026-11-28T23:10:00+00:00": {
@@ -75,9 +61,9 @@
         "name": "Andrei Vasilevskiy",
         "status": "projected"
       },
-      "probability": 0.510033,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": -0.010482
+      "probability": 0.558561,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.010212
     },
     "New York Rangers|Calgary Flames|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
@@ -86,12 +72,12 @@
         "status": "projected"
       },
       "away": {
-        "name": "Devin Cooley",
+        "name": "Dustin Wolf",
         "status": "projected"
       },
-      "probability": 0.585058,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": -0.020463
+      "probability": 0.597872,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.003959
     },
     "Carolina Hurricanes|Ottawa Senators|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
@@ -103,23 +89,23 @@
         "name": "Samuel Ersson",
         "status": "projected"
       },
-      "probability": 0.748464,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.01266
+      "probability": 0.709948,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.013637
     },
     "Detroit Red Wings|Nashville Predators|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
       "home": {
-        "name": "John Gibson",
+        "name": "Daniil Tarasov",
         "status": "projected"
       },
       "away": {
         "name": "Justus Annunen",
         "status": "projected"
       },
-      "probability": 0.48924,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.001242
+      "probability": 0.518233,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.013406
     },
     "New Jersey Devils|Winnipeg Jets|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
@@ -131,9 +117,9 @@
         "name": "Nico Daws",
         "status": "projected"
       },
-      "probability": 0.612985,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.020138
+      "probability": 0.614036,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.020124
     },
     "Pittsburgh Penguins|Toronto Maple Leafs|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
@@ -145,9 +131,9 @@
         "name": "Sergei Bobrovsky",
         "status": "confirmed"
       },
-      "probability": 0.483072,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.003764
+      "probability": 0.484349,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.00376
     },
     "St. Louis Blues|Washington Capitals|2026-11-29T00:10:00+00:00": {
       "start": "2026-11-29T00:10:00+00:00",
@@ -159,9 +145,9 @@
         "name": "Charlie Lindgren",
         "status": "projected"
       },
-      "probability": 0.607072,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": -0.018884
+      "probability": 0.622294,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.018838
     },
     "Philadelphia Flyers|New York Islanders|2026-11-29T00:40:00+00:00": {
       "start": "2026-11-29T00:40:00+00:00",
@@ -173,9 +159,9 @@
         "name": "Ilya Sorokin",
         "status": "confirmed"
       },
-      "probability": 0.441352,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.000655
+      "probability": 0.455869,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.000667
     },
     "Dallas Stars|Utah Mammoth|2026-11-29T01:10:00+00:00": {
       "start": "2026-11-29T01:10:00+00:00",
@@ -187,9 +173,9 @@
         "name": "Sebastian Cossa",
         "status": "projected"
       },
-      "probability": 0.549988,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": -0.007824
+      "probability": 0.535386,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.007771
     },
     "Los Angeles Kings|Anaheim Ducks|2026-11-29T02:10:00+00:00": {
       "start": "2026-11-29T02:10:00+00:00",
@@ -198,12 +184,12 @@
         "status": "projected"
       },
       "away": {
-        "name": "Ville Husso",
+        "name": "Lukas Dostal",
         "status": "projected"
       },
-      "probability": 0.50866,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.006373
+      "probability": 0.55212,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.006493
     },
     "Colorado Avalanche|San Jose Sharks|2026-11-29T02:10:00+00:00": {
       "start": "2026-11-29T02:10:00+00:00",
@@ -215,9 +201,9 @@
         "name": "Alex Nedeljkovic",
         "status": "projected"
       },
-      "probability": 0.809919,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.006408
+      "probability": 0.789088,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.006774
     },
     "Seattle Kraken|Edmonton Oilers|2026-11-29T03:10:00+00:00": {
       "start": "2026-11-29T03:10:00+00:00",
@@ -229,12 +215,106 @@
         "name": "Devon Levi",
         "status": "projected"
       },
-      "probability": 0.415114,
-      "checked_at": "2026-11-27T21:25:56.403989+00:00",
-      "effect": 0.000298
+      "probability": 0.416561,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.000295
+    },
+    "New York Islanders|Winnipeg Jets|2026-11-28T00:40:00+00:00": {
+      "start": "2026-11-28T00:40:00+00:00",
+      "home": {
+        "name": "Semyon Varlamov",
+        "status": "confirmed"
+      },
+      "away": {
+        "name": "Stuart Skinner",
+        "status": "confirmed"
+      },
+      "probability": 0.533141,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.022487
+    },
+    "Buffalo Sabres|Pittsburgh Penguins|2026-11-28T01:10:00+00:00": {
+      "start": "2026-11-28T01:10:00+00:00",
+      "home": {
+        "name": "Ukko-Pekka Luukkonen",
+        "status": "confirmed"
+      },
+      "away": {
+        "name": "Sergei Murashov",
+        "status": "confirmed"
+      },
+      "probability": 0.678608,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": 0.012018
+    },
+    "Edmonton Oilers|Seattle Kraken|2026-11-28T01:10:00+00:00": {
+      "start": "2026-11-28T01:10:00+00:00",
+      "home": {
+        "name": "Tristan Jarry",
+        "status": "confirmed"
+      },
+      "away": {
+        "name": "Philipp Grubauer",
+        "status": "confirmed"
+      },
+      "probability": 0.662017,
+      "checked_at": "2026-11-27T23:52:31.750722+00:00",
+      "effect": -0.010102
     }
   },
-  "changes": [],
+  "changes": [
+    {
+      "team": "Calgary Flames",
+      "home": "New York Rangers",
+      "away": "Calgary Flames",
+      "start": "2026-11-29T00:10:00+00:00",
+      "before": {
+        "name": "Devin Cooley",
+        "status": "projected"
+      },
+      "after": {
+        "name": "Dustin Wolf",
+        "status": "projected"
+      },
+      "type": "replacement",
+      "home_probability_effect_change": 0.016503999999999998,
+      "alert": false
+    },
+    {
+      "team": "Detroit Red Wings",
+      "home": "Detroit Red Wings",
+      "away": "Nashville Predators",
+      "start": "2026-11-29T00:10:00+00:00",
+      "before": {
+        "name": "John Gibson",
+        "status": "projected"
+      },
+      "after": {
+        "name": "Daniil Tarasov",
+        "status": "projected"
+      },
+      "type": "replacement",
+      "home_probability_effect_change": 0.012164,
+      "alert": false
+    },
+    {
+      "team": "Anaheim Ducks",
+      "home": "Los Angeles Kings",
+      "away": "Anaheim Ducks",
+      "start": "2026-11-29T02:10:00+00:00",
+      "before": {
+        "name": "Ville Husso",
+        "status": "projected"
+      },
+      "after": {
+        "name": "Lukas Dostal",
+        "status": "projected"
+      },
+      "type": "replacement",
+      "home_probability_effect_change": 0.00011999999999999945,
+      "alert": false
+    }
+  ],
   "alerts": 0,
   "research_only": true
 }
