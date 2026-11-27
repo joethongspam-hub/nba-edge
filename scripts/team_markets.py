@@ -11,6 +11,7 @@ import nhl_team_model
 import nhl_context_shadow
 import nhl_efficiency
 import team_tracker
+import team_rankings
 import team_backtest
 import os
 from datetime import datetime, timezone
@@ -190,6 +191,7 @@ def main():
                     if key.startswith("xg_"):
                         row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
+    snapshot["rankings"] = team_rankings.rankings(snapshot)
     team_tracker.update(snapshot, histories)
     audit_path = Path('docs/team_backtest.json')
     audit_temp = audit_path.with_suffix('.tmp')
