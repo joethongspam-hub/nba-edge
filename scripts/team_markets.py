@@ -3,6 +3,7 @@ import json
 import nba_team_model
 import nfl_team_model
 import nhl_team_model
+import team_tracker
 import os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -65,10 +66,12 @@ def main():
                                 bookmakers="fanduel,draftkings", oddsFormat="american")
         remaining = remaining_from_headers(headers)
         snapshot["sports"][name] = normalize(events)
+    histories = {}
     try:
         now = datetime.now(timezone.utc)
+        histories["NBA"] = nba_team_model.history(now)
         if snapshot["sports"]["NBA"]:
-            nba_team_model.annotate(snapshot["sports"]["NBA"], nba_team_model.history(now), now)
+            nba_team_model.annotate(snapshot["sports"]["NBA"], histories["NBA"], now)
     except Exception:
         for row in snapshot["sports"]["NBA"]:
             row["model_status"] = "NBA history unavailable"
@@ -76,8 +79,9 @@ def main():
                 row.pop(key, None)
     try:
         now = datetime.now(timezone.utc)
+        histories["NFL"] = nfl_team_model.history(now)
         if snapshot["sports"]["NFL"]:
-            nfl_team_model.annotate(snapshot["sports"]["NFL"], nfl_team_model.history(now), now)
+            nfl_team_model.annotate(snapshot["sports"]["NFL"], histories["NFL"], now)
     except Exception:
         for row in snapshot["sports"]["NFL"]:
             row["model_status"] = "NFL history unavailable"
@@ -85,13 +89,16 @@ def main():
                 row.pop(key, None)
     try:
         now = datetime.now(timezone.utc)
+        histories["NHL"] = nhl_team_model.history(now)
         if snapshot["sports"]["NHL"]:
-            nhl_team_model.annotate(snapshot["sports"]["NHL"], nhl_team_model.history(now), now)
+            nhl_team_model.annotate(snapshot["sports"]["NHL"], histories["NHL"], now)
     except Exception:
         for row in snapshot["sports"]["NHL"]:
             row["model_status"] = "NHL history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
                 row.pop(key, None)
+    snapshot["updated"] = datetime.now(timezone.utc).isoformat()
+    team_tracker.update(snapshot, histories)
     target = Path("docs/team_markets.json")
     temp = target.with_suffix(".tmp")
     temp.write_text(json.dumps(snapshot, indent=2) + "\n", encoding="utf-8")
