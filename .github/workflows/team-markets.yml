@@ -48,6 +48,7 @@ jobs:
           git add docs/team_markets.json docs/team_tracker.json docs/team_backtest.json docs/team_daily_analysis.json docs/paper_parlay_analysis.json docs/paper_parlay_tracker.json
           if [ -f docs/nba_efficiency_cache.json ]; then git add docs/nba_efficiency_cache.json; fi
           if [ -f docs/team_context_refresh.json ]; then git add docs/team_context_refresh.json; fi
+          if [ -f docs/nhl_goalie_ratings_cache.json ]; then git add docs/nhl_goalie_ratings_cache.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
       - name: Notify ntfy about team-market refresh
         if: always()
