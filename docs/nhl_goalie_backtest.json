@@ -1,479 +1,14 @@
 {
-  "updated": "2026-11-27T17:51:50.218858+00:00",
+  "updated": "2026-11-27T18:08:48.764400+00:00",
   "research_only": true,
   "method": "historical realized starters, prior-day-only season-weighted ratings; no announcement timestamps",
   "attribution": "MoneyPuck.com / NHL API",
   "goalie_ids": 134,
-  "career_files": 18,
-  "observations": 1427,
+  "career_files": 134,
+  "observations": 9167,
   "scheduled_final_games": 4335,
   "verified_boxscores": 4335,
-  "errors": [
-    {
-      "item": "8475883",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476316",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476341",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476412",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476433",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476434",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476876",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476883",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476899",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476904",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476914",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476932",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476945",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8476999",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477035",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477293",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477361",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477405",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477424",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477465",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477480",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477484",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477831",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477967",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477968",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477970",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477990",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8477992",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478007",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478009",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478024",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478039",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478048",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478406",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478433",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478435",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478470",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478492",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478499",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478848",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478872",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478905",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478916",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478965",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8478971",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479193",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479292",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479312",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479361",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479394",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479406",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479496",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479973",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8479979",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480022",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480045",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480051",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480191",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480193",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480238",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480280",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480313",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480382",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480819",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480843",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480885",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480947",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480981",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8480992",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481020",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481031",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481033",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481035",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481519",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481529",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481544",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481551",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481611",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481668",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481692",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8481707",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482076",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482123",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482137",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482193",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482221",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482411",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482445",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482446",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482447",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482487",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482515",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482657",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482661",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482668",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482761",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482783",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482821",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482949",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8482982",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483114",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483530",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483532",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483548",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483575",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483668",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483703",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483710",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8483746",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484170",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484268",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484293",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484312",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484900",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8484910",
-      "error": "HTTPError"
-    },
-    {
-      "item": "8485545",
-      "error": "HTTPError"
-    }
-  ],
+  "errors": [],
   "coverage": {
     "2023": {
       "completed": 1312,
@@ -481,116 +16,124 @@
     },
     "2024": {
       "completed": 1312,
-      "evaluated": 30
+      "evaluated": 1108
     },
     "2025": {
       "completed": 1312,
-      "evaluated": 13
+      "evaluated": 1105
     },
     "2026": {
       "completed": 399,
-      "evaluated": 4
+      "evaluated": 233
     }
   },
   "results": {
     "2024": {
       "0.0": {
-        "games": 30,
-        "brier": 0.22661138450830928,
-        "accuracy": 0.6,
-        "margin_mae": 2.443105656076962
+        "games": 1108,
+        "brier": 0.24392426089333855,
+        "accuracy": 0.5640794223826715,
+        "margin_mae": 2.1790423845073374
       },
       "0.25": {
-        "games": 30,
-        "brier": 0.2260304804399411,
-        "accuracy": 0.6,
-        "margin_mae": 2.438416723989845
+        "games": 1108,
+        "brier": 0.24308985029320984,
+        "accuracy": 0.5740072202166066,
+        "margin_mae": 2.173929443808299
       },
       "0.5": {
-        "games": 30,
-        "brier": 0.22548455131706432,
-        "accuracy": 0.6333333333333333,
-        "margin_mae": 2.4337277919027276
+        "games": 1108,
+        "brier": 0.2424397060253963,
+        "accuracy": 0.5785198555956679,
+        "margin_mae": 2.1694081851396874
       },
       "0.75": {
-        "games": 30,
-        "brier": 0.22497351406641,
-        "accuracy": 0.6333333333333333,
-        "margin_mae": 2.4290388598156105
+        "games": 1108,
+        "brier": 0.24197733382699574,
+        "accuracy": 0.5731046931407943,
+        "margin_mae": 2.165751427001273
       },
       "1.0": {
-        "games": 30,
-        "brier": 0.22449726950531118,
-        "accuracy": 0.6333333333333333,
-        "margin_mae": 2.424349927728493
+        "games": 1108,
+        "brier": 0.24168659101870216,
+        "accuracy": 0.5785198555956679,
+        "margin_mae": 2.1627415289353906
       }
     },
     "2025": {
       "0.0": {
-        "games": 13,
-        "brier": 0.2596428292373461,
-        "accuracy": 0.46153846153846156,
-        "margin_mae": 2.1772882015021633
+        "games": 1105,
+        "brier": 0.24910276196121264,
+        "accuracy": 0.5475113122171946,
+        "margin_mae": 2.164530453353898
       },
       "0.25": {
-        "games": 13,
-        "brier": 0.26089127358053976,
-        "accuracy": 0.46153846153846156,
-        "margin_mae": 2.186235829962605
+        "games": 1105,
+        "brier": 0.24848710113564054,
+        "accuracy": 0.5438914027149321,
+        "margin_mae": 2.1614479698636457
       },
       "0.5": {
-        "games": 13,
-        "brier": 0.26226903020564235,
-        "accuracy": 0.46153846153846156,
-        "margin_mae": 2.1951834584230463
+        "games": 1105,
+        "brier": 0.24807857995377097,
+        "accuracy": 0.5475113122171946,
+        "margin_mae": 2.159424277629806
       },
       "0.75": {
-        "games": 13,
-        "brier": 0.26377686571662234,
-        "accuracy": 0.38461538461538464,
-        "margin_mae": 2.204131086883488
+        "games": 1105,
+        "brier": 0.24786779489381466,
+        "accuracy": 0.5484162895927602,
+        "margin_mae": 2.158005919119689
       },
       "1.0": {
-        "games": 13,
-        "brier": 0.26541544764551034,
-        "accuracy": 0.46153846153846156,
-        "margin_mae": 2.2130787153439293
+        "games": 1105,
+        "brier": 0.24789428566330554,
+        "accuracy": 0.5466063348416289,
+        "margin_mae": 2.157565126754414
       }
     },
     "2026": {
       "0.0": {
-        "games": 4,
-        "brier": 0.304338038072224,
-        "accuracy": 0.25,
-        "margin_mae": 2.8256885445767423
+        "games": 233,
+        "brier": 0.24940997396054415,
+        "accuracy": 0.5364806866952789,
+        "margin_mae": 2.1418076506873542
       },
       "0.25": {
-        "games": 4,
-        "brier": 0.30974690707188984,
-        "accuracy": 0.25,
-        "margin_mae": 2.8521086847024337
+        "games": 233,
+        "brier": 0.24908060179734232,
+        "accuracy": 0.5236051502145923,
+        "margin_mae": 2.1394269871978864
       },
       "0.5": {
-        "games": 4,
-        "brier": 0.3154188314148563,
-        "accuracy": 0.25,
-        "margin_mae": 2.878528824828125
+        "games": 233,
+        "brier": 0.24896178758990956,
+        "accuracy": 0.5064377682403434,
+        "margin_mae": 2.139643282281748
       },
       "0.75": {
-        "games": 4,
-        "brier": 0.3213188755003785,
-        "accuracy": 0.25,
-        "margin_mae": 2.9049489649538156
+        "games": 233,
+        "brier": 0.24905580932698873,
+        "accuracy": 0.5321888412017167,
+        "margin_mae": 2.1411661202880254
       },
       "1.0": {
-        "games": 4,
-        "brier": 0.3274102892334218,
-        "accuracy": 0.25,
-        "margin_mae": 2.931369105079507
+        "games": 233,
+        "brier": 0.2495853875348375,
+        "accuracy": 0.5407725321888412,
+        "margin_mae": 2.1439225893027647
       }
     }
   },
   "selected_on_2024": "1.0",
+  "exploratory_selection": "1.0",
+  "actionable": true,
+  "career_cache_hits": 0,
+  "source_coverage": 1.0,
+  "box_coverage": 1.0,
+  "paired_games": 2213,
+  "minimum_source_coverage": 0.9,
+  "minimum_paired_games": 2000,
   "evaluation_season": 2025,
   "additional_validation_season": 2026,
   "limitations": [
