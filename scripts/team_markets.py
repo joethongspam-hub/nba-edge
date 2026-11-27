@@ -1,6 +1,7 @@
 """Shared team-market odds snapshot. No independent predictions yet."""
 import json
 import nba_team_model
+import nba_context_shadow
 import nfl_team_model
 import nhl_team_model
 import team_tracker
@@ -99,6 +100,16 @@ def main():
             row["model_status"] = "NHL history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
                 row.pop(key, None)
+    if "NBA" in histories:
+        try:
+            nba_context_shadow.annotate(snapshot["sports"]["NBA"], histories["NBA"], datetime.now(timezone.utc))
+            snapshot["nba_shadow_audit"] = nba_context_shadow.audit(histories["NBA"])
+        except Exception:
+            snapshot["nba_shadow_audit"] = {"status": "Unavailable"}
+            for row in snapshot["sports"]["NBA"]:
+                for key in tuple(row):
+                    if key.startswith("shadow_"):
+                        row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     team_tracker.update(snapshot, histories)
     audit_path = Path('docs/team_backtest.json')
