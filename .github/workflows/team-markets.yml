@@ -35,6 +35,9 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -61,7 +64,19 @@ jobs:
           if [ -f docs/nhl_goalie_ratings_cache.json ]; then git add docs/nhl_goalie_ratings_cache.json; fi
           if [ -f docs/nhl_goalie_validation.json ]; then git add docs/nhl_goalie_validation.json; fi
           if [ -f docs/nhl_goalie_changes.json ]; then git add docs/nhl_goalie_changes.json; fi
-          git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh SPORTS EDGE team markets'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                echo 'Conflicting snapshot changes; refusing to overwrite newer data.'
+                exit 1
+              fi
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
+          fi
       - name: Notify ntfy about team-market refresh
         if: always()
         continue-on-error: true
