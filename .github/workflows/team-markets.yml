@@ -1,0 +1,29 @@
+name: Refresh SPORTS EDGE team markets
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nba-edge-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Fetch team markets
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/team_markets.py
+      - name: Publish snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/team_markets.json
+          git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
