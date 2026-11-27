@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/team_markets.json docs/team_tracker.json docs/team_backtest.json
+          git add docs/team_markets.json docs/team_tracker.json docs/team_backtest.json docs/team_daily_analysis.json
           if [ -f docs/nba_efficiency_cache.json ]; then git add docs/nba_efficiency_cache.json; fi
           git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
       - name: Notify ntfy about team-market refresh

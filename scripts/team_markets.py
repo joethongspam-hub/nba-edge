@@ -11,6 +11,7 @@ import nhl_team_model
 import nhl_context_shadow
 import nhl_efficiency
 import team_tracker
+import team_analysis_export
 import team_rankings
 import team_backtest
 import os
@@ -192,7 +193,8 @@ def main():
                         row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     snapshot["rankings"] = team_rankings.rankings(snapshot)
-    team_tracker.update(snapshot, histories)
+    tracker = team_tracker.update(snapshot, histories)
+    team_analysis_export.write(snapshot, tracker)
     audit_path = Path('docs/team_backtest.json')
     audit_temp = audit_path.with_suffix('.tmp')
     audit_temp.write_text(json.dumps({'updated': snapshot['updated'], 'sports': team_backtest.audit(histories)}, indent=2) + '\n', encoding='utf-8')
