@@ -11,28 +11,8 @@ def parse_time(value):
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 def history(now):
-    games = {}
-    for offset in range(0, 84, 7):
-        end = now.date() - timedelta(days=offset)
-        start = end - timedelta(days=6)
-        url = BASE + "?dates=" + start.strftime("%Y%m%d") + "-" + end.strftime("%Y%m%d") + "&limit=500"
-        with urlopen(url, timeout=25) as response:
-            board = json.load(response)
-        for event in board.get("events", []):
-            if not event.get("status", {}).get("type", {}).get("completed"):
-                continue
-            if event.get("season", {}).get("type") != 2:
-                continue
-            time = parse_time(event["date"])
-            if time >= now:
-                continue
-            comp = event["competitions"][0]
-            teams = {c["homeAway"]: c for c in comp["competitors"]}
-            if set(teams) != {"home", "away"}:
-                continue
-            h, a = teams["home"], teams["away"]
-            games[event["id"]] = (time, h["team"]["displayName"], a["team"]["displayName"], int(h["score"])-int(a["score"]), bool(comp.get("neutralSite")))
-    return list(games.values())
+    from team_history import history as fetch_history
+    return fetch_history(BASE, now, "NBA", 84)
 
 def fit(games, now):
     # Weighted ridge-like iterative opponent adjustment; 2.5-point home prior.
