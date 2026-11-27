@@ -1,6 +1,10 @@
 name: Refresh SPORTS EDGE team markets
 on:
   workflow_dispatch:
+  schedule:
+    # Central time: morning slate, afternoon refresh and evening refresh.
+    - cron: '13 9,14,17 * * *'
+      timezone: 'America/Chicago'
 permissions:
   contents: write
 concurrency:
@@ -27,3 +31,13 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/team_markets.json docs/team_tracker.json docs/team_backtest.json
           git diff --cached --quiet || (git commit -m 'Refresh SPORTS EDGE team markets' && git push)
+      - name: Notify ntfy about team-market refresh
+        if: always()
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          WORKFLOW_STATUS: ${{ job.status }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TEAM_MARKETS_NOTIFY: 'true'
+        run: python scripts/notify.py

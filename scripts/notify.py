@@ -30,12 +30,24 @@ def main():
          +'Credits remaining: '+str(snapshot.get('oddsCreditsRemaining') or 'unknown')+' (2,000 reserve)')
         if success else 'The refresh did not complete successfully. See the workflow logs.'
     )
+    team_mode=os.environ.get('TEAM_MARKETS_NOTIFY')=='true'
+    if team_mode:
+        title='SPORTS EDGE refresh succeeded' if success else 'SPORTS EDGE refresh failed'
+        if success:
+            try:
+                team_data=json.loads((Path(__file__).resolve().parents[1]/'docs'/'team_markets.json').read_text())
+                counts={sport:len({row['event_id'] for row in rows}) for sport,rows in team_data.get('sports',{}).items()}
+                message='Team-market snapshot updated.\\n'+'\\n'.join(f'{sport}: {count} games' for sport,count in counts.items())+'\\nCredits remaining: '+str(team_data.get('odds_credits_remaining','unknown'))
+            except (OSError,ValueError,KeyError):
+                message='Refresh completed; snapshot summary unavailable.'
+        else:
+            message='Team-market refresh failed. See workflow logs.'
     run_url=os.environ.get('RUN_URL','')
     if run_url.startswith('https://github.com/'):
         message+='\nRun details: '+run_url
     headers={'Title':title,'Priority':'default' if success else 'high',
              'Tags':'basketball,white_check_mark' if success else 'warning',
-             'Click':'https://joethongspam-hub.github.io/nba-edge/'}
+             'Click':'https://joethongspam-hub.github.io/nba-edge/team-markets.html' if team_mode else 'https://joethongspam-hub.github.io/nba-edge/'}
     token=os.environ.get('NTFY_TOKEN','').strip()
     if token:headers['Authorization']='Bearer '+token
     url='https://ntfy.sh/'+topic

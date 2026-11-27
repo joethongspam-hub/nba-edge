@@ -6,11 +6,6 @@ on:
         description: 'Use the one allowed second paid refresh today (if eligible)'
         type: boolean
         default: false
-  schedule:
-    # Hourly free NBA scoreboard checks; early games trigger the first paid
-    # fetch up to 2 hours before tipoff. 5:13 PM CT remains the late fallback.
-    - cron: '13 9-17 * * *'
-      timezone: 'America/Chicago'
 permissions:
   contents: write
 concurrency:

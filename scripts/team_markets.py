@@ -67,6 +67,7 @@ def main():
                                 bookmakers="fanduel,draftkings", oddsFormat="american")
         remaining = remaining_from_headers(headers)
         snapshot["sports"][name] = normalize(events)
+    snapshot["odds_credits_remaining"] = remaining
     histories = {}
     try:
         now = datetime.now(timezone.utc)
