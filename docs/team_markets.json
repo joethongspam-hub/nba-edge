@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-27T05:10:39.721260+00:00",
-  "method": "Sportsbook no-vig baseline; NBA experimental independent model where available",
+  "updated": "2026-11-27T05:12:35.331058+00:00",
+  "method": "Sportsbook no-vig baseline; NBA and NFL experimental independent models where available",
   "sports": {
     "NBA": [
       {
@@ -298,8 +298,8 @@
         "market": "spreads",
         "team": "Detroit Pistons",
         "line": -9.5,
-        "odds": -107,
-        "market_probability": 0.493504,
+        "odds": -108,
+        "market_probability": 0.49567,
         "model_status": "NBA history unavailable"
       },
       {
@@ -311,8 +311,8 @@
         "market": "spreads",
         "team": "Milwaukee Bucks",
         "line": 9.5,
-        "odds": -113,
-        "market_probability": 0.506496,
+        "odds": -112,
+        "market_probability": 0.50433,
         "model_status": "NBA history unavailable"
       },
       {
@@ -1159,7 +1159,8 @@
         "team": "Denver Broncos",
         "line": null,
         "odds": -248,
-        "market_probability": 0.684897
+        "market_probability": 0.684897,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1171,7 +1172,8 @@
         "team": "Pittsburgh Steelers",
         "line": null,
         "odds": 205,
-        "market_probability": 0.315103
+        "market_probability": 0.315103,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1183,7 +1185,8 @@
         "team": "Denver Broncos",
         "line": -4.5,
         "odds": -118,
-        "market_probability": 0.517364
+        "market_probability": 0.517364,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1195,7 +1198,8 @@
         "team": "Pittsburgh Steelers",
         "line": 4.5,
         "odds": -102,
-        "market_probability": 0.482636
+        "market_probability": 0.482636,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1207,7 +1211,8 @@
         "team": "Denver Broncos",
         "line": null,
         "odds": -235,
-        "market_probability": 0.673457
+        "market_probability": 0.673457,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1219,7 +1224,8 @@
         "team": "Pittsburgh Steelers",
         "line": null,
         "odds": 194,
-        "market_probability": 0.326543
+        "market_probability": 0.326543,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1231,7 +1237,8 @@
         "team": "Denver Broncos",
         "line": -4.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1243,7 +1250,8 @@
         "team": "Pittsburgh Steelers",
         "line": 4.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1255,7 +1263,8 @@
         "team": "Atlanta Falcons",
         "line": null,
         "odds": 252,
-        "market_probability": 0.273115
+        "market_probability": 0.273115,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1267,7 +1276,8 @@
         "team": "Minnesota Vikings",
         "line": null,
         "odds": -310,
-        "market_probability": 0.726885
+        "market_probability": 0.726885,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1279,7 +1289,8 @@
         "team": "Atlanta Falcons",
         "line": 7.0,
         "odds": -119,
-        "market_probability": 0.519549
+        "market_probability": 0.519549,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1291,7 +1302,8 @@
         "team": "Minnesota Vikings",
         "line": -7.0,
         "odds": -101,
-        "market_probability": 0.480451
+        "market_probability": 0.480451,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1303,7 +1315,8 @@
         "team": "Atlanta Falcons",
         "line": null,
         "odds": 265,
-        "market_probability": 0.263077
+        "market_probability": 0.263077,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1315,7 +1328,8 @@
         "team": "Minnesota Vikings",
         "line": null,
         "odds": -330,
-        "market_probability": 0.736923
+        "market_probability": 0.736923,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1327,7 +1341,8 @@
         "team": "Atlanta Falcons",
         "line": 7.0,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1339,7 +1354,8 @@
         "team": "Minnesota Vikings",
         "line": -7.0,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1351,7 +1367,8 @@
         "team": "Baltimore Ravens",
         "line": null,
         "odds": 267,
-        "market_probability": 0.261748
+        "market_probability": 0.261748,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1363,7 +1380,8 @@
         "team": "Houston Texans",
         "line": null,
         "odds": -332,
-        "market_probability": 0.738252
+        "market_probability": 0.738252,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1375,7 +1393,8 @@
         "team": "Baltimore Ravens",
         "line": 6.5,
         "odds": -107,
-        "market_probability": 0.49455
+        "market_probability": 0.49455,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1387,7 +1406,8 @@
         "team": "Houston Texans",
         "line": -6.5,
         "odds": -112,
-        "market_probability": 0.50545
+        "market_probability": 0.50545,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1399,7 +1419,8 @@
         "team": "Baltimore Ravens",
         "line": null,
         "odds": 240,
-        "market_probability": 0.282546
+        "market_probability": 0.282546,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1411,7 +1432,8 @@
         "team": "Houston Texans",
         "line": null,
         "odds": -295,
-        "market_probability": 0.717454
+        "market_probability": 0.717454,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1423,7 +1445,8 @@
         "team": "Baltimore Ravens",
         "line": 6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "60d0c074801985c1062795362a24200e",
@@ -1435,7 +1458,8 @@
         "team": "Houston Texans",
         "line": -6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1447,7 +1471,8 @@
         "team": "Cincinnati Bengals",
         "line": null,
         "odds": -562,
-        "market_probability": 0.816175
+        "market_probability": 0.816175,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1459,7 +1484,8 @@
         "team": "New Orleans Saints",
         "line": null,
         "odds": 423,
-        "market_probability": 0.183825
+        "market_probability": 0.183825,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1471,7 +1497,8 @@
         "team": "Cincinnati Bengals",
         "line": -10.0,
         "odds": -106,
-        "market_probability": 0.492367
+        "market_probability": 0.492367,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1483,7 +1510,8 @@
         "team": "New Orleans Saints",
         "line": 10.0,
         "odds": -113,
-        "market_probability": 0.507633
+        "market_probability": 0.507633,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1495,7 +1523,8 @@
         "team": "Cincinnati Bengals",
         "line": null,
         "odds": -560,
-        "market_probability": 0.81523
+        "market_probability": 0.81523,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1507,7 +1536,8 @@
         "team": "New Orleans Saints",
         "line": null,
         "odds": 420,
-        "market_probability": 0.18477
+        "market_probability": 0.18477,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1519,7 +1549,8 @@
         "team": "Cincinnati Bengals",
         "line": -9.5,
         "odds": -120,
-        "market_probability": 0.521739
+        "market_probability": 0.521739,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1531,7 +1562,8 @@
         "team": "New Orleans Saints",
         "line": 9.5,
         "odds": 100,
-        "market_probability": 0.478261
+        "market_probability": 0.478261,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1543,7 +1575,8 @@
         "team": "Indianapolis Colts",
         "line": null,
         "odds": 236,
-        "market_probability": 0.286387
+        "market_probability": 0.286387,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1555,7 +1588,8 @@
         "team": "New York Giants",
         "line": null,
         "odds": -287,
-        "market_probability": 0.713613
+        "market_probability": 0.713613,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1567,7 +1601,8 @@
         "team": "Indianapolis Colts",
         "line": 6.0,
         "odds": -110,
-        "market_probability": 0.50109
+        "market_probability": 0.50109,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1579,7 +1614,8 @@
         "team": "New York Giants",
         "line": -6.0,
         "odds": -109,
-        "market_probability": 0.49891
+        "market_probability": 0.49891,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1591,7 +1627,8 @@
         "team": "Indianapolis Colts",
         "line": null,
         "odds": 240,
-        "market_probability": 0.282546
+        "market_probability": 0.282546,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1603,7 +1640,8 @@
         "team": "New York Giants",
         "line": null,
         "odds": -295,
-        "market_probability": 0.717454
+        "market_probability": 0.717454,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1615,7 +1653,8 @@
         "team": "Indianapolis Colts",
         "line": 6.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1627,7 +1666,8 @@
         "team": "New York Giants",
         "line": -6.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1639,7 +1679,8 @@
         "team": "Jacksonville Jaguars",
         "line": null,
         "odds": -1260,
-        "market_probability": 0.890746
+        "market_probability": 0.890746,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1651,7 +1692,8 @@
         "team": "Tennessee Titans",
         "line": null,
         "odds": 780,
-        "market_probability": 0.109254
+        "market_probability": 0.109254,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1663,7 +1705,8 @@
         "team": "Jacksonville Jaguars",
         "line": -14.5,
         "odds": -104,
-        "market_probability": 0.486993
+        "market_probability": 0.486993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1675,7 +1718,8 @@
         "team": "Tennessee Titans",
         "line": 14.5,
         "odds": -116,
-        "market_probability": 0.513007
+        "market_probability": 0.513007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1687,7 +1731,8 @@
         "team": "Jacksonville Jaguars",
         "line": null,
         "odds": -1150,
-        "market_probability": 0.884206
+        "market_probability": 0.884206,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1699,7 +1744,8 @@
         "team": "Tennessee Titans",
         "line": null,
         "odds": 730,
-        "market_probability": 0.115794
+        "market_probability": 0.115794,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1711,7 +1757,8 @@
         "team": "Jacksonville Jaguars",
         "line": -14.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1723,7 +1770,8 @@
         "team": "Tennessee Titans",
         "line": 14.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1735,7 +1783,8 @@
         "team": "Miami Dolphins",
         "line": null,
         "odds": 204,
-        "market_probability": 0.316317
+        "market_probability": 0.316317,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1747,7 +1796,8 @@
         "team": "New York Jets",
         "line": null,
         "odds": -246,
-        "market_probability": 0.683683
+        "market_probability": 0.683683,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1759,7 +1809,8 @@
         "team": "Miami Dolphins",
         "line": 5.5,
         "odds": -113,
-        "market_probability": 0.507633
+        "market_probability": 0.507633,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1771,7 +1822,8 @@
         "team": "New York Jets",
         "line": -5.5,
         "odds": -106,
-        "market_probability": 0.492367
+        "market_probability": 0.492367,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1783,7 +1835,8 @@
         "team": "Miami Dolphins",
         "line": null,
         "odds": 210,
-        "market_probability": 0.309908
+        "market_probability": 0.309908,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1795,7 +1848,8 @@
         "team": "New York Jets",
         "line": null,
         "odds": -255,
-        "market_probability": 0.690092
+        "market_probability": 0.690092,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1807,7 +1861,8 @@
         "team": "Miami Dolphins",
         "line": 5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -1819,7 +1874,8 @@
         "team": "New York Jets",
         "line": -5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1831,7 +1887,8 @@
         "team": "Los Angeles Chargers",
         "line": null,
         "odds": 115,
-        "market_probability": 0.445866
+        "market_probability": 0.445866,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1843,7 +1900,8 @@
         "team": "New England Patriots",
         "line": null,
         "odds": -137,
-        "market_probability": 0.554134
+        "market_probability": 0.554134,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1855,7 +1913,8 @@
         "team": "Los Angeles Chargers",
         "line": 2.5,
         "odds": -111,
-        "market_probability": 0.50327
+        "market_probability": 0.50327,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1867,7 +1926,8 @@
         "team": "New England Patriots",
         "line": -2.5,
         "odds": -108,
-        "market_probability": 0.49673
+        "market_probability": 0.49673,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1879,7 +1939,8 @@
         "team": "Los Angeles Chargers",
         "line": null,
         "odds": 102,
-        "market_probability": 0.475779
+        "market_probability": 0.475779,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1891,7 +1952,8 @@
         "team": "New England Patriots",
         "line": null,
         "odds": -120,
-        "market_probability": 0.524221
+        "market_probability": 0.524221,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1903,7 +1965,8 @@
         "team": "Los Angeles Chargers",
         "line": 1.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -1915,7 +1978,8 @@
         "team": "New England Patriots",
         "line": -1.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1927,7 +1991,8 @@
         "team": "Arizona Cardinals",
         "line": null,
         "odds": 282,
-        "market_probability": 0.251581
+        "market_probability": 0.251581,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1939,7 +2004,8 @@
         "team": "Washington Commanders",
         "line": null,
         "odds": -352,
-        "market_probability": 0.748419
+        "market_probability": 0.748419,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1951,7 +2017,8 @@
         "team": "Arizona Cardinals",
         "line": 6.5,
         "odds": -102,
-        "market_probability": 0.482636
+        "market_probability": 0.482636,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1963,7 +2030,8 @@
         "team": "Washington Commanders",
         "line": -6.5,
         "odds": -118,
-        "market_probability": 0.517364
+        "market_probability": 0.517364,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1975,7 +2043,8 @@
         "team": "Arizona Cardinals",
         "line": null,
         "odds": 280,
-        "market_probability": 0.252809
+        "market_probability": 0.252809,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1987,7 +2056,8 @@
         "team": "Washington Commanders",
         "line": null,
         "odds": -350,
-        "market_probability": 0.747191
+        "market_probability": 0.747191,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -1999,7 +2069,8 @@
         "team": "Arizona Cardinals",
         "line": 7.0,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -2011,7 +2082,8 @@
         "team": "Washington Commanders",
         "line": -7.0,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2023,7 +2095,8 @@
         "team": "San Francisco 49ers",
         "line": null,
         "odds": -152,
-        "market_probability": 0.580056
+        "market_probability": 0.580056,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2035,7 +2108,8 @@
         "team": "Seattle Seahawks",
         "line": null,
         "odds": 129,
-        "market_probability": 0.419944
+        "market_probability": 0.419944,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2047,7 +2121,8 @@
         "team": "San Francisco 49ers",
         "line": -3.0,
         "odds": -102,
-        "market_probability": 0.483613
+        "market_probability": 0.483613,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2059,7 +2134,8 @@
         "team": "Seattle Seahawks",
         "line": 3.0,
         "odds": -117,
-        "market_probability": 0.516387
+        "market_probability": 0.516387,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2071,7 +2147,8 @@
         "team": "San Francisco 49ers",
         "line": null,
         "odds": -146,
-        "market_probability": 0.570711
+        "market_probability": 0.570711,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2083,7 +2160,8 @@
         "team": "Seattle Seahawks",
         "line": null,
         "odds": 124,
-        "market_probability": 0.429289
+        "market_probability": 0.429289,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2095,7 +2173,8 @@
         "team": "San Francisco 49ers",
         "line": -2.5,
         "odds": -120,
-        "market_probability": 0.521739
+        "market_probability": 0.521739,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2107,7 +2186,8 @@
         "team": "Seattle Seahawks",
         "line": 2.5,
         "odds": 100,
-        "market_probability": 0.478261
+        "market_probability": 0.478261,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2119,7 +2199,8 @@
         "team": "Cleveland Browns",
         "line": null,
         "odds": -244,
-        "market_probability": 0.681021
+        "market_probability": 0.681021,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2131,7 +2212,8 @@
         "team": "Las Vegas Raiders",
         "line": null,
         "odds": 201,
-        "market_probability": 0.318979
+        "market_probability": 0.318979,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2143,7 +2225,8 @@
         "team": "Cleveland Browns",
         "line": -4.5,
         "odds": -105,
-        "market_probability": 0.490183
+        "market_probability": 0.490183,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2155,7 +2238,8 @@
         "team": "Las Vegas Raiders",
         "line": 4.5,
         "odds": -114,
-        "market_probability": 0.509817
+        "market_probability": 0.509817,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2167,7 +2251,8 @@
         "team": "Cleveland Browns",
         "line": null,
         "odds": -230,
-        "market_probability": 0.669007
+        "market_probability": 0.669007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2179,7 +2264,8 @@
         "team": "Las Vegas Raiders",
         "line": null,
         "odds": 190,
-        "market_probability": 0.330993
+        "market_probability": 0.330993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2191,7 +2277,8 @@
         "team": "Cleveland Browns",
         "line": -4.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2203,7 +2290,8 @@
         "team": "Las Vegas Raiders",
         "line": 4.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2215,7 +2303,8 @@
         "team": "Carolina Panthers",
         "line": null,
         "odds": 132,
-        "market_probability": 0.413689
+        "market_probability": 0.413689,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2227,7 +2316,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": null,
         "odds": -157,
-        "market_probability": 0.586311
+        "market_probability": 0.586311,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2239,7 +2329,8 @@
         "team": "Carolina Panthers",
         "line": 3.0,
         "odds": -112,
-        "market_probability": 0.50545
+        "market_probability": 0.50545,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2251,7 +2342,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": -3.0,
         "odds": -107,
-        "market_probability": 0.49455
+        "market_probability": 0.49455,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2263,7 +2355,8 @@
         "team": "Carolina Panthers",
         "line": null,
         "odds": 136,
-        "market_probability": 0.40663
+        "market_probability": 0.40663,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2275,7 +2368,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": null,
         "odds": -162,
-        "market_probability": 0.59337
+        "market_probability": 0.59337,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2287,7 +2381,8 @@
         "team": "Carolina Panthers",
         "line": 3.0,
         "odds": -116,
-        "market_probability": 0.513007
+        "market_probability": 0.513007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2299,7 +2394,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": -3.0,
         "odds": -104,
-        "market_probability": 0.486993
+        "market_probability": 0.486993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2311,7 +2407,8 @@
         "team": "Cincinnati Bengals",
         "line": null,
         "odds": -258,
-        "market_probability": 0.692165
+        "market_probability": 0.692165,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2323,7 +2420,8 @@
         "team": "Cleveland Browns",
         "line": null,
         "odds": 212,
-        "market_probability": 0.307835
+        "market_probability": 0.307835,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2335,7 +2433,8 @@
         "team": "Cincinnati Bengals",
         "line": -6.0,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2347,7 +2446,8 @@
         "team": "Cleveland Browns",
         "line": 6.0,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2359,7 +2459,8 @@
         "team": "Cincinnati Bengals",
         "line": null,
         "odds": -245,
-        "market_probability": 0.680556
+        "market_probability": 0.680556,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2371,7 +2472,8 @@
         "team": "Cleveland Browns",
         "line": null,
         "odds": 200,
-        "market_probability": 0.319444
+        "market_probability": 0.319444,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2383,7 +2485,8 @@
         "team": "Cincinnati Bengals",
         "line": -5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2395,7 +2498,8 @@
         "team": "Cleveland Browns",
         "line": 5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2407,7 +2511,8 @@
         "team": "Denver Broncos",
         "line": null,
         "odds": -1120,
-        "market_probability": 0.881461
+        "market_probability": 0.881461,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2419,7 +2524,8 @@
         "team": "Miami Dolphins",
         "line": null,
         "odds": 710,
-        "market_probability": 0.118539
+        "market_probability": 0.118539,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2431,7 +2537,8 @@
         "team": "Denver Broncos",
         "line": -14.5,
         "odds": -105,
-        "market_probability": 0.490183
+        "market_probability": 0.490183,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2443,7 +2550,8 @@
         "team": "Miami Dolphins",
         "line": 14.5,
         "odds": -114,
-        "market_probability": 0.509817
+        "market_probability": 0.509817,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2455,7 +2563,8 @@
         "team": "Denver Broncos",
         "line": null,
         "odds": -1400,
-        "market_probability": 0.896694
+        "market_probability": 0.896694,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2467,7 +2576,8 @@
         "team": "Miami Dolphins",
         "line": null,
         "odds": 830,
-        "market_probability": 0.103306
+        "market_probability": 0.103306,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2479,7 +2589,8 @@
         "team": "Denver Broncos",
         "line": -14.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -2491,7 +2602,8 @@
         "team": "Miami Dolphins",
         "line": 14.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2503,7 +2615,8 @@
         "team": "Green Bay Packers",
         "line": null,
         "odds": -227,
-        "market_probability": 0.667355
+        "market_probability": 0.667355,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2515,7 +2628,8 @@
         "team": "New Orleans Saints",
         "line": null,
         "odds": 189,
-        "market_probability": 0.332645
+        "market_probability": 0.332645,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2527,7 +2641,8 @@
         "team": "Green Bay Packers",
         "line": -4.5,
         "odds": -118,
-        "market_probability": 0.517364
+        "market_probability": 0.517364,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2539,7 +2654,8 @@
         "team": "New Orleans Saints",
         "line": 4.5,
         "odds": -102,
-        "market_probability": 0.482636
+        "market_probability": 0.482636,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2551,7 +2667,8 @@
         "team": "Green Bay Packers",
         "line": null,
         "odds": -230,
-        "market_probability": 0.669007
+        "market_probability": 0.669007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2563,7 +2680,8 @@
         "team": "New Orleans Saints",
         "line": null,
         "odds": 190,
-        "market_probability": 0.330993
+        "market_probability": 0.330993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2575,7 +2693,8 @@
         "team": "Green Bay Packers",
         "line": -5.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -2587,7 +2706,8 @@
         "team": "New Orleans Saints",
         "line": 5.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2599,7 +2719,8 @@
         "team": "Los Angeles Chargers",
         "line": null,
         "odds": 209,
-        "market_probability": 0.311076
+        "market_probability": 0.311076,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2611,7 +2732,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": null,
         "odds": -253,
-        "market_probability": 0.688924
+        "market_probability": 0.688924,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2623,7 +2745,8 @@
         "team": "Los Angeles Chargers",
         "line": 5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2635,7 +2758,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": -5.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2647,7 +2771,8 @@
         "team": "Los Angeles Chargers",
         "line": null,
         "odds": 220,
-        "market_probability": 0.299838
+        "market_probability": 0.299838,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2659,7 +2784,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": null,
         "odds": -270,
-        "market_probability": 0.700162
+        "market_probability": 0.700162,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2671,7 +2797,8 @@
         "team": "Los Angeles Chargers",
         "line": 5.5,
         "odds": -104,
-        "market_probability": 0.486993
+        "market_probability": 0.486993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "f8a92363386bd337975650879086cca6",
@@ -2683,7 +2810,8 @@
         "team": "Tampa Bay Buccaneers",
         "line": -5.5,
         "odds": -116,
-        "market_probability": 0.513007
+        "market_probability": 0.513007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2695,7 +2823,8 @@
         "team": "New York Giants",
         "line": null,
         "odds": 241,
-        "market_probability": 0.281952
+        "market_probability": 0.281952,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2707,7 +2836,8 @@
         "team": "San Francisco 49ers",
         "line": null,
         "odds": -295,
-        "market_probability": 0.718048
+        "market_probability": 0.718048,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2719,7 +2849,8 @@
         "team": "New York Giants",
         "line": 6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2731,7 +2862,8 @@
         "team": "San Francisco 49ers",
         "line": -6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2743,7 +2875,8 @@
         "team": "New York Giants",
         "line": null,
         "odds": 245,
-        "market_probability": 0.278746
+        "market_probability": 0.278746,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2755,7 +2888,8 @@
         "team": "San Francisco 49ers",
         "line": null,
         "odds": -300,
-        "market_probability": 0.721254
+        "market_probability": 0.721254,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2767,7 +2901,8 @@
         "team": "New York Giants",
         "line": 6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -2779,7 +2914,8 @@
         "team": "San Francisco 49ers",
         "line": -6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2791,7 +2927,8 @@
         "team": "Tennessee Titans",
         "line": null,
         "odds": 191,
-        "market_probability": 0.330231
+        "market_probability": 0.330231,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2803,7 +2940,8 @@
         "team": "Washington Commanders",
         "line": null,
         "odds": -230,
-        "market_probability": 0.669769
+        "market_probability": 0.669769,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2815,7 +2953,8 @@
         "team": "Tennessee Titans",
         "line": 4.5,
         "odds": -110,
-        "market_probability": 0.50109
+        "market_probability": 0.50109,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2827,7 +2966,8 @@
         "team": "Washington Commanders",
         "line": -4.5,
         "odds": -109,
-        "market_probability": 0.49891
+        "market_probability": 0.49891,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2839,7 +2979,8 @@
         "team": "Tennessee Titans",
         "line": null,
         "odds": 180,
-        "market_probability": 0.343511
+        "market_probability": 0.343511,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2851,7 +2992,8 @@
         "team": "Washington Commanders",
         "line": null,
         "odds": -215,
-        "market_probability": 0.656489
+        "market_probability": 0.656489,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2863,7 +3005,8 @@
         "team": "Tennessee Titans",
         "line": 4.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -2875,7 +3018,8 @@
         "team": "Washington Commanders",
         "line": -4.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2887,7 +3031,8 @@
         "team": "Carolina Panthers",
         "line": null,
         "odds": 201,
-        "market_probability": 0.319239
+        "market_probability": 0.319239,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2899,7 +3044,8 @@
         "team": "Minnesota Vikings",
         "line": null,
         "odds": -243,
-        "market_probability": 0.680761
+        "market_probability": 0.680761,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2911,7 +3057,8 @@
         "team": "Carolina Panthers",
         "line": 5.5,
         "odds": -110,
-        "market_probability": 0.50109
+        "market_probability": 0.50109,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2923,7 +3070,8 @@
         "team": "Minnesota Vikings",
         "line": -5.5,
         "odds": -109,
-        "market_probability": 0.49891
+        "market_probability": 0.49891,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2935,7 +3083,8 @@
         "team": "Carolina Panthers",
         "line": null,
         "odds": 190,
-        "market_probability": 0.330993
+        "market_probability": 0.330993,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2947,7 +3096,8 @@
         "team": "Minnesota Vikings",
         "line": null,
         "odds": -230,
-        "market_probability": 0.669007
+        "market_probability": 0.669007,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2959,7 +3109,8 @@
         "team": "Carolina Panthers",
         "line": 4.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -2971,7 +3122,8 @@
         "team": "Minnesota Vikings",
         "line": -4.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -2983,7 +3135,8 @@
         "team": "Houston Texans",
         "line": null,
         "odds": -224,
-        "market_probability": 0.664123
+        "market_probability": 0.664123,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -2995,7 +3148,8 @@
         "team": "Pittsburgh Steelers",
         "line": null,
         "odds": 186,
-        "market_probability": 0.335877
+        "market_probability": 0.335877,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3007,7 +3161,8 @@
         "team": "Houston Texans",
         "line": -4.5,
         "odds": -108,
-        "market_probability": 0.49673
+        "market_probability": 0.49673,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3019,7 +3174,8 @@
         "team": "Pittsburgh Steelers",
         "line": 4.5,
         "odds": -111,
-        "market_probability": 0.50327
+        "market_probability": 0.50327,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3031,7 +3187,8 @@
         "team": "Houston Texans",
         "line": null,
         "odds": -220,
-        "market_probability": 0.661304
+        "market_probability": 0.661304,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3043,7 +3200,8 @@
         "team": "Pittsburgh Steelers",
         "line": null,
         "odds": 184,
-        "market_probability": 0.338696
+        "market_probability": 0.338696,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3055,7 +3213,8 @@
         "team": "Houston Texans",
         "line": -4.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
       },
       {
         "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3067,7 +3226,8 @@
         "team": "Pittsburgh Steelers",
         "line": 4.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       }
     ],
     "NHL": [
