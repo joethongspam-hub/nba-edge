@@ -9,28 +9,8 @@ from nba_team_model import parse_time
 BASE = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
 
 def history(now):
-    games = {}
-    for offset in range(0, 126, 7):
-        end = now.date() - timedelta(days=offset)
-        start = end - timedelta(days=6)
-        url = BASE + "?dates=" + start.strftime("%Y%m%d") + "-" + end.strftime("%Y%m%d") + "&limit=100"
-        with urlopen(url, timeout=25) as response:
-            board = json.load(response)
-        for event in board.get("events", []):
-            if not event.get("status", {}).get("type", {}).get("completed"):
-                continue
-            if event.get("season", {}).get("type") not in (2, 3):
-                continue
-            time = parse_time(event["date"])
-            if time >= now:
-                continue
-            comp = event["competitions"][0]
-            teams = {c["homeAway"]: c for c in comp["competitors"]}
-            if set(teams) != {"home", "away"}:
-                continue
-            h, a = teams["home"], teams["away"]
-            games[event["id"]] = (time, h["team"]["displayName"], a["team"]["displayName"], int(h["score"])-int(a["score"]), bool(comp.get("neutralSite")))
-    return list(games.values())
+    from team_history import history as fetch_history
+    return fetch_history(BASE, now, "NFL", 126)
 
 def fit(games, now):
     obs = defaultdict(list)
