@@ -32,6 +32,7 @@ jobs:
       - name: Fetch team markets
         env:
           TEAM_REFRESH_MODE: ${{ github.event.inputs.refresh_mode || 'live' }}
+          PROPLINE_API_KEY: ${{ secrets.PROPLINE_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/team_markets.py
       - name: Generate experimental paper parlay export
