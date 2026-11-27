@@ -6,6 +6,7 @@ import nba_context_shadow
 import nba_efficiency
 import nfl_team_model
 import nfl_context_shadow
+import nfl_efficiency
 import nhl_team_model
 import nhl_context_shadow
 import team_tracker
@@ -160,6 +161,19 @@ def main():
             for row in snapshot["sports"]["NBA"]:
                 for key in tuple(row):
                     if key.startswith("efficiency_"):
+                        row.pop(key)
+    if "NFL" in histories:
+        try:
+            epa_games = nfl_efficiency.load(datetime.now(timezone.utc), histories["NFL"])
+            snapshot["nfl_epa_health"] = {"matched": len(epa_games), "eligible": len(histories["NFL"])}
+            nfl_efficiency.annotate(snapshot["sports"]["NFL"], epa_games, datetime.now(timezone.utc))
+            snapshot["nfl_epa_audit"] = nfl_efficiency.audit(epa_games, team_backtest.evaluate("NFL", histories["NFL"]))
+        except Exception as exc:
+            print("NFL EPA unavailable:", type(exc).__name__)
+            snapshot["nfl_epa_health"] = {"error": type(exc).__name__}
+            for row in snapshot["sports"]["NFL"]:
+                for key in tuple(row):
+                    if key.startswith("epa_"):
                         row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     team_tracker.update(snapshot, histories)
