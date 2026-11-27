@@ -21,6 +21,42 @@ def record(rows):
     return dict(settled=n,wins=w,losses=l,pushes=n-w-l,accuracy=w/(w+l) if w+l else None,
                 units=units,roi=units/n if n else None)
 
+def segments(rows):
+    groups=defaultdict(list)
+    for r in rows:
+        market=r["market"]
+        p=r.get("model_probability")
+        odds=r.get("odds")
+        mp=r.get("market_probability")
+        if r.get("team") and r.get("home") and r.get("away"):
+            venue="Home" if r["team"]==r["home"] else "Away" if r["team"]==r["away"] else "Unknown"
+            groups[("Venue",venue)].append(r)
+        if market=="h2h" and mp is not None:
+            groups[("Market side","Favorite" if mp>.5 else "Underdog" if mp<.5 else "Even")].append(r)
+        elif market=="spreads" and r.get("line") is not None:
+            line=r["line"]
+            groups[("Market side","Giving points" if line<0 else "Receiving points" if line>0 else "Pick'em")].append(r)
+        if p is not None:
+            for low,high,label in [(0,.55,"Below 55%"),(.55,.60,"55–59%"),(.60,.70,"60–69%"),(.70,.80,"70–79%"),(.80,1.01,"80%+")]:
+                if low<=p<high:
+                    groups[("Model probability",label)].append(r)
+                    break
+            if mp is not None:
+                gap=p-mp
+                label="Below market" if gap<0 else "0–<5 pp" if gap<.05 else "5–<10 pp" if gap<.10 else "10+ pp"
+                groups[("Model minus no-vig market",label)].append(r)
+            if odds and abs(odds)>=100:
+                breakeven=100/(100+odds) if odds>0 else -odds/(100-odds)
+                push=r.get("push_probability",0) or 0
+                gap=p-(1-push)*breakeven
+                groups[("Model vs break-even","Above" if gap>1e-9 else "Below" if gap< -1e-9 else "Equal")].append(r)
+        agreement=r.get("archived_agreement")
+        if agreement:
+            groups[("Challenger direction",agreement)].append(r)
+        else:
+            groups[("Challenger direction","Not recorded")].append(r)
+    return [dict(dimension=d,label=l,forecasts=len(rs),**record(rs)) for (d,l),rs in sorted(groups.items())]
+
 def benchmark(tracker):
     groups=defaultdict(list)
     for r in tracker:
@@ -46,5 +82,5 @@ def benchmark(tracker):
             if subset:
                 bins.append(dict(low=low,high=min(high,1),**record(subset)))
         out.append(dict(sport=sport,market=market,book=book,model=record(rows),
-                        matched_model=record(matched),market_reference=record(favorites),confidence=bins))
+                        matched_model=record(matched),market_reference=record(favorites),confidence=bins,segments=segments(rows)))
     return out
