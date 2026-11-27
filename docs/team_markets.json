@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:21:39.156666+00:00",
+  "updated": "2026-11-27T05:23:25.551160+00:00",
   "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
@@ -5313,5 +5313,5 @@
       }
     ]
   },
-  "odds_credits_remaining": 18616
+  "odds_credits_remaining": 18610
 }
