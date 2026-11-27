@@ -36,3 +36,25 @@ class BenchmarkTest(unittest.TestCase):
         result=benchmark([row])[0]
         self.assertEqual(result["market_reference"]["pushes"],1)
         self.assertEqual(result["market_reference"]["roi"],0)
+
+    def test_segments(self):
+        base=dict(sport="NBA",market="h2h",book="fanduel",home="A",away="B",team="A",odds=150,model_probability=.62,market_probability=.4,archived_agreement="All agree")
+        rows=[dict(base,result="win"),dict(base,result="pending"),dict(base,result="loss",team="B",odds=-150,market_probability=.6)]
+        groups={(s["dimension"],s["label"]):s for s in benchmark(rows)[0]["segments"]}
+        self.assertEqual(groups["Venue","Home"]["forecasts"],2)
+        self.assertEqual(groups["Venue","Home"]["settled"],1)
+        self.assertEqual(groups["Market side","Underdog"]["roi"],1.5)
+        self.assertEqual(groups["Model minus no-vig market","10+ pp"]["settled"],1)
+        self.assertEqual(groups["Challenger direction","All agree"]["settled"],2)
+
+    def test_archive_challenger_direction(self):
+        base=dict(event_id="1",home="A",away="B",start="2026-11-27T00:00:00Z",book="fanduel",market="h2h",line=None,odds=-110)
+        a=dict(base,team="A",model_probability=.6,shadow_probability=.55,efficiency_probability=.4)
+        b=dict(base,team="B",model_probability=.4,shadow_probability=.45,efficiency_probability=.6)
+        snapshot=dict(updated="2026-11-26T00:00:00Z",sports={"NBA":[a,b]})
+        tracked=archive([],snapshot)
+        self.assertEqual(tracked[0]["archived_agreement"],"Mixed or tied")
+        self.assertEqual(tracked[0]["archived_challenger_count"],2)
+        a["efficiency_probability"]=.9
+        archive(tracked,snapshot)
+        self.assertEqual(tracked[0]["archived_agreement"],"Mixed or tied")
