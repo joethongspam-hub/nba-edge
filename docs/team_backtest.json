@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:28:56.457044+00:00",
+  "updated": "2026-11-27T05:31:33.280189+00:00",
   "sports": [
     {
       "sport": "NBA",
@@ -1653,7 +1653,32 @@
           "brier": 0.4745386652179999,
           "margin_error": 4.61
         }
-      ]
+      ],
+      "calibration_holdout": {
+        "status": "Experimental holdout",
+        "scale": 1.0,
+        "split": "2026-11-19",
+        "training_games": 86,
+        "baseline": {
+          "games": 60,
+          "brier": 0.42814289682576656,
+          "log_loss": 0.6119589957590175,
+          "accuracy": 0.65
+        },
+        "challenger": {
+          "games": 60,
+          "brier": 0.42814289682576656,
+          "log_loss": 0.6119589957590175,
+          "accuracy": 0.65
+        },
+        "coin_flip": {
+          "games": 60,
+          "brier": 0.5,
+          "log_loss": 0.6931471805599451,
+          "accuracy": 0.5333333333333333
+        },
+        "home_only_accuracy": 0.5333333333333333
+      }
     },
     {
       "sport": "NFL",
@@ -2647,7 +2672,32 @@
           "brier": 0.371878533054,
           "margin_error": 0.6299999999999999
         }
-      ]
+      ],
+      "calibration_holdout": {
+        "status": "Experimental holdout",
+        "scale": 0.75,
+        "split": "2026-11-08",
+        "training_games": 41,
+        "baseline": {
+          "games": 45,
+          "brier": 0.4096257788416001,
+          "log_loss": 0.6227046112269162,
+          "accuracy": 0.7111111111111111
+        },
+        "challenger": {
+          "games": 45,
+          "brier": 0.4242721442453605,
+          "log_loss": 0.6401082595431098,
+          "accuracy": 0.7111111111111111
+        },
+        "coin_flip": {
+          "games": 45,
+          "brier": 0.5011385854787667,
+          "log_loss": 0.7209797007151877,
+          "accuracy": 0.5111111111111111
+        },
+        "home_only_accuracy": 0.5111111111111111
+      }
     },
     {
       "sport": "NHL",
@@ -5577,7 +5627,32 @@
           "brier": 0.32146086348800007,
           "margin_error": 6.3100000000000005
         }
-      ]
+      ],
+      "calibration_holdout": {
+        "status": "Experimental holdout",
+        "scale": 0.75,
+        "split": "2026-11-12",
+        "training_games": 155,
+        "baseline": {
+          "games": 107,
+          "brier": 0.5165175923016823,
+          "log_loss": 0.7125557394171579,
+          "accuracy": 0.5046728971962616
+        },
+        "challenger": {
+          "games": 107,
+          "brier": 0.5069499470715659,
+          "log_loss": 0.700979485924621,
+          "accuracy": 0.5046728971962616
+        },
+        "coin_flip": {
+          "games": 107,
+          "brier": 0.5,
+          "log_loss": 0.693147180559946,
+          "accuracy": 0.4205607476635514
+        },
+        "home_only_accuracy": 0.4205607476635514
+      }
     }
   ]
 }
