@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:16:58.385996+00:00",
+  "updated": "2026-11-27T05:18:22.280470+00:00",
   "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
@@ -220,8 +220,8 @@
         "market": "h2h",
         "team": "Detroit Pistons",
         "line": null,
-        "odds": -400,
-        "market_probability": 0.768519,
+        "odds": -370,
+        "market_probability": 0.756666,
         "model_status": "NBA history unavailable"
       },
       {
@@ -233,8 +233,8 @@
         "market": "h2h",
         "team": "Milwaukee Bucks",
         "line": null,
-        "odds": 315,
-        "market_probability": 0.231481,
+        "odds": 295,
+        "market_probability": 0.243334,
         "model_status": "NBA history unavailable"
       },
       {
@@ -245,9 +245,9 @@
         "book": "fanduel",
         "market": "spreads",
         "team": "Detroit Pistons",
-        "line": -9.5,
-        "odds": -106,
-        "market_probability": 0.491336,
+        "line": -8.5,
+        "odds": -114,
+        "market_probability": 0.508664,
         "model_status": "NBA history unavailable"
       },
       {
@@ -258,9 +258,9 @@
         "book": "fanduel",
         "market": "spreads",
         "team": "Milwaukee Bucks",
-        "line": 9.5,
-        "odds": -114,
-        "market_probability": 0.508664,
+        "line": 8.5,
+        "odds": -106,
+        "market_probability": 0.491336,
         "model_status": "NBA history unavailable"
       },
       {
@@ -1158,8 +1158,8 @@
         "market": "h2h",
         "team": "Denver Broncos",
         "line": null,
-        "odds": -248,
-        "market_probability": 0.684897,
+        "odds": -247,
+        "market_probability": 0.683936,
         "model_status": "NFL history unavailable"
       },
       {
@@ -1171,8 +1171,8 @@
         "market": "h2h",
         "team": "Pittsburgh Steelers",
         "line": null,
-        "odds": 205,
-        "market_probability": 0.315103,
+        "odds": 204,
+        "market_probability": 0.316064,
         "model_status": "NFL history unavailable"
       },
       {
@@ -5208,5 +5208,6 @@
         "model_status": "NHL history unavailable"
       }
     ]
-  }
+  },
+  "odds_credits_remaining": 18622
 }
