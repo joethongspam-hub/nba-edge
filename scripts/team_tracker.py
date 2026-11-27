@@ -3,6 +3,7 @@ from datetime import timedelta
 from collections import defaultdict
 from nba_team_model import parse_time
 import json
+from team_benchmark import benchmark
 from pathlib import Path
 
 def archive(tracker, snapshot):
@@ -18,7 +19,11 @@ def archive(tracker, snapshot):
                 continue
             # One model-direction forecast per book and market, not a bet recommendation.
             chosen=max(candidates,key=lambda r:(r["model_probability"],r["team"]))
-            tracker.append(dict(chosen,sport=sport,captured=snapshot["updated"],result="pending"))
+            entry=dict(chosen,sport=sport,captured=snapshot["updated"],result="pending")
+            if all(c.get("market_probability") is not None for c in candidates):
+                reference=max(candidates,key=lambda c:(c["market_probability"],c["team"]))
+                entry["market_reference"]={k:reference[k] for k in ("team","line","odds","market_probability")}
+            tracker.append(entry)
             seen.add(key)
     return tracker
 
@@ -60,7 +65,7 @@ def update(snapshot,histories,path=Path("docs/team_tracker.json")):
     tracker=json.loads(path.read_text())["forecasts"] if path.exists() else []
     archive(tracker,snapshot)
     settle(tracker,histories)
-    data={"updated":snapshot["updated"],"forecasts":tracker,"summary":summarize(tracker)}
+    data={"updated":snapshot["updated"],"forecasts":tracker,"summary":summarize(tracker),"benchmark":benchmark(tracker)}
     temp=path.with_suffix(".tmp")
     temp.write_text(json.dumps(data,indent=2)+"\n")
     temp.replace(path)
