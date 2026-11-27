@@ -3,6 +3,7 @@ import json
 import team_history
 import nba_team_model
 import nba_context_shadow
+import nba_efficiency
 import nfl_team_model
 import nfl_context_shadow
 import nhl_team_model
@@ -147,6 +148,19 @@ def main():
         health["quotes"] = len(rows)
         health["modeled"] = sum(r.get("model_probability") is not None for r in rows)
         print(sport, "history health:", health)
+    if "NBA" in histories:
+        try:
+            efficiency_games, health = nba_efficiency.load(datetime.now(timezone.utc))
+            snapshot["nba_efficiency_health"] = health
+            nba_efficiency.annotate(snapshot["sports"]["NBA"], efficiency_games, datetime.now(timezone.utc))
+            snapshot["nba_efficiency_audit"] = nba_efficiency.audit(efficiency_games, team_backtest.evaluate("NBA", histories["NBA"]))
+        except Exception as exc:
+            print("NBA efficiency unavailable:", type(exc).__name__)
+            snapshot["nba_efficiency_health"] = {"error": type(exc).__name__}
+            for row in snapshot["sports"]["NBA"]:
+                for key in tuple(row):
+                    if key.startswith("efficiency_"):
+                        row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     team_tracker.update(snapshot, histories)
     audit_path = Path('docs/team_backtest.json')
