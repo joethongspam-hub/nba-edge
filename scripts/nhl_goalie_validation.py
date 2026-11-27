@@ -28,10 +28,15 @@ def update(rows, games, now, path=PATH):
             continue
         h,a = r["home"],r["away"]
         key = "|".join((h,a,start.isoformat()))
-        if key in entries or min(counts.get(h,0),counts.get(a,0))<8:
+        if min(counts.get(h,0),counts.get(a,0))<8:
             continue
         gh,ga = r.get("goalie_home",{}),r.get("goalie_away",{})
         if adjustment(gh) is None or adjustment(ga) is None:
+            continue
+        both_confirmed = gh["status"]==ga["status"]=="confirmed"
+        existing = entries.get(key)
+        if existing is not None and (not both_confirmed or existing["both_confirmed"]
+                                     or "confirmed_snapshot" in existing or "result" in existing):
             continue
         hr,ar = clamp(3+attack[h]-defense[a]+.15),clamp(3+attack[a]-defense[h]-.15)
         def delta(g,c):
@@ -42,10 +47,15 @@ def update(rows, games, now, path=PATH):
             d=distribution(clamp(hr-delta(ga,c)),clamp(ar-delta(gh,c)))
             win,_,margin=probabilities(d,1,0)
             forecasts[str(c)]={"probability":win,"margin":margin}
-        entries[key]={"home":h,"away":a,"start":start.isoformat(),
+        snapshot={"home":h,"away":a,"start":start.isoformat(),
                       "observed_at":now.isoformat(),"home_goalie":gh["name"],
                       "away_goalie":ga["name"],"both_confirmed":gh["status"]==ga["status"]=="confirmed",
                       "forecasts":forecasts}
+        if existing is None:
+            entries[key]=snapshot
+        else:
+            # Preserve the first forecast; separately capture first confirmed pair.
+            existing["confirmed_snapshot"]=snapshot
     for entry in entries.values():
         if "result" in entry:
             continue
@@ -56,6 +66,12 @@ def update(rows, games, now, path=PATH):
             g=matches[0]
             entry["result"]={"home_goals":g[3],"away_goals":g[4]}
     settled=[e for e in entries.values() if "result" in e]
+    confirmed_sample=[]
+    for e in settled:
+        if e["both_confirmed"]:
+            confirmed_sample.append(e)
+        elif "confirmed_snapshot" in e:
+            confirmed_sample.append({**e["confirmed_snapshot"],"result":e["result"]})
     def score(sample):
         result={}
         for c in COEFFICIENTS:
@@ -73,7 +89,7 @@ def update(rows, games, now, path=PATH):
         return result
     archive.update(updated=now.isoformat(),summary={"recorded":len(entries),
         "settled":len(settled),"all":score(settled),
-        "both_confirmed":score([e for e in settled if e["both_confirmed"]]),
+        "both_confirmed":score(confirmed_sample),
         "projected":score([e for e in settled if not e["both_confirmed"]])})
     tmp=path.with_suffix(".tmp")
     tmp.write_text(json.dumps(archive,indent=2)+"\n",encoding="utf-8")
