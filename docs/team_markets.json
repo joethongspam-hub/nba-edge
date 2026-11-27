@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:25:18.716576+00:00",
+  "updated": "2026-11-27T05:26:41.971878+00:00",
   "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
@@ -896,8 +896,8 @@
         "market": "h2h",
         "team": "Golden State Warriors",
         "line": null,
-        "odds": 300,
-        "market_probability": 0.240201,
+        "odds": 312,
+        "market_probability": 0.233227,
         "model_status": "NBA history unavailable"
       },
       {
@@ -909,8 +909,8 @@
         "market": "h2h",
         "team": "Portland Trail Blazers",
         "line": null,
-        "odds": -378,
-        "market_probability": 0.759799,
+        "odds": -395,
+        "market_probability": 0.766773,
         "model_status": "NBA history unavailable"
       },
       {
@@ -921,9 +921,9 @@
         "book": "draftkings",
         "market": "spreads",
         "team": "Golden State Warriors",
-        "line": 8.5,
-        "odds": -105,
-        "market_probability": 0.489166,
+        "line": 9.5,
+        "odds": -114,
+        "market_probability": 0.508664,
         "model_status": "NBA history unavailable"
       },
       {
@@ -934,9 +934,9 @@
         "book": "draftkings",
         "market": "spreads",
         "team": "Portland Trail Blazers",
-        "line": -8.5,
-        "odds": -115,
-        "market_probability": 0.510834,
+        "line": -9.5,
+        "odds": -106,
+        "market_probability": 0.491336,
         "model_status": "NBA history unavailable"
       },
       {
@@ -5313,5 +5313,5 @@
       }
     ]
   },
-  "odds_credits_remaining": 18604
+  "odds_credits_remaining": 18598
 }
