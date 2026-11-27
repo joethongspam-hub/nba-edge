@@ -4,6 +4,7 @@ import nba_team_model
 import nfl_team_model
 import nhl_team_model
 import team_tracker
+import team_backtest
 import os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -99,6 +100,10 @@ def main():
                 row.pop(key, None)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     team_tracker.update(snapshot, histories)
+    audit_path = Path('docs/team_backtest.json')
+    audit_temp = audit_path.with_suffix('.tmp')
+    audit_temp.write_text(json.dumps({'updated': snapshot['updated'], 'sports': team_backtest.audit(histories)}, indent=2) + '\n', encoding='utf-8')
+    audit_temp.replace(audit_path)
     target = Path("docs/team_markets.json")
     temp = target.with_suffix(".tmp")
     temp.write_text(json.dumps(snapshot, indent=2) + "\n", encoding="utf-8")
