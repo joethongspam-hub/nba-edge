@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:31:33.280189+00:00",
+  "updated": "2026-11-27T05:34:10.045238+00:00",
   "forecasts": [
     {
       "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -5030,6 +5030,944 @@
       "pending": 15,
       "accuracy": null,
       "brier": null
+    }
+  ],
+  "benchmark": [
+    {
+      "sport": "NBA",
+      "market": "h2h",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NBA",
+      "market": "h2h",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NBA",
+      "market": "spreads",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NBA",
+      "market": "spreads",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NFL",
+      "market": "h2h",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NFL",
+      "market": "h2h",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NFL",
+      "market": "spreads",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NFL",
+      "market": "spreads",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NHL",
+      "market": "h2h",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NHL",
+      "market": "h2h",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NHL",
+      "market": "spreads",
+      "book": "draftkings",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
+    },
+    {
+      "sport": "NHL",
+      "market": "spreads",
+      "book": "fanduel",
+      "model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "matched_model": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "market_reference": {
+        "settled": 0,
+        "wins": 0,
+        "losses": 0,
+        "pushes": 0,
+        "accuracy": null,
+        "units": 0,
+        "roi": null
+      },
+      "confidence": [
+        {
+          "low": 0,
+          "high": 0.55,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "low": 0.8,
+          "high": 1,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        }
+      ]
     }
   ]
 }
