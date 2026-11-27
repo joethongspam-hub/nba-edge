@@ -5,6 +5,7 @@ import nba_context_shadow
 import nfl_team_model
 import nfl_context_shadow
 import nhl_team_model
+import nhl_context_shadow
 import team_tracker
 import team_backtest
 import os
@@ -118,6 +119,16 @@ def main():
         except Exception:
             snapshot["nfl_shadow_audit"] = {"status": "Unavailable"}
             for row in snapshot["sports"]["NFL"]:
+                for key in tuple(row):
+                    if key.startswith("shadow_"):
+                        row.pop(key)
+    if "NHL" in histories:
+        try:
+            nhl_context_shadow.annotate(snapshot["sports"]["NHL"], histories["NHL"], datetime.now(timezone.utc))
+            snapshot["nhl_shadow_audit"] = nhl_context_shadow.audit(histories["NHL"])
+        except Exception:
+            snapshot["nhl_shadow_audit"] = {"status": "Unavailable"}
+            for row in snapshot["sports"]["NHL"]:
                 for key in tuple(row):
                     if key.startswith("shadow_"):
                         row.pop(key)
