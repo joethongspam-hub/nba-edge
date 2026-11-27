@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:18:22.280470+00:00",
+  "updated": "2026-11-27T05:21:39.156666+00:00",
   "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
@@ -1158,8 +1158,8 @@
         "market": "h2h",
         "team": "Denver Broncos",
         "line": null,
-        "odds": -247,
-        "market_probability": 0.683936,
+        "odds": -248,
+        "market_probability": 0.684897,
         "model_status": "NFL history unavailable"
       },
       {
@@ -1171,8 +1171,8 @@
         "market": "h2h",
         "team": "Pittsburgh Steelers",
         "line": null,
-        "odds": 204,
-        "market_probability": 0.316064,
+        "odds": 205,
+        "market_probability": 0.315103,
         "model_status": "NFL history unavailable"
       },
       {
@@ -3644,6 +3644,110 @@
         "odds": -105,
         "market_probability": 0.489166,
         "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Dallas Cowboys",
+        "line": null,
+        "odds": 223,
+        "market_probability": 0.297467,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "draftkings",
+        "market": "h2h",
+        "team": "Seattle Seahawks",
+        "line": null,
+        "odds": -272,
+        "market_probability": 0.702533,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Dallas Cowboys",
+        "line": 6.0,
+        "odds": -110,
+        "market_probability": 0.50109,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "draftkings",
+        "market": "spreads",
+        "team": "Seattle Seahawks",
+        "line": -6.0,
+        "odds": -109,
+        "market_probability": 0.49891,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Dallas Cowboys",
+        "line": null,
+        "odds": 245,
+        "market_probability": 0.278746,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "fanduel",
+        "market": "h2h",
+        "team": "Seattle Seahawks",
+        "line": null,
+        "odds": -300,
+        "market_probability": 0.721254,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Dallas Cowboys",
+        "line": 6.5,
+        "odds": -115,
+        "market_probability": 0.510834,
+        "model_status": "NFL history unavailable"
+      },
+      {
+        "event_id": "0db4646c964ecdff19957373fe707546",
+        "home": "Seattle Seahawks",
+        "away": "Dallas Cowboys",
+        "start": "2026-12-08T01:15:00Z",
+        "book": "fanduel",
+        "market": "spreads",
+        "team": "Seattle Seahawks",
+        "line": -6.5,
+        "odds": -105,
+        "market_probability": 0.489166,
+        "model_status": "NFL history unavailable"
       }
     ],
     "NHL": [
@@ -5138,8 +5242,8 @@
         "market": "spreads",
         "team": "Edmonton Oilers",
         "line": -1.5,
-        "odds": 120,
-        "market_probability": 0.436508,
+        "odds": 114,
+        "market_probability": 0.448559,
         "model_status": "NHL history unavailable"
       },
       {
@@ -5151,8 +5255,8 @@
         "market": "spreads",
         "team": "Seattle Kraken",
         "line": 1.5,
-        "odds": -142,
-        "market_probability": 0.563492,
+        "odds": -135,
+        "market_probability": 0.551441,
         "model_status": "NHL history unavailable"
       },
       {
@@ -5209,5 +5313,5 @@
       }
     ]
   },
-  "odds_credits_remaining": 18622
+  "odds_credits_remaining": 18616
 }
