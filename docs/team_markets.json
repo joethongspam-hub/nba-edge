@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T05:15:32.391155+00:00",
+  "updated": "2026-11-27T05:16:58.385996+00:00",
   "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available",
   "sports": {
     "NBA": [
@@ -1158,8 +1158,8 @@
         "market": "h2h",
         "team": "Denver Broncos",
         "line": null,
-        "odds": -247,
-        "market_probability": 0.683936,
+        "odds": -248,
+        "market_probability": 0.684897,
         "model_status": "NFL history unavailable"
       },
       {
@@ -1171,8 +1171,8 @@
         "market": "h2h",
         "team": "Pittsburgh Steelers",
         "line": null,
-        "odds": 204,
-        "market_probability": 0.316064,
+        "odds": 205,
+        "market_probability": 0.315103,
         "model_status": "NFL history unavailable"
       },
       {
