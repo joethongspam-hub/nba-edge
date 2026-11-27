@@ -1,0 +1,617 @@
+{
+  "updated": "2026-11-27T17:38:32.166219+00:00",
+  "sources": [
+    {
+      "url": "https://moneypuck.com/moneypuck/playerData/careers/gameByGame/goalies/8478402.csv",
+      "error": "HTTP_404"
+    },
+    {
+      "url": "https://moneypuck.com/moneypuck/playerData/season/2025/regular/goalies.csv",
+      "error": "HTTP_404"
+    },
+    {
+      "url": "https://moneypuck.com/moneypuck/playerData/season/2024/regular/goalies.csv",
+      "error": "HTTP_404"
+    },
+    {
+      "url": "https://api-web.nhle.com/v1/gamecenter/2024020001/boxscore",
+      "fields": [
+        "id",
+        "season",
+        "gameType",
+        "limitedScoring",
+        "gameDate",
+        "venue",
+        "venueLocation",
+        "startTimeUTC",
+        "easternUTCOffset",
+        "venueUTCOffset",
+        "tvBroadcasts",
+        "gameState",
+        "gameScheduleState",
+        "specialEvent",
+        "periodDescriptor",
+        "regPeriods",
+        "awayTeam",
+        "homeTeam",
+        "clock",
+        "playerByGameStats",
+        "gameOutcome"
+      ],
+      "game_state": "OFF",
+      "goalies": {
+        "home": [
+          {
+            "playerId": 8480045,
+            "name": {
+              "default": "U. Luukkonen"
+            },
+            "toi": "59:05",
+            "starter": true,
+            "decision": "L"
+          },
+          {
+            "playerId": 8482221,
+            "name": {
+              "default": "D. Levi"
+            },
+            "toi": "00:00",
+            "starter": false
+          }
+        ],
+        "away": [
+          {
+            "playerId": 8474593,
+            "name": {
+              "default": "J. Markstrom",
+              "cs": "J. Markstr\u00f6m",
+              "fi": "J. Markstr\u00f6m",
+              "sk": "J. Markstr\u00f6m",
+              "sv": "J. Markstr\u00f6m"
+            },
+            "toi": "59:38",
+            "starter": true,
+            "decision": "W"
+          },
+          {
+            "playerId": 8474596,
+            "name": {
+              "default": "J. Allen"
+            },
+            "toi": "00:00",
+            "starter": false
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api-web.nhle.com/v1/gamecenter/2024020001/play-by-play",
+      "fields": [
+        "id",
+        "season",
+        "gameType",
+        "limitedScoring",
+        "gameDate",
+        "venue",
+        "venueLocation",
+        "startTimeUTC",
+        "easternUTCOffset",
+        "venueUTCOffset",
+        "tvBroadcasts",
+        "gameState",
+        "gameScheduleState",
+        "specialEvent",
+        "periodDescriptor",
+        "awayTeam",
+        "homeTeam",
+        "shootoutInUse",
+        "otInUse",
+        "clock",
+        "displayPeriod",
+        "maxPeriods",
+        "gameOutcome",
+        "plays",
+        "rosterSpots",
+        "regPeriods",
+        "summary"
+      ],
+      "game_state": "OFF",
+      "early_events": [
+        {
+          "typeDescKey": "period-start",
+          "timeInPeriod": "00:00",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": null
+        },
+        {
+          "typeDescKey": "faceoff",
+          "timeInPeriod": "00:00",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "eventOwnerTeamId": 1,
+            "losingPlayerId": 8478043,
+            "winningPlayerId": 8480002,
+            "xCoord": 0,
+            "yCoord": 0,
+            "zoneCode": "N"
+          }
+        },
+        {
+          "typeDescKey": "hit",
+          "timeInPeriod": "00:05",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 68,
+            "yCoord": -40,
+            "zoneCode": "D",
+            "eventOwnerTeamId": 7,
+            "hittingPlayerId": 8479359,
+            "hitteePlayerId": 8475193
+          }
+        },
+        {
+          "typeDescKey": "shot-on-goal",
+          "timeInPeriod": "00:08",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 56,
+            "yCoord": -39,
+            "zoneCode": "O",
+            "shotType": "wrist",
+            "shootingPlayerId": 8483495,
+            "goalieInNetId": 8480045,
+            "eventOwnerTeamId": 1,
+            "awaySOG": 1,
+            "homeSOG": 0
+          }
+        },
+        {
+          "typeDescKey": "giveaway",
+          "timeInPeriod": "00:19",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -73,
+            "yCoord": 8,
+            "zoneCode": "D",
+            "eventOwnerTeamId": 1,
+            "playerId": 8474593
+          }
+        },
+        {
+          "typeDescKey": "missed-shot",
+          "timeInPeriod": "00:29",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 71,
+            "yCoord": -28,
+            "zoneCode": "O",
+            "reason": "short",
+            "shotType": "wrist",
+            "shootingPlayerId": 8479407,
+            "goalieInNetId": 8480045,
+            "eventOwnerTeamId": 1
+          }
+        },
+        {
+          "typeDescKey": "hit",
+          "timeInPeriod": "00:36",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 68,
+            "yCoord": 40,
+            "zoneCode": "D",
+            "eventOwnerTeamId": 7,
+            "hittingPlayerId": 8481524,
+            "hitteePlayerId": 8481559
+          }
+        },
+        {
+          "typeDescKey": "shot-on-goal",
+          "timeInPeriod": "00:40",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 47,
+            "yCoord": -23,
+            "zoneCode": "O",
+            "shotType": "slap",
+            "shootingPlayerId": 8476462,
+            "goalieInNetId": 8480045,
+            "eventOwnerTeamId": 1,
+            "awaySOG": 2,
+            "homeSOG": 0
+          }
+        },
+        {
+          "typeDescKey": "blocked-shot",
+          "timeInPeriod": "00:46",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": 58,
+            "yCoord": 21,
+            "zoneCode": "D",
+            "blockingPlayerId": 8481524,
+            "shootingPlayerId": 8479407,
+            "eventOwnerTeamId": 1,
+            "reason": "blocked"
+          }
+        },
+        {
+          "typeDescKey": "stoppage",
+          "timeInPeriod": "00:56",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "reason": "icing"
+          }
+        },
+        {
+          "typeDescKey": "faceoff",
+          "timeInPeriod": "00:56",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "eventOwnerTeamId": 7,
+            "losingPlayerId": 8481559,
+            "winningPlayerId": 8479420,
+            "xCoord": -69,
+            "yCoord": 22,
+            "zoneCode": "O"
+          }
+        },
+        {
+          "typeDescKey": "blocked-shot",
+          "timeInPeriod": "00:57",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -68,
+            "yCoord": 11,
+            "zoneCode": "D",
+            "blockingPlayerId": 8475455,
+            "shootingPlayerId": 8482175,
+            "eventOwnerTeamId": 7,
+            "reason": "blocked"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/boxscore",
+      "fields": [
+        "id",
+        "season",
+        "gameType",
+        "limitedScoring",
+        "gameDate",
+        "venue",
+        "venueLocation",
+        "startTimeUTC",
+        "easternUTCOffset",
+        "venueUTCOffset",
+        "tvBroadcasts",
+        "gameState",
+        "gameScheduleState",
+        "periodDescriptor",
+        "regPeriods",
+        "awayTeam",
+        "homeTeam",
+        "clock",
+        "playerByGameStats",
+        "gameOutcome"
+      ],
+      "game_state": "OFF",
+      "goalies": {
+        "home": [
+          {
+            "playerId": 8480193,
+            "name": {
+              "default": "D. Tarasov"
+            },
+            "toi": "00:00",
+            "starter": false
+          },
+          {
+            "playerId": 8475683,
+            "name": {
+              "default": "S. Bobrovsky",
+              "cs": "S. Bobrovskij",
+              "fi": "S. Bobrovski",
+              "sk": "S. Bobrovskij"
+            },
+            "toi": "60:00",
+            "starter": true,
+            "decision": "W"
+          }
+        ],
+        "away": [
+          {
+            "playerId": 8481519,
+            "name": {
+              "default": "S. Knight"
+            },
+            "toi": "59:04",
+            "starter": true,
+            "decision": "L"
+          },
+          {
+            "playerId": 8482821,
+            "name": {
+              "default": "A. Soderblom",
+              "cs": "A. S\u00f6derblom",
+              "fi": "A. S\u00f6derblom",
+              "sk": "A. S\u00f6derblom",
+              "sv": "A. S\u00f6derblom"
+            },
+            "toi": "00:00",
+            "starter": false
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api-web.nhle.com/v1/gamecenter/2025020001/play-by-play",
+      "fields": [
+        "id",
+        "season",
+        "gameType",
+        "limitedScoring",
+        "gameDate",
+        "venue",
+        "venueLocation",
+        "startTimeUTC",
+        "easternUTCOffset",
+        "venueUTCOffset",
+        "tvBroadcasts",
+        "gameState",
+        "gameScheduleState",
+        "periodDescriptor",
+        "awayTeam",
+        "homeTeam",
+        "shootoutInUse",
+        "otInUse",
+        "clock",
+        "displayPeriod",
+        "maxPeriods",
+        "gameOutcome",
+        "plays",
+        "rosterSpots",
+        "regPeriods",
+        "summary"
+      ],
+      "game_state": "OFF",
+      "early_events": [
+        {
+          "typeDescKey": "period-start",
+          "timeInPeriod": "00:00",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": null
+        },
+        {
+          "typeDescKey": "faceoff",
+          "timeInPeriod": "00:00",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "eventOwnerTeamId": 16,
+            "losingPlayerId": 8477935,
+            "winningPlayerId": 8477450,
+            "xCoord": 0,
+            "yCoord": 0,
+            "zoneCode": "N"
+          }
+        },
+        {
+          "typeDescKey": "blocked-shot",
+          "timeInPeriod": "00:22",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -61,
+            "yCoord": 3,
+            "zoneCode": "D",
+            "blockingPlayerId": 8482807,
+            "shootingPlayerId": 8473419,
+            "eventOwnerTeamId": 13,
+            "reason": "blocked"
+          }
+        },
+        {
+          "typeDescKey": "stoppage",
+          "timeInPeriod": "00:34",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "reason": "puck-in-crowd"
+          }
+        },
+        {
+          "typeDescKey": "faceoff",
+          "timeInPeriod": "00:34",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "eventOwnerTeamId": 16,
+            "losingPlayerId": 8477933,
+            "winningPlayerId": 8477450,
+            "xCoord": -69,
+            "yCoord": 22,
+            "zoneCode": "D"
+          }
+        },
+        {
+          "typeDescKey": "giveaway",
+          "timeInPeriod": "00:46",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -41,
+            "yCoord": 38,
+            "zoneCode": "O",
+            "eventOwnerTeamId": 13,
+            "playerId": 8482113
+          }
+        },
+        {
+          "typeDescKey": "giveaway",
+          "timeInPeriod": "01:10",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -13,
+            "yCoord": -31,
+            "zoneCode": "N",
+            "eventOwnerTeamId": 16,
+            "playerId": 8484783
+          }
+        },
+        {
+          "typeDescKey": "blocked-shot",
+          "timeInPeriod": "01:13",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -64,
+            "yCoord": -16,
+            "zoneCode": "D",
+            "blockingPlayerId": 8476891,
+            "shootingPlayerId": 8482713,
+            "eventOwnerTeamId": 13,
+            "reason": "blocked"
+          }
+        },
+        {
+          "typeDescKey": "stoppage",
+          "timeInPeriod": "01:15",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "reason": "puck-in-netting"
+          }
+        },
+        {
+          "typeDescKey": "faceoff",
+          "timeInPeriod": "01:15",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "eventOwnerTeamId": 13,
+            "losingPlayerId": 8484144,
+            "winningPlayerId": 8480003,
+            "xCoord": -69,
+            "yCoord": -22,
+            "zoneCode": "O"
+          }
+        },
+        {
+          "typeDescKey": "shot-on-goal",
+          "timeInPeriod": "01:16",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "xCoord": -58,
+            "yCoord": -22,
+            "zoneCode": "O",
+            "shotType": "wrist",
+            "shootingPlayerId": 8478542,
+            "goalieInNetId": 8481519,
+            "eventOwnerTeamId": 13,
+            "awaySOG": 0,
+            "homeSOG": 1
+          }
+        },
+        {
+          "typeDescKey": "stoppage",
+          "timeInPeriod": "01:17",
+          "periodDescriptor": {
+            "number": 1,
+            "periodType": "REG",
+            "maxRegulationPeriods": 3
+          },
+          "details": {
+            "reason": "goalie-stopped-after-sog"
+          }
+        }
+      ]
+    }
+  ],
+  "research_only": true
+}
