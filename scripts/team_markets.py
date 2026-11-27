@@ -1,5 +1,6 @@
 """Shared team-market odds snapshot. No independent predictions yet."""
 import json
+import team_history
 import nba_team_model
 import nba_context_shadow
 import nfl_team_model
@@ -45,9 +46,9 @@ def normalize(events):
                     continue
                 probs = [implied(o["price"]) for o in outcomes]
                 for o, p in zip(outcomes, probs):
-                    rows.append({"event_id": event["id"], "home": event["home_team"],
-                        "away": event["away_team"], "start": event["commence_time"],
-                        "book": book["key"], "market": market["key"], "team": o["name"],
+                    rows.append({"event_id": event["id"], "home": team_history.canonical(event["home_team"]),
+                        "away": team_history.canonical(event["away_team"]), "start": event["commence_time"],
+                        "book": book["key"], "market": market["key"], "team": team_history.canonical(o["name"]),
                         "line": o.get("point"), "odds": o["price"],
                         "market_probability": round(p / sum(probs), 6)})
     return rows
@@ -72,12 +73,15 @@ def main():
         snapshot["sports"][name] = normalize(events)
     snapshot["odds_credits_remaining"] = remaining
     histories = {}
+    snapshot['history_health'] = {}
     try:
         now = datetime.now(timezone.utc)
         histories["NBA"] = nba_team_model.history(now)
         if snapshot["sports"]["NBA"]:
             nba_team_model.annotate(snapshot["sports"]["NBA"], histories["NBA"], now)
-    except Exception:
+    except Exception as exc:
+        print("NBA model failure:", type(exc).__name__)
+        snapshot["history_health"]["NBA"] = {"error": type(exc).__name__}
         for row in snapshot["sports"]["NBA"]:
             row["model_status"] = "NBA history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
@@ -87,7 +91,9 @@ def main():
         histories["NFL"] = nfl_team_model.history(now)
         if snapshot["sports"]["NFL"]:
             nfl_team_model.annotate(snapshot["sports"]["NFL"], histories["NFL"], now)
-    except Exception:
+    except Exception as exc:
+        print("NFL model failure:", type(exc).__name__)
+        snapshot["history_health"]["NFL"] = {"error": type(exc).__name__}
         for row in snapshot["sports"]["NFL"]:
             row["model_status"] = "NFL history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
@@ -97,7 +103,9 @@ def main():
         histories["NHL"] = nhl_team_model.history(now)
         if snapshot["sports"]["NHL"]:
             nhl_team_model.annotate(snapshot["sports"]["NHL"], histories["NHL"], now)
-    except Exception:
+    except Exception as exc:
+        print("NHL model failure:", type(exc).__name__)
+        snapshot["history_health"]["NHL"] = {"error": type(exc).__name__}
         for row in snapshot["sports"]["NHL"]:
             row["model_status"] = "NHL history unavailable"
             for key in ("model_probability", "projected_margin", "push_probability", "history_games"):
@@ -132,6 +140,13 @@ def main():
                 for key in tuple(row):
                     if key.startswith("shadow_"):
                         row.pop(key)
+    for sport, games in histories.items():
+        snapshot["history_health"].setdefault(sport, {"completed_games": len(games)})
+    for sport, rows in snapshot["sports"].items():
+        health = snapshot["history_health"].setdefault(sport, {})
+        health["quotes"] = len(rows)
+        health["modeled"] = sum(r.get("model_probability") is not None for r in rows)
+        print(sport, "history health:", health)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     team_tracker.update(snapshot, histories)
     audit_path = Path('docs/team_backtest.json')
