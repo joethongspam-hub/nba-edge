@@ -2,6 +2,7 @@
 from datetime import timedelta
 import nba_team_model
 import team_calibration
+import team_optimization
 import nfl_team_model
 import nhl_team_model
 
@@ -40,4 +41,9 @@ def audit(histories):
     audits = [evaluate(sport,games) for sport,games in histories.items() if sport in MODELS]
     for audit in audits:
         audit['calibration_holdout'] = team_calibration.evaluate(audit['results'])
+        try:
+            audit['parameter_holdout'] = team_optimization.audit(audit['sport'], histories[audit['sport']])
+        except Exception as exc:
+            print(audit['sport'], 'parameter audit unavailable:', type(exc).__name__)
+            audit['parameter_holdout'] = {'status': 'Unavailable'}
     return audits
