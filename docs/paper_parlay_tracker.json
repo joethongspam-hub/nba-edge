@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T07:48:45.709410+00:00",
+  "updated": "2026-11-27T16:16:56.192484+00:00",
   "forecasts": [
     {
       "book": "draftkings",
@@ -360,12 +360,48 @@
         "pending",
         "pending"
       ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NBA",
+          "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
+          "start": "2026-11-28T00:40:00Z",
+          "team": "Detroit Pistons",
+          "market": "h2h",
+          "line": null,
+          "odds": -452,
+          "probability": 0.858465,
+          "decimal": 1.2212389380530975
+        },
+        {
+          "sport": "NHL",
+          "event_id": "caa1c061c2ace9568a038a36abf48a25",
+          "start": "2026-11-28T23:10:00Z",
+          "team": "Florida Panthers",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -245,
+          "probability": 0.748213,
+          "decimal": 1.4081632653061225
+        }
+      ],
+      "probability": 0.642314673045,
+      "estimated_decimal_odds": 1.719703810727831,
+      "estimated_ev": 0.1045909909218874,
+      "captured": "2026-11-27T16:16:56.192484+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
     }
   ],
   "summary": {
     "2": {
-      "archived": 10,
-      "pending": 10,
+      "archived": 11,
+      "pending": 11,
       "settled": 0,
       "wins": 0,
       "losses": 0,

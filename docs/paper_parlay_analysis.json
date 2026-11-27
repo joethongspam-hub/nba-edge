@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T07:48:45.709410+00:00",
+  "updated": "2026-11-27T16:16:56.192484+00:00",
   "status": "Experimental paper analysis; uncalibrated",
   "limitations": [
     "Assumes independent outcomes; distinct games do not guarantee independence.",
@@ -20,7 +20,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -258,
-            "probability": 0.827128,
+            "probability": 0.826947,
             "decimal": 1.3875968992248062
           },
           {
@@ -31,13 +31,13 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -218,
-            "probability": 0.812324,
+            "probability": 0.81217,
             "decimal": 1.4587155963302751
           }
         ],
-        "probability": 0.671895925472,
+        "probability": 0.6716215449899999,
         "estimated_decimal_odds": 2.024109238318754,
-        "estimated_ev": 0.3599907499366042
+        "estimated_ev": 0.3594353738681735
       },
       {
         "book": "fanduel",
@@ -50,7 +50,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -250,
-            "probability": 0.827128,
+            "probability": 0.826947,
             "decimal": 1.4
           },
           {
@@ -60,14 +60,14 @@
             "team": "St. Louis Blues",
             "market": "spreads",
             "line": 1.5,
-            "odds": -245,
-            "probability": 0.812324,
-            "decimal": 1.4081632653061225
+            "odds": -230,
+            "probability": 0.81217,
+            "decimal": 1.434782608695652
           }
         ],
-        "probability": 0.671895925472,
-        "estimated_decimal_odds": 1.9714285714285713,
-        "estimated_ev": 0.324594824501943
+        "probability": 0.6716215449899999,
+        "estimated_decimal_odds": 2.008695652173913,
+        "estimated_ev": 0.349083277327739
       },
       {
         "book": "fanduel",
@@ -79,9 +79,9 @@
             "team": "Detroit Pistons",
             "market": "h2h",
             "line": null,
-            "odds": -370,
-            "probability": 0.858911,
-            "decimal": 1.2702702702702702
+            "odds": -450,
+            "probability": 0.858465,
+            "decimal": 1.2222222222222223
           },
           {
             "sport": "NBA",
@@ -91,13 +91,13 @@
             "market": "spreads",
             "line": 10.5,
             "odds": -112,
-            "probability": 0.777066,
+            "probability": 0.77726,
             "decimal": 1.8928571428571428
           }
         ],
-        "probability": 0.667430535126,
-        "estimated_decimal_odds": 2.404440154440154,
-        "estimated_ev": 0.6047967789564341
+        "probability": 0.6672505059,
+        "estimated_decimal_odds": 2.3134920634920637,
+        "estimated_ev": 0.5436787497607145
       },
       {
         "book": "draftkings",
@@ -109,9 +109,9 @@
             "team": "Detroit Pistons",
             "market": "h2h",
             "line": null,
-            "odds": -395,
-            "probability": 0.858911,
-            "decimal": 1.2531645569620253
+            "odds": -452,
+            "probability": 0.858465,
+            "decimal": 1.2212389380530975
           },
           {
             "sport": "NBA",
@@ -121,13 +121,43 @@
             "market": "spreads",
             "line": 10.5,
             "odds": -117,
-            "probability": 0.777066,
+            "probability": 0.77726,
             "decimal": 1.8547008547008548
           }
         ],
-        "probability": 0.667430535126,
-        "estimated_decimal_odds": 2.3242453748782865,
-        "estimated_ev": 0.5512723343191452
+        "probability": 0.6672505059,
+        "estimated_decimal_odds": 2.2650329022010443,
+        "estimated_ev": 0.511344349873792
+      },
+      {
+        "book": "draftkings",
+        "legs": [
+          {
+            "sport": "NHL",
+            "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
+            "start": "2026-11-27T18:00:00Z",
+            "team": "Nashville Predators",
+            "market": "spreads",
+            "line": 1.5,
+            "odds": -258,
+            "probability": 0.826947,
+            "decimal": 1.3875968992248062
+          },
+          {
+            "sport": "NHL",
+            "event_id": "634c54722c6860c9773604c369f6e062",
+            "start": "2026-11-27T21:00:00Z",
+            "team": "Anaheim Ducks",
+            "market": "spreads",
+            "line": 1.5,
+            "odds": -250,
+            "probability": 0.795937,
+            "decimal": 1.4
+          }
+        ],
+        "probability": 0.658197714339,
+        "estimated_decimal_odds": 1.9426356589147287,
+        "estimated_ev": 0.27863835049111163
       },
       {
         "book": "fanduel",
@@ -140,7 +170,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -250,
-            "probability": 0.827128,
+            "probability": 0.826947,
             "decimal": 1.4
           },
           {
@@ -150,44 +180,14 @@
             "team": "Anaheim Ducks",
             "market": "spreads",
             "line": 1.5,
-            "odds": -265,
-            "probability": 0.795997,
-            "decimal": 1.3773584905660377
+            "odds": -280,
+            "probability": 0.795937,
+            "decimal": 1.3571428571428572
           }
         ],
-        "probability": 0.6583914066159999,
-        "estimated_decimal_odds": 1.9283018867924526,
-        "estimated_ev": 0.2695773916255695
-      },
-      {
-        "book": "draftkings",
-        "legs": [
-          {
-            "sport": "NHL",
-            "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
-            "start": "2026-11-27T18:00:00Z",
-            "team": "Nashville Predators",
-            "market": "spreads",
-            "line": 1.5,
-            "odds": -258,
-            "probability": 0.827128,
-            "decimal": 1.3875968992248062
-          },
-          {
-            "sport": "NHL",
-            "event_id": "634c54722c6860c9773604c369f6e062",
-            "start": "2026-11-27T21:00:00Z",
-            "team": "Anaheim Ducks",
-            "market": "spreads",
-            "line": 1.5,
-            "odds": -258,
-            "probability": 0.795997,
-            "decimal": 1.3875968992248062
-          }
-        ],
-        "probability": 0.6583914066159999,
-        "estimated_decimal_odds": 1.925425154738297,
-        "estimated_ev": 0.2676833759619768
+        "probability": 0.658197714339,
+        "estimated_decimal_odds": 1.9,
+        "estimated_ev": 0.2505756572440998
       },
       {
         "book": "draftkings",
@@ -200,7 +200,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -218,
-            "probability": 0.812324,
+            "probability": 0.81217,
             "decimal": 1.4587155963302751
           },
           {
@@ -210,14 +210,14 @@
             "team": "Anaheim Ducks",
             "market": "spreads",
             "line": 1.5,
-            "odds": -258,
-            "probability": 0.795997,
-            "decimal": 1.3875968992248062
+            "odds": -250,
+            "probability": 0.795937,
+            "decimal": 1.4
           }
         ],
-        "probability": 0.646607467028,
-        "estimated_decimal_odds": 2.024109238318754,
-        "estimated_ev": 0.3088041475772638
+        "probability": 0.6464361532899999,
+        "estimated_decimal_odds": 2.042201834862385,
+        "estimated_ev": 0.3201530983702199
       },
       {
         "book": "fanduel",
@@ -229,9 +229,9 @@
             "team": "St. Louis Blues",
             "market": "spreads",
             "line": 1.5,
-            "odds": -245,
-            "probability": 0.812324,
-            "decimal": 1.4081632653061225
+            "odds": -230,
+            "probability": 0.81217,
+            "decimal": 1.434782608695652
           },
           {
             "sport": "NHL",
@@ -240,44 +240,14 @@
             "team": "Anaheim Ducks",
             "market": "spreads",
             "line": 1.5,
-            "odds": -265,
-            "probability": 0.795997,
-            "decimal": 1.3773584905660377
+            "odds": -280,
+            "probability": 0.795937,
+            "decimal": 1.3571428571428572
           }
         ],
-        "probability": 0.646607467028,
-        "estimated_decimal_odds": 1.9395456295725837,
-        "estimated_ev": 0.2541246867231559
-      },
-      {
-        "book": "fanduel",
-        "legs": [
-          {
-            "sport": "NBA",
-            "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
-            "start": "2026-11-28T00:40:00Z",
-            "team": "Detroit Pistons",
-            "market": "h2h",
-            "line": null,
-            "odds": -370,
-            "probability": 0.858911,
-            "decimal": 1.2702702702702702
-          },
-          {
-            "sport": "NBA",
-            "event_id": "13d9ca3bcb664829c603755d31401002",
-            "start": "2026-11-28T02:40:00Z",
-            "team": "San Antonio Spurs",
-            "market": "h2h",
-            "line": null,
-            "odds": -210,
-            "probability": 0.736353,
-            "decimal": 1.4761904761904763
-          }
-        ],
-        "probability": 0.632461691583,
-        "estimated_decimal_odds": 1.875160875160875,
-        "estimated_ev": 0.18596741909450576
+        "probability": 0.6464361532899999,
+        "estimated_decimal_odds": 1.9472049689440993,
+        "estimated_ev": 0.2587436897913973
       },
       {
         "book": "draftkings",
@@ -289,9 +259,39 @@
             "team": "Detroit Pistons",
             "market": "h2h",
             "line": null,
-            "odds": -395,
-            "probability": 0.858911,
-            "decimal": 1.2531645569620253
+            "odds": -452,
+            "probability": 0.858465,
+            "decimal": 1.2212389380530975
+          },
+          {
+            "sport": "NHL",
+            "event_id": "caa1c061c2ace9568a038a36abf48a25",
+            "start": "2026-11-28T23:10:00Z",
+            "team": "Florida Panthers",
+            "market": "spreads",
+            "line": 1.5,
+            "odds": -245,
+            "probability": 0.748213,
+            "decimal": 1.4081632653061225
+          }
+        ],
+        "probability": 0.642314673045,
+        "estimated_decimal_odds": 1.719703810727831,
+        "estimated_ev": 0.1045909909218874
+      },
+      {
+        "book": "fanduel",
+        "legs": [
+          {
+            "sport": "NBA",
+            "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
+            "start": "2026-11-28T00:40:00Z",
+            "team": "Detroit Pistons",
+            "market": "h2h",
+            "line": null,
+            "odds": -450,
+            "probability": 0.858465,
+            "decimal": 1.2222222222222223
           },
           {
             "sport": "NBA",
@@ -300,14 +300,14 @@
             "team": "San Antonio Spurs",
             "market": "h2h",
             "line": null,
-            "odds": -217,
-            "probability": 0.736353,
-            "decimal": 1.4608294930875576
+            "odds": -220,
+            "probability": 0.735938,
+            "decimal": 1.4545454545454546
           }
         ],
-        "probability": 0.632461691583,
-        "estimated_decimal_odds": 1.830659744502129,
-        "estimated_ev": 0.15782215872071914
+        "probability": 0.63177701517,
+        "estimated_decimal_odds": 1.777777777777778,
+        "estimated_ev": 0.1231591380799999
       }
     ],
     "3": []
