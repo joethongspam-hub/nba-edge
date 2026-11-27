@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-27T05:08:50.753116+00:00",
-  "method": "Sportsbook no-vig baseline; not a predictive model",
+  "updated": "2026-11-27T05:10:39.721260+00:00",
+  "method": "Sportsbook no-vig baseline; NBA experimental independent model where available",
   "sports": {
     "NBA": [
       {
@@ -13,7 +13,8 @@
         "team": "Miami Heat",
         "line": null,
         "odds": 146,
-        "market_probability": 0.390291
+        "market_probability": 0.390291,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -25,7 +26,8 @@
         "team": "New York Knicks",
         "line": null,
         "odds": -174,
-        "market_probability": 0.609709
+        "market_probability": 0.609709,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -37,7 +39,8 @@
         "team": "Miami Heat",
         "line": 3.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -49,7 +52,8 @@
         "team": "New York Knicks",
         "line": -3.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -61,7 +65,8 @@
         "team": "Miami Heat",
         "line": null,
         "odds": 140,
-        "market_probability": 0.400361
+        "market_probability": 0.400361,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -73,7 +78,8 @@
         "team": "New York Knicks",
         "line": null,
         "odds": -166,
-        "market_probability": 0.599639
+        "market_probability": 0.599639,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -85,7 +91,8 @@
         "team": "Miami Heat",
         "line": 3.5,
         "odds": -102,
-        "market_probability": 0.48072
+        "market_probability": 0.48072,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -97,7 +104,8 @@
         "team": "New York Knicks",
         "line": -3.5,
         "odds": -120,
-        "market_probability": 0.51928
+        "market_probability": 0.51928,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -109,7 +117,8 @@
         "team": "Brooklyn Nets",
         "line": null,
         "odds": 250,
-        "market_probability": 0.274247
+        "market_probability": 0.274247,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -121,7 +130,8 @@
         "team": "Toronto Raptors",
         "line": null,
         "odds": -310,
-        "market_probability": 0.725753
+        "market_probability": 0.725753,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -133,7 +143,8 @@
         "team": "Brooklyn Nets",
         "line": 8.5,
         "odds": -114,
-        "market_probability": 0.508664
+        "market_probability": 0.508664,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -145,7 +156,8 @@
         "team": "Toronto Raptors",
         "line": -8.5,
         "odds": -106,
-        "market_probability": 0.491336
+        "market_probability": 0.491336,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -157,7 +169,8 @@
         "team": "Brooklyn Nets",
         "line": null,
         "odds": 251,
-        "market_probability": 0.27368
+        "market_probability": 0.27368,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -169,7 +182,8 @@
         "team": "Toronto Raptors",
         "line": null,
         "odds": -310,
-        "market_probability": 0.72632
+        "market_probability": 0.72632,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -181,7 +195,8 @@
         "team": "Brooklyn Nets",
         "line": 7.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -193,7 +208,8 @@
         "team": "Toronto Raptors",
         "line": -7.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -205,7 +221,8 @@
         "team": "Detroit Pistons",
         "line": null,
         "odds": -400,
-        "market_probability": 0.768519
+        "market_probability": 0.768519,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -217,7 +234,8 @@
         "team": "Milwaukee Bucks",
         "line": null,
         "odds": 315,
-        "market_probability": 0.231481
+        "market_probability": 0.231481,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -229,7 +247,8 @@
         "team": "Detroit Pistons",
         "line": -9.5,
         "odds": -106,
-        "market_probability": 0.491336
+        "market_probability": 0.491336,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -241,7 +260,8 @@
         "team": "Milwaukee Bucks",
         "line": 9.5,
         "odds": -114,
-        "market_probability": 0.508664
+        "market_probability": 0.508664,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -253,7 +273,8 @@
         "team": "Detroit Pistons",
         "line": null,
         "odds": -410,
-        "market_probability": 0.772342
+        "market_probability": 0.772342,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -265,7 +286,8 @@
         "team": "Milwaukee Bucks",
         "line": null,
         "odds": 322,
-        "market_probability": 0.227658
+        "market_probability": 0.227658,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -277,7 +299,8 @@
         "team": "Detroit Pistons",
         "line": -9.5,
         "odds": -107,
-        "market_probability": 0.493504
+        "market_probability": 0.493504,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -289,7 +312,8 @@
         "team": "Milwaukee Bucks",
         "line": 9.5,
         "odds": -113,
-        "market_probability": 0.506496
+        "market_probability": 0.506496,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -301,7 +325,8 @@
         "team": "Indiana Pacers",
         "line": null,
         "odds": 136,
-        "market_probability": 0.408953
+        "market_probability": 0.408953,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -313,7 +338,8 @@
         "team": "Philadelphia 76ers",
         "line": null,
         "odds": -158,
-        "market_probability": 0.591047
+        "market_probability": 0.591047,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -325,7 +351,8 @@
         "team": "Indiana Pacers",
         "line": 2.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -337,7 +364,8 @@
         "team": "Philadelphia 76ers",
         "line": -2.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -349,7 +377,8 @@
         "team": "Indiana Pacers",
         "line": null,
         "odds": 130,
-        "market_probability": 0.417007
+        "market_probability": 0.417007,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -361,7 +390,8 @@
         "team": "Philadelphia 76ers",
         "line": null,
         "odds": -155,
-        "market_probability": 0.582993
+        "market_probability": 0.582993,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -373,7 +403,8 @@
         "team": "Indiana Pacers",
         "line": 3.5,
         "odds": -117,
-        "market_probability": 0.515184
+        "market_probability": 0.515184,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -385,7 +416,8 @@
         "team": "Philadelphia 76ers",
         "line": -3.5,
         "odds": -103,
-        "market_probability": 0.484816
+        "market_probability": 0.484816,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -397,7 +429,8 @@
         "team": "Atlanta Hawks",
         "line": null,
         "odds": 310,
-        "market_probability": 0.234562
+        "market_probability": 0.234562,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -409,7 +442,8 @@
         "team": "Boston Celtics",
         "line": null,
         "odds": -390,
-        "market_probability": 0.765438
+        "market_probability": 0.765438,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -421,7 +455,8 @@
         "team": "Atlanta Hawks",
         "line": 9.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -433,7 +468,8 @@
         "team": "Boston Celtics",
         "line": -9.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -445,7 +481,8 @@
         "team": "Atlanta Hawks",
         "line": null,
         "odds": 331,
-        "market_probability": 0.22292
+        "market_probability": 0.22292,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -457,7 +494,8 @@
         "team": "Boston Celtics",
         "line": null,
         "odds": -423,
-        "market_probability": 0.77708
+        "market_probability": 0.77708,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -469,7 +507,8 @@
         "team": "Atlanta Hawks",
         "line": 9.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -481,7 +520,8 @@
         "team": "Boston Celtics",
         "line": -9.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -493,7 +533,8 @@
         "team": "Memphis Grizzlies",
         "line": null,
         "odds": 142,
-        "market_probability": 0.397296
+        "market_probability": 0.397296,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -505,7 +546,8 @@
         "team": "Minnesota Timberwolves",
         "line": null,
         "odds": -168,
-        "market_probability": 0.602704
+        "market_probability": 0.602704,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -517,7 +559,8 @@
         "team": "Memphis Grizzlies",
         "line": 4.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -529,7 +572,8 @@
         "team": "Minnesota Timberwolves",
         "line": -4.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -541,7 +585,8 @@
         "team": "Memphis Grizzlies",
         "line": null,
         "odds": 136,
-        "market_probability": 0.40663
+        "market_probability": 0.40663,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -553,7 +598,8 @@
         "team": "Minnesota Timberwolves",
         "line": null,
         "odds": -162,
-        "market_probability": 0.59337
+        "market_probability": 0.59337,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -565,7 +611,8 @@
         "team": "Memphis Grizzlies",
         "line": 3.5,
         "odds": -112,
-        "market_probability": 0.50433
+        "market_probability": 0.50433,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -577,7 +624,8 @@
         "team": "Minnesota Timberwolves",
         "line": -3.5,
         "odds": -108,
-        "market_probability": 0.49567
+        "market_probability": 0.49567,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -589,7 +637,8 @@
         "team": "Dallas Mavericks",
         "line": null,
         "odds": 120,
-        "market_probability": 0.436508
+        "market_probability": 0.436508,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -601,7 +650,8 @@
         "team": "Phoenix Suns",
         "line": null,
         "odds": -142,
-        "market_probability": 0.563492
+        "market_probability": 0.563492,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -613,7 +663,8 @@
         "team": "Dallas Mavericks",
         "line": 2.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -625,7 +676,8 @@
         "team": "Phoenix Suns",
         "line": -2.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -637,7 +689,8 @@
         "team": "Dallas Mavericks",
         "line": null,
         "odds": 115,
-        "market_probability": 0.446631
+        "market_probability": 0.446631,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -649,7 +702,8 @@
         "team": "Phoenix Suns",
         "line": null,
         "odds": -136,
-        "market_probability": 0.553369
+        "market_probability": 0.553369,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -661,7 +715,8 @@
         "team": "Dallas Mavericks",
         "line": 2.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -673,7 +728,8 @@
         "team": "Phoenix Suns",
         "line": -2.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -685,7 +741,8 @@
         "team": "Denver Nuggets",
         "line": null,
         "odds": -500,
-        "market_probability": 0.801653
+        "market_probability": 0.801653,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -697,7 +754,8 @@
         "team": "Utah Jazz",
         "line": null,
         "odds": 385,
-        "market_probability": 0.198347
+        "market_probability": 0.198347,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -709,7 +767,8 @@
         "team": "Denver Nuggets",
         "line": -10.5,
         "odds": -108,
-        "market_probability": 0.49567
+        "market_probability": 0.49567,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -721,7 +780,8 @@
         "team": "Utah Jazz",
         "line": 10.5,
         "odds": -112,
-        "market_probability": 0.50433
+        "market_probability": 0.50433,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -733,7 +793,8 @@
         "team": "Denver Nuggets",
         "line": null,
         "odds": -497,
-        "market_probability": 0.799839
+        "market_probability": 0.799839,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -745,7 +806,8 @@
         "team": "Utah Jazz",
         "line": null,
         "odds": 380,
-        "market_probability": 0.200161
+        "market_probability": 0.200161,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -757,7 +819,8 @@
         "team": "Denver Nuggets",
         "line": -10.5,
         "odds": -103,
-        "market_probability": 0.484816
+        "market_probability": 0.484816,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -769,7 +832,8 @@
         "team": "Utah Jazz",
         "line": 10.5,
         "odds": -117,
-        "market_probability": 0.515184
+        "market_probability": 0.515184,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -781,7 +845,8 @@
         "team": "Golden State Warriors",
         "line": null,
         "odds": 290,
-        "market_probability": 0.246781
+        "market_probability": 0.246781,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -793,7 +858,8 @@
         "team": "Portland Trail Blazers",
         "line": null,
         "odds": -360,
-        "market_probability": 0.753219
+        "market_probability": 0.753219,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -805,7 +871,8 @@
         "team": "Golden State Warriors",
         "line": 8.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -817,7 +884,8 @@
         "team": "Portland Trail Blazers",
         "line": -8.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -829,7 +897,8 @@
         "team": "Golden State Warriors",
         "line": null,
         "odds": 312,
-        "market_probability": 0.233135
+        "market_probability": 0.233135,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -841,7 +910,8 @@
         "team": "Portland Trail Blazers",
         "line": null,
         "odds": -396,
-        "market_probability": 0.766865
+        "market_probability": 0.766865,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -853,7 +923,8 @@
         "team": "Golden State Warriors",
         "line": 9.5,
         "odds": -114,
-        "market_probability": 0.508664
+        "market_probability": 0.508664,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -865,7 +936,8 @@
         "team": "Portland Trail Blazers",
         "line": -9.5,
         "odds": -106,
-        "market_probability": 0.491336
+        "market_probability": 0.491336,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -877,7 +949,8 @@
         "team": "Los Angeles Clippers",
         "line": null,
         "odds": -154,
-        "market_probability": 0.582374
+        "market_probability": 0.582374,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -889,7 +962,8 @@
         "team": "New Orleans Pelicans",
         "line": null,
         "odds": 130,
-        "market_probability": 0.417626
+        "market_probability": 0.417626,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -901,7 +975,8 @@
         "team": "Los Angeles Clippers",
         "line": -3.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -913,7 +988,8 @@
         "team": "New Orleans Pelicans",
         "line": 3.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -925,7 +1001,8 @@
         "team": "Los Angeles Clippers",
         "line": null,
         "odds": -158,
-        "market_probability": 0.587952
+        "market_probability": 0.587952,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -937,7 +1014,8 @@
         "team": "New Orleans Pelicans",
         "line": null,
         "odds": 133,
-        "market_probability": 0.412048
+        "market_probability": 0.412048,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -949,7 +1027,8 @@
         "team": "Los Angeles Clippers",
         "line": -3.5,
         "odds": -106,
-        "market_probability": 0.491336
+        "market_probability": 0.491336,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -961,7 +1040,8 @@
         "team": "New Orleans Pelicans",
         "line": 3.5,
         "odds": -114,
-        "market_probability": 0.508664
+        "market_probability": 0.508664,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -973,7 +1053,8 @@
         "team": "Los Angeles Lakers",
         "line": null,
         "odds": 180,
-        "market_probability": 0.342851
+        "market_probability": 0.342851,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -985,7 +1066,8 @@
         "team": "San Antonio Spurs",
         "line": null,
         "odds": -217,
-        "market_probability": 0.657149
+        "market_probability": 0.657149,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -997,7 +1079,8 @@
         "team": "Los Angeles Lakers",
         "line": 5.5,
         "odds": -105,
-        "market_probability": 0.489166
+        "market_probability": 0.489166,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1009,7 +1092,8 @@
         "team": "San Antonio Spurs",
         "line": -5.5,
         "odds": -115,
-        "market_probability": 0.510834
+        "market_probability": 0.510834,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1021,7 +1105,8 @@
         "team": "Los Angeles Lakers",
         "line": null,
         "odds": 176,
-        "market_probability": 0.348471
+        "market_probability": 0.348471,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1033,7 +1118,8 @@
         "team": "San Antonio Spurs",
         "line": null,
         "odds": -210,
-        "market_probability": 0.651529
+        "market_probability": 0.651529,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1045,7 +1131,8 @@
         "team": "Los Angeles Lakers",
         "line": 6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       },
       {
         "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1057,7 +1144,8 @@
         "team": "San Antonio Spurs",
         "line": -6.5,
         "odds": -110,
-        "market_probability": 0.5
+        "market_probability": 0.5,
+        "model_status": "NBA history unavailable"
       }
     ],
     "NFL": [
