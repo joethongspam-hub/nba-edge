@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "predictions": {
+    "Boston Bruins|Toronto Maple Leafs|2026-11-27T18:00:00+00:00": {
+      "home": "Boston Bruins",
+      "away": "Toronto Maple Leafs",
+      "start": "2026-11-27T18:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Jeremy Swayman",
+      "away_goalie": "Anthony Stolarz",
+      "both_confirmed": true,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6594151675853422,
+          "margin": 1.0716650457139598
+        },
+        "0.25": {
+          "probability": 0.6600087043028626,
+          "margin": 1.0741650457139593
+        },
+        "0.5": {
+          "probability": 0.6606041678245045,
+          "margin": 1.0766650457139595
+        },
+        "0.75": {
+          "probability": 0.6612015705811805,
+          "margin": 1.0791650457139597
+        },
+        "1.0": {
+          "probability": 0.6618009251226268,
+          "margin": 1.08166504571396
+        }
+      }
+    },
+    "New Jersey Devils|Calgary Flames|2026-11-27T18:00:00+00:00": {
+      "home": "New Jersey Devils",
+      "away": "Calgary Flames",
+      "start": "2026-11-27T18:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Jake Allen",
+      "away_goalie": "Dustin Wolf",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6882805442240961,
+          "margin": 1.2599740463902762
+        },
+        "0.25": {
+          "probability": 0.6933982866534342,
+          "margin": 1.2944740463902757
+        },
+        "0.5": {
+          "probability": 0.6985028826703523,
+          "margin": 1.3289740463902757
+        },
+        "0.75": {
+          "probability": 0.7035933996129945,
+          "margin": 1.363474046390276
+        },
+        "1.0": {
+          "probability": 0.7086689006333432,
+          "margin": 1.3979740463902761
+        }
+      }
+    },
+    "Nashville Predators|Utah Mammoth|2026-11-27T18:00:00+00:00": {
+      "home": "Nashville Predators",
+      "away": "Utah Mammoth",
+      "start": "2026-11-27T18:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Juuse Saros",
+      "away_goalie": "Karel Vejmelka",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.6200419894651059,
+          "margin": 0.7664494344811152
+        },
+        "0.25": {
+          "probability": 0.6130027884265655,
+          "margin": 0.719574434481115
+        },
+        "0.5": {
+          "probability": 0.6059151955184416,
+          "margin": 0.6726994344811154
+        },
+        "0.75": {
+          "probability": 0.5987809460039804,
+          "margin": 0.6258244344811155
+        },
+        "1.0": {
+          "probability": 0.5916018207668764,
+          "margin": 0.5789494344811152
+        }
+      }
+    },
+    "St. Louis Blues|Dallas Stars|2026-11-27T19:00:00+00:00": {
+      "home": "St. Louis Blues",
+      "away": "Dallas Stars",
+      "start": "2026-11-27T19:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Joel Hofer",
+      "away_goalie": "Jake Oettinger",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5957639667338398,
+          "margin": 0.6004291693102554
+        },
+        "0.25": {
+          "probability": 0.6029216538704456,
+          "margin": 0.6449291693102551
+        },
+        "0.5": {
+          "probability": 0.6100772736244238,
+          "margin": 0.6894291693102556
+        },
+        "0.75": {
+          "probability": 0.6172287115983094,
+          "margin": 0.7339291693102553
+        },
+        "1.0": {
+          "probability": 0.6243738322382342,
+          "margin": 0.7784291693102553
+        }
+      }
+    },
+    "Columbus Blue Jackets|Detroit Red Wings|2026-11-27T20:00:00+00:00": {
+      "home": "Columbus Blue Jackets",
+      "away": "Detroit Red Wings",
+      "start": "2026-11-27T20:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Jet Greaves",
+      "away_goalie": "Daniil Tarasov",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5066314697910295,
+          "margin": 0.03884991720381249
+        },
+        "0.25": {
+          "probability": 0.5041242663143225,
+          "margin": 0.024099917203812198
+        },
+        "0.5": {
+          "probability": 0.5016041722427154,
+          "margin": 0.009349917203812124
+        },
+        "0.75": {
+          "probability": 0.49907112696839356,
+          "margin": -0.0054000827961879
+        },
+        "1.0": {
+          "probability": 0.4965250697935906,
+          "margin": -0.020150082796187598
+        }
+      }
+    },
+    "Washington Capitals|Florida Panthers|2026-11-27T20:00:00+00:00": {
+      "home": "Washington Capitals",
+      "away": "Florida Panthers",
+      "start": "2026-11-27T20:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Logan Thompson",
+      "away_goalie": "Jacob Markstrom",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.46688704041142737,
+          "margin": -0.2306503210300051
+        },
+        "0.25": {
+          "probability": 0.4782915748934637,
+          "margin": -0.15077532103000493
+        },
+        "0.5": {
+          "probability": 0.4897647551546146,
+          "margin": -0.07090032103000453
+        },
+        "0.75": {
+          "probability": 0.501298725749972,
+          "margin": 0.008974678969994914
+        },
+        "1.0": {
+          "probability": 0.5128854052850039,
+          "margin": 0.08884967896999464
+        }
+      }
+    },
+    "Tampa Bay Lightning|Ottawa Senators|2026-11-27T20:00:00+00:00": {
+      "home": "Tampa Bay Lightning",
+      "away": "Ottawa Senators",
+      "start": "2026-11-27T20:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Andrei Vasilevskiy",
+      "away_goalie": "Linus Ullmark",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5870253357864145,
+          "margin": 0.5550691006933063
+        },
+        "0.25": {
+          "probability": 0.590003889991597,
+          "margin": 0.572694100693306
+        },
+        "0.5": {
+          "probability": 0.5929959888566211,
+          "margin": 0.5903191006933061
+        },
+        "0.75": {
+          "probability": 0.5960016502591352,
+          "margin": 0.607944100693306
+        },
+        "1.0": {
+          "probability": 0.5990208908325675,
+          "margin": 0.6255691006933064
+        }
+      }
+    },
+    "Anaheim Ducks|Los Angeles Kings|2026-11-27T21:00:00+00:00": {
+      "home": "Anaheim Ducks",
+      "away": "Los Angeles Kings",
+      "start": "2026-11-27T21:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Laurent Brossoit",
+      "away_goalie": "Darcy Kuemper",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5879164318913963,
+          "margin": 0.5812401910373929
+        },
+        "0.25": {
+          "probability": 0.5974810992651421,
+          "margin": 0.642740191037393
+        },
+        "0.5": {
+          "probability": 0.6070805734456975,
+          "margin": 0.7042401910373929
+        },
+        "0.75": {
+          "probability": 0.616710310899715,
+          "margin": 0.7657401910373924
+        },
+        "1.0": {
+          "probability": 0.6263656035113805,
+          "margin": 0.8272401910373928
+        }
+      }
+    },
+    "Minnesota Wild|Colorado Avalanche|2026-11-27T21:00:00+00:00": {
+      "home": "Minnesota Wild",
+      "away": "Colorado Avalanche",
+      "start": "2026-11-27T21:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Jesper Wallstedt",
+      "away_goalie": "Mackenzie Blackwood",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.5603741551478078,
+          "margin": 0.38928906873058944
+        },
+        "0.25": {
+          "probability": 0.5578250140484063,
+          "margin": 0.37203906873058923
+        },
+        "0.5": {
+          "probability": 0.5552642024294465,
+          "margin": 0.3547890687305894
+        },
+        "0.75": {
+          "probability": 0.552691712077307,
+          "margin": 0.33753906873058953
+        },
+        "1.0": {
+          "probability": 0.5501075356186343,
+          "margin": 0.32028906873058954
+        }
+      }
+    },
+    "San Jose Sharks|Vegas Golden Knights|2026-11-27T21:00:00+00:00": {
+      "home": "San Jose Sharks",
+      "away": "Vegas Golden Knights",
+      "start": "2026-11-27T21:00:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Yaroslav Askarov",
+      "away_goalie": "Carter Hart",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.3728541614133991,
+          "margin": -0.8543774366511213
+        },
+        "0.25": {
+          "probability": 0.3708791368036563,
+          "margin": -0.870752436651121
+        },
+        "0.5": {
+          "probability": 0.36891811181571804,
+          "margin": -0.8871274366511214
+        },
+        "0.75": {
+          "probability": 0.3669709404193194,
+          "margin": -0.9035024366511207
+        },
+        "1.0": {
+          "probability": 0.3650374788208652,
+          "margin": -0.9198774366511212
+        }
+      }
+    },
+    "Chicago Blackhawks|New York Rangers|2026-11-27T22:30:00+00:00": {
+      "home": "Chicago Blackhawks",
+      "away": "New York Rangers",
+      "start": "2026-11-27T22:30:00+00:00",
+      "observed_at": "2026-11-27T17:30:51.572280+00:00",
+      "home_goalie": "Spencer Knight",
+      "away_goalie": "Dylan Garand",
+      "both_confirmed": false,
+      "forecasts": {
+        "0.0": {
+          "probability": 0.48742953952455503,
+          "margin": -0.07983426267956047
+        },
+        "0.25": {
+          "probability": 0.4915621906496627,
+          "margin": -0.05345926267956024
+        },
+        "0.5": {
+          "probability": 0.49571491281751295,
+          "margin": -0.027084262679560756
+        },
+        "0.75": {
+          "probability": 0.4998875196766018,
+          "margin": -0.0007092626795607792
+        },
+        "1.0": {
+          "probability": 0.5040798178302585,
+          "margin": 0.02566573732043886
+        }
+      }
+    }
+  },
+  "updated": "2026-11-27T17:30:51.572280+00:00",
+  "summary": {
+    "recorded": 11,
+    "settled": 0,
+    "all": {
+      "0.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.25": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.5": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.75": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "1.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      }
+    },
+    "both_confirmed": {
+      "0.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.25": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.5": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.75": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "1.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      }
+    },
+    "projected": {
+      "0.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.25": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.5": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "0.75": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      },
+      "1.0": {
+        "games": 0,
+        "brier": null,
+        "accuracy": null,
+        "margin_mae": null
+      }
+    }
+  }
+}
