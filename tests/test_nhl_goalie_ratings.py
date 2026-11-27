@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from datetime import datetime, timezone
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from nhl_goalie_ratings import ratings, name_key
+from nhl_goalie_ratings import ratings, name_key, season_ratings
 
 class GoalieRatingTests(unittest.TestCase):
     def test_shrinkage_and_exclusions(self):
@@ -23,3 +23,16 @@ class GoalieRatingTests(unittest.TestCase):
         self.assertIn("Boston Bruins",teams)
     def test_name_normalization(self):
         self.assertEqual(name_key("Jakub Dobeš"),name_key("Jakub Dobes"))
+
+    def test_season_summary(self):
+        from nhl_goalie_ratings import season_ratings
+        row = {"situation":"all","team":"BOS","icetime":"36000",
+               "xGoals":"35","goals":"25","playerId":"1","name":"Jeremy Swayman"}
+        players, teams = season_ratings([(2026,[row,row]),(2025,[row])],2026)
+        p = players[name_key("Jeremy Swayman")]
+        self.assertEqual(p["season_gsax"],10)
+        self.assertEqual(p["season_gsax60"],1)
+        self.assertEqual(p["effective_hours"],15)
+        self.assertEqual(p["gsax60"],.5)
+        self.assertIsNone(p["recent_gsax60"])
+        self.assertIn("Boston Bruins",teams)
