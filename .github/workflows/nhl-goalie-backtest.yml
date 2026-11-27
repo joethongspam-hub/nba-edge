@@ -24,7 +24,20 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
+      - name: Restore historical research cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .research-cache/nhl-goalies-v1
+          key: nhl-goalie-history-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            nhl-goalie-history-v1-
       - run: python scripts/nhl_goalie_backtest.py
+      - name: Save historical research cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .research-cache/nhl-goalies-v1
+          key: nhl-goalie-history-v1-${{ github.run_id }}-${{ github.run_attempt }}
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
