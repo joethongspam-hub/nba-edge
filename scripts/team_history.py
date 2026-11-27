@@ -11,7 +11,7 @@ def parse_time(value):
 def canonical(name):
     return {"LA Clippers":"Los Angeles Clippers", "LA Rams":"Los Angeles Rams",
             "LA Chargers":"Los Angeles Chargers", "NY Giants":"New York Giants",
-            "NY Jets":"New York Jets", "Utah Hockey Club":"Utah Mammoth"}.get(name,name)
+            "NY Jets":"New York Jets", "Utah Hockey Club":"Utah Mammoth", "St Louis Blues":"St. Louis Blues"}.get(name,name)
 
 def board(base, dates):
     url=base+"?"+urlencode({"dates":dates,"limit":100})
