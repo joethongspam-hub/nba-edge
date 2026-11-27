@@ -1,0 +1,601 @@
+{
+  "updated": "2026-11-27T17:51:50.218858+00:00",
+  "research_only": true,
+  "method": "historical realized starters, prior-day-only season-weighted ratings; no announcement timestamps",
+  "attribution": "MoneyPuck.com / NHL API",
+  "goalie_ids": 134,
+  "career_files": 18,
+  "observations": 1427,
+  "scheduled_final_games": 4335,
+  "verified_boxscores": 4335,
+  "errors": [
+    {
+      "item": "8475883",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476316",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476341",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476412",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476433",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476434",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476876",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476883",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476899",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476904",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476914",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476932",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476945",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8476999",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477035",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477293",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477361",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477405",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477424",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477465",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477480",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477484",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477831",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477967",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477968",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477970",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477990",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8477992",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478007",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478009",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478024",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478039",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478048",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478406",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478433",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478435",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478470",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478492",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478499",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478848",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478872",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478905",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478916",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478965",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8478971",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479193",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479292",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479312",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479361",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479394",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479406",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479496",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479973",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8479979",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480022",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480045",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480051",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480191",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480193",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480238",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480280",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480313",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480382",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480819",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480843",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480885",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480947",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480981",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8480992",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481020",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481031",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481033",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481035",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481519",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481529",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481544",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481551",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481611",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481668",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481692",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8481707",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482076",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482123",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482137",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482193",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482221",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482411",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482445",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482446",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482447",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482487",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482515",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482657",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482661",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482668",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482761",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482783",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482821",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482949",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8482982",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483114",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483530",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483532",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483548",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483575",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483668",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483703",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483710",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8483746",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484170",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484268",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484293",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484312",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484900",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8484910",
+      "error": "HTTPError"
+    },
+    {
+      "item": "8485545",
+      "error": "HTTPError"
+    }
+  ],
+  "coverage": {
+    "2023": {
+      "completed": 1312,
+      "evaluated": 0
+    },
+    "2024": {
+      "completed": 1312,
+      "evaluated": 30
+    },
+    "2025": {
+      "completed": 1312,
+      "evaluated": 13
+    },
+    "2026": {
+      "completed": 399,
+      "evaluated": 4
+    }
+  },
+  "results": {
+    "2024": {
+      "0.0": {
+        "games": 30,
+        "brier": 0.22661138450830928,
+        "accuracy": 0.6,
+        "margin_mae": 2.443105656076962
+      },
+      "0.25": {
+        "games": 30,
+        "brier": 0.2260304804399411,
+        "accuracy": 0.6,
+        "margin_mae": 2.438416723989845
+      },
+      "0.5": {
+        "games": 30,
+        "brier": 0.22548455131706432,
+        "accuracy": 0.6333333333333333,
+        "margin_mae": 2.4337277919027276
+      },
+      "0.75": {
+        "games": 30,
+        "brier": 0.22497351406641,
+        "accuracy": 0.6333333333333333,
+        "margin_mae": 2.4290388598156105
+      },
+      "1.0": {
+        "games": 30,
+        "brier": 0.22449726950531118,
+        "accuracy": 0.6333333333333333,
+        "margin_mae": 2.424349927728493
+      }
+    },
+    "2025": {
+      "0.0": {
+        "games": 13,
+        "brier": 0.2596428292373461,
+        "accuracy": 0.46153846153846156,
+        "margin_mae": 2.1772882015021633
+      },
+      "0.25": {
+        "games": 13,
+        "brier": 0.26089127358053976,
+        "accuracy": 0.46153846153846156,
+        "margin_mae": 2.186235829962605
+      },
+      "0.5": {
+        "games": 13,
+        "brier": 0.26226903020564235,
+        "accuracy": 0.46153846153846156,
+        "margin_mae": 2.1951834584230463
+      },
+      "0.75": {
+        "games": 13,
+        "brier": 0.26377686571662234,
+        "accuracy": 0.38461538461538464,
+        "margin_mae": 2.204131086883488
+      },
+      "1.0": {
+        "games": 13,
+        "brier": 0.26541544764551034,
+        "accuracy": 0.46153846153846156,
+        "margin_mae": 2.2130787153439293
+      }
+    },
+    "2026": {
+      "0.0": {
+        "games": 4,
+        "brier": 0.304338038072224,
+        "accuracy": 0.25,
+        "margin_mae": 2.8256885445767423
+      },
+      "0.25": {
+        "games": 4,
+        "brier": 0.30974690707188984,
+        "accuracy": 0.25,
+        "margin_mae": 2.8521086847024337
+      },
+      "0.5": {
+        "games": 4,
+        "brier": 0.3154188314148563,
+        "accuracy": 0.25,
+        "margin_mae": 2.878528824828125
+      },
+      "0.75": {
+        "games": 4,
+        "brier": 0.3213188755003785,
+        "accuracy": 0.25,
+        "margin_mae": 2.9049489649538156
+      },
+      "1.0": {
+        "games": 4,
+        "brier": 0.3274102892334218,
+        "accuracy": 0.25,
+        "margin_mae": 2.931369105079507
+      }
+    }
+  },
+  "selected_on_2024": "1.0",
+  "evaluation_season": 2025,
+  "additional_validation_season": 2026,
+  "limitations": [
+    "Realized starters are not evidence of pregame confirmation; optimistic information availability.",
+    "Missing historical files or boxscores may bias coverage; no production changes.",
+    "No historical odds or betting ROI tested."
+  ]
+}
