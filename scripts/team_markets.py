@@ -14,6 +14,7 @@ import espn_starters
 import nhl_goalie_ratings
 import nhl_goalie_model
 import nhl_goalie_validation
+import nhl_goalie_changes
 import team_tracker
 import team_analysis_export
 import team_rankings
@@ -248,6 +249,11 @@ def main():
                 snapshot["sports"]["NHL"], histories["NHL"], datetime.now(timezone.utc))
         except Exception as exc:
             snapshot["nhl_goalie_validation"] = {"error": type(exc).__name__}
+    try:
+        snapshot["nhl_goalie_changes"] = nhl_goalie_changes.update(
+            snapshot["sports"]["NHL"], datetime.now(timezone.utc))
+    except Exception as exc:
+        snapshot["nhl_goalie_changes"] = {"error": type(exc).__name__}
     snapshot["rankings"] = team_rankings.rankings(snapshot)
     if snapshot["odds_mode"] == "cached":
         target = Path("docs/team_context_refresh.json")

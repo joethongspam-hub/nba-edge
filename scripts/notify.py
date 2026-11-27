@@ -35,9 +35,19 @@ def main():
         title='SPORTS EDGE refresh succeeded' if success else 'SPORTS EDGE refresh failed'
         if success:
             try:
-                team_data=json.loads((Path(__file__).resolve().parents[1]/'docs'/'team_markets.json').read_text())
+                team_data=json.loads((Path(__file__).resolve().parents[1]/'docs'/('team_context_refresh.json' if os.environ.get('TEAM_REFRESH_MODE')=='cached' else 'team_markets.json')).read_text())
                 counts={sport:len({row['event_id'] for row in rows}) for sport,rows in team_data.get('sports',{}).items()}
                 message='Team-market snapshot updated.\\n'+'\\n'.join(f'{sport}: {count} games' for sport,count in counts.items())+'\\nCredits remaining: '+str(team_data.get('odds_credits_remaining','unknown'))
+                if os.environ.get('TEAM_REFRESH_MODE')=='cached':
+                    message='Cached context refreshed (0 Odds API credits).\n'+ '\n'.join(f'{sport}: {count} games' for sport,count in counts.items())
+                try:
+                    changes=json.loads((Path(__file__).resolve().parents[1]/'docs'/'nhl_goalie_changes.json').read_text())
+                    alerts=[c for c in changes.get('changes',[]) if c.get('alert')] if team_data.get('nhl_goalie_changes',{}).get('alerts',0)>0 else []
+                    if alerts:
+                        title='SPORTS EDGE goalie update'
+                        message+='\nResearch-only goalie changes:\n'+'\n'.join(f"{c['team']}: {c['before']['name']} → {c['after']['name']} ({c['type']}); home win effect {100*c['home_probability_effect_change']:+.1f} pp" for c in alerts[:5])
+                except (OSError,ValueError,KeyError,TypeError):
+                    pass
             except (OSError,ValueError,KeyError):
                 message='Refresh completed; snapshot summary unavailable.'
         else:
