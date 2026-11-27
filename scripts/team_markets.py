@@ -58,25 +58,48 @@ def normalize(events):
                         "market_probability": round(p / sum(probs), 6)})
     return rows
 
+def cached_snapshot(now):
+    old = json.loads(Path("docs/team_markets.json").read_text(encoding="utf-8"))
+    from nba_team_model import parse_time
+    sports = {}
+    for name in SPORTS:
+        sports[name] = [
+            {k: row[k] for k in ("event_id", "home", "away", "start", "book",
+                                  "market", "team", "line", "odds", "market_probability")
+             if k in row}
+            for row in old["sports"].get(name, [])
+            if parse_time(row["start"]) > now
+        ]
+    return {"updated": now.isoformat(), "method": old["method"],
+            "sports": sports, "odds_updated": old.get("odds_updated", old["updated"]),
+            "odds_mode": "cached", "odds_credits_remaining": old.get("odds_credits_remaining")}
+
+
 def main():
-    # Preflight free events requests; reserve 2,000 credits and allow 2 per league.
-    active = []
-    remaining = None
-    for name, key in SPORTS.items():
-        events, headers = fetch(key, "events")
-        remaining = remaining_from_headers(headers)
-        if events:
-            active.append((name, key))
-    check_budget(remaining, len(active), worst_cost=2)
-    snapshot = {"updated": datetime.now(timezone.utc).isoformat(),
-                "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available", "sports": {n: [] for n in SPORTS}}
-    for index, (name, key) in enumerate(active):
-        check_budget(remaining, len(active)-index, worst_cost=2)
-        events, headers = fetch(key, "odds", regions="us", markets="h2h,spreads",
-                                bookmakers="fanduel,draftkings", oddsFormat="american")
-        remaining = remaining_from_headers(headers)
-        snapshot["sports"][name] = normalize(events)
-    snapshot["odds_credits_remaining"] = remaining
+    if os.environ.get("TEAM_REFRESH_MODE") == "cached":
+        snapshot = cached_snapshot(datetime.now(timezone.utc))
+        print("Cached odds mode: zero Odds API requests")
+    else:
+        # Preflight free events requests; reserve 2,000 credits and allow 2 per league.
+        active = []
+        remaining = None
+        for name, key in SPORTS.items():
+            events, headers = fetch(key, "events")
+            remaining = remaining_from_headers(headers)
+            if events:
+                active.append((name, key))
+        check_budget(remaining, len(active), worst_cost=2)
+        snapshot = {"updated": datetime.now(timezone.utc).isoformat(),
+                    "method": "Sportsbook no-vig baseline; NBA, NFL and NHL experimental independent models where available", "sports": {n: [] for n in SPORTS}}
+        for index, (name, key) in enumerate(active):
+            check_budget(remaining, len(active)-index, worst_cost=2)
+            events, headers = fetch(key, "odds", regions="us", markets="h2h,spreads",
+                                    bookmakers="fanduel,draftkings", oddsFormat="american")
+            remaining = remaining_from_headers(headers)
+            snapshot["sports"][name] = normalize(events)
+        snapshot["odds_credits_remaining"] = remaining
+        snapshot["odds_updated"] = snapshot["updated"]
+        snapshot["odds_mode"] = "live"
     histories = {}
     snapshot['history_health'] = {}
     try:
@@ -193,6 +216,12 @@ def main():
                         row.pop(key)
     snapshot["updated"] = datetime.now(timezone.utc).isoformat()
     snapshot["rankings"] = team_rankings.rankings(snapshot)
+    if snapshot["odds_mode"] == "cached":
+        target = Path("docs/team_context_refresh.json")
+        temp = target.with_suffix(".tmp")
+        temp.write_text(json.dumps(snapshot, indent=2) + "\n", encoding="utf-8")
+        temp.replace(target)
+        return
     tracker = team_tracker.update(snapshot, histories)
     team_analysis_export.write(snapshot, tracker)
     audit_path = Path('docs/team_backtest.json')
