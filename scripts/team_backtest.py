@@ -1,6 +1,7 @@
 """Walk-forward moneyline audit; no historical sportsbook prices assumed."""
 from datetime import timedelta
 import nba_team_model
+import team_calibration
 import nfl_team_model
 import nhl_team_model
 
@@ -36,4 +37,7 @@ def evaluate(sport,games):
     return dict(sport=sport,games=n,available_games=len(games),decisive=len(decisive),accuracy=sum(r["correct"] for r in decisive)/len(decisive) if decisive else None,brier=sum(r["brier"] for r in results)/n if n else None,margin_mae=sum(r["margin_error"] for r in results)/n if n else None,calibration=buckets,results=results)
 
 def audit(histories):
-    return [evaluate(sport,games) for sport,games in histories.items() if sport in MODELS]
+    audits = [evaluate(sport,games) for sport,games in histories.items() if sport in MODELS]
+    for audit in audits:
+        audit['calibration_holdout'] = team_calibration.evaluate(audit['results'])
+    return audits
