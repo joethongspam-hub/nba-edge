@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T23:52:31.734169+00:00",
+  "updated": "2026-11-28T00:00:10.969139+00:00",
   "status": "Experimental paper analysis; uncalibrated",
   "limitations": [
     "Assumes independent outcomes; distinct games do not guarantee independence.",
@@ -20,7 +20,7 @@
             "market": "h2h",
             "line": null,
             "odds": -450,
-            "probability": 0.858063,
+            "probability": 0.858056,
             "decimal": 1.2222222222222223
           },
           {
@@ -31,13 +31,13 @@
             "market": "spreads",
             "line": 9.5,
             "odds": -108,
-            "probability": 0.751819,
+            "probability": 0.751822,
             "decimal": 1.925925925925926
           }
         ],
-        "probability": 0.645108066597,
+        "probability": 0.6451053780320001,
         "estimated_decimal_odds": 2.3539094650205765,
-        "estimated_ev": 0.5185259839238028
+        "estimated_ev": 0.518519655285202
       },
       {
         "book": "draftkings",
@@ -50,7 +50,7 @@
             "market": "h2h",
             "line": null,
             "odds": -452,
-            "probability": 0.858063,
+            "probability": 0.858056,
             "decimal": 1.2212389380530975
           },
           {
@@ -61,13 +61,13 @@
             "market": "spreads",
             "line": 9.5,
             "odds": -112,
-            "probability": 0.751819,
+            "probability": 0.751822,
             "decimal": 1.8928571428571428
           }
         ],
-        "probability": 0.645108066597,
+        "probability": 0.6451053780320001,
         "estimated_decimal_odds": 2.311630847029077,
-        "estimated_ev": 0.4912517064129136
+        "estimated_ev": 0.49124549144312546
       },
       {
         "book": "fanduel",
@@ -80,7 +80,7 @@
             "market": "h2h",
             "line": null,
             "odds": -450,
-            "probability": 0.858063,
+            "probability": 0.858056,
             "decimal": 1.2222222222222223
           },
           {
@@ -91,13 +91,13 @@
             "market": "h2h",
             "line": null,
             "odds": -210,
-            "probability": 0.735563,
+            "probability": 0.735557,
             "decimal": 1.4761904761904763
           }
         ],
-        "probability": 0.6311593944689999,
+        "probability": 0.6311490971920001,
         "estimated_decimal_odds": 1.8042328042328044,
-        "estimated_ev": 0.1387584842006826
+        "estimated_ev": 0.13873990551572501
       },
       {
         "book": "draftkings",
@@ -110,7 +110,7 @@
             "market": "h2h",
             "line": null,
             "odds": -452,
-            "probability": 0.858063,
+            "probability": 0.858056,
             "decimal": 1.2212389380530975
           },
           {
@@ -121,13 +121,13 @@
             "market": "h2h",
             "line": null,
             "odds": -217,
-            "probability": 0.735563,
+            "probability": 0.735557,
             "decimal": 1.4608294930875576
           }
         ],
-        "probability": 0.6311593944689999,
+        "probability": 0.6311490971920001,
         "estimated_decimal_odds": 1.7840218588148935,
-        "estimated_ev": 0.12600215612906784
+        "estimated_ev": 0.12598378556181378
       },
       {
         "book": "fanduel",
@@ -140,7 +140,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -290,
-            "probability": 0.766398,
+            "probability": 0.766349,
             "decimal": 1.3448275862068966
           },
           {
@@ -151,13 +151,13 @@
             "market": "h2h",
             "line": null,
             "odds": -260,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3846153846153846
           }
         ],
-        "probability": 0.59956465137,
+        "probability": 0.606384375136,
         "estimated_decimal_odds": 1.8620689655172413,
-        "estimated_ev": 0.11643073013724137
+        "estimated_ev": 0.12912952611531026
       },
       {
         "book": "draftkings",
@@ -170,7 +170,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -290,
-            "probability": 0.766398,
+            "probability": 0.766349,
             "decimal": 1.3448275862068966
           },
           {
@@ -181,13 +181,13 @@
             "market": "h2h",
             "line": null,
             "odds": -278,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3597122302158273
           }
         ],
-        "probability": 0.59956465137,
+        "probability": 0.606384375136,
         "estimated_decimal_odds": 1.828578516497147,
-        "estimated_ev": 0.09635104074628376
+        "estimated_ev": 0.10882144111323644
       },
       {
         "book": "fanduel",
@@ -200,7 +200,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -225,
-            "probability": 0.744526,
+            "probability": 0.744498,
             "decimal": 1.4444444444444444
           },
           {
@@ -211,13 +211,13 @@
             "market": "h2h",
             "line": null,
             "odds": -260,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3846153846153846
           }
         ],
-        "probability": 0.58245385769,
+        "probability": 0.589094465472,
         "estimated_decimal_odds": 2.0,
-        "estimated_ev": 0.16490771538000004
+        "estimated_ev": 0.1781889309439999
       },
       {
         "book": "draftkings",
@@ -230,7 +230,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -230,
-            "probability": 0.744526,
+            "probability": 0.744498,
             "decimal": 1.434782608695652
           },
           {
@@ -241,13 +241,13 @@
             "market": "h2h",
             "line": null,
             "odds": -278,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3597122302158273
           }
         ],
-        "probability": 0.58245385769,
+        "probability": 0.589094465472,
         "estimated_decimal_odds": 1.9508914607444479,
-        "estimated_ev": 0.136304257245083
+        "estimated_ev": 0.14925936226113978
       },
       {
         "book": "fanduel",
@@ -260,7 +260,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -260,
-            "probability": 0.740084,
+            "probability": 0.739943,
             "decimal": 1.3846153846153846
           },
           {
@@ -271,13 +271,13 @@
             "market": "h2h",
             "line": null,
             "odds": -260,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3846153846153846
           }
         ],
-        "probability": 0.57897881446,
+        "probability": 0.5854902579519999,
         "estimated_decimal_odds": 1.9171597633136093,
-        "estimated_ev": 0.10999488689372772
+        "estimated_ev": 0.12247836435768034
       },
       {
         "book": "draftkings",
@@ -290,7 +290,7 @@
             "market": "spreads",
             "line": 1.5,
             "odds": -258,
-            "probability": 0.740084,
+            "probability": 0.739943,
             "decimal": 1.3875968992248062
           },
           {
@@ -301,13 +301,13 @@
             "market": "h2h",
             "line": null,
             "odds": -278,
-            "probability": 0.782315,
+            "probability": 0.791264,
             "decimal": 1.3597122302158273
           }
         ],
-        "probability": 0.57897881446,
+        "probability": 0.5854902579519999,
         "estimated_decimal_odds": 1.8867324744855278,
-        "estimated_ev": 0.09237813128081318
+        "estimated_ev": 0.10466348317294694
       }
     ],
     "3": []

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T23:52:31.734169+00:00",
+  "updated": "2026-11-28T00:00:10.969139+00:00",
   "sports": [
     {
       "sport": "NBA",
@@ -3068,12 +3068,12 @@
     },
     {
       "sport": "NHL",
-      "games": 272,
-      "available_games": 409,
-      "decisive": 272,
-      "accuracy": 0.5183823529411765,
-      "brier": 0.5007504240754486,
-      "margin_mae": 2.1594852941176472,
+      "games": 273,
+      "available_games": 410,
+      "decisive": 273,
+      "accuracy": 0.5164835164835165,
+      "brier": 0.5012155379449524,
+      "margin_mae": 2.1566666666666667,
       "calibration": [
         {
           "low": 0,
@@ -3085,9 +3085,9 @@
         {
           "low": 0.5,
           "high": 0.6,
-          "n": 94,
-          "predicted": 0.5451489361702128,
-          "observed": 0.425531914893617
+          "n": 95,
+          "predicted": 0.5453077368421052,
+          "observed": 0.42105263157894735
         },
         {
           "low": 0.6,
@@ -6095,6 +6095,17 @@
         },
         {
           "time": "2026-11-27T21:00:00+00:00",
+          "home": "Minnesota Wild",
+          "away": "Colorado Avalanche",
+          "home_probability": 0.560235,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.62772651045,
+          "margin_error": 1.3900000000000001
+        },
+        {
+          "time": "2026-11-27T21:00:00+00:00",
           "home": "San Jose Sharks",
           "away": "Vegas Golden Knights",
           "home_probability": 0.37193,
@@ -6111,28 +6122,28 @@
         "split": "2026-11-13",
         "training_games": 162,
         "baseline": {
-          "games": 110,
-          "brier": 0.5293976321092545,
-          "log_loss": 0.725733641141963,
-          "accuracy": 0.4818181818181818
+          "games": 111,
+          "brier": 0.5302834778600721,
+          "log_loss": 0.7265965343357857,
+          "accuracy": 0.4774774774774775
         },
         "challenger": {
-          "games": 110,
-          "brier": 0.516588255561456,
-          "log_loss": 0.7107476703575327,
-          "accuracy": 0.4818181818181818
+          "games": 111,
+          "brier": 0.5172895711611558,
+          "log_loss": 0.7114422435769499,
+          "accuracy": 0.4774774774774775
         },
         "coin_flip": {
-          "games": 110,
+          "games": 111,
           "brier": 0.5,
           "log_loss": 0.6931471805599461,
-          "accuracy": 0.42727272727272725
+          "accuracy": 0.42342342342342343
         },
-        "home_only_accuracy": 0.42727272727272725
+        "home_only_accuracy": 0.42342342342342343
       },
       "parameter_holdout": {
         "status": "Experimental holdout",
-        "games": 272,
+        "games": 273,
         "training_games": 162,
         "split": "2026-11-13",
         "tested": 9,
@@ -6151,16 +6162,16 @@
           "margin_sd": null
         },
         "baseline": {
-          "games": 110,
-          "brier": 0.529397632775671,
-          "mae": 2.2592787879384715,
-          "accuracy": 0.4818181818181818
+          "games": 111,
+          "brier": 0.5302834836958646,
+          "mae": 2.2514333461996654,
+          "accuracy": 0.4774774774774775
         },
         "challenger": {
-          "games": 110,
-          "brier": 0.5226358774786249,
-          "mae": 2.2555463830713975,
-          "accuracy": 0.4727272727272727
+          "games": 111,
+          "brier": 0.5236533336466257,
+          "mae": 2.2479225092319277,
+          "accuracy": 0.46846846846846846
         },
         "training": [
           {
