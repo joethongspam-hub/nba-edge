@@ -1,0 +1,38 @@
+name: Settle SPORTS EDGE team results
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+      timezone: 'America/Chicago'
+permissions:
+  contents: write
+concurrency:
+  group: nba-edge-refresh
+  cancel-in-progress: false
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Offline tests
+        run: python -m unittest discover -s tests -v
+      - name: Retrieve final scores only
+        run: python scripts/settle_team_results.py
+      - name: Publish settlement
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/team_tracker.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Settle SPORTS EDGE team results'
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
