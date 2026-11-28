@@ -23,12 +23,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -148
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -52,12 +54,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -2.5,
         "odds": -108
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -81,12 +85,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -142
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -110,12 +116,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -2.5,
         "odds": -106
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -139,12 +147,14 @@
       "shadow_venue_adjustment": 0.54,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -350
-      }
+      },
+      "actual_margin": 24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -168,12 +178,14 @@
       "shadow_venue_adjustment": -0.54,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -114
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -197,12 +209,14 @@
       "shadow_venue_adjustment": 0.54,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -374
-      }
+      },
+      "actual_margin": 24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "709de4f76f95aebf383d180ac3c6f679",
@@ -226,12 +240,14 @@
       "shadow_venue_adjustment": -0.54,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -112
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -255,12 +271,14 @@
       "shadow_venue_adjustment": 0.93,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -450
-      }
+      },
+      "actual_margin": 15,
+      "settlement_status": "settled"
     },
     {
       "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -284,12 +302,14 @@
       "shadow_venue_adjustment": 0.93,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -10.5,
         "odds": -102
-      }
+      },
+      "actual_margin": 15,
+      "settlement_status": "settled"
     },
     {
       "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -313,12 +333,14 @@
       "shadow_venue_adjustment": 0.93,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -452
-      }
+      },
+      "actual_margin": 15,
+      "settlement_status": "settled"
     },
     {
       "event_id": "326e8215b0369df0d4d65e5c0afe9ff5",
@@ -342,12 +364,14 @@
       "shadow_venue_adjustment": 0.93,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -9.5,
         "odds": -117
-      }
+      },
+      "actual_margin": 15,
+      "settlement_status": "settled"
     },
     {
       "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -371,12 +395,14 @@
       "shadow_venue_adjustment": -0.26,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 138
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -400,12 +426,14 @@
       "shadow_venue_adjustment": -0.26,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -110
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -429,12 +457,14 @@
       "shadow_venue_adjustment": -0.26,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 142
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "5b64071f3e3bf67b0fdea8d1ac81d0ec",
@@ -458,12 +488,14 @@
       "shadow_venue_adjustment": -0.26,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -112
-      }
+      },
+      "actual_margin": -24,
+      "settlement_status": "settled"
     },
     {
       "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -487,12 +519,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -370
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -516,12 +550,14 @@
       "shadow_venue_adjustment": -0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 8.5,
         "odds": -105
-      }
+      },
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -545,12 +581,14 @@
       "shadow_venue_adjustment": 0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -378
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "c5dc35b4116988de2c1425df17456478",
@@ -574,12 +612,14 @@
       "shadow_venue_adjustment": -0.34,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -115
-      }
+      },
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -603,12 +643,14 @@
       "shadow_venue_adjustment": 0.21,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -164
-      }
+      },
+      "actual_margin": -5,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -632,12 +674,14 @@
       "shadow_venue_adjustment": -0.21,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 2.5,
         "odds": -104
-      }
+      },
+      "actual_margin": 5,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -661,12 +705,14 @@
       "shadow_venue_adjustment": 0.21,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -148
-      }
+      },
+      "actual_margin": -5,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f0bc60d1516d217dba58c1f4fa653a59",
@@ -690,12 +736,14 @@
       "shadow_venue_adjustment": 0.21,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -2.5,
         "odds": -112
-      }
+      },
+      "actual_margin": -5,
+      "settlement_status": "settled"
     },
     {
       "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -719,12 +767,14 @@
       "shadow_venue_adjustment": -0.28,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -146
-      }
+      },
+      "actual_margin": -4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -748,12 +798,14 @@
       "shadow_venue_adjustment": 0.28,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -112
-      }
+      },
+      "actual_margin": 4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -777,12 +829,14 @@
       "shadow_venue_adjustment": -0.28,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -148
-      }
+      },
+      "actual_margin": -4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "46b1c571cf786a86e800d61fd1d79004",
@@ -806,12 +860,14 @@
       "shadow_venue_adjustment": 0.28,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -114
-      }
+      },
+      "actual_margin": 4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -835,12 +891,14 @@
       "shadow_venue_adjustment": 0.29,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -390
-      }
+      },
+      "actual_margin": 13,
+      "settlement_status": "settled"
     },
     {
       "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -864,12 +922,14 @@
       "shadow_venue_adjustment": -0.29,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -108
-      }
+      },
+      "actual_margin": -13,
+      "settlement_status": "settled"
     },
     {
       "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -893,12 +953,14 @@
       "shadow_venue_adjustment": 0.29,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -410
-      }
+      },
+      "actual_margin": 13,
+      "settlement_status": "settled"
     },
     {
       "event_id": "428050645d1dc8b16d84287e21de55fa",
@@ -922,12 +984,14 @@
       "shadow_venue_adjustment": -0.29,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -112
-      }
+      },
+      "actual_margin": -13,
+      "settlement_status": "settled"
     },
     {
       "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -951,12 +1015,14 @@
       "shadow_venue_adjustment": 0.19,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -330
-      }
+      },
+      "actual_margin": 22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -980,12 +1046,14 @@
       "shadow_venue_adjustment": 0.19,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -8.5,
         "odds": -105
-      }
+      },
+      "actual_margin": 22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -1009,12 +1077,14 @@
       "shadow_venue_adjustment": 0.19,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -324
-      }
+      },
+      "actual_margin": 22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "592a440c590415d43f5ffbfd922cd41e",
@@ -1038,12 +1108,14 @@
       "shadow_venue_adjustment": -0.19,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 8.5,
         "odds": -116
-      }
+      },
+      "actual_margin": -22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -1067,12 +1139,14 @@
       "shadow_venue_adjustment": 0.03,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -142
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -1096,12 +1170,14 @@
       "shadow_venue_adjustment": 0.03,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -2.5,
         "odds": -110
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -1125,12 +1201,14 @@
       "shadow_venue_adjustment": 0.03,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -135
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "fecbaa4e1973217826262c63d8f52dea",
@@ -1154,12 +1232,14 @@
       "shadow_venue_adjustment": 0.03,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -2.5,
         "odds": -104
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1183,12 +1263,14 @@
       "shadow_venue_adjustment": 0.13,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -217
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1212,12 +1294,14 @@
       "shadow_venue_adjustment": 0.13,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -6.5,
         "odds": -103
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1241,12 +1325,14 @@
       "shadow_venue_adjustment": 0.13,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -210
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "13d9ca3bcb664829c603755d31401002",
@@ -1270,12 +1356,14 @@
       "shadow_venue_adjustment": 0.13,
       "sport": "NBA",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -6.5,
         "odds": -105
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1305,7 +1393,8 @@
         "line": null,
         "odds": -236
       },
-      "actual_margin": -22
+      "actual_margin": -22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1335,7 +1424,8 @@
         "line": 4.5,
         "odds": -105
       },
-      "actual_margin": 22
+      "actual_margin": 22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1365,7 +1455,8 @@
         "line": null,
         "odds": -230
       },
-      "actual_margin": -22
+      "actual_margin": -22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "44a3bcf5bd002583ddef2207a92dd977",
@@ -1395,7 +1486,8 @@
         "line": 4.5,
         "odds": -110
       },
-      "actual_margin": 22
+      "actual_margin": 22,
+      "settlement_status": "settled"
     },
     {
       "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1424,7 +1516,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -310
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1453,7 +1546,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 7.0,
         "odds": -119
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1482,7 +1576,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -330
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
@@ -1511,7 +1606,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 7.0,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "60d0c074801985c1062795362a24200e",
@@ -1540,7 +1636,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -332
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "60d0c074801985c1062795362a24200e",
@@ -1569,7 +1666,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -6.5,
         "odds": -112
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "60d0c074801985c1062795362a24200e",
@@ -1598,7 +1696,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -295
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "60d0c074801985c1062795362a24200e",
@@ -1627,7 +1726,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -6.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1656,7 +1756,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -570
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1685,7 +1786,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 9.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1714,7 +1816,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -620
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
@@ -1743,7 +1846,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -9.5,
         "odds": -120
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1772,7 +1876,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -272
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1801,7 +1906,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -107
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1830,7 +1936,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -275
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e9da808e36e1b7475698a57465ad4519",
@@ -1859,7 +1966,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1888,7 +1996,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -930
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1917,7 +2026,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -14.0,
         "odds": -107
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1946,7 +2056,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -1100
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
@@ -1975,7 +2086,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -14.5,
         "odds": 100
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -2004,7 +2116,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 212
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -2033,7 +2146,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -113
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -2062,7 +2176,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 210
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
@@ -2091,7 +2206,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -2120,7 +2236,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -152
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -2149,7 +2266,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.0,
         "odds": -118
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -2178,7 +2296,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -154
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c64ceba13ede564e8658693e3171e7f9",
@@ -2207,7 +2326,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -3.0,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -2236,7 +2356,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -343
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -2265,7 +2386,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 6.5,
         "odds": -102
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -2294,7 +2416,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -360
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
@@ -2323,7 +2446,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 7.0,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2352,7 +2476,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 101
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2381,7 +2506,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2410,7 +2536,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 100
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
@@ -2439,7 +2566,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2468,7 +2596,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -236
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2497,7 +2626,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 4.5,
         "odds": -114
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2526,7 +2656,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -230
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
@@ -2555,7 +2686,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 4.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2584,7 +2716,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -159
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2613,7 +2746,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -3.0,
         "odds": -107
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2642,7 +2776,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -158
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
@@ -2671,7 +2806,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -3.0,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "06e52a676b516186989e3b181a37c8a7",
@@ -2700,7 +2836,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -109
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "06e52a676b516186989e3b181a37c8a7",
@@ -2729,7 +2866,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -121
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c94419ba8fb818fc36a5b21b526aab75",
@@ -2758,7 +2896,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -188
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c94419ba8fb818fc36a5b21b526aab75",
@@ -2787,7 +2926,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -3.5,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c94419ba8fb818fc36a5b21b526aab75",
@@ -2816,7 +2956,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -210
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c94419ba8fb818fc36a5b21b526aab75",
@@ -2845,7 +2986,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -3.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
@@ -2874,7 +3016,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 129
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
@@ -2903,7 +3046,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.0,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
@@ -2932,7 +3076,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 136
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0236f9aa68d65ea03bd1ca025b749c20",
@@ -2961,7 +3106,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.0,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -2990,7 +3136,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -259
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -3019,7 +3166,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 6.0,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -3048,7 +3196,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -245
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b447fab53534af892f98a74eae26c1c6",
@@ -3077,7 +3226,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -5.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -3106,7 +3256,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": null,
         "odds": -1120
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -3135,7 +3286,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": 14.5,
         "odds": -114
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -3164,7 +3316,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": null,
         "odds": -1400
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "9a55467e1cd6310ae2af20d8154612e1",
@@ -3193,7 +3346,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": 14.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -3222,7 +3376,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -228
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -3251,7 +3406,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 4.5,
         "odds": -102
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -3280,7 +3436,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -230
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "1ccb61b811b7aae4270df22a67e6459f",
@@ -3309,7 +3466,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f8a92363386bd337975650879086cca6",
@@ -3338,7 +3496,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -254
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f8a92363386bd337975650879086cca6",
@@ -3367,7 +3526,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -5.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f8a92363386bd337975650879086cca6",
@@ -3396,7 +3556,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -270
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f8a92363386bd337975650879086cca6",
@@ -3425,7 +3586,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -5.5,
         "odds": -116
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -3454,7 +3616,8 @@
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -293
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -3483,7 +3646,8 @@
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 6.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -3512,7 +3676,8 @@
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -300
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a5495c3360b3bb13da76ba23a675c9ef",
@@ -3541,7 +3706,8 @@
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 6.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -3570,7 +3736,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -231
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -3599,7 +3766,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -4.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -3628,7 +3796,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -220
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "ae3429e95ee704c7fd001cade20072d0",
@@ -3657,7 +3826,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -4.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f4897f48a5351881280f7598bd826408",
@@ -3686,7 +3856,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -167
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f4897f48a5351881280f7598bd826408",
@@ -3715,7 +3886,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.0,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f4897f48a5351881280f7598bd826408",
@@ -3744,7 +3916,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -174
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "f4897f48a5351881280f7598bd826408",
@@ -3773,7 +3946,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "4116dbff75ab7957b69c2152f204b74d",
@@ -3802,7 +3976,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -790
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "4116dbff75ab7957b69c2152f204b74d",
@@ -3831,7 +4006,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 12.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -3860,7 +4036,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -247
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -3889,7 +4066,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -3918,7 +4096,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -230
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c186c605febd6370b292469c9151cfb3",
@@ -3947,7 +4126,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 4.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -3976,7 +4156,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": null,
         "odds": -225
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -4005,7 +4186,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": 4.5,
         "odds": -111
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -4034,7 +4216,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": null,
         "odds": -220
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "26bf8e165d2d273ed0772a355f07ab16",
@@ -4063,7 +4246,8 @@
         "captured": "2026-11-27T16:16:56.192484+00:00",
         "line": 4.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0db4646c964ecdff19957373fe707546",
@@ -4092,7 +4276,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -273
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0db4646c964ecdff19957373fe707546",
@@ -4121,7 +4306,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 6.0,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0db4646c964ecdff19957373fe707546",
@@ -4150,7 +4336,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -300
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "0db4646c964ecdff19957373fe707546",
@@ -4179,7 +4366,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 6.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -4209,7 +4397,8 @@
         "line": null,
         "odds": -152
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -4239,7 +4428,8 @@
         "line": 1.5,
         "odds": -188
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -4269,7 +4459,8 @@
         "line": null,
         "odds": -155
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "27cb678af08c1929cf19d9350d9f511e",
@@ -4299,7 +4490,8 @@
         "line": 1.5,
         "odds": -180
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -4329,7 +4521,8 @@
         "line": null,
         "odds": -250
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -4359,7 +4552,8 @@
         "line": 1.5,
         "odds": -122
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -4389,7 +4583,8 @@
         "line": null,
         "odds": -258
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "978dfc077c2cba5159882a1f65088b8d",
@@ -4419,7 +4614,8 @@
         "line": 1.5,
         "odds": -120
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -4449,7 +4645,8 @@
         "line": null,
         "odds": 100
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -4479,7 +4676,8 @@
         "line": 1.5,
         "odds": -250
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -4509,7 +4707,8 @@
         "line": null,
         "odds": -105
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "b5234ea5788fb4f5393efc6c33c8e5e7",
@@ -4539,7 +4738,8 @@
         "line": 1.5,
         "odds": -258
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -4569,7 +4769,8 @@
         "line": null,
         "odds": -134
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -4599,7 +4800,8 @@
         "line": 1.5,
         "odds": -240
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -4629,7 +4831,8 @@
         "line": null,
         "odds": -130
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f4f067c12199285d9589564210a2a7d5",
@@ -4659,7 +4862,8 @@
         "line": 1.5,
         "odds": -238
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -4689,7 +4893,8 @@
         "line": null,
         "odds": -118
       },
-      "actual_margin": 1
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -4719,7 +4924,8 @@
         "line": 1.5,
         "odds": -260
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -4749,7 +4955,8 @@
         "line": null,
         "odds": -115
       },
-      "actual_margin": 1
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f59fbb4eb34e72efeecfce2b7adc2198",
@@ -4779,7 +4986,8 @@
         "line": 1.5,
         "odds": -250
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "e455a88aa787a29717a862a536046895",
@@ -4809,7 +5017,8 @@
         "line": null,
         "odds": -138
       },
-      "actual_margin": -4
+      "actual_margin": -4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "e455a88aa787a29717a862a536046895",
@@ -4839,7 +5048,8 @@
         "line": 1.5,
         "odds": -220
       },
-      "actual_margin": 4
+      "actual_margin": 4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "e455a88aa787a29717a862a536046895",
@@ -4869,7 +5079,8 @@
         "line": null,
         "odds": -142
       },
-      "actual_margin": -4
+      "actual_margin": -4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "e455a88aa787a29717a862a536046895",
@@ -4899,7 +5110,8 @@
         "line": 1.5,
         "odds": -218
       },
-      "actual_margin": 4
+      "actual_margin": 4,
+      "settlement_status": "settled"
     },
     {
       "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -4929,7 +5141,8 @@
         "line": null,
         "odds": -245
       },
-      "actual_margin": 3
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -4959,7 +5172,8 @@
         "line": 1.5,
         "odds": -128
       },
-      "actual_margin": -3
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -4989,7 +5203,8 @@
         "line": null,
         "odds": -245
       },
-      "actual_margin": 3
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "a76ba8f9808ac21b09342afdd5df0b32",
@@ -5019,7 +5234,8 @@
         "line": 1.5,
         "odds": -125
       },
-      "actual_margin": -3
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "634c54722c6860c9773604c369f6e062",
@@ -5049,7 +5265,8 @@
         "line": null,
         "odds": -105
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "634c54722c6860c9773604c369f6e062",
@@ -5079,7 +5296,8 @@
         "line": 1.5,
         "odds": -250
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "634c54722c6860c9773604c369f6e062",
@@ -5109,7 +5327,8 @@
         "line": null,
         "odds": -102
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "634c54722c6860c9773604c369f6e062",
@@ -5139,7 +5358,8 @@
         "line": 1.5,
         "odds": -280
       },
-      "actual_margin": -2
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "d86dc755fe06568141403800fce290fb",
@@ -5169,7 +5389,8 @@
         "line": null,
         "odds": -125
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "d86dc755fe06568141403800fce290fb",
@@ -5199,7 +5420,8 @@
         "line": 1.5,
         "odds": -230
       },
-      "actual_margin": 1
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "d86dc755fe06568141403800fce290fb",
@@ -5229,7 +5451,8 @@
         "line": null,
         "odds": -126
       },
-      "actual_margin": -1
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "d86dc755fe06568141403800fce290fb",
@@ -5259,7 +5482,8 @@
         "line": 1.5,
         "odds": -230
       },
-      "actual_margin": 1
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -5289,7 +5513,8 @@
         "line": null,
         "odds": -218
       },
-      "actual_margin": -3
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -5319,7 +5544,8 @@
         "line": 1.5,
         "odds": -142
       },
-      "actual_margin": 3
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -5349,7 +5575,8 @@
         "line": null,
         "odds": -210
       },
-      "actual_margin": -3
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
@@ -5379,7 +5606,8 @@
         "line": 1.5,
         "odds": -148
       },
-      "actual_margin": 3
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -5403,12 +5631,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -180
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -5432,12 +5662,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -175
-      }
+      },
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -5461,12 +5693,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -176
-      }
+      },
+      "actual_margin": -1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "05bd16c51ce4454e77900af56cd8997c",
@@ -5490,12 +5724,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -184
-      }
+      },
+      "actual_margin": 1,
+      "settlement_status": "settled"
     },
     {
       "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -5519,12 +5755,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -125
-      }
+      },
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -5548,12 +5786,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -238
-      }
+      },
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -5577,12 +5817,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -120
-      }
+      },
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "26c93a0fb3baf8842c064fe3aad7082d",
@@ -5606,12 +5848,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -250
-      }
+      },
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3553bd967a739912ede178eb373433b8",
@@ -5635,12 +5879,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -130
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3553bd967a739912ede178eb373433b8",
@@ -5664,12 +5910,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -205
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3553bd967a739912ede178eb373433b8",
@@ -5693,12 +5941,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -134
-      }
+      },
+      "actual_margin": -3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "3553bd967a739912ede178eb373433b8",
@@ -5722,12 +5972,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -225
-      }
+      },
+      "actual_margin": 3,
+      "settlement_status": "settled"
     },
     {
       "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -5751,12 +6003,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -218
-      }
+      },
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -5780,12 +6034,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -135
-      }
+      },
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -5809,12 +6065,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "loss",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": null,
         "odds": -220
-      }
+      },
+      "actual_margin": -2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "6be85c97118cc429ba24770044f011cd",
@@ -5838,12 +6096,14 @@
       "shadow_rest_adjustment": 0,
       "sport": "NHL",
       "captured": "2026-11-27T05:28:56.457044+00:00",
-      "result": "pending",
+      "result": "win",
       "latest_pregame": {
         "captured": "2026-11-27T21:08:21.170949+00:00",
         "line": 1.5,
         "odds": -142
-      }
+      },
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -5873,7 +6133,8 @@
         "line": null,
         "odds": 116
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -5903,7 +6164,8 @@
         "line": 1.5,
         "odds": -230
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -5933,7 +6195,8 @@
         "line": null,
         "odds": 120
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
@@ -5963,7 +6226,8 @@
         "line": 1.5,
         "odds": -218
       },
-      "actual_margin": 2
+      "actual_margin": 2,
+      "settlement_status": "settled"
     },
     {
       "event_id": "06e52a676b516186989e3b181a37c8a7",
@@ -6006,7 +6270,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "06e52a676b516186989e3b181a37c8a7",
@@ -6049,7 +6314,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -116
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "4116dbff75ab7957b69c2152f204b74d",
@@ -6092,7 +6358,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -850
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "4116dbff75ab7957b69c2152f204b74d",
@@ -6135,7 +6402,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 13.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "caa1c061c2ace9568a038a36abf48a25",
@@ -6178,7 +6446,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -108
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "caa1c061c2ace9568a038a36abf48a25",
@@ -6221,7 +6490,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": 205
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "79a04197d6f55ccaf3fbccea1207874b",
@@ -6264,7 +6534,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -192
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "79a04197d6f55ccaf3fbccea1207874b",
@@ -6307,7 +6578,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -148
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e52a03fb10019b305f480dbb4b76f824",
@@ -6350,7 +6622,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -265
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e52a03fb10019b305f480dbb4b76f824",
@@ -6393,7 +6666,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": -108
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
@@ -6436,7 +6710,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -108
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
@@ -6479,7 +6754,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -258
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "274d3542bf8eff313ed96f04ff26e743",
@@ -6522,7 +6798,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -205
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "274d3542bf8eff313ed96f04ff26e743",
@@ -6565,7 +6842,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -135
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2eb8dba3fd1115cc292ba861af377253",
@@ -6608,7 +6886,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -122
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2eb8dba3fd1115cc292ba861af377253",
@@ -6651,7 +6930,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -230
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "13c3edd2c9dc19cce0a916e9db43cc44",
@@ -6694,7 +6974,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -112
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "13c3edd2c9dc19cce0a916e9db43cc44",
@@ -6737,7 +7018,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -250
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2b6e5d5ff42cf859e0a34051ee14caf2",
@@ -6780,7 +7062,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -122
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2b6e5d5ff42cf859e0a34051ee14caf2",
@@ -6823,7 +7106,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": 235
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c7d8345f0df3b99a79c00eefada5673a",
@@ -6866,7 +7150,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -155
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c7d8345f0df3b99a79c00eefada5673a",
@@ -6909,7 +7194,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -180
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b593db6702ca42144f478008ba894214",
@@ -6952,7 +7238,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -142
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b593db6702ca42144f478008ba894214",
@@ -6995,7 +7282,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -192
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
@@ -7038,7 +7326,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -278
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
@@ -7081,7 +7370,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": -115
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "94344b740781b59e4e387c487269635a",
@@ -7124,7 +7414,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -170
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "94344b740781b59e4e387c487269635a",
@@ -7167,7 +7458,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -166
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "79a04197d6f55ccaf3fbccea1207874b",
@@ -7268,7 +7560,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -205
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "79a04197d6f55ccaf3fbccea1207874b",
@@ -7369,7 +7662,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -158
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e52a03fb10019b305f480dbb4b76f824",
@@ -7470,7 +7764,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -280
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "e52a03fb10019b305f480dbb4b76f824",
@@ -7571,7 +7866,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
@@ -7672,7 +7968,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -102
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
@@ -7773,7 +8070,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -260
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "274d3542bf8eff313ed96f04ff26e743",
@@ -7874,7 +8172,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -220
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "274d3542bf8eff313ed96f04ff26e743",
@@ -7975,7 +8274,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -142
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2eb8dba3fd1115cc292ba861af377253",
@@ -8076,7 +8376,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 108
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2eb8dba3fd1115cc292ba861af377253",
@@ -8177,7 +8478,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -225
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "13c3edd2c9dc19cce0a916e9db43cc44",
@@ -8278,7 +8580,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -125
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "13c3edd2c9dc19cce0a916e9db43cc44",
@@ -8379,7 +8682,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -235
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2b6e5d5ff42cf859e0a34051ee14caf2",
@@ -8480,7 +8784,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -110
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2b6e5d5ff42cf859e0a34051ee14caf2",
@@ -8581,7 +8886,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -290
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c7d8345f0df3b99a79c00eefada5673a",
@@ -8682,7 +8988,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -156
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "c7d8345f0df3b99a79c00eefada5673a",
@@ -8783,7 +9090,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -194
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b593db6702ca42144f478008ba894214",
@@ -8884,7 +9192,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -154
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b593db6702ca42144f478008ba894214",
@@ -8985,7 +9294,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -192
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
@@ -9086,7 +9396,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -260
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
@@ -9187,7 +9498,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": -1.5,
         "odds": -105
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "94344b740781b59e4e387c487269635a",
@@ -9288,7 +9600,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -166
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "94344b740781b59e4e387c487269635a",
@@ -9389,7 +9702,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -184
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2f2c60fafdc3fd106d71517a9de4f2b1",
@@ -9432,7 +9746,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": 152
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "2f2c60fafdc3fd106d71517a9de4f2b1",
@@ -9475,7 +9790,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 3.5,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a05c295062d5e2b8e9fa633c2797880e",
@@ -9518,7 +9834,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -245
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "a05c295062d5e2b8e9fa633c2797880e",
@@ -9561,7 +9878,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 5.5,
         "odds": -104
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "638cefeed67cdd691e1686e024981563",
@@ -9604,7 +9922,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -550
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "638cefeed67cdd691e1686e024981563",
@@ -9647,7 +9966,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 11.5,
         "odds": -112
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "caa1c061c2ace9568a038a36abf48a25",
@@ -9748,7 +10068,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": null,
         "odds": -114
-      }
+      },
+      "settlement_status": "upcoming"
     },
     {
       "event_id": "caa1c061c2ace9568a038a36abf48a25",
@@ -9849,7 +10170,8 @@
         "captured": "2026-11-28T00:00:10.969139+00:00",
         "line": 1.5,
         "odds": -280
-      }
+      },
+      "settlement_status": "upcoming"
     }
   ],
   "summary": [
@@ -9857,45 +10179,45 @@
       "sport": "NBA",
       "market": "h2h",
       "book": "draftkings",
-      "wins": 0,
-      "losses": 0,
+      "wins": 5,
+      "losses": 6,
       "pushes": 0,
-      "pending": 11,
-      "accuracy": null,
-      "brier": null
+      "pending": 0,
+      "accuracy": 0.45454545454545453,
+      "brier": 0.5054663739763637
     },
     {
       "sport": "NBA",
       "market": "h2h",
       "book": "fanduel",
-      "wins": 0,
-      "losses": 0,
+      "wins": 5,
+      "losses": 6,
       "pushes": 0,
-      "pending": 14,
-      "accuracy": null,
-      "brier": null
+      "pending": 3,
+      "accuracy": 0.45454545454545453,
+      "brier": 0.5054663739763637
     },
     {
       "sport": "NBA",
       "market": "spreads",
       "book": "draftkings",
-      "wins": 0,
-      "losses": 0,
+      "wins": 3,
+      "losses": 8,
       "pushes": 0,
-      "pending": 11,
-      "accuracy": null,
-      "brier": null
+      "pending": 0,
+      "accuracy": 0.2727272727272727,
+      "brier": 0.5898528136627272
     },
     {
       "sport": "NBA",
       "market": "spreads",
       "book": "fanduel",
-      "wins": 0,
-      "losses": 0,
+      "wins": 5,
+      "losses": 6,
       "pushes": 0,
-      "pending": 14,
-      "accuracy": null,
-      "brier": null
+      "pending": 3,
+      "accuracy": 0.45454545454545453,
+      "brier": 0.570373753148909
     },
     {
       "sport": "NFL",
@@ -9946,44 +10268,44 @@
       "market": "h2h",
       "book": "draftkings",
       "wins": 4,
-      "losses": 7,
+      "losses": 11,
       "pushes": 0,
-      "pending": 16,
-      "accuracy": 0.36363636363636365,
-      "brier": 0.5593418955465453
+      "pending": 12,
+      "accuracy": 0.26666666666666666,
+      "brier": 0.6053058750464
     },
     {
       "sport": "NHL",
       "market": "h2h",
       "book": "fanduel",
       "wins": 4,
-      "losses": 7,
+      "losses": 11,
       "pushes": 0,
-      "pending": 16,
-      "accuracy": 0.36363636363636365,
-      "brier": 0.5593418955465453
+      "pending": 12,
+      "accuracy": 0.26666666666666666,
+      "brier": 0.6053058750464
     },
     {
       "sport": "NHL",
       "market": "spreads",
       "book": "draftkings",
-      "wins": 8,
+      "wins": 12,
       "losses": 3,
       "pushes": 0,
-      "pending": 16,
-      "accuracy": 0.7272727272727273,
-      "brier": 0.3740826739958182
+      "pending": 12,
+      "accuracy": 0.8,
+      "brier": 0.34873076963826666
     },
     {
       "sport": "NHL",
       "market": "spreads",
       "book": "fanduel",
-      "wins": 8,
+      "wins": 12,
       "losses": 3,
       "pushes": 0,
-      "pending": 16,
-      "accuracy": 0.7272727272727273,
-      "brier": 0.3740826739958182
+      "pending": 12,
+      "accuracy": 0.8,
+      "brier": 0.34873076963826666
     }
   ],
   "benchmark": [
@@ -9992,13 +10314,13 @@
       "market": "h2h",
       "book": "draftkings",
       "model": {
-        "settled": 0,
-        "wins": 0,
-        "losses": 0,
+        "settled": 11,
+        "wins": 5,
+        "losses": 6,
         "pushes": 0,
-        "accuracy": null,
-        "units": 0,
-        "roi": null
+        "accuracy": 0.45454545454545453,
+        "units": -4.509053504366337,
+        "roi": -0.40991395494239424
       },
       "matched_model": {
         "settled": 0,
@@ -10022,46 +10344,46 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.7987927565392354,
+          "roi": -0.5995975855130785
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 0,
+          "settled": 3,
           "wins": 0,
-          "losses": 0,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -3.0,
+          "roi": -1.0
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.75,
+          "units": 0.036574695210873254,
+          "roi": 0.009143673802718313
         },
         {
           "low": 0.8,
           "high": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.25316455696202533,
+          "roi": 0.25316455696202533
         }
       ],
       "segments": [
@@ -10069,169 +10391,169 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 11,
+          "wins": 5,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.45454545454545453,
+          "units": -4.509053504366337,
+          "roi": -0.40991395494239424
         },
         {
           "dimension": "Market side",
           "label": "Favorite",
           "forecasts": 10,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 10,
+          "wins": 5,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -3.509053504366337,
+          "roi": -0.3509053504366337
         },
         {
           "dimension": "Market side",
           "label": "Underdog",
           "forecasts": 1,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.7468354430379747,
+          "roi": -0.5822784810126582
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 2,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -1.286005949950417,
+          "roi": -0.32150148748760426
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 2,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -1.4762121113779452,
+          "roi": -0.3690530278444863
         },
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 3,
-          "settled": 0,
+          "settled": 3,
           "wins": 0,
-          "losses": 0,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -3.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.75,
+          "units": 0.036574695210873254,
+          "roi": 0.009143673802718313
         },
         {
           "dimension": "Model probability",
           "label": "80%+",
           "forecasts": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.25316455696202533,
+          "roi": 0.25316455696202533
         },
         {
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.7987927565392354,
+          "roi": -0.5995975855130785
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 2,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -3.2860059499504173,
+          "roi": -0.5476676583250696
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 3,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.6,
+          "units": -1.2230475544159198,
+          "roi": -0.24460951088318397
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.2012072434607646,
+          "roi": 0.2012072434607646
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 10,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 10,
+          "wins": 4,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.4,
+          "units": -4.7102607478271015,
+          "roi": -0.47102607478271014
         }
       ]
     },
@@ -10240,13 +10562,13 @@
       "market": "h2h",
       "book": "fanduel",
       "model": {
-        "settled": 0,
-        "wins": 0,
-        "losses": 0,
+        "settled": 11,
+        "wins": 5,
+        "losses": 6,
         "pushes": 0,
-        "accuracy": null,
-        "units": 0,
-        "roi": null
+        "accuracy": 0.45454545454545453,
+        "units": -4.453180830600186,
+        "roi": -0.40483462096365325
       },
       "matched_model": {
         "settled": 0,
@@ -10270,13 +10592,13 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.8,
+          "roi": -0.6
         },
         {
           "low": 0.55,
@@ -10292,35 +10614,35 @@
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 0,
+          "settled": 3,
           "wins": 0,
-          "losses": 0,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -3.0,
+          "roi": -1.0
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.75,
+          "units": 0.07654889912954427,
+          "roi": 0.019137224782386067
         },
         {
           "low": 0.8,
           "high": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.2702702702702703,
+          "roi": 0.2702702702702703
         }
       ],
       "segments": [
@@ -10340,85 +10662,85 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 11,
+          "wins": 5,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.45454545454545453,
+          "units": -4.453180830600186,
+          "roi": -0.40483462096365325
         },
         {
           "dimension": "Market side",
           "label": "Favorite",
           "forecasts": 12,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 10,
+          "wins": 5,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -3.4531808306001857,
+          "roi": -0.34531808306001854
         },
         {
           "dimension": "Market side",
           "label": "Underdog",
           "forecasts": 2,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.7222222222222223,
+          "roi": -0.5740740740740741
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
           "forecasts": 2,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.2702702702702703,
+          "roi": 0.2702702702702703
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.5238095238095237,
+          "roi": -0.5079365079365079
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 2,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -1.4774193548387098,
+          "roi": -0.36935483870967745
         },
         {
           "dimension": "Model probability",
@@ -10436,97 +10758,97 @@
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 4,
-          "settled": 0,
+          "settled": 3,
           "wins": 0,
-          "losses": 0,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -3.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.75,
+          "units": 0.07654889912954427,
+          "roi": 0.019137224782386067
         },
         {
           "dimension": "Model probability",
           "label": "80%+",
           "forecasts": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.2702702702702703,
+          "roi": 0.2702702702702703
         },
         {
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.8,
+          "roi": -0.6
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 7,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 2,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -3.2535392535392536,
+          "roi": -0.5422565422565423
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 7,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 3,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.6,
+          "units": -1.1996415770609319,
+          "roi": -0.23992831541218637
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 2,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.2,
+          "roi": 0.2
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 12,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 10,
+          "wins": 4,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.4,
+          "units": -4.653180830600186,
+          "roi": -0.4653180830600186
         }
       ]
     },
@@ -10535,13 +10857,13 @@
       "market": "spreads",
       "book": "draftkings",
       "model": {
-        "settled": 0,
-        "wins": 0,
-        "losses": 0,
+        "settled": 11,
+        "wins": 3,
+        "losses": 8,
         "pushes": 0,
-        "accuracy": null,
-        "units": 0,
-        "roi": null
+        "accuracy": 0.2727272727272727,
+        "units": -5.288961038961039,
+        "roi": -0.480814639905549
       },
       "matched_model": {
         "settled": 0,
@@ -10565,46 +10887,46 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 1,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2,
+          "units": -3.090909090909091,
+          "roi": -0.6181818181818182
         },
         {
           "low": 0.55,
           "high": 0.6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0909090909090908,
+          "roi": -0.3636363636363636
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 2,
+          "wins": 1,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.1071428571428571,
+          "roi": -0.05357142857142855
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         }
       ],
       "segments": [
@@ -10612,169 +10934,169 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 11,
+          "wins": 3,
+          "losses": 8,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2727272727272727,
+          "units": -5.288961038961039,
+          "roi": -0.480814639905549
         },
         {
           "dimension": "Market side",
           "label": "Giving points",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 1,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2,
+          "units": -3.107142857142857,
+          "roi": -0.6214285714285714
         },
         {
           "dimension": "Market side",
           "label": "Receiving points",
           "forecasts": 6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 2,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -2.1818181818181817,
+          "roi": -0.3636363636363636
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 1,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2,
+          "units": -3.090909090909091,
+          "roi": -0.6181818181818182
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.1071428571428572,
+          "roi": -0.36904761904761907
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0909090909090908,
+          "roi": -0.3636363636363636
         },
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0909090909090908,
+          "roi": -0.3636363636363636
         },
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 2,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 2,
+          "wins": 1,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.1071428571428571,
+          "roi": -0.05357142857142855
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 1,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 1,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2,
+          "units": -3.090909090909091,
+          "roi": -0.6181818181818182
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 10,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 10,
+          "wins": 3,
+          "losses": 7,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3,
+          "units": -4.288961038961039,
+          "roi": -0.42889610389610394
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 1,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 2,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.18181818181818188,
+          "roi": -0.04545454545454547
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 7,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 7,
+          "wins": 1,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.14285714285714285,
+          "units": -5.107142857142857,
+          "roi": -0.7295918367346939
         }
       ]
     },
@@ -10783,13 +11105,13 @@
       "market": "spreads",
       "book": "fanduel",
       "model": {
-        "settled": 0,
-        "wins": 0,
-        "losses": 0,
+        "settled": 11,
+        "wins": 5,
+        "losses": 6,
         "pushes": 0,
-        "accuracy": null,
-        "units": 0,
-        "roi": null
+        "accuracy": 0.45454545454545453,
+        "units": -1.482679029589785,
+        "roi": -0.13478900268998045
       },
       "matched_model": {
         "settled": 0,
@@ -10813,46 +11135,46 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 3,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.31225296442687756,
+          "roi": -0.052042160737812926
         },
         {
           "low": 0.55,
           "high": 0.6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0476190476190477,
+          "roi": -0.34920634920634924
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.8771929824561403,
+          "roi": 0.8771929824561403
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         }
       ],
       "segments": [
@@ -10872,181 +11194,181 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 11,
+          "wins": 5,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.45454545454545453,
+          "units": -1.482679029589785,
+          "roi": -0.13478900268998045
         },
         {
           "dimension": "Market side",
           "label": "Giving points",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 2,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.4,
+          "units": -1.2137161084529506,
+          "roi": -0.24274322169059012
         },
         {
           "dimension": "Market side",
           "label": "Receiving points",
           "forecasts": 9,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 3,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.2689629211368343,
+          "roi": -0.04482715352280572
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 5,
+          "wins": 2,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.4,
+          "units": -1.1818181818181819,
+          "roi": -0.2363636363636364
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 2,
+          "wins": 1,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.1228070175438597,
+          "roi": -0.06140350877192985
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0476190476190477,
+          "roi": -0.34920634920634924
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 1,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.8695652173913043,
+          "roi": 0.8695652173913043
         },
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
           "forecasts": 3,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -1.0476190476190477,
+          "roi": -0.34920634920634924
         },
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 4,
-          "settled": 0,
-          "wins": 0,
+          "settled": 1,
+          "wins": 1,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 0.8771929824561403,
+          "roi": 0.8771929824561403
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 1,
-          "settled": 0,
+          "settled": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.0,
+          "units": -1.0,
+          "roi": -1.0
         },
         {
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 6,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 6,
+          "wins": 3,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.5,
+          "units": -0.31225296442687756,
+          "roi": -0.052042160737812926
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 12,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 9,
+          "wins": 3,
+          "losses": 6,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.3333333333333333,
+          "units": -3.2613351560719983,
+          "roi": -0.3623705728968887
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 2,
-          "settled": 0,
-          "wins": 0,
+          "settled": 2,
+          "wins": 2,
           "losses": 0,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 1.0,
+          "units": 1.7786561264822134,
+          "roi": 0.8893280632411067
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 5,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.75,
+          "units": 1.7310370788631657,
+          "roi": 0.43275926971579143
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 9,
-          "settled": 0,
-          "wins": 0,
-          "losses": 0,
+          "settled": 7,
+          "wins": 2,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": null,
-          "units": 0,
-          "roi": null
+          "accuracy": 0.2857142857142857,
+          "units": -3.2137161084529504,
+          "roi": -0.45910230120756435
         }
       ]
     },
@@ -12119,13 +12441,13 @@
       "market": "h2h",
       "book": "draftkings",
       "model": {
-        "settled": 11,
+        "settled": 15,
         "wins": 4,
-        "losses": 7,
+        "losses": 11,
         "pushes": 0,
-        "accuracy": 0.36363636363636365,
-        "units": -4.193501914592778,
-        "roi": -0.3812274467811616
+        "accuracy": 0.26666666666666666,
+        "units": -8.193501914592778,
+        "roi": -0.5462334609728519
       },
       "matched_model": {
         "settled": 0,
@@ -12149,13 +12471,13 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 2,
+          "settled": 4,
           "wins": 1,
-          "losses": 1,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.15254237288135597,
-          "roi": -0.07627118644067798
+          "accuracy": 0.25,
+          "units": -2.152542372881356,
+          "roi": -0.538135593220339
         },
         {
           "low": 0.55,
@@ -12171,13 +12493,13 @@
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 5,
+          "settled": 7,
           "wins": 2,
-          "losses": 3,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.4,
-          "units": -2.2409595417114216,
-          "roi": -0.44819190834228434
+          "accuracy": 0.2857142857142857,
+          "units": -4.240959541711422,
+          "roi": -0.6058513631016317
         },
         {
           "low": 0.7,
@@ -12231,25 +12553,25 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 15,
-          "settled": 11,
+          "settled": 15,
           "wins": 4,
-          "losses": 7,
+          "losses": 11,
           "pushes": 0,
-          "accuracy": 0.36363636363636365,
-          "units": -4.193501914592778,
-          "roi": -0.3812274467811616
+          "accuracy": 0.26666666666666666,
+          "units": -8.193501914592778,
+          "roi": -0.5462334609728519
         },
         {
           "dimension": "Market side",
           "label": "Favorite",
           "forecasts": 22,
-          "settled": 8,
+          "settled": 12,
           "wins": 3,
-          "losses": 5,
+          "losses": 9,
           "pushes": 0,
-          "accuracy": 0.375,
-          "units": -3.393501914592777,
-          "roi": -0.42418773932409715
+          "accuracy": 0.25,
+          "units": -7.393501914592777,
+          "roi": -0.6161251595493981
         },
         {
           "dimension": "Market side",
@@ -12267,13 +12589,13 @@
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 7,
-          "settled": 3,
+          "settled": 4,
           "wins": 1,
-          "losses": 2,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.3333333333333333,
-          "units": -1.152542372881356,
-          "roi": -0.384180790960452
+          "accuracy": 0.25,
+          "units": -2.152542372881356,
+          "roi": -0.538135593220339
         },
         {
           "dimension": "Model minus no-vig market",
@@ -12291,25 +12613,25 @@
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 5,
-          "settled": 2,
+          "settled": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "pushes": 0,
           "accuracy": 0.0,
-          "units": -2.0,
+          "units": -3.0,
           "roi": -1.0
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 12,
-          "settled": 4,
+          "settled": 6,
           "wins": 2,
-          "losses": 2,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -1.2409595417114214,
-          "roi": -0.31023988542785536
+          "accuracy": 0.3333333333333333,
+          "units": -3.2409595417114216,
+          "roi": -0.5401599236185702
         },
         {
           "dimension": "Model probability",
@@ -12327,13 +12649,13 @@
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 9,
-          "settled": 5,
+          "settled": 7,
           "wins": 2,
-          "losses": 3,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.4,
-          "units": -2.2409595417114216,
-          "roi": -0.44819190834228434
+          "accuracy": 0.2857142857142857,
+          "units": -4.240959541711422,
+          "roi": -0.6058513631016317
         },
         {
           "dimension": "Model probability",
@@ -12363,61 +12685,61 @@
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 8,
-          "settled": 2,
+          "settled": 4,
           "wins": 1,
-          "losses": 1,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.15254237288135597,
-          "roi": -0.07627118644067798
+          "accuracy": 0.25,
+          "units": -2.152542372881356,
+          "roi": -0.538135593220339
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 12,
-          "settled": 5,
+          "settled": 6,
           "wins": 1,
-          "losses": 4,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.2,
-          "units": -2.8,
-          "roi": -0.5599999999999999
+          "accuracy": 0.16666666666666666,
+          "units": -3.8,
+          "roi": -0.6333333333333333
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 15,
-          "settled": 6,
-          "wins": 3,
-          "losses": 3,
-          "pushes": 0,
-          "accuracy": 0.5,
-          "units": -1.3935019145927774,
-          "roi": -0.23225031909879623
-        },
-        {
-          "dimension": "Venue",
-          "label": "Away",
-          "forecasts": 6,
-          "settled": 2,
-          "wins": 1,
-          "losses": 1,
-          "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.15254237288135597,
-          "roi": -0.07627118644067798
-        },
-        {
-          "dimension": "Venue",
-          "label": "Home",
-          "forecasts": 21,
           "settled": 9,
           "wins": 3,
           "losses": 6,
           "pushes": 0,
           "accuracy": 0.3333333333333333,
-          "units": -4.0409595417114215,
-          "roi": -0.44899550463460236
+          "units": -4.393501914592777,
+          "roi": -0.48816687939919745
+        },
+        {
+          "dimension": "Venue",
+          "label": "Away",
+          "forecasts": 6,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
+          "pushes": 0,
+          "accuracy": 0.3333333333333333,
+          "units": -1.152542372881356,
+          "roi": -0.384180790960452
+        },
+        {
+          "dimension": "Venue",
+          "label": "Home",
+          "forecasts": 21,
+          "settled": 12,
+          "wins": 3,
+          "losses": 9,
+          "pushes": 0,
+          "accuracy": 0.25,
+          "units": -7.0409595417114215,
+          "roi": -0.5867466284759518
         }
       ]
     },
@@ -12426,13 +12748,13 @@
       "market": "h2h",
       "book": "fanduel",
       "model": {
-        "settled": 11,
+        "settled": 15,
         "wins": 4,
-        "losses": 7,
+        "losses": 11,
         "pushes": 0,
-        "accuracy": 0.36363636363636365,
-        "units": -4.24486703772418,
-        "roi": -0.3858970034294709
+        "accuracy": 0.26666666666666666,
+        "units": -8.24486703772418,
+        "roi": -0.5496578025149453
       },
       "matched_model": {
         "settled": 0,
@@ -12456,13 +12778,13 @@
         {
           "low": 0,
           "high": 0.55,
-          "settled": 2,
+          "settled": 4,
           "wins": 1,
-          "losses": 1,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.16666666666666663,
-          "roi": -0.08333333333333331
+          "accuracy": 0.25,
+          "units": -2.1666666666666665,
+          "roi": -0.5416666666666666
         },
         {
           "low": 0.55,
@@ -12478,13 +12800,13 @@
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 5,
+          "settled": 7,
           "wins": 2,
-          "losses": 3,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.4,
-          "units": -2.228200371057514,
-          "roi": -0.44564007421150276
+          "accuracy": 0.2857142857142857,
+          "units": -4.228200371057514,
+          "roi": -0.6040286244367877
         },
         {
           "low": 0.7,
@@ -12538,13 +12860,13 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 15,
-          "settled": 11,
+          "settled": 15,
           "wins": 4,
-          "losses": 7,
+          "losses": 11,
           "pushes": 0,
-          "accuracy": 0.36363636363636365,
-          "units": -4.24486703772418,
-          "roi": -0.3858970034294709
+          "accuracy": 0.26666666666666666,
+          "units": -8.24486703772418,
+          "roi": -0.5496578025149453
         },
         {
           "dimension": "Market side",
@@ -12562,13 +12884,13 @@
           "dimension": "Market side",
           "label": "Favorite",
           "forecasts": 21,
-          "settled": 8,
+          "settled": 12,
           "wins": 3,
-          "losses": 5,
+          "losses": 9,
           "pushes": 0,
-          "accuracy": 0.375,
-          "units": -3.3948670377241807,
-          "roi": -0.4243583797155226
+          "accuracy": 0.25,
+          "units": -7.394867037724181,
+          "roi": -0.6162389198103484
         },
         {
           "dimension": "Market side",
@@ -12586,13 +12908,13 @@
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 7,
-          "settled": 3,
+          "settled": 5,
           "wins": 1,
-          "losses": 2,
+          "losses": 4,
           "pushes": 0,
-          "accuracy": 0.3333333333333333,
-          "units": -1.1666666666666665,
-          "roi": -0.38888888888888884
+          "accuracy": 0.2,
+          "units": -3.1666666666666665,
+          "roi": -0.6333333333333333
         },
         {
           "dimension": "Model minus no-vig market",
@@ -12610,25 +12932,25 @@
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
           "forecasts": 6,
-          "settled": 1,
+          "settled": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "pushes": 0,
           "accuracy": 0.0,
-          "units": -1.0,
+          "units": -2.0,
           "roi": -1.0
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 10,
-          "settled": 4,
+          "settled": 5,
           "wins": 2,
-          "losses": 2,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -1.2282003710575138,
-          "roi": -0.30705009276437845
+          "accuracy": 0.4,
+          "units": -2.228200371057514,
+          "roi": -0.44564007421150276
         },
         {
           "dimension": "Model probability",
@@ -12646,13 +12968,13 @@
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 9,
-          "settled": 5,
+          "settled": 7,
           "wins": 2,
-          "losses": 3,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.4,
-          "units": -2.228200371057514,
-          "roi": -0.44564007421150276
+          "accuracy": 0.2857142857142857,
+          "units": -4.228200371057514,
+          "roi": -0.6040286244367877
         },
         {
           "dimension": "Model probability",
@@ -12682,61 +13004,61 @@
           "dimension": "Model probability",
           "label": "Below 55%",
           "forecasts": 7,
-          "settled": 2,
+          "settled": 4,
           "wins": 1,
-          "losses": 1,
+          "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.16666666666666663,
-          "roi": -0.08333333333333331
+          "accuracy": 0.25,
+          "units": -2.1666666666666665,
+          "roi": -0.5416666666666666
         },
         {
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 12,
-          "settled": 5,
+          "settled": 6,
           "wins": 1,
-          "losses": 4,
+          "losses": 5,
           "pushes": 0,
-          "accuracy": 0.2,
-          "units": -2.85,
-          "roi": -0.5700000000000001
+          "accuracy": 0.16666666666666666,
+          "units": -3.85,
+          "roi": -0.6416666666666667
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 15,
-          "settled": 6,
-          "wins": 3,
-          "losses": 3,
-          "pushes": 0,
-          "accuracy": 0.5,
-          "units": -1.3948670377241805,
-          "roi": -0.23247783962069676
-        },
-        {
-          "dimension": "Venue",
-          "label": "Away",
-          "forecasts": 7,
-          "settled": 2,
-          "wins": 1,
-          "losses": 1,
-          "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.16666666666666663,
-          "roi": -0.08333333333333331
-        },
-        {
-          "dimension": "Venue",
-          "label": "Home",
-          "forecasts": 20,
           "settled": 9,
           "wins": 3,
           "losses": 6,
           "pushes": 0,
           "accuracy": 0.3333333333333333,
-          "units": -4.078200371057514,
-          "roi": -0.453133374561946
+          "units": -4.394867037724181,
+          "roi": -0.4883185597471312
+        },
+        {
+          "dimension": "Venue",
+          "label": "Away",
+          "forecasts": 7,
+          "settled": 3,
+          "wins": 1,
+          "losses": 2,
+          "pushes": 0,
+          "accuracy": 0.3333333333333333,
+          "units": -1.1666666666666665,
+          "roi": -0.38888888888888884
+        },
+        {
+          "dimension": "Venue",
+          "label": "Home",
+          "forecasts": 20,
+          "settled": 12,
+          "wins": 3,
+          "losses": 9,
+          "pushes": 0,
+          "accuracy": 0.25,
+          "units": -7.078200371057514,
+          "roi": -0.5898500309214595
         }
       ]
     },
@@ -12745,13 +13067,13 @@
       "market": "spreads",
       "book": "draftkings",
       "model": {
-        "settled": 11,
-        "wins": 8,
+        "settled": 15,
+        "wins": 12,
         "losses": 3,
         "pushes": 0,
-        "accuracy": 0.7272727272727273,
-        "units": 0.8197596754761313,
-        "roi": 0.07452360686146647
+        "accuracy": 0.8,
+        "units": 3.081423937140393,
+        "roi": 0.2054282624760262
       },
       "matched_model": {
         "settled": 0,
@@ -12786,35 +13108,35 @@
         {
           "low": 0.55,
           "high": 0.6,
-          "settled": 2,
-          "wins": 1,
+          "settled": 4,
+          "wins": 3,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.4444444444444444,
-          "roi": -0.2222222222222222
+          "accuracy": 0.75,
+          "units": 0.8013468013468014,
+          "roi": 0.20033670033670034
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 4,
-          "wins": 4,
+          "settled": 5,
+          "wins": 5,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.9977235571386034,
-          "roi": 0.49943088928465085
+          "units": 2.442168001583048,
+          "roi": 0.4884336003166096
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 2,
-          "wins": 1,
+          "settled": 3,
+          "wins": 2,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.5798319327731092,
-          "roi": -0.2899159663865546
+          "accuracy": 0.6666666666666666,
+          "units": -0.00840336134453784,
+          "roi": -0.0028011204481792804
         },
         {
           "low": 0.8,
@@ -12857,13 +13179,13 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 15,
-          "settled": 11,
-          "wins": 8,
+          "settled": 15,
+          "wins": 12,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.7272727272727273,
-          "units": 0.8197596754761313,
-          "roi": 0.07452360686146647
+          "accuracy": 0.8,
+          "units": 3.081423937140393,
+          "roi": 0.2054282624760262
         },
         {
           "dimension": "Market side",
@@ -12881,37 +13203,37 @@
           "dimension": "Market side",
           "label": "Receiving points",
           "forecasts": 25,
-          "settled": 11,
-          "wins": 8,
+          "settled": 15,
+          "wins": 12,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.7272727272727273,
-          "units": 0.8197596754761313,
-          "roi": 0.07452360686146647
+          "accuracy": 0.8,
+          "units": 3.081423937140393,
+          "roi": 0.2054282624760262
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 9,
-          "settled": 4,
-          "wins": 2,
+          "settled": 6,
+          "wins": 4,
           "losses": 2,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.8609920391916719,
-          "roi": -0.21524800979791797
+          "accuracy": 0.6666666666666666,
+          "units": 0.3241931459935133,
+          "roi": 0.05403219099891888
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
           "forecasts": 5,
-          "settled": 3,
-          "wins": 2,
+          "settled": 4,
+          "wins": 3,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.6666666666666666,
-          "units": -0.15368750444491852,
-          "roi": -0.05122916814830617
+          "accuracy": 0.75,
+          "units": 0.4177410669836529,
+          "roi": 0.10443526674591322
         },
         {
           "dimension": "Model minus no-vig market",
@@ -12929,49 +13251,49 @@
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 5,
-          "settled": 3,
-          "wins": 3,
-          "losses": 0,
-          "pushes": 0,
-          "accuracy": 1.0,
-          "units": 1.4142711518858309,
-          "roi": 0.47142371729527693
-        },
-        {
-          "dimension": "Model probability",
-          "label": "55\u201359%",
-          "forecasts": 6,
-          "settled": 2,
-          "wins": 1,
-          "losses": 1,
-          "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.4444444444444444,
-          "roi": -0.2222222222222222
-        },
-        {
-          "dimension": "Model probability",
-          "label": "60\u201369%",
-          "forecasts": 10,
           "settled": 4,
           "wins": 4,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.9977235571386034,
-          "roi": 0.49943088928465085
+          "units": 1.919321656936336,
+          "roi": 0.479830414234084
+        },
+        {
+          "dimension": "Model probability",
+          "label": "55\u201359%",
+          "forecasts": 6,
+          "settled": 4,
+          "wins": 3,
+          "losses": 1,
+          "pushes": 0,
+          "accuracy": 0.75,
+          "units": 0.8013468013468014,
+          "roi": 0.20033670033670034
+        },
+        {
+          "dimension": "Model probability",
+          "label": "60\u201369%",
+          "forecasts": 10,
+          "settled": 5,
+          "wins": 5,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": 1.0,
+          "units": 2.442168001583048,
+          "roi": 0.4884336003166096
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 7,
-          "settled": 2,
-          "wins": 1,
+          "settled": 3,
+          "wins": 2,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.5798319327731092,
-          "roi": -0.2899159663865546
+          "accuracy": 0.6666666666666666,
+          "units": -0.00840336134453784,
+          "roi": -0.0028011204481792804
         },
         {
           "dimension": "Model probability",
@@ -13001,49 +13323,49 @@
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 18,
-          "settled": 7,
-          "wins": 4,
+          "settled": 8,
+          "wins": 5,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5714285714285714,
-          "units": -1.0292940851053518,
-          "roi": -0.1470420121579074
+          "accuracy": 0.625,
+          "units": -0.45786551367678036,
+          "roi": -0.057233189209597544
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 9,
-          "settled": 4,
-          "wins": 4,
+          "settled": 7,
+          "wins": 7,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.849053760581483,
-          "roi": 0.46226344014537074
+          "units": 3.539289450817173,
+          "roi": 0.5056127786881676
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 16,
-          "settled": 6,
-          "wins": 4,
+          "settled": 9,
+          "wins": 7,
           "losses": 2,
           "pushes": 0,
-          "accuracy": 0.6666666666666666,
-          "units": -0.13077817219162624,
-          "roi": -0.021796362031937706
+          "accuracy": 0.7777777777777778,
+          "units": 1.559457518044064,
+          "roi": 0.17327305756045155
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 11,
-          "settled": 5,
-          "wins": 4,
+          "settled": 6,
+          "wins": 5,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.8,
-          "units": 0.9505378476677575,
-          "roi": 0.1901075695335515
+          "accuracy": 0.8333333333333334,
+          "units": 1.521966419096329,
+          "roi": 0.25366106984938813
         }
       ]
     },
@@ -13052,13 +13374,13 @@
       "market": "spreads",
       "book": "fanduel",
       "model": {
-        "settled": 11,
-        "wins": 8,
+        "settled": 15,
+        "wins": 12,
         "losses": 3,
         "pushes": 0,
-        "accuracy": 0.7272727272727273,
-        "units": 0.696962794755148,
-        "roi": 0.06336025406864981
+        "accuracy": 0.8,
+        "units": 2.8995702402355317,
+        "roi": 0.19330468268236878
       },
       "matched_model": {
         "settled": 0,
@@ -13093,35 +13415,35 @@
         {
           "low": 0.55,
           "high": 0.6,
-          "settled": 2,
-          "wins": 1,
+          "settled": 4,
+          "wins": 3,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.46808510638297873,
-          "roi": -0.23404255319148937
+          "accuracy": 0.75,
+          "units": 0.7471926713947991,
+          "roi": 0.18679816784869976
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "settled": 4,
-          "wins": 4,
+          "settled": 5,
+          "wins": 5,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.91244019138756,
-          "roi": 0.47811004784689
+          "units": 2.337972106281177,
+          "roi": 0.4675944212562354
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "settled": 2,
-          "wins": 1,
+          "settled": 3,
+          "wins": 2,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.5555555555555556,
-          "roi": -0.2777777777777778
+          "accuracy": 0.6666666666666666,
+          "units": 0.006242197253433224,
+          "roi": 0.0020807324178110744
         },
         {
           "low": 0.8,
@@ -13164,13 +13486,13 @@
           "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 15,
-          "settled": 11,
-          "wins": 8,
+          "settled": 15,
+          "wins": 12,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.7272727272727273,
-          "units": 0.696962794755148,
-          "roi": 0.06336025406864981
+          "accuracy": 0.8,
+          "units": 2.8995702402355317,
+          "roi": 0.19330468268236878
         },
         {
           "dimension": "Market side",
@@ -13188,37 +13510,37 @@
           "dimension": "Market side",
           "label": "Receiving points",
           "forecasts": 25,
-          "settled": 11,
-          "wins": 8,
+          "settled": 15,
+          "wins": 12,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.7272727272727273,
-          "units": 0.696962794755148,
-          "roi": 0.06336025406864981
+          "accuracy": 0.8,
+          "units": 2.8995702402355317,
+          "roi": 0.19330468268236878
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
           "forecasts": 7,
-          "settled": 4,
-          "wins": 2,
+          "settled": 5,
+          "wins": 3,
           "losses": 2,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.9421052631578947,
-          "roi": -0.23552631578947367
+          "accuracy": 0.6,
+          "units": -0.5165733482642776,
+          "roi": -0.10331466965285552
         },
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
           "forecasts": 4,
-          "settled": 3,
-          "wins": 2,
+          "settled": 4,
+          "wins": 3,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.6666666666666666,
-          "units": -0.19183673469387752,
-          "roi": -0.0639455782312925
+          "accuracy": 0.75,
+          "units": 0.3699610181151113,
+          "roi": 0.09249025452877782
         },
         {
           "dimension": "Model minus no-vig market",
@@ -13236,49 +13558,49 @@
           "dimension": "Model minus no-vig market",
           "label": "Below market",
           "forecasts": 7,
-          "settled": 3,
-          "wins": 3,
+          "settled": 5,
+          "wins": 5,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.3864603481624758,
-          "roi": 0.4621534493874919
+          "units": 2.6017381259402534,
+          "roi": 0.5203476251880507
         },
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
           "forecasts": 5,
-          "settled": 2,
-          "wins": 1,
+          "settled": 4,
+          "wins": 3,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.46808510638297873,
-          "roi": -0.23404255319148937
+          "accuracy": 0.75,
+          "units": 0.7471926713947991,
+          "roi": 0.18679816784869976
         },
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
           "forecasts": 11,
-          "settled": 4,
-          "wins": 4,
+          "settled": 5,
+          "wins": 5,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.91244019138756,
-          "roi": 0.47811004784689
+          "units": 2.337972106281177,
+          "roi": 0.4675944212562354
         },
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
           "forecasts": 7,
-          "settled": 2,
-          "wins": 1,
+          "settled": 3,
+          "wins": 2,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.5,
-          "units": -0.5555555555555556,
-          "roi": -0.2777777777777778
+          "accuracy": 0.6666666666666666,
+          "units": 0.006242197253433224,
+          "roi": 0.0020807324178110744
         },
         {
           "dimension": "Model probability",
@@ -13308,49 +13630,49 @@
           "dimension": "Model vs break-even",
           "label": "Above",
           "forecasts": 17,
-          "settled": 7,
-          "wins": 4,
+          "settled": 8,
+          "wins": 5,
           "losses": 3,
           "pushes": 0,
-          "accuracy": 0.5714285714285714,
-          "units": -1.0894975534073277,
-          "roi": -0.15564250762961823
+          "accuracy": 0.625,
+          "units": -0.527699800598339,
+          "roi": -0.06596247507479237
         },
         {
           "dimension": "Model vs break-even",
           "label": "Below",
           "forecasts": 10,
-          "settled": 4,
-          "wins": 4,
+          "settled": 7,
+          "wins": 7,
           "losses": 0,
           "pushes": 0,
           "accuracy": 1.0,
-          "units": 1.786460348162476,
-          "roi": 0.446615087040619
+          "units": 3.4272700408338705,
+          "roi": 0.4896100058334101
         },
         {
           "dimension": "Venue",
           "label": "Away",
           "forecasts": 18,
-          "settled": 6,
-          "wins": 4,
+          "settled": 9,
+          "wins": 7,
           "losses": 2,
           "pushes": 0,
-          "accuracy": 0.6666666666666666,
-          "units": -0.16909520739307976,
-          "roi": -0.028182534565513295
+          "accuracy": 0.7777777777777778,
+          "units": 1.471714485278315,
+          "roi": 0.16352383169759055
         },
         {
           "dimension": "Venue",
           "label": "Home",
           "forecasts": 9,
-          "settled": 5,
-          "wins": 4,
+          "settled": 6,
+          "wins": 5,
           "losses": 1,
           "pushes": 0,
-          "accuracy": 0.8,
-          "units": 0.8660580021482278,
-          "roi": 0.17321160042964556
+          "accuracy": 0.8333333333333334,
+          "units": 1.4278557549572166,
+          "roi": 0.2379759591595361
         }
       ]
     }
@@ -13360,49 +13682,49 @@
       "sport": "NBA",
       "market": "h2h",
       "book": "draftkings",
-      "settled": 0,
-      "observed": 0,
+      "settled": 11,
+      "observed": 11,
       "avg_points": null,
-      "comparable_prices": 0,
-      "avg_price_pp": null,
-      "positive_rate": null,
-      "avg_minutes_before_start": null
+      "comparable_prices": 11,
+      "avg_price_pp": -1.1400997313052936,
+      "positive_rate": 0.2727272727272727,
+      "avg_minutes_before_start": 97.08990828939395
     },
     {
       "sport": "NBA",
       "market": "h2h",
       "book": "fanduel",
-      "settled": 0,
-      "observed": 0,
+      "settled": 11,
+      "observed": 11,
       "avg_points": null,
-      "comparable_prices": 0,
-      "avg_price_pp": null,
-      "positive_rate": null,
-      "avg_minutes_before_start": null
+      "comparable_prices": 11,
+      "avg_price_pp": -0.6176272619035371,
+      "positive_rate": 0.2727272727272727,
+      "avg_minutes_before_start": 97.08990828939395
     },
     {
       "sport": "NBA",
       "market": "spreads",
       "book": "draftkings",
-      "settled": 0,
-      "observed": 0,
-      "avg_points": null,
-      "comparable_prices": 0,
-      "avg_price_pp": null,
-      "positive_rate": null,
-      "avg_minutes_before_start": null
+      "settled": 11,
+      "observed": 11,
+      "avg_points": -0.18181818181818182,
+      "comparable_prices": 2,
+      "avg_price_pp": 0.01027885003595519,
+      "positive_rate": 0.45454545454545453,
+      "avg_minutes_before_start": 97.08990828939395
     },
     {
       "sport": "NBA",
       "market": "spreads",
       "book": "fanduel",
-      "settled": 0,
-      "observed": 0,
-      "avg_points": null,
-      "comparable_prices": 0,
-      "avg_price_pp": null,
-      "positive_rate": null,
-      "avg_minutes_before_start": null
+      "settled": 11,
+      "observed": 11,
+      "avg_points": 0.09090909090909091,
+      "comparable_prices": 2,
+      "avg_price_pp": -1.1614401858304313,
+      "positive_rate": 0.36363636363636365,
+      "avg_minutes_before_start": 97.08990828939395
     },
     {
       "sport": "NFL",
@@ -13456,49 +13778,50 @@
       "sport": "NHL",
       "market": "h2h",
       "book": "draftkings",
-      "settled": 11,
-      "observed": 11,
+      "settled": 15,
+      "observed": 15,
       "avg_points": null,
-      "comparable_prices": 11,
-      "avg_price_pp": -0.25824764349870616,
-      "positive_rate": 0.09090909090909091,
-      "avg_minutes_before_start": 201.2452767818182
+      "comparable_prices": 15,
+      "avg_price_pp": -0.5563467319515514,
+      "positive_rate": 0.13333333333333333,
+      "avg_minutes_before_start": 197.3524432
     },
     {
       "sport": "NHL",
       "market": "h2h",
       "book": "fanduel",
-      "settled": 11,
-      "observed": 11,
+      "settled": 15,
+      "observed": 15,
       "avg_points": null,
-      "comparable_prices": 11,
-      "avg_price_pp": -0.2945137856279196,
-      "positive_rate": 0.18181818181818182,
-      "avg_minutes_before_start": 201.2452767818182
+      "comparable_prices": 15,
+      "avg_price_pp": -0.5762167915395707,
+      "positive_rate": 0.13333333333333333,
+      "avg_minutes_before_start": 197.3524432
     },
     {
       "sport": "NHL",
       "market": "spreads",
       "book": "draftkings",
-      "settled": 11,
-      "observed": 11,
+      "settled": 15,
+      "observed": 15,
       "avg_points": 0.0,
-      "comparable_prices": 11,
-      "avg_price_pp": 0.09789074442140379,
-      "positive_rate": 0.09090909090909091,
-      "avg_minutes_before_start": 201.2452767818182
+      "comparable_prices": 15,
+      "avg_price_pp": 0.20202612501748632,
+      "positive_rate": 0.2,
+      "avg_minutes_before_start": 197.3524432
     },
     {
       "sport": "NHL",
       "market": "spreads",
       "book": "fanduel",
-      "settled": 11,
-      "observed": 11,
+      "settled": 15,
+      "observed": 15,
       "avg_points": 0.0,
-      "comparable_prices": 11,
-      "avg_price_pp": 0.09181861530386248,
-      "positive_rate": 0.36363636363636365,
-      "avg_minutes_before_start": 201.2452767818182
+      "comparable_prices": 15,
+      "avg_price_pp": 0.41252766416965514,
+      "positive_rate": 0.4666666666666667,
+      "avg_minutes_before_start": 197.3524432
     }
-  ]
+  ],
+  "settlement_updated": "2026-11-28T14:09:25.708518+00:00"
 }
