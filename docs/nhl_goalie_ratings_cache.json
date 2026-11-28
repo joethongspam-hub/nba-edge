@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "year": 2026,
   "players": {
     "igorshesterkin": {
@@ -18,11 +18,11 @@
     },
     "karelvejmelka": {
       "moneypuck_id": "8478872",
-      "gsax60": -0.071,
-      "effective_hours": 47.03,
-      "season_hours": 16.26,
-      "season_gsax": -7.86,
-      "season_gsax60": -0.483,
+      "gsax60": -0.109,
+      "effective_hours": 48.12,
+      "season_hours": 17.34,
+      "season_gsax": -10.35,
+      "season_gsax60": -0.597,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -44,20 +44,6 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "claystevenson": {
-      "moneypuck_id": "8483532",
-      "gsax60": -0.048,
-      "effective_hours": 6.43,
-      "season_hours": 4.43,
-      "season_gsax": -2.6,
-      "season_gsax60": -0.587,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Winnipeg Jets"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
     "alexnedeljkovic": {
       "moneypuck_id": "8477968",
       "gsax60": 0.039,
@@ -74,11 +60,11 @@
     },
     "linusullmark": {
       "moneypuck_id": "8476999",
-      "gsax60": 0.097,
-      "effective_hours": 37.51,
-      "season_hours": 13.48,
-      "season_gsax": 11.52,
-      "season_gsax60": 0.855,
+      "gsax60": 0.095,
+      "effective_hours": 38.51,
+      "season_hours": 14.48,
+      "season_gsax": 11.47,
+      "season_gsax60": 0.792,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -102,11 +88,11 @@
     },
     "jeremyswayman": {
       "moneypuck_id": "8480280",
-      "gsax60": 0.339,
-      "effective_hours": 44.54,
-      "season_hours": 17.58,
-      "season_gsax": 5.8,
-      "season_gsax60": 0.33,
+      "gsax60": 0.321,
+      "effective_hours": 45.48,
+      "season_hours": 18.52,
+      "season_gsax": 5.03,
+      "season_gsax60": 0.272,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -128,111 +114,41 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "stuartskinner": {
-      "moneypuck_id": "8479973",
-      "gsax60": 0.1,
-      "effective_hours": 41.01,
-      "season_hours": 16.66,
-      "season_gsax": 1.43,
-      "season_gsax60": 0.086,
+    "alexlyon": {
+      "moneypuck_id": "8479312",
+      "gsax60": 0.133,
+      "effective_hours": 21.12,
+      "season_hours": 4.52,
+      "season_gsax": -1.51,
+      "season_gsax60": -0.334,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
-        "Winnipeg Jets"
+        "Buffalo Sabres"
       ],
       "method": "season_weighted_shrinkage"
     },
-    "sergeimurashov": {
-      "moneypuck_id": "8483703",
-      "gsax60": -0.141,
-      "effective_hours": 11.31,
-      "season_hours": 8.96,
-      "season_gsax": -1.96,
-      "season_gsax60": -0.219,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Pittsburgh Penguins"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "michalpostava": {
-      "moneypuck_id": "8485545",
-      "gsax60": -0.018,
-      "effective_hours": 1.38,
-      "season_hours": 1.38,
-      "season_gsax": -0.29,
-      "season_gsax60": -0.21,
+    "matttomkins": {
+      "moneypuck_id": "8477035",
+      "gsax60": 0.001,
+      "effective_hours": 1.94,
+      "season_hours": 1.94,
+      "season_gsax": 0.01,
+      "season_gsax60": 0.005,
       "recent_gsax60": null,
       "rating_eligible": false,
       "teams": [
-        "Detroit Red Wings"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jetgreaves": {
-      "moneypuck_id": "8482982",
-      "gsax60": 0.092,
-      "effective_hours": 36.95,
-      "season_hours": 9.65,
-      "season_gsax": -3.44,
-      "season_gsax60": -0.357,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Columbus Blue Jackets"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "andreivasilevskiy": {
-      "moneypuck_id": "8476883",
-      "gsax60": 0.24,
-      "effective_hours": 46.54,
-      "season_hours": 17.95,
-      "season_gsax": 2.39,
-      "season_gsax60": 0.133,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Tampa Bay Lightning"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "carterhart": {
-      "moneypuck_id": "8479394",
-      "gsax60": -0.113,
-      "effective_hours": 22.61,
-      "season_hours": 14.11,
-      "season_gsax": -2.16,
-      "season_gsax60": -0.153,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Vegas Golden Knights"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "dennishildeby": {
-      "moneypuck_id": "8483710",
-      "gsax60": 0.125,
-      "effective_hours": 14.46,
-      "season_hours": 6.06,
-      "season_gsax": -1.53,
-      "season_gsax60": -0.253,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Tampa Bay Lightning"
+        "Edmonton Oilers"
       ],
       "method": "season_weighted_shrinkage"
     },
     "jesperwallstedt": {
       "moneypuck_id": "8482661",
-      "gsax60": 0.353,
-      "effective_hours": 39.77,
-      "season_hours": 23.13,
-      "season_gsax": 16.23,
-      "season_gsax60": 0.702,
+      "gsax60": 0.349,
+      "effective_hours": 40.85,
+      "season_hours": 24.21,
+      "season_gsax": 16.39,
+      "season_gsax60": 0.677,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -240,17 +156,213 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "antonforsberg": {
-      "moneypuck_id": "8476341",
-      "gsax60": 0.096,
-      "effective_hours": 25.41,
-      "season_hours": 8.47,
-      "season_gsax": -0.83,
-      "season_gsax60": -0.098,
+    "lukasdostal": {
+      "moneypuck_id": "8480843",
+      "gsax60": -0.153,
+      "effective_hours": 39.38,
+      "season_hours": 12.15,
+      "season_gsax": -6.84,
+      "season_gsax60": -0.563,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
-        "Los Angeles Kings"
+        "Anaheim Ducks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jacobfowler": {
+      "moneypuck_id": "8484170",
+      "gsax60": 0.352,
+      "effective_hours": 24.55,
+      "season_hours": 16.12,
+      "season_gsax": 10.38,
+      "season_gsax60": 0.644,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Montreal Canadiens"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jamesreimer": {
+      "moneypuck_id": "8473503",
+      "gsax60": -0.104,
+      "effective_hours": 7.15,
+      "season_hours": 0.33,
+      "season_gsax": -1.97,
+      "season_gsax60": -5.91,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "New York Rangers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "mackenzieblackwood": {
+      "moneypuck_id": "8478406",
+      "gsax60": 0.146,
+      "effective_hours": 36.42,
+      "season_hours": 18.45,
+      "season_gsax": 3.38,
+      "season_gsax60": 0.183,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Colorado Avalanche"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jacobmarkstrom": {
+      "moneypuck_id": "8474593",
+      "gsax60": -0.054,
+      "effective_hours": 35.53,
+      "season_hours": 14.33,
+      "season_gsax": 3.26,
+      "season_gsax60": 0.227,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Florida Panthers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "arturssilovs": {
+      "moneypuck_id": "8481668",
+      "gsax60": -0.201,
+      "effective_hours": 33.55,
+      "season_hours": 14.82,
+      "season_gsax": -3.83,
+      "season_gsax60": -0.258,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Pittsburgh Penguins"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "brandonbussi": {
+      "moneypuck_id": "8483548",
+      "gsax60": 0.029,
+      "effective_hours": 29.79,
+      "season_hours": 10.12,
+      "season_gsax": -0.08,
+      "season_gsax60": -0.008,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Carolina Hurricanes"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "camtalbot": {
+      "moneypuck_id": "8475660",
+      "gsax60": -0.014,
+      "effective_hours": 27.99,
+      "season_hours": 13.41,
+      "season_gsax": 5.96,
+      "season_gsax60": 0.445,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Columbus Blue Jackets"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "dylangarand": {
+      "moneypuck_id": "8482193",
+      "gsax60": 0.125,
+      "effective_hours": 16.97,
+      "season_hours": 15.43,
+      "season_gsax": 2.06,
+      "season_gsax60": 0.134,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "New York Rangers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "semyonvarlamov": {
+      "moneypuck_id": "8473575",
+      "gsax60": 0.297,
+      "effective_hours": 8.13,
+      "season_hours": 8.13,
+      "season_gsax": 6.87,
+      "season_gsax60": 0.844,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "New York Islanders"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "daniiltarasov": {
+      "moneypuck_id": "8480193",
+      "gsax60": 0.26,
+      "effective_hours": 25.97,
+      "season_hours": 10.09,
+      "season_gsax": 11.53,
+      "season_gsax60": 1.143,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Detroit Red Wings"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jonasjohansson": {
+      "moneypuck_id": "8477992",
+      "gsax60": -0.303,
+      "effective_hours": 15.34,
+      "season_hours": 3.48,
+      "season_gsax": -3.97,
+      "season_gsax60": -1.142,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Ottawa Senators"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "dennishildeby": {
+      "moneypuck_id": "8483710",
+      "gsax60": 0.016,
+      "effective_hours": 15.46,
+      "season_hours": 7.06,
+      "season_gsax": -4.75,
+      "season_gsax60": -0.673,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Tampa Bay Lightning"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "tristanjarry": {
+      "moneypuck_id": "8477465",
+      "gsax60": -0.029,
+      "effective_hours": 27.01,
+      "season_hours": 12.23,
+      "season_gsax": 0.85,
+      "season_gsax60": 0.07,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Edmonton Oilers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "charlielindgren": {
+      "moneypuck_id": "8479292",
+      "gsax60": -0.274,
+      "effective_hours": 17.68,
+      "season_hours": 7.3,
+      "season_gsax": -6.32,
+      "season_gsax60": -0.866,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Washington Capitals"
       ],
       "method": "season_weighted_shrinkage"
     },
@@ -268,13 +380,293 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "philippgrubauer": {
-      "moneypuck_id": "8475831",
-      "gsax60": 0.074,
-      "effective_hours": 27.19,
+    "juusesaros": {
+      "moneypuck_id": "8477424",
+      "gsax60": 0.081,
+      "effective_hours": 47.51,
+      "season_hours": 18.91,
+      "season_gsax": 9.69,
+      "season_gsax60": 0.512,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Nashville Predators"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "filipgustavsson": {
+      "moneypuck_id": "8479406",
+      "gsax60": 0.007,
+      "effective_hours": 25.72,
+      "season_hours": 0.99,
+      "season_gsax": -0.39,
+      "season_gsax60": -0.393,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Minnesota Wild"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "arvidsoderblom": {
+      "moneypuck_id": "8482821",
+      "gsax60": -0.256,
+      "effective_hours": 16.73,
+      "season_hours": 4.5,
+      "season_gsax": -6.12,
+      "season_gsax60": -1.361,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Chicago Blackhawks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "johngibson": {
+      "moneypuck_id": "8476434",
+      "gsax60": 0.026,
+      "effective_hours": 39.93,
+      "season_hours": 13.42,
+      "season_gsax": -4.41,
+      "season_gsax60": -0.329,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Detroit Red Wings"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "akiraschmid": {
+      "moneypuck_id": "8481033",
+      "gsax60": -0.03,
+      "effective_hours": 27.1,
+      "season_hours": 10.72,
+      "season_gsax": -0.78,
+      "season_gsax60": -0.073,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Florida Panthers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "darcykuemper": {
+      "moneypuck_id": "8475311",
+      "gsax60": -0.128,
+      "effective_hours": 38.49,
+      "season_hours": 14.43,
+      "season_gsax": -3.94,
+      "season_gsax60": -0.273,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Los Angeles Kings"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "sebastiancossa": {
+      "moneypuck_id": "8482657",
+      "gsax60": -0.202,
+      "effective_hours": 9.7,
+      "season_hours": 9.7,
+      "season_gsax": -4.99,
+      "season_gsax60": -0.515,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Utah Mammoth"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "michaeldipietro": {
+      "moneypuck_id": "8480022",
+      "gsax60": 0.26,
+      "effective_hours": 6.56,
+      "season_hours": 6.51,
+      "season_gsax": 5.56,
+      "season_gsax60": 0.854,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Boston Bruins"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "claystevenson": {
+      "moneypuck_id": "8483532",
+      "gsax60": -0.048,
+      "effective_hours": 6.43,
+      "season_hours": 4.43,
+      "season_gsax": -2.6,
+      "season_gsax60": -0.587,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Winnipeg Jets"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "adinhill": {
+      "moneypuck_id": "8478499",
+      "gsax60": -0.131,
+      "effective_hours": 24.75,
       "season_hours": 12.27,
-      "season_gsax": 0.29,
-      "season_gsax60": 0.024,
+      "season_gsax": 1.88,
+      "season_gsax60": 0.153,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Vegas Golden Knights"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "loganthompson": {
+      "moneypuck_id": "8480313",
+      "gsax60": 0.184,
+      "effective_hours": 44.15,
+      "season_hours": 15.44,
+      "season_gsax": -3.79,
+      "season_gsax60": -0.245,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Washington Capitals"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "sergeibobrovsky": {
+      "moneypuck_id": "8475683",
+      "gsax60": -0.207,
+      "effective_hours": 39.05,
+      "season_hours": 13.97,
+      "season_gsax": -5.12,
+      "season_gsax60": -0.366,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Toronto Maple Leafs"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "danvladar": {
+      "moneypuck_id": "8478435",
+      "gsax60": 0.059,
+      "effective_hours": 39.04,
+      "season_hours": 14.08,
+      "season_gsax": -3.69,
+      "season_gsax60": -0.262,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Philadelphia Flyers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "spencerknight": {
+      "moneypuck_id": "8481519",
+      "gsax60": 0.122,
+      "effective_hours": 47.49,
+      "season_hours": 20.56,
+      "season_gsax": 2.2,
+      "season_gsax60": 0.107,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Chicago Blackhawks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "coltenellis": {
+      "moneypuck_id": "8481551",
+      "gsax60": 0.016,
+      "effective_hours": 14.38,
+      "season_hours": 6.79,
+      "season_gsax": -0.45,
+      "season_gsax60": -0.066,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Buffalo Sabres"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "carterhart": {
+      "moneypuck_id": "8479394",
+      "gsax60": -0.09,
+      "effective_hours": 23.58,
+      "season_hours": 15.09,
+      "season_gsax": -1.38,
+      "season_gsax60": -0.091,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Vegas Golden Knights"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "spencermartin": {
+      "moneypuck_id": "8477484",
+      "gsax60": -0.175,
+      "effective_hours": 3.01,
+      "season_hours": 0.59,
+      "season_gsax": -1.09,
+      "season_gsax60": -1.85,
+      "recent_gsax60": null,
+      "rating_eligible": false,
+      "teams": [
+        "New York Rangers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "pyotrkochetkov": {
+      "moneypuck_id": "8481611",
+      "gsax60": 0.225,
+      "effective_hours": 19.08,
+      "season_hours": 15.0,
+      "season_gsax": 7.67,
+      "season_gsax60": 0.511,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Carolina Hurricanes"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "joelhofer": {
+      "moneypuck_id": "8480981",
+      "gsax60": 0.299,
+      "effective_hours": 40.98,
+      "season_hours": 19.1,
+      "season_gsax": 10.88,
+      "season_gsax60": 0.57,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "St. Louis Blues"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "michalpostava": {
+      "moneypuck_id": "8485545",
+      "gsax60": -0.018,
+      "effective_hours": 1.38,
+      "season_hours": 1.38,
+      "season_gsax": -0.29,
+      "season_gsax60": -0.21,
+      "recent_gsax60": null,
+      "rating_eligible": false,
+      "teams": [
+        "Detroit Red Wings"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "joeydaccord": {
+      "moneypuck_id": "8478916",
+      "gsax60": -0.1,
+      "effective_hours": 32.53,
+      "season_hours": 10.08,
+      "season_gsax": -1.65,
+      "season_gsax60": -0.164,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -282,17 +674,101 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "ukkopekkaluukkonen": {
-      "moneypuck_id": "8480045",
-      "gsax60": 0.127,
-      "effective_hours": 31.29,
-      "season_hours": 14.39,
-      "season_gsax": 0.63,
-      "season_gsax60": 0.044,
+    "justusannunen": {
+      "moneypuck_id": "8481020",
+      "gsax60": 0.062,
+      "effective_hours": 18.04,
+      "season_hours": 5.53,
+      "season_gsax": -2.12,
+      "season_gsax60": -0.383,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
-        "Buffalo Sabres"
+        "Nashville Predators"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "caseydesmith": {
+      "moneypuck_id": "8479193",
+      "gsax60": 0.115,
+      "effective_hours": 21.09,
+      "season_hours": 6.47,
+      "season_gsax": -1.11,
+      "season_gsax60": -0.172,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Dallas Stars"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "anthonystolarz": {
+      "moneypuck_id": "8476932",
+      "gsax60": -0.055,
+      "effective_hours": 24.51,
+      "season_hours": 12.94,
+      "season_gsax": 1.19,
+      "season_gsax60": 0.092,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Toronto Maple Leafs"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jakeallen": {
+      "moneypuck_id": "8474596",
+      "gsax60": -0.132,
+      "effective_hours": 30.09,
+      "season_hours": 11.87,
+      "season_gsax": -9.12,
+      "season_gsax60": -0.768,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "New Jersey Devils"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "sergeimurashov": {
+      "moneypuck_id": "8483703",
+      "gsax60": -0.135,
+      "effective_hours": 12.31,
+      "season_hours": 9.96,
+      "season_gsax": -1.92,
+      "season_gsax60": -0.193,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Pittsburgh Penguins"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "leevimerilinen": {
+      "moneypuck_id": "8482447",
+      "gsax60": -0.295,
+      "effective_hours": 27.74,
+      "season_hours": 18.62,
+      "season_gsax": -3.97,
+      "season_gsax60": -0.213,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Vancouver Canucks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "villehusso": {
+      "moneypuck_id": "8478024",
+      "gsax60": -0.152,
+      "effective_hours": 17.17,
+      "season_hours": 7.62,
+      "season_gsax": -3.33,
+      "season_gsax60": -0.437,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Anaheim Ducks"
       ],
       "method": "season_weighted_shrinkage"
     },
@@ -324,633 +800,17 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "jordanbinnington": {
-      "moneypuck_id": "8476412",
-      "gsax60": -0.506,
-      "effective_hours": 26.15,
-      "season_hours": 6.92,
-      "season_gsax": -9.61,
-      "season_gsax60": -1.389,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "St. Louis Blues"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "scottwedgewood": {
-      "moneypuck_id": "8475809",
-      "gsax60": 0.168,
-      "effective_hours": 27.75,
-      "season_hours": 6.51,
-      "season_gsax": -4.38,
-      "season_gsax60": -0.673,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Colorado Avalanche"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "camtalbot": {
-      "moneypuck_id": "8475660",
-      "gsax60": -0.014,
-      "effective_hours": 27.99,
-      "season_hours": 13.41,
-      "season_gsax": 5.96,
-      "season_gsax60": 0.445,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Columbus Blue Jackets"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "yaroslavaskarov": {
-      "moneypuck_id": "8482137",
-      "gsax60": -0.153,
-      "effective_hours": 38.76,
-      "season_hours": 17.12,
-      "season_gsax": 1.24,
-      "season_gsax60": 0.072,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "San Jose Sharks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "justusannunen": {
-      "moneypuck_id": "8481020",
-      "gsax60": 0.062,
-      "effective_hours": 18.04,
-      "season_hours": 5.53,
-      "season_gsax": -2.12,
-      "season_gsax60": -0.383,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Nashville Predators"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "spencerknight": {
-      "moneypuck_id": "8481519",
-      "gsax60": 0.092,
-      "effective_hours": 46.49,
-      "season_hours": 19.56,
-      "season_gsax": 0.19,
-      "season_gsax60": 0.01,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Chicago Blackhawks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "calvinpickard": {
-      "moneypuck_id": "8475717",
-      "gsax60": -0.159,
-      "effective_hours": 10.26,
-      "season_hours": 3.05,
-      "season_gsax": -2.24,
-      "season_gsax60": -0.733,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Minnesota Wild"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "alexlyon": {
-      "moneypuck_id": "8479312",
-      "gsax60": 0.132,
-      "effective_hours": 20.54,
-      "season_hours": 3.94,
-      "season_gsax": -1.61,
-      "season_gsax60": -0.409,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Buffalo Sabres"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "anthonystolarz": {
-      "moneypuck_id": "8476932",
-      "gsax60": -0.095,
-      "effective_hours": 23.51,
-      "season_hours": 11.94,
-      "season_gsax": -0.33,
-      "season_gsax60": -0.028,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Toronto Maple Leafs"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "akiraschmid": {
-      "moneypuck_id": "8481033",
-      "gsax60": -0.03,
-      "effective_hours": 27.1,
-      "season_hours": 10.72,
-      "season_gsax": -0.78,
-      "season_gsax60": -0.073,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Florida Panthers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jacobfowler": {
-      "moneypuck_id": "8484170",
-      "gsax60": 0.352,
-      "effective_hours": 24.55,
-      "season_hours": 16.12,
-      "season_gsax": 10.38,
-      "season_gsax60": 0.644,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Montreal Canadiens"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "brandonbussi": {
-      "moneypuck_id": "8483548",
-      "gsax60": 0.029,
-      "effective_hours": 29.79,
-      "season_hours": 10.12,
-      "season_gsax": -0.08,
-      "season_gsax60": -0.008,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Carolina Hurricanes"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "arvidsoderblom": {
-      "moneypuck_id": "8482821",
-      "gsax60": -0.256,
-      "effective_hours": 16.73,
-      "season_hours": 4.5,
-      "season_gsax": -6.12,
-      "season_gsax60": -1.361,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Chicago Blackhawks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "devonlevi": {
-      "moneypuck_id": "8482221",
-      "gsax60": -0.053,
-      "effective_hours": 14.02,
-      "season_hours": 14.02,
-      "season_gsax": -1.53,
-      "season_gsax60": -0.109,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Edmonton Oilers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "devincooley": {
-      "moneypuck_id": "8482445",
-      "gsax60": 0.305,
-      "effective_hours": 24.62,
-      "season_hours": 10.3,
-      "season_gsax": 3.45,
-      "season_gsax60": 0.335,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Calgary Flames"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "leevimerilinen": {
-      "moneypuck_id": "8482447",
-      "gsax60": -0.276,
-      "effective_hours": 26.77,
-      "season_hours": 17.64,
-      "season_gsax": -2.89,
-      "season_gsax60": -0.164,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Vancouver Canucks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "dustinwolf": {
-      "moneypuck_id": "8481692",
-      "gsax60": -0.126,
-      "effective_hours": 40.85,
-      "season_hours": 14.61,
-      "season_gsax": -6.15,
-      "season_gsax60": -0.421,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Calgary Flames"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jacobmarkstrom": {
-      "moneypuck_id": "8474593",
-      "gsax60": -0.067,
-      "effective_hours": 34.53,
-      "season_hours": 13.33,
-      "season_gsax": 2.66,
-      "season_gsax60": 0.2,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Florida Panthers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "josephwoll": {
-      "moneypuck_id": "8479361",
-      "gsax60": -0.082,
-      "effective_hours": 32.55,
-      "season_hours": 13.97,
-      "season_gsax": -0.59,
-      "season_gsax60": -0.042,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Philadelphia Flyers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "juusesaros": {
-      "moneypuck_id": "8477424",
-      "gsax60": 0.084,
-      "effective_hours": 46.43,
-      "season_hours": 17.82,
-      "season_gsax": 9.82,
-      "season_gsax60": 0.551,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Nashville Predators"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "caseydesmith": {
-      "moneypuck_id": "8479193",
-      "gsax60": 0.158,
-      "effective_hours": 20.12,
-      "season_hours": 5.5,
-      "season_gsax": 0.3,
-      "season_gsax60": 0.055,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Dallas Stars"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "semyonvarlamov": {
-      "moneypuck_id": "8473575",
-      "gsax60": 0.224,
-      "effective_hours": 7.16,
-      "season_hours": 7.16,
-      "season_gsax": 4.96,
-      "season_gsax60": 0.692,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "New York Islanders"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "charlielindgren": {
-      "moneypuck_id": "8479292",
-      "gsax60": -0.274,
-      "effective_hours": 17.68,
-      "season_hours": 7.3,
-      "season_gsax": -6.32,
-      "season_gsax60": -0.866,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Washington Capitals"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "joeydaccord": {
-      "moneypuck_id": "8478916",
-      "gsax60": -0.122,
-      "effective_hours": 32.2,
-      "season_hours": 9.76,
-      "season_gsax": -2.68,
-      "season_gsax60": -0.275,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Seattle Kraken"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "adinhill": {
-      "moneypuck_id": "8478499",
-      "gsax60": -0.131,
-      "effective_hours": 24.75,
-      "season_hours": 12.27,
-      "season_gsax": 1.88,
-      "season_gsax60": 0.153,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Vegas Golden Knights"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "michaeldipietro": {
-      "moneypuck_id": "8480022",
-      "gsax60": 0.26,
-      "effective_hours": 6.56,
-      "season_hours": 6.51,
-      "season_gsax": 5.56,
-      "season_gsax60": 0.854,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Boston Bruins"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jakeallen": {
-      "moneypuck_id": "8474596",
-      "gsax60": -0.114,
-      "effective_hours": 29.09,
-      "season_hours": 10.87,
-      "season_gsax": -8.19,
-      "season_gsax60": -0.753,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "New Jersey Devils"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jamesreimer": {
-      "moneypuck_id": "8473503",
-      "gsax60": -0.104,
-      "effective_hours": 7.15,
-      "season_hours": 0.33,
-      "season_gsax": -1.97,
-      "season_gsax60": -5.91,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "New York Rangers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "mackenzieblackwood": {
-      "moneypuck_id": "8478406",
-      "gsax60": 0.169,
-      "effective_hours": 35.39,
-      "season_hours": 17.43,
-      "season_gsax": 4.38,
-      "season_gsax60": 0.251,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Colorado Avalanche"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "villehusso": {
-      "moneypuck_id": "8478024",
-      "gsax60": -0.152,
-      "effective_hours": 17.17,
-      "season_hours": 7.62,
-      "season_gsax": -3.33,
-      "season_gsax60": -0.437,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Anaheim Ducks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "joelhofer": {
-      "moneypuck_id": "8480981",
-      "gsax60": 0.303,
-      "effective_hours": 39.98,
-      "season_hours": 18.1,
-      "season_gsax": 10.81,
-      "season_gsax60": 0.597,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "St. Louis Blues"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "coltenellis": {
-      "moneypuck_id": "8481551",
-      "gsax60": 0.016,
-      "effective_hours": 14.38,
-      "season_hours": 6.79,
-      "season_gsax": -0.45,
-      "season_gsax60": -0.066,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Buffalo Sabres"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "sebastiancossa": {
-      "moneypuck_id": "8482657",
-      "gsax60": -0.202,
-      "effective_hours": 9.7,
-      "season_hours": 9.7,
-      "season_gsax": -4.99,
-      "season_gsax60": -0.515,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Utah Mammoth"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "pyotrkochetkov": {
-      "moneypuck_id": "8481611",
-      "gsax60": 0.225,
-      "effective_hours": 19.08,
-      "season_hours": 15.0,
-      "season_gsax": 7.67,
-      "season_gsax60": 0.511,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Carolina Hurricanes"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "matttomkins": {
-      "moneypuck_id": "8477035",
-      "gsax60": 0.001,
-      "effective_hours": 1.94,
-      "season_hours": 1.94,
-      "season_gsax": 0.01,
-      "season_gsax60": 0.005,
+    "arseniisergeev": {
+      "moneypuck_id": "8482949",
+      "gsax60": 0.03,
+      "effective_hours": 1.5,
+      "season_hours": 1.0,
+      "season_gsax": -0.82,
+      "season_gsax60": -0.82,
       "recent_gsax60": null,
       "rating_eligible": false,
       "teams": [
-        "Edmonton Oilers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "jakubdobes": {
-      "moneypuck_id": "8482487",
-      "gsax60": 0.091,
-      "effective_hours": 30.91,
-      "season_hours": 9.86,
-      "season_gsax": -4.47,
-      "season_gsax60": -0.453,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Montreal Canadiens"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "daniiltarasov": {
-      "moneypuck_id": "8480193",
-      "gsax60": 0.26,
-      "effective_hours": 25.97,
-      "season_hours": 10.09,
-      "season_gsax": 11.53,
-      "season_gsax60": 1.143,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Detroit Red Wings"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "laurentbrossoit": {
-      "moneypuck_id": "8476316",
-      "gsax60": 0.048,
-      "effective_hours": 6.46,
-      "season_hours": 5.97,
-      "season_gsax": 2.21,
-      "season_gsax60": 0.37,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Anaheim Ducks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "dylangarand": {
-      "moneypuck_id": "8482193",
-      "gsax60": 0.15,
-      "effective_hours": 15.99,
-      "season_hours": 14.45,
-      "season_gsax": 2.71,
-      "season_gsax60": 0.188,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "New York Rangers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "nikitatolopilo": {
-      "moneypuck_id": "8484268",
-      "gsax60": -0.11,
-      "effective_hours": 10.76,
-      "season_hours": 1.21,
-      "season_gsax": 0.92,
-      "season_gsax60": 0.759,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Vancouver Canucks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "arturssilovs": {
-      "moneypuck_id": "8481668",
-      "gsax60": -0.201,
-      "effective_hours": 33.55,
-      "season_hours": 14.82,
-      "season_gsax": -3.83,
-      "season_gsax60": -0.258,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Pittsburgh Penguins"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "darcykuemper": {
-      "moneypuck_id": "8475311",
-      "gsax60": -0.119,
-      "effective_hours": 37.49,
-      "season_hours": 13.43,
-      "season_gsax": -3.35,
-      "season_gsax60": -0.25,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Los Angeles Kings"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "lukasdostal": {
-      "moneypuck_id": "8480843",
-      "gsax60": -0.153,
-      "effective_hours": 39.38,
-      "season_hours": 12.15,
-      "season_gsax": -6.84,
-      "season_gsax60": -0.563,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Anaheim Ducks"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "spencermartin": {
-      "moneypuck_id": "8477484",
-      "gsax60": -0.175,
-      "effective_hours": 3.01,
-      "season_hours": 0.59,
-      "season_gsax": -1.09,
-      "season_gsax60": -1.85,
-      "recent_gsax60": null,
-      "rating_eligible": false,
-      "teams": [
-        "New York Rangers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "loganthompson": {
-      "moneypuck_id": "8480313",
-      "gsax60": 0.189,
-      "effective_hours": 43.16,
-      "season_hours": 14.45,
-      "season_gsax": -3.66,
-      "season_gsax60": -0.253,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Washington Capitals"
+        "Calgary Flames"
       ],
       "method": "season_weighted_shrinkage"
     },
@@ -968,69 +828,27 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "jonasjohansson": {
-      "moneypuck_id": "8477992",
-      "gsax60": -0.303,
-      "effective_hours": 15.34,
-      "season_hours": 3.48,
-      "season_gsax": -3.97,
-      "season_gsax60": -1.142,
+    "jakubdobes": {
+      "moneypuck_id": "8482487",
+      "gsax60": 0.091,
+      "effective_hours": 30.91,
+      "season_hours": 9.86,
+      "season_gsax": -4.47,
+      "season_gsax60": -0.453,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
-        "Ottawa Senators"
+        "Montreal Canadiens"
       ],
       "method": "season_weighted_shrinkage"
     },
-    "arseniisergeev": {
-      "moneypuck_id": "8482949",
-      "gsax60": 0.03,
-      "effective_hours": 1.5,
-      "season_hours": 1.0,
-      "season_gsax": -0.82,
-      "season_gsax60": -0.82,
-      "recent_gsax60": null,
-      "rating_eligible": false,
-      "teams": [
-        "Calgary Flames"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "danvladar": {
-      "moneypuck_id": "8478435",
-      "gsax60": 0.055,
-      "effective_hours": 38.04,
-      "season_hours": 13.08,
-      "season_gsax": -3.94,
-      "season_gsax60": -0.301,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Philadelphia Flyers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "joonaskorpisalo": {
-      "moneypuck_id": "8476914",
-      "gsax60": 0.006,
-      "effective_hours": 18.26,
-      "season_hours": 3.99,
-      "season_gsax": 0.69,
-      "season_gsax60": 0.173,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "New York Rangers"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "tristanjarry": {
-      "moneypuck_id": "8477465",
-      "gsax60": -0.006,
-      "effective_hours": 26.05,
-      "season_hours": 11.27,
-      "season_gsax": 1.81,
-      "season_gsax60": 0.161,
+    "devonlevi": {
+      "moneypuck_id": "8482221",
+      "gsax60": -0.053,
+      "effective_hours": 14.02,
+      "season_hours": 14.02,
+      "season_gsax": -1.53,
+      "season_gsax60": -0.109,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
@@ -1038,45 +856,17 @@
       ],
       "method": "season_weighted_shrinkage"
     },
-    "sergeibobrovsky": {
-      "moneypuck_id": "8475683",
-      "gsax60": -0.207,
-      "effective_hours": 39.05,
-      "season_hours": 13.97,
-      "season_gsax": -5.12,
-      "season_gsax60": -0.366,
+    "nikitatolopilo": {
+      "moneypuck_id": "8484268",
+      "gsax60": -0.11,
+      "effective_hours": 10.76,
+      "season_hours": 1.21,
+      "season_gsax": 0.92,
+      "season_gsax60": 0.759,
       "recent_gsax60": null,
       "rating_eligible": true,
       "teams": [
-        "Toronto Maple Leafs"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "johngibson": {
-      "moneypuck_id": "8476434",
-      "gsax60": -0.035,
-      "effective_hours": 38.93,
-      "season_hours": 12.42,
-      "season_gsax": -7.73,
-      "season_gsax60": -0.622,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Detroit Red Wings"
-      ],
-      "method": "season_weighted_shrinkage"
-    },
-    "filipgustavsson": {
-      "moneypuck_id": "8479406",
-      "gsax60": 0.007,
-      "effective_hours": 25.72,
-      "season_hours": 0.99,
-      "season_gsax": -0.39,
-      "season_gsax60": -0.393,
-      "recent_gsax60": null,
-      "rating_eligible": true,
-      "teams": [
-        "Minnesota Wild"
+        "Vancouver Canucks"
       ],
       "method": "season_weighted_shrinkage"
     },
@@ -1091,6 +881,216 @@
       "rating_eligible": false,
       "teams": [
         "Chicago Blackhawks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "andreivasilevskiy": {
+      "moneypuck_id": "8476883",
+      "gsax60": 0.24,
+      "effective_hours": 46.54,
+      "season_hours": 17.95,
+      "season_gsax": 2.39,
+      "season_gsax60": 0.133,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Tampa Bay Lightning"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "stuartskinner": {
+      "moneypuck_id": "8479973",
+      "gsax60": 0.115,
+      "effective_hours": 42.01,
+      "season_hours": 17.66,
+      "season_gsax": 2.41,
+      "season_gsax60": 0.136,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Winnipeg Jets"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jordanbinnington": {
+      "moneypuck_id": "8476412",
+      "gsax60": -0.506,
+      "effective_hours": 26.15,
+      "season_hours": 6.92,
+      "season_gsax": -9.61,
+      "season_gsax60": -1.389,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "St. Louis Blues"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "philippgrubauer": {
+      "moneypuck_id": "8475831",
+      "gsax60": 0.071,
+      "effective_hours": 27.86,
+      "season_hours": 12.93,
+      "season_gsax": 0.22,
+      "season_gsax60": 0.017,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Seattle Kraken"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "josephwoll": {
+      "moneypuck_id": "8479361",
+      "gsax60": -0.082,
+      "effective_hours": 32.55,
+      "season_hours": 13.97,
+      "season_gsax": -0.59,
+      "season_gsax60": -0.042,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Philadelphia Flyers"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "jetgreaves": {
+      "moneypuck_id": "8482982",
+      "gsax60": 0.091,
+      "effective_hours": 37.9,
+      "season_hours": 10.6,
+      "season_gsax": -3.39,
+      "season_gsax60": -0.32,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Columbus Blue Jackets"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "calvinpickard": {
+      "moneypuck_id": "8475717",
+      "gsax60": -0.159,
+      "effective_hours": 10.26,
+      "season_hours": 3.05,
+      "season_gsax": -2.24,
+      "season_gsax60": -0.733,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Minnesota Wild"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "devincooley": {
+      "moneypuck_id": "8482445",
+      "gsax60": 0.309,
+      "effective_hours": 25.6,
+      "season_hours": 11.28,
+      "season_gsax": 3.9,
+      "season_gsax60": 0.346,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Calgary Flames"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "dustinwolf": {
+      "moneypuck_id": "8481692",
+      "gsax60": -0.126,
+      "effective_hours": 40.85,
+      "season_hours": 14.61,
+      "season_gsax": -6.15,
+      "season_gsax60": -0.421,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Calgary Flames"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "yaroslavaskarov": {
+      "moneypuck_id": "8482137",
+      "gsax60": -0.121,
+      "effective_hours": 39.76,
+      "season_hours": 18.12,
+      "season_gsax": 2.82,
+      "season_gsax60": 0.156,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "San Jose Sharks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "ukkopekkaluukkonen": {
+      "moneypuck_id": "8480045",
+      "gsax60": 0.054,
+      "effective_hours": 31.68,
+      "season_hours": 14.78,
+      "season_gsax": -2.75,
+      "season_gsax60": -0.186,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Buffalo Sabres"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "laurentbrossoit": {
+      "moneypuck_id": "8476316",
+      "gsax60": -0.039,
+      "effective_hours": 7.43,
+      "season_hours": 6.94,
+      "season_gsax": 0.3,
+      "season_gsax60": 0.043,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Anaheim Ducks"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "antonforsberg": {
+      "moneypuck_id": "8476341",
+      "gsax60": 0.096,
+      "effective_hours": 25.41,
+      "season_hours": 8.47,
+      "season_gsax": -0.83,
+      "season_gsax60": -0.098,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Los Angeles Kings"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "scottwedgewood": {
+      "moneypuck_id": "8475809",
+      "gsax60": 0.168,
+      "effective_hours": 27.75,
+      "season_hours": 6.51,
+      "season_gsax": -4.38,
+      "season_gsax60": -0.673,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "Colorado Avalanche"
+      ],
+      "method": "season_weighted_shrinkage"
+    },
+    "joonaskorpisalo": {
+      "moneypuck_id": "8476914",
+      "gsax60": 0.006,
+      "effective_hours": 18.26,
+      "season_hours": 3.99,
+      "season_gsax": 0.69,
+      "season_gsax60": 0.173,
+      "recent_gsax60": null,
+      "rating_eligible": true,
+      "teams": [
+        "New York Rangers"
       ],
       "method": "season_weighted_shrinkage"
     },
@@ -1446,38 +1446,38 @@
     }
   },
   "teams": {
-    "New York Rangers": 0.136,
-    "Utah Mammoth": -0.314,
-    "Dallas Stars": 0.357,
-    "Winnipeg Jets": -0.039,
-    "San Jose Sharks": 0.084,
-    "Ottawa Senators": 0.02,
-    "New York Islanders": 0.378,
-    "Boston Bruins": 0.291,
-    "New Jersey Devils": -0.232,
-    "Pittsburgh Penguins": -0.149,
-    "Detroit Red Wings": 0.09,
-    "Columbus Blue Jackets": 0.066,
-    "Tampa Bay Lightning": 0.022,
-    "Vegas Golden Knights": -0.007,
-    "Minnesota Wild": 0.322,
-    "Los Angeles Kings": -0.113,
-    "Seattle Kraken": -0.065,
-    "Buffalo Sabres": -0.036,
-    "Vancouver Canucks": -0.394,
-    "St. Louis Blues": 0.03,
-    "Colorado Avalanche": 0.0,
-    "Nashville Predators": 0.216,
-    "Chicago Blackhawks": -0.133,
-    "Toronto Maple Leafs": -0.133,
-    "Florida Panthers": 0.022,
+    "New York Rangers": 0.117,
+    "Utah Mammoth": -0.365,
+    "Dallas Stars": 0.313,
+    "San Jose Sharks": 0.119,
+    "Ottawa Senators": 0.018,
+    "New York Islanders": 0.416,
+    "Boston Bruins": 0.265,
+    "New Jersey Devils": -0.251,
+    "Buffalo Sabres": -0.115,
+    "Edmonton Oilers": -0.016,
+    "Minnesota Wild": 0.318,
+    "Anaheim Ducks": -0.237,
     "Montreal Canadiens": 0.144,
+    "Colorado Avalanche": -0.025,
+    "Florida Panthers": 0.036,
+    "Pittsburgh Penguins": -0.145,
     "Carolina Hurricanes": 0.189,
-    "Edmonton Oilers": 0.007,
-    "Calgary Flames": -0.086,
-    "Philadelphia Flyers": -0.108,
-    "Washington Capitals": -0.272,
-    "Anaheim Ducks": -0.195
+    "Columbus Blue Jackets": 0.066,
+    "Detroit Red Wings": 0.171,
+    "Tampa Bay Lightning": -0.059,
+    "Washington Capitals": -0.268,
+    "Winnipeg Jets": -0.017,
+    "Nashville Predators": 0.207,
+    "Chicago Blackhawks": -0.081,
+    "Los Angeles Kings": -0.126,
+    "Vegas Golden Knights": 0.012,
+    "Toronto Maple Leafs": -0.094,
+    "Philadelphia Flyers": -0.099,
+    "St. Louis Blues": 0.031,
+    "Seattle Kraken": -0.038,
+    "Vancouver Canucks": -0.411,
+    "Calgary Flames": -0.073
   },
   "health": {
     "goalies": 103,
@@ -1488,7 +1488,7 @@
     "errors": [],
     "method": "season_weighted_shrinkage",
     "cache_hit": false,
-    "data_date": "2026-11-27",
+    "data_date": "2026-11-28",
     "attribution": "MoneyPuck.com"
   }
 }

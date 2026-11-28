@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T00:00:10.969139+00:00",
+  "updated": "2026-11-28T15:58:08.105386+00:00",
   "forecasts": [
     {
       "book": "draftkings",
@@ -105,11 +105,12 @@
       "estimated_decimal_odds": 2.404440154440154,
       "estimated_ev": 0.6047965821626253,
       "captured": "2026-11-27T07:46:59.977968+00:00",
-      "result": "pending",
+      "result": "loss",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "loss"
+      ],
+      "units": -1
     },
     {
       "book": "draftkings",
@@ -141,11 +142,12 @@
       "estimated_decimal_odds": 2.3242453748782865,
       "estimated_ev": 0.5512721440889585,
       "captured": "2026-11-27T07:46:59.977968+00:00",
-      "result": "pending",
+      "result": "loss",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "loss"
+      ],
+      "units": -1
     },
     {
       "book": "fanduel",
@@ -325,11 +327,12 @@
       "estimated_decimal_odds": 1.875160875160875,
       "estimated_ev": 0.18597041047301932,
       "captured": "2026-11-27T07:46:59.977968+00:00",
-      "result": "pending",
+      "result": "win",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "win"
+      ],
+      "units": 0.875160875160875
     },
     {
       "book": "draftkings",
@@ -361,11 +364,12 @@
       "estimated_decimal_odds": 1.830659744502129,
       "estimated_ev": 0.1578250791081366,
       "captured": "2026-11-27T07:46:59.977968+00:00",
-      "result": "pending",
+      "result": "win",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "win"
+      ],
+      "units": 0.8306597445021291
     },
     {
       "book": "draftkings",
@@ -399,7 +403,7 @@
       "captured": "2026-11-27T16:16:56.192484+00:00",
       "result": "pending",
       "leg_results": [
-        "pending",
+        "win",
         "pending"
       ]
     },
@@ -433,11 +437,12 @@
       "estimated_decimal_odds": 2.384323640960809,
       "estimated_ev": 0.5382692397782249,
       "captured": "2026-11-27T21:08:21.170949+00:00",
-      "result": "pending",
+      "result": "loss",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "loss"
+      ],
+      "units": -1
     },
     {
       "book": "fanduel",
@@ -685,11 +690,12 @@
       "estimated_decimal_odds": 2.3539094650205765,
       "estimated_ev": 0.5185259839238028,
       "captured": "2026-11-27T23:52:31.734169+00:00",
-      "result": "pending",
+      "result": "loss",
       "leg_results": [
-        "pending",
-        "pending"
-      ]
+        "win",
+        "loss"
+      ],
+      "units": -1
     },
     {
       "book": "draftkings",
@@ -726,20 +732,308 @@
         "pending",
         "pending"
       ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
+          "start": "2026-11-29T02:10:00Z",
+          "team": "Colorado Avalanche",
+          "market": "h2h",
+          "line": null,
+          "odds": -258,
+          "probability": 0.790211,
+          "decimal": 1.3875968992248062
+        },
+        {
+          "sport": "NHL",
+          "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+          "start": "2026-11-29T22:10:00Z",
+          "team": "Boston Bruins",
+          "market": "h2h",
+          "line": null,
+          "odds": -265,
+          "probability": 0.735591,
+          "decimal": 1.3773584905660377
+        }
+      ],
+      "probability": 0.581272099701,
+      "estimated_decimal_odds": 1.9112183706303933,
+      "estimated_ev": 0.11093791528345287,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "fanduel",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
+          "start": "2026-11-29T02:10:00Z",
+          "team": "Colorado Avalanche",
+          "market": "h2h",
+          "line": null,
+          "odds": -250,
+          "probability": 0.790211,
+          "decimal": 1.4
+        },
+        {
+          "sport": "NHL",
+          "event_id": "94344b740781b59e4e387c487269635a",
+          "start": "2026-11-29T03:10:00Z",
+          "team": "Seattle Kraken",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -176,
+          "probability": 0.703138,
+          "decimal": 1.5681818181818183
+        }
+      ],
+      "probability": 0.555627382118,
+      "estimated_decimal_odds": 2.1954545454545453,
+      "estimated_ev": 0.21985466164997258,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "b23cbb8c5378e792e7ac624fec34b7f5",
+          "start": "2026-11-29T02:10:00Z",
+          "team": "Colorado Avalanche",
+          "market": "h2h",
+          "line": null,
+          "odds": -258,
+          "probability": 0.790211,
+          "decimal": 1.3875968992248062
+        },
+        {
+          "sport": "NHL",
+          "event_id": "94344b740781b59e4e387c487269635a",
+          "start": "2026-11-29T03:10:00Z",
+          "team": "Seattle Kraken",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -175,
+          "probability": 0.703138,
+          "decimal": 1.5714285714285714
+        }
+      ],
+      "probability": 0.555627382118,
+      "estimated_decimal_odds": 2.1805094130675524,
+      "estimated_ev": 0.21155073686638093,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
+          "start": "2026-11-29T00:10:00Z",
+          "team": "Nashville Predators",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -285,
+          "probability": 0.741991,
+          "decimal": 1.3508771929824561
+        },
+        {
+          "sport": "NHL",
+          "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+          "start": "2026-11-29T22:10:00Z",
+          "team": "Boston Bruins",
+          "market": "h2h",
+          "line": null,
+          "odds": -265,
+          "probability": 0.735591,
+          "decimal": 1.3773584905660377
+        }
+      ],
+      "probability": 0.545801901681,
+      "estimated_decimal_odds": 1.8606421714664017,
+      "estimated_ev": 0.015542035534227283,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "2eb8dba3fd1115cc292ba861af377253",
+          "start": "2026-11-29T00:10:00Z",
+          "team": "Toronto Maple Leafs",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -238,
+          "probability": 0.70908,
+          "decimal": 1.4201680672268908
+        },
+        {
+          "sport": "NHL",
+          "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
+          "start": "2026-11-29T00:10:00Z",
+          "team": "Nashville Predators",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -285,
+          "probability": 0.741991,
+          "decimal": 1.3508771929824561
+        }
+      ],
+      "probability": 0.52613097828,
+      "estimated_decimal_odds": 1.9184726522187823,
+      "estimated_ev": 0.009367893315294085,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "5b55930ad4bc2fc98ab0d37fa53d7a59",
+          "start": "2026-11-29T00:10:00Z",
+          "team": "Nashville Predators",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -285,
+          "probability": 0.741991,
+          "decimal": 1.3508771929824561
+        },
+        {
+          "sport": "NHL",
+          "event_id": "94344b740781b59e4e387c487269635a",
+          "start": "2026-11-29T03:10:00Z",
+          "team": "Seattle Kraken",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -175,
+          "probability": 0.703138,
+          "decimal": 1.5714285714285714
+        }
+      ],
+      "probability": 0.521722067758,
+      "estimated_decimal_odds": 2.1228070175438596,
+      "estimated_ev": 0.10751526664417543,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "2eb8dba3fd1115cc292ba861af377253",
+          "start": "2026-11-29T00:10:00Z",
+          "team": "Toronto Maple Leafs",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -238,
+          "probability": 0.70908,
+          "decimal": 1.4201680672268908
+        },
+        {
+          "sport": "NHL",
+          "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+          "start": "2026-11-29T22:10:00Z",
+          "team": "Boston Bruins",
+          "market": "h2h",
+          "line": null,
+          "odds": -265,
+          "probability": 0.735591,
+          "decimal": 1.3773584905660377
+        }
+      ],
+      "probability": 0.52159286628,
+      "estimated_decimal_odds": 1.9560805454257175,
+      "estimated_ev": 0.020277658363145656,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
+    },
+    {
+      "book": "draftkings",
+      "legs": [
+        {
+          "sport": "NHL",
+          "event_id": "94344b740781b59e4e387c487269635a",
+          "start": "2026-11-29T03:10:00Z",
+          "team": "Seattle Kraken",
+          "market": "spreads",
+          "line": 1.5,
+          "odds": -175,
+          "probability": 0.703138,
+          "decimal": 1.5714285714285714
+        },
+        {
+          "sport": "NHL",
+          "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+          "start": "2026-11-29T22:10:00Z",
+          "team": "Boston Bruins",
+          "market": "h2h",
+          "line": null,
+          "odds": -265,
+          "probability": 0.735591,
+          "decimal": 1.3773584905660377
+        }
+      ],
+      "probability": 0.5172219845580001,
+      "estimated_decimal_odds": 2.164420485175202,
+      "estimated_ev": 0.11948585876030737,
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "leg_results": [
+        "pending",
+        "pending"
+      ]
     }
   ],
   "summary": {
     "2": {
-      "archived": 20,
-      "pending": 14,
-      "settled": 6,
-      "wins": 2,
-      "losses": 4,
+      "archived": 28,
+      "pending": 16,
+      "settled": 12,
+      "wins": 4,
+      "losses": 8,
       "reduced": 0,
       "win_rate": 0.3333333333333333,
-      "average_probability": 0.6589654691456667,
-      "brier": 0.3197444198489568,
-      "paper_roi": -0.33407703170877917
+      "average_probability": 0.6536539951785834,
+      "brier": 0.3259962593204211,
+      "paper_roi": -0.3582201308824726
     },
     "3": {
       "archived": 0,

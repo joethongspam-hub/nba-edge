@@ -1,49 +1,49 @@
 {
-  "updated": "2026-11-28T00:00:10.969139+00:00",
+  "updated": "2026-11-28T15:58:08.105386+00:00",
   "sports": [
     {
       "sport": "NBA",
-      "games": 146,
-      "available_games": 270,
-      "decisive": 146,
-      "accuracy": 0.678082191780822,
-      "brier": 0.4154711333113288,
-      "margin_mae": 11.422739726027398,
+      "games": 157,
+      "available_games": 281,
+      "decisive": 157,
+      "accuracy": 0.6624203821656051,
+      "brier": 0.4217742878089554,
+      "margin_mae": 11.317961783439491,
       "calibration": [
         {
           "low": 0,
           "high": 0.5,
-          "n": 62,
-          "predicted": 0.3426598870967742,
-          "observed": 0.3064516129032258
+          "n": 63,
+          "predicted": 0.3444531746031746,
+          "observed": 0.30158730158730157
         },
         {
           "low": 0.5,
           "high": 0.6,
-          "n": 20,
-          "predicted": 0.55154045,
-          "observed": 0.55
+          "n": 22,
+          "predicted": 0.5488550454545454,
+          "observed": 0.5
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "n": 16,
-          "predicted": 0.65096525,
-          "observed": 0.4375
+          "n": 19,
+          "predicted": 0.6514831052631579,
+          "observed": 0.3684210526315789
         },
         {
           "low": 0.7,
           "high": 0.8,
-          "n": 29,
-          "predicted": 0.7494823793103448,
-          "observed": 0.7586206896551724
+          "n": 33,
+          "predicted": 0.747854696969697,
+          "observed": 0.7575757575757576
         },
         {
           "low": 0.8,
           "high": 1,
-          "n": 19,
-          "predicted": 0.8708886315789472,
-          "observed": 0.8421052631578947
+          "n": 20,
+          "predicted": 0.870247,
+          "observed": 0.85
         }
       ],
       "results": [
@@ -1652,6 +1652,127 @@
           "correct": true,
           "brier": 0.4745386652179999,
           "margin_error": 4.61
+        },
+        {
+          "time": "2026-11-28T00:00:00+00:00",
+          "home": "New York Knicks",
+          "away": "Miami Heat",
+          "home_probability": 0.693561,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.962053721442,
+          "margin_error": 9.07
+        },
+        {
+          "time": "2026-11-28T00:30:00+00:00",
+          "home": "Detroit Pistons",
+          "away": "Milwaukee Bucks",
+          "home_probability": 0.858056,
+          "tie_probability": 0.0,
+          "actual": "win",
+          "correct": true,
+          "brier": 0.040296198271999976,
+          "margin_error": 2.1400000000000006
+        },
+        {
+          "time": "2026-11-28T00:30:00+00:00",
+          "home": "Indiana Pacers",
+          "away": "Philadelphia 76ers",
+          "home_probability": 0.502219,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.5044478479219999,
+          "margin_error": 24.07
+        },
+        {
+          "time": "2026-11-28T00:30:00+00:00",
+          "home": "Toronto Raptors",
+          "away": "Brooklyn Nets",
+          "home_probability": 0.72046,
+          "tie_probability": 0.0,
+          "actual": "win",
+          "correct": true,
+          "brier": 0.15628522320000002,
+          "margin_error": 16.990000000000002
+        },
+        {
+          "time": "2026-11-28T01:00:00+00:00",
+          "home": "Boston Celtics",
+          "away": "Atlanta Hawks",
+          "home_probability": 0.719862,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 1.036402598088,
+          "margin_error": 7.99
+        },
+        {
+          "time": "2026-11-28T01:30:00+00:00",
+          "home": "Minnesota Timberwolves",
+          "away": "Memphis Grizzlies",
+          "home_probability": 0.637137,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.8118871135379999,
+          "margin_error": 9.21
+        },
+        {
+          "time": "2026-11-28T02:00:00+00:00",
+          "home": "Phoenix Suns",
+          "away": "Dallas Mavericks",
+          "home_probability": 0.541783,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.587057638178,
+          "margin_error": 5.26
+        },
+        {
+          "time": "2026-11-28T02:30:00+00:00",
+          "home": "Los Angeles Clippers",
+          "away": "New Orleans Pelicans",
+          "home_probability": 0.632037,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.7989415387379999,
+          "margin_error": 5.05
+        },
+        {
+          "time": "2026-11-28T02:30:00+00:00",
+          "home": "Portland Trail Blazers",
+          "away": "Golden State Warriors",
+          "home_probability": 0.768337,
+          "tie_probability": 0.0,
+          "actual": "win",
+          "correct": true,
+          "brier": 0.10733549113799995,
+          "margin_error": 13.2
+        },
+        {
+          "time": "2026-11-28T02:30:00+00:00",
+          "home": "San Antonio Spurs",
+          "away": "Los Angeles Lakers",
+          "home_probability": 0.735557,
+          "tie_probability": 0.0,
+          "actual": "win",
+          "correct": true,
+          "brier": 0.139860200498,
+          "margin_error": 4.56
+        },
+        {
+          "time": "2026-11-28T02:30:00+00:00",
+          "home": "Utah Jazz",
+          "away": "Denver Nuggets",
+          "home_probability": 0.455637,
+          "tie_probability": 0.0,
+          "actual": "loss",
+          "correct": true,
+          "brier": 0.41521015153800006,
+          "margin_error": 11.66
         }
       ],
       "calibration_holdout": {
@@ -1660,28 +1781,28 @@
         "split": "2026-11-19",
         "training_games": 86,
         "baseline": {
-          "games": 60,
-          "brier": 0.42814289682576656,
-          "log_loss": 0.6119589957590175,
-          "accuracy": 0.65
+          "games": 71,
+          "brier": 0.44011762721264774,
+          "log_loss": 0.6242817448761975,
+          "accuracy": 0.6197183098591549
         },
         "challenger": {
-          "games": 60,
-          "brier": 0.42814289682576656,
-          "log_loss": 0.6119589957590175,
-          "accuracy": 0.65
+          "games": 71,
+          "brier": 0.44011762721264774,
+          "log_loss": 0.6242817448761975,
+          "accuracy": 0.6197183098591549
         },
         "coin_flip": {
-          "games": 60,
+          "games": 71,
           "brier": 0.5,
-          "log_loss": 0.6931471805599451,
-          "accuracy": 0.5333333333333333
+          "log_loss": 0.6931471805599454,
+          "accuracy": 0.5070422535211268
         },
-        "home_only_accuracy": 0.5333333333333333
+        "home_only_accuracy": 0.5070422535211268
       },
       "parameter_holdout": {
         "status": "Experimental holdout",
-        "games": 146,
+        "games": 157,
         "training_games": 86,
         "split": "2026-11-19",
         "tested": 11,
@@ -1700,16 +1821,16 @@
           "margin_sd": 12
         },
         "baseline": {
-          "games": 60,
-          "brier": 0.4281429221821789,
-          "mae": 9.004602834565487,
-          "accuracy": 0.65
+          "games": 71,
+          "brier": 0.4401176632905832,
+          "mae": 9.147442950705193,
+          "accuracy": 0.6197183098591549
         },
         "challenger": {
-          "games": 60,
-          "brier": 0.43068928213077,
-          "mae": 9.161781629719759,
-          "accuracy": 0.65
+          "games": 71,
+          "brier": 0.4425722217723561,
+          "mae": 9.26259945594337,
+          "accuracy": 0.6338028169014085
         },
         "training": [
           {
@@ -3068,33 +3189,33 @@
     },
     {
       "sport": "NHL",
-      "games": 273,
-      "available_games": 410,
-      "decisive": 273,
-      "accuracy": 0.5164835164835165,
-      "brier": 0.5012155379449524,
-      "margin_mae": 2.1566666666666667,
+      "games": 277,
+      "available_games": 414,
+      "decisive": 277,
+      "accuracy": 0.5090252707581228,
+      "brier": 0.5045539771535307,
+      "margin_mae": 2.164115523465704,
       "calibration": [
         {
           "low": 0,
           "high": 0.5,
-          "n": 85,
-          "predicted": 0.42168143529411767,
-          "observed": 0.4823529411764706
+          "n": 86,
+          "predicted": 0.4224416395348838,
+          "observed": 0.4883720930232558
         },
         {
           "low": 0.5,
           "high": 0.6,
-          "n": 95,
-          "predicted": 0.5453077368421052,
-          "observed": 0.42105263157894735
+          "n": 96,
+          "predicted": 0.5454073854166667,
+          "observed": 0.4166666666666667
         },
         {
           "low": 0.6,
           "high": 0.7,
-          "n": 74,
-          "predicted": 0.6424733783783784,
-          "observed": 0.6081081081081081
+          "n": 76,
+          "predicted": 0.6431584078947369,
+          "observed": 0.5921052631578947
         },
         {
           "low": 0.7,
@@ -6114,6 +6235,50 @@
           "correct": false,
           "brier": 0.7889438498000001,
           "margin_error": 3.86
+        },
+        {
+          "time": "2026-11-27T22:30:00+00:00",
+          "home": "Chicago Blackhawks",
+          "away": "New York Rangers",
+          "home_probability": 0.487059,
+          "tie_probability": 0,
+          "actual": "win",
+          "correct": false,
+          "brier": 0.526216938962,
+          "margin_error": 1.08
+        },
+        {
+          "time": "2026-11-28T00:30:00+00:00",
+          "home": "New York Islanders",
+          "away": "Winnipeg Jets",
+          "home_probability": 0.554874,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.6157703117519999,
+          "margin_error": 2.36
+        },
+        {
+          "time": "2026-11-28T01:00:00+00:00",
+          "home": "Buffalo Sabres",
+          "away": "Pittsburgh Penguins",
+          "home_probability": 0.665789,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.8865499850419999,
+          "margin_error": 4.11
+        },
+        {
+          "time": "2026-11-28T01:00:00+00:00",
+          "home": "Edmonton Oilers",
+          "away": "Seattle Kraken",
+          "home_probability": 0.67122,
+          "tie_probability": 0,
+          "actual": "loss",
+          "correct": false,
+          "brier": 0.9010725768000001,
+          "margin_error": 3.1399999999999997
         }
       ],
       "calibration_holdout": {
@@ -6122,28 +6287,28 @@
         "split": "2026-11-13",
         "training_games": 162,
         "baseline": {
-          "games": 111,
-          "brier": 0.5302834778600721,
-          "log_loss": 0.7265965343357857,
-          "accuracy": 0.4774774774774775
+          "games": 115,
+          "brier": 0.5373137030871653,
+          "log_loss": 0.7338202818198264,
+          "accuracy": 0.4608695652173913
         },
         "challenger": {
-          "games": 111,
-          "brier": 0.5172895711611558,
-          "log_loss": 0.7114422435769499,
-          "accuracy": 0.4774774774774775
+          "games": 115,
+          "brier": 0.5225552775517481,
+          "log_loss": 0.7167907443351601,
+          "accuracy": 0.4608695652173913
         },
         "coin_flip": {
-          "games": 111,
+          "games": 115,
           "brier": 0.5,
           "log_loss": 0.6931471805599461,
-          "accuracy": 0.42342342342342343
+          "accuracy": 0.41739130434782606
         },
-        "home_only_accuracy": 0.42342342342342343
+        "home_only_accuracy": 0.41739130434782606
       },
       "parameter_holdout": {
         "status": "Experimental holdout",
-        "games": 273,
+        "games": 277,
         "training_games": 162,
         "split": "2026-11-13",
         "tested": 9,
@@ -6162,16 +6327,16 @@
           "margin_sd": null
         },
         "baseline": {
-          "games": 111,
-          "brier": 0.5302834836958646,
-          "mae": 2.2514333461996654,
-          "accuracy": 0.4774774774774775
+          "games": 115,
+          "brier": 0.5373137096935983,
+          "mae": 2.266040694098763,
+          "accuracy": 0.4608695652173913
         },
         "challenger": {
-          "games": 111,
-          "brier": 0.5236533336466257,
-          "mae": 2.2479225092319277,
-          "accuracy": 0.46846846846846846
+          "games": 115,
+          "brier": 0.5294311836235467,
+          "mae": 2.2584920702255777,
+          "accuracy": 0.4608695652173913
         },
         "training": [
           {

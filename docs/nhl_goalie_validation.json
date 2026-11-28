@@ -380,6 +380,10 @@
           "probability": 0.5040798178302585,
           "margin": 0.02566573732043886
         }
+      },
+      "result": {
+        "home_goals": 2,
+        "away_goals": 1
       }
     },
     "New York Islanders|Winnipeg Jets|2026-11-28T00:30:00+00:00": {
@@ -411,6 +415,10 @@
           "probability": 0.5035323374724275,
           "margin": 0.02295332260286724
         }
+      },
+      "result": {
+        "home_goals": 1,
+        "away_goals": 3
       }
     },
     "Buffalo Sabres|Pittsburgh Penguins|2026-11-28T01:00:00+00:00": {
@@ -442,6 +450,10 @@
           "probability": 0.6919707711245189,
           "margin": 1.2781772036767591
         }
+      },
+      "result": {
+        "home_goals": 3,
+        "away_goals": 6
       }
     },
     "Edmonton Oilers|Seattle Kraken|2026-11-28T01:00:00+00:00": {
@@ -473,6 +485,10 @@
           "probability": 0.6516909901369342,
           "margin": 0.9922290357264322
         }
+      },
+      "result": {
+        "home_goals": 2,
+        "away_goals": 4
       }
     },
     "New York Islanders|Winnipeg Jets|2026-11-28T00:40:00+00:00": {
@@ -504,6 +520,10 @@
           "probability": 0.5105857905946489,
           "margin": 0.06871912377980754
         }
+      },
+      "result": {
+        "home_goals": 1,
+        "away_goals": 3
       }
     },
     "Buffalo Sabres|Pittsburgh Penguins|2026-11-28T01:10:00+00:00": {
@@ -535,6 +555,10 @@
           "probability": 0.6906269074620963,
           "margin": 1.2654555862638963
         }
+      },
+      "result": {
+        "home_goals": 3,
+        "away_goals": 6
       }
     },
     "Edmonton Oilers|Seattle Kraken|2026-11-28T01:10:00+00:00": {
@@ -566,107 +590,111 @@
           "probability": 0.6517140921458566,
           "margin": 0.9925065171479773
         }
+      },
+      "result": {
+        "home_goals": 2,
+        "away_goals": 4
       }
     }
   },
-  "updated": "2026-11-28T00:00:10.969144+00:00",
+  "updated": "2026-11-28T15:58:08.105391+00:00",
   "summary": {
     "recorded": 17,
-    "settled": 10,
+    "settled": 17,
     "all": {
       "0.0": {
-        "games": 10,
-        "brier": 0.29520907486853715,
-        "accuracy": 0.3,
-        "margin_mae": 2.216588665778076
+        "games": 17,
+        "brier": 0.330501492750984,
+        "accuracy": 0.17647058823529413,
+        "margin_mae": 2.496809512332827
       },
       "0.25": {
-        "games": 10,
-        "brier": 0.295801389945866,
-        "accuracy": 0.3,
-        "margin_mae": 2.218588665778076
+        "games": 17,
+        "brier": 0.32931128736776,
+        "accuracy": 0.17647058823529413,
+        "margin_mae": 2.4879051005681214
       },
       "0.5": {
-        "games": 10,
-        "brier": 0.2964721345561513,
-        "accuracy": 0.3,
-        "margin_mae": 2.220588665778076
+        "games": 17,
+        "brier": 0.3282016637633507,
+        "accuracy": 0.17647058823529413,
+        "margin_mae": 2.4790006888034157
       },
       "0.75": {
-        "games": 10,
-        "brier": 0.2972212765980343,
-        "accuracy": 0.3,
-        "margin_mae": 2.222588665778076
+        "games": 17,
+        "brier": 0.3271737924141461,
+        "accuracy": 0.17647058823529413,
+        "margin_mae": 2.4700962770387096
       },
       "1.0": {
-        "games": 10,
-        "brier": 0.29804861910439046,
-        "accuracy": 0.3,
-        "margin_mae": 2.224588665778076
+        "games": 17,
+        "brier": 0.32622865649960353,
+        "accuracy": 0.23529411764705882,
+        "margin_mae": 2.461191865274004
       }
     },
     "both_confirmed": {
       "0.0": {
-        "games": 1,
-        "brier": 0.434828363241605,
+        "games": 7,
+        "brier": 0.40550493062442156,
         "accuracy": 0.0,
-        "margin_mae": 3.07166504571396
+        "margin_mae": 3.1816722621302427
       },
       "0.25": {
-        "games": 1,
-        "brier": 0.43561148975554354,
+        "games": 7,
+        "brier": 0.40248292422454784,
         "accuracy": 0.0,
-        "margin_mae": 3.0741650457139595
+        "margin_mae": 3.1613151192731004
       },
       "0.5": {
-        "games": 1,
-        "brier": 0.4363978665471061,
+        "games": 7,
+        "brier": 0.39954305082970076,
         "accuracy": 0.0,
-        "margin_mae": 3.0766650457139595
+        "margin_mae": 3.140957976415957
       },
       "0.75": {
-        "games": 1,
-        "brier": 0.43718751693901975,
+        "games": 7,
+        "brier": 0.396688104146277,
         "accuracy": 0.0,
-        "margin_mae": 3.0791650457139594
+        "margin_mae": 3.120600833558814
       },
       "1.0": {
-        "games": 1,
-        "brier": 0.43798046449316463,
+        "games": 7,
+        "brier": 0.39392065812274996,
         "accuracy": 0.0,
-        "margin_mae": 3.08166504571396
+        "margin_mae": 3.1002436907016713
       }
     },
     "projected": {
       "0.0": {
-        "games": 9,
-        "brier": 0.2796958206048629,
-        "accuracy": 0.3333333333333333,
-        "margin_mae": 2.121580179118533
+        "games": 10,
+        "brier": 0.2779990862395776,
+        "accuracy": 0.3,
+        "margin_mae": 2.017405587474636
       },
       "0.25": {
-        "games": 9,
-        "brier": 0.28026693441145745,
-        "accuracy": 0.3333333333333333,
-        "margin_mae": 2.123524623562978
+        "games": 10,
+        "brier": 0.2780911415680086,
+        "accuracy": 0.3,
+        "margin_mae": 2.016518087474636
       },
       "0.5": {
-        "games": 9,
-        "brier": 0.2809248310016008,
-        "accuracy": 0.3333333333333333,
-        "margin_mae": 2.125469068007422
+        "games": 10,
+        "brier": 0.2782626928169056,
+        "accuracy": 0.3,
+        "margin_mae": 2.0156305874746363
       },
       "0.75": {
-        "games": 9,
-        "brier": 0.2816694721157026,
-        "accuracy": 0.3333333333333333,
-        "margin_mae": 2.1274135124518665
+        "games": 10,
+        "brier": 0.27851377420165446,
+        "accuracy": 0.3,
+        "margin_mae": 2.0147430874746357
       },
       "1.0": {
-        "games": 9,
-        "brier": 0.28250063628341554,
-        "accuracy": 0.3333333333333333,
-        "margin_mae": 2.1293579568963117
+        "games": 10,
+        "brier": 0.27884425536340096,
+        "accuracy": 0.4,
+        "margin_mae": 2.0138555874746364
       }
     }
   }

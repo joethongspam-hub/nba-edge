@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T00:00:10.969139+00:00",
+  "updated": "2026-11-28T15:58:08.105386+00:00",
   "forecasts": [
     {
       "event_id": "3c522e32c3035d7dc3e1734903b84654",
@@ -1513,9 +1513,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -310
+        "odds": -311
       },
       "settlement_status": "upcoming"
     },
@@ -1543,7 +1543,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 7.0,
         "odds": -119
       },
@@ -1573,7 +1573,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -330
       },
@@ -1603,7 +1603,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 7.0,
         "odds": -115
       },
@@ -1633,9 +1633,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -332
+        "odds": -335
       },
       "settlement_status": "upcoming"
     },
@@ -1663,7 +1663,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -6.5,
         "odds": -112
       },
@@ -1693,7 +1693,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -295
       },
@@ -1723,7 +1723,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -6.5,
         "odds": -110
       },
@@ -1753,9 +1753,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -570
+        "odds": -550
       },
       "settlement_status": "upcoming"
     },
@@ -1783,7 +1783,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 9.5,
         "odds": -105
       },
@@ -1813,7 +1813,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -620
       },
@@ -1843,7 +1843,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -9.5,
         "odds": -120
       },
@@ -1873,9 +1873,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -272
+        "odds": -263
       },
       "settlement_status": "upcoming"
     },
@@ -1903,9 +1903,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
-        "odds": -107
+        "odds": -112
       },
       "settlement_status": "upcoming"
     },
@@ -1933,9 +1933,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -275
+        "odds": -270
       },
       "settlement_status": "upcoming"
     },
@@ -1963,9 +1963,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
-        "odds": -105
+        "odds": -106
       },
       "settlement_status": "upcoming"
     },
@@ -1993,7 +1993,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -930
       },
@@ -2023,7 +2023,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -14.0,
         "odds": -107
       },
@@ -2053,7 +2053,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -1100
       },
@@ -2083,7 +2083,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -14.5,
         "odds": 100
       },
@@ -2113,9 +2113,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 212
+        "odds": 213
       },
       "settlement_status": "upcoming"
     },
@@ -2143,9 +2143,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
-        "odds": -113
+        "odds": -109
       },
       "settlement_status": "upcoming"
     },
@@ -2173,9 +2173,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 210
+        "odds": 198
       },
       "settlement_status": "upcoming"
     },
@@ -2203,9 +2203,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
-        "odds": -110
+        "odds": -114
       },
       "settlement_status": "upcoming"
     },
@@ -2233,9 +2233,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -152
+        "odds": -150
       },
       "settlement_status": "upcoming"
     },
@@ -2263,7 +2263,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.0,
         "odds": -118
       },
@@ -2293,9 +2293,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -154
+        "odds": -158
       },
       "settlement_status": "upcoming"
     },
@@ -2323,9 +2323,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -3.0,
-        "odds": -105
+        "odds": -106
       },
       "settlement_status": "upcoming"
     },
@@ -2353,9 +2353,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -343
+        "odds": -345
       },
       "settlement_status": "upcoming"
     },
@@ -2383,7 +2383,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 6.5,
         "odds": -102
       },
@@ -2413,9 +2413,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -360
+        "odds": -340
       },
       "settlement_status": "upcoming"
     },
@@ -2443,9 +2443,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 7.0,
-        "odds": -115
+        "odds": -116
       },
       "settlement_status": "upcoming"
     },
@@ -2473,9 +2473,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 101
+        "odds": 103
       },
       "settlement_status": "upcoming"
     },
@@ -2503,9 +2503,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -115
+        "odds": -111
       },
       "settlement_status": "upcoming"
     },
@@ -2533,9 +2533,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 100
+        "odds": -102
       },
       "settlement_status": "upcoming"
     },
@@ -2563,7 +2563,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
         "odds": -115
       },
@@ -2593,9 +2593,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -236
+        "odds": -241
       },
       "settlement_status": "upcoming"
     },
@@ -2623,7 +2623,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 4.5,
         "odds": -114
       },
@@ -2653,7 +2653,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -230
       },
@@ -2683,7 +2683,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 4.5,
         "odds": -105
       },
@@ -2713,7 +2713,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -159
       },
@@ -2743,7 +2743,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -3.0,
         "odds": -107
       },
@@ -2773,9 +2773,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -158
+        "odds": -174
       },
       "settlement_status": "upcoming"
     },
@@ -2803,9 +2803,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -3.0,
-        "odds": -104
+        "odds": -110
       },
       "settlement_status": "upcoming"
     },
@@ -2833,7 +2833,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -109
       },
@@ -2863,7 +2863,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
         "odds": -121
       },
@@ -2893,9 +2893,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -188
+        "odds": -201
       },
       "settlement_status": "upcoming"
     },
@@ -2923,9 +2923,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -3.5,
-        "odds": -104
+        "odds": -115
       },
       "settlement_status": "upcoming"
     },
@@ -2953,7 +2953,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -210
       },
@@ -2983,7 +2983,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -3.5,
         "odds": -115
       },
@@ -3013,7 +3013,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": 129
       },
@@ -3043,7 +3043,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.0,
         "odds": -115
       },
@@ -3073,7 +3073,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": 136
       },
@@ -3103,7 +3103,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.0,
         "odds": -110
       },
@@ -3133,7 +3133,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -259
       },
@@ -3163,7 +3163,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 6.0,
         "odds": -110
       },
@@ -3193,7 +3193,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -245
       },
@@ -3223,7 +3223,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -5.5,
         "odds": -110
       },
@@ -3373,7 +3373,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -228
       },
@@ -3403,7 +3403,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 4.5,
         "odds": -102
       },
@@ -3433,7 +3433,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -230
       },
@@ -3463,7 +3463,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
         "odds": -115
       },
@@ -3493,9 +3493,9 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -254
+        "odds": -255
       },
       "settlement_status": "upcoming"
     },
@@ -3523,7 +3523,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -5.5,
         "odds": -110
       },
@@ -3553,7 +3553,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -270
       },
@@ -3583,7 +3583,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -5.5,
         "odds": -116
       },
@@ -3733,7 +3733,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -231
       },
@@ -3763,7 +3763,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -4.5,
         "odds": -110
       },
@@ -3793,7 +3793,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -220
       },
@@ -3823,7 +3823,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -4.5,
         "odds": -105
       },
@@ -3853,7 +3853,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -167
       },
@@ -3883,7 +3883,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.0,
         "odds": -104
       },
@@ -3913,7 +3913,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -174
       },
@@ -3943,7 +3943,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.5,
         "odds": -115
       },
@@ -3973,7 +3973,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -790
       },
@@ -4003,7 +4003,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 12.5,
         "odds": -110
       },
@@ -4033,7 +4033,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -247
       },
@@ -4063,7 +4063,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 5.5,
         "odds": -110
       },
@@ -4093,7 +4093,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -230
       },
@@ -4123,7 +4123,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 4.5,
         "odds": -105
       },
@@ -4273,7 +4273,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -273
       },
@@ -4303,7 +4303,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 6.0,
         "odds": -110
       },
@@ -4333,7 +4333,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -300
       },
@@ -4363,7 +4363,7 @@
       "captured": "2026-11-27T05:28:56.457044+00:00",
       "result": "pending",
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 6.5,
         "odds": -115
       },
@@ -6267,7 +6267,7 @@
         "market_probability": 0.508909
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -104
       },
@@ -6311,7 +6311,7 @@
         "market_probability": 0.513007
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
         "odds": -116
       },
@@ -6355,7 +6355,7 @@
         "market_probability": 0.860602
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -850
       },
@@ -6399,7 +6399,7 @@
         "market_probability": 0.510834
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 13.5,
         "odds": -115
       },
@@ -6443,9 +6443,9 @@
         "market_probability": 0.50433
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -108
+        "odds": -105
       },
       "settlement_status": "upcoming"
     },
@@ -6487,9 +6487,9 @@
         "market_probability": 0.680556
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": -1.5,
-        "odds": 205
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": 1.5,
+        "odds": -265
       },
       "settlement_status": "upcoming"
     },
@@ -6531,9 +6531,9 @@
         "market_probability": 0.622467
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -192
+        "odds": -185
       },
       "settlement_status": "upcoming"
     },
@@ -6575,9 +6575,9 @@
         "market_probability": 0.582993
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -148
+        "odds": -170
       },
       "settlement_status": "upcoming"
     },
@@ -6619,7 +6619,7 @@
         "market_probability": 0.675031
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -265
       },
@@ -6663,9 +6663,9 @@
         "market_probability": 0.521739
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -1.5,
-        "odds": -108
+        "odds": -105
       },
       "settlement_status": "upcoming"
     },
@@ -6707,7 +6707,7 @@
         "market_probability": 0.50433
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -108
       },
@@ -6751,9 +6751,9 @@
         "market_probability": 0.685393
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -258
+        "odds": -285
       },
       "settlement_status": "upcoming"
     },
@@ -6795,7 +6795,7 @@
         "market_probability": 0.63094
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -205
       },
@@ -6839,9 +6839,9 @@
         "market_probability": 0.582993
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -135
+        "odds": -148
       },
       "settlement_status": "upcoming"
     },
@@ -6883,9 +6883,9 @@
         "market_probability": 0.532468
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -122
+        "odds": -118
       },
       "settlement_status": "upcoming"
     },
@@ -6927,9 +6927,9 @@
         "market_probability": 0.669007
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -230
+        "odds": -238
       },
       "settlement_status": "upcoming"
     },
@@ -6971,9 +6971,9 @@
         "market_probability": 0.50433
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -112
+        "odds": -108
       },
       "settlement_status": "upcoming"
     },
@@ -7015,9 +7015,9 @@
         "market_probability": 0.680556
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -250
+        "odds": -285
       },
       "settlement_status": "upcoming"
     },
@@ -7059,9 +7059,9 @@
         "market_probability": 0.517364
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -122
+        "odds": -118
       },
       "settlement_status": "upcoming"
     },
@@ -7103,9 +7103,9 @@
         "market_probability": 0.663648
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": -1.5,
-        "odds": 235
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": 1.5,
+        "odds": -258
       },
       "settlement_status": "upcoming"
     },
@@ -7147,9 +7147,9 @@
         "market_probability": 0.59337
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -155
+        "odds": -148
       },
       "settlement_status": "upcoming"
     },
@@ -7191,9 +7191,9 @@
         "market_probability": 0.616438
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -180
+        "odds": -205
       },
       "settlement_status": "upcoming"
     },
@@ -7235,7 +7235,7 @@
         "market_probability": 0.57206
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -142
       },
@@ -7279,9 +7279,9 @@
         "market_probability": 0.63094
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -192
+        "odds": -205
       },
       "settlement_status": "upcoming"
     },
@@ -7323,9 +7323,9 @@
         "market_probability": 0.705033
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -278
+        "odds": -258
       },
       "settlement_status": "upcoming"
     },
@@ -7367,9 +7367,9 @@
         "market_probability": 0.521739
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -1.5,
-        "odds": -115
+        "odds": -102
       },
       "settlement_status": "upcoming"
     },
@@ -7411,7 +7411,7 @@
         "market_probability": 0.603757
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -170
       },
@@ -7455,9 +7455,9 @@
         "market_probability": 0.603757
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -166
+        "odds": -175
       },
       "settlement_status": "upcoming"
     },
@@ -7557,9 +7557,9 @@
         "market_probability": 0.653236
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -205
+        "odds": -178
       },
       "settlement_status": "upcoming"
     },
@@ -7659,9 +7659,9 @@
         "market_probability": 0.562661
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -158
+        "odds": -180
       },
       "settlement_status": "upcoming"
     },
@@ -7761,9 +7761,9 @@
         "market_probability": 0.702194
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -280
+        "odds": -275
       },
       "settlement_status": "upcoming"
     },
@@ -7863,9 +7863,9 @@
         "market_probability": 0.5
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -1.5,
-        "odds": -110
+        "odds": -105
       },
       "settlement_status": "upcoming"
     },
@@ -7965,9 +7965,9 @@
         "market_probability": 0.517364
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -102
+        "odds": -110
       },
       "settlement_status": "upcoming"
     },
@@ -8067,9 +8067,9 @@
         "market_probability": 0.687771
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": 1.5,
-        "odds": -260
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": -1.5,
+        "odds": 235
       },
       "settlement_status": "upcoming"
     },
@@ -8169,9 +8169,9 @@
         "market_probability": 0.65812
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -220
+        "odds": -210
       },
       "settlement_status": "upcoming"
     },
@@ -8271,9 +8271,9 @@
         "market_probability": 0.558974
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -142
+        "odds": -144
       },
       "settlement_status": "upcoming"
     },
@@ -8373,9 +8373,9 @@
         "market_probability": 0.540368
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 108
+        "odds": -102
       },
       "settlement_status": "upcoming"
     },
@@ -8475,9 +8475,9 @@
         "market_probability": 0.656448
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -225
+        "odds": -245
       },
       "settlement_status": "upcoming"
     },
@@ -8577,9 +8577,9 @@
         "market_probability": 0.53125
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -125
+        "odds": -110
       },
       "settlement_status": "upcoming"
     },
@@ -8679,9 +8679,9 @@
         "market_probability": 0.671815
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -235
+        "odds": -265
       },
       "settlement_status": "upcoming"
     },
@@ -8781,9 +8781,9 @@
         "market_probability": 0.5
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -110
+        "odds": -120
       },
       "settlement_status": "upcoming"
     },
@@ -8883,9 +8883,9 @@
         "market_probability": 0.707317
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": 1.5,
-        "odds": -290
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": -1.5,
+        "odds": 205
       },
       "settlement_status": "upcoming"
     },
@@ -8985,9 +8985,9 @@
         "market_probability": 0.583604
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -156
+        "odds": -150
       },
       "settlement_status": "upcoming"
     },
@@ -9087,9 +9087,9 @@
         "market_probability": 0.628149
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -194
+        "odds": -215
       },
       "settlement_status": "upcoming"
     },
@@ -9189,9 +9189,9 @@
         "market_probability": 0.580249
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -154
+        "odds": -146
       },
       "settlement_status": "upcoming"
     },
@@ -9291,9 +9291,9 @@
         "market_probability": 0.625487
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -192
+        "odds": -200
       },
       "settlement_status": "upcoming"
     },
@@ -9393,9 +9393,9 @@
         "market_probability": 0.701195
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -260
+        "odds": -250
       },
       "settlement_status": "upcoming"
     },
@@ -9495,9 +9495,9 @@
         "market_probability": 0.508664
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": -1.5,
-        "odds": -105
+        "odds": 100
       },
       "settlement_status": "upcoming"
     },
@@ -9597,9 +9597,9 @@
         "market_probability": 0.597628
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -166
+        "odds": -170
       },
       "settlement_status": "upcoming"
     },
@@ -9699,9 +9699,9 @@
         "market_probability": 0.616382
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 1.5,
-        "odds": -184
+        "odds": -176
       },
       "settlement_status": "upcoming"
     },
@@ -9743,9 +9743,9 @@
         "market_probability": 0.618321
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": 152
+        "odds": 142
       },
       "settlement_status": "upcoming"
     },
@@ -9787,7 +9787,7 @@
         "market_probability": 0.514975
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 3.5,
         "odds": -104
       },
@@ -9831,9 +9831,9 @@
         "market_probability": 0.680556
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -245
+        "odds": -255
       },
       "settlement_status": "upcoming"
     },
@@ -9875,9 +9875,9 @@
         "market_probability": 0.514975
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": 5.5,
-        "odds": -104
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": 6.5,
+        "odds": -110
       },
       "settlement_status": "upcoming"
     },
@@ -9919,7 +9919,7 @@
         "market_probability": 0.811867
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
         "odds": -550
       },
@@ -9963,7 +9963,7 @@
         "market_probability": 0.50433
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": 11.5,
         "odds": -112
       },
@@ -10065,9 +10065,9 @@
         "market_probability": 0.509817
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
+        "captured": "2026-11-28T15:58:08.105386+00:00",
         "line": null,
-        "odds": -114
+        "odds": -105
       },
       "settlement_status": "upcoming"
     },
@@ -10167,11 +10167,1483 @@
         "market_probability": 0.702194
       },
       "latest_pregame": {
-        "captured": "2026-11-28T00:00:10.969139+00:00",
-        "line": 1.5,
-        "odds": -280
+        "captured": "2026-11-28T15:58:08.105386+00:00",
+        "line": -1.5,
+        "odds": 220
       },
       "settlement_status": "upcoming"
+    },
+    {
+      "event_id": "2f2c60fafdc3fd106d71517a9de4f2b1",
+      "home": "Washington Wizards",
+      "away": "Orlando Magic",
+      "start": "2026-11-28T22:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Washington Wizards",
+      "line": null,
+      "odds": 145,
+      "market_probability": 0.391763,
+      "projected_margin": 1.89,
+      "model_probability": 0.562425,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 17,
+      "shadow_margin": 1.83,
+      "shadow_probability": 0.560723,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.05,
+      "efficiency_margin": 1.84,
+      "efficiency_probability": 0.560972,
+      "efficiency_push": 0,
+      "efficiency_off": 109.38,
+      "efficiency_def": 113.41,
+      "efficiency_pace": 100.0,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Orlando Magic",
+        "line": null,
+        "odds": -173,
+        "market_probability": 0.608237
+      }
+    },
+    {
+      "event_id": "2f2c60fafdc3fd106d71517a9de4f2b1",
+      "home": "Washington Wizards",
+      "away": "Orlando Magic",
+      "start": "2026-11-28T22:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Washington Wizards",
+      "line": 3.5,
+      "odds": -105,
+      "market_probability": 0.489166,
+      "projected_margin": 1.89,
+      "model_probability": 0.673207,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 17,
+      "shadow_margin": 1.83,
+      "shadow_probability": 0.671649,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.05,
+      "efficiency_margin": 1.84,
+      "efficiency_probability": 0.671877,
+      "efficiency_push": 0,
+      "efficiency_off": 109.38,
+      "efficiency_def": 113.41,
+      "efficiency_pace": 100.0,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Orlando Magic",
+        "line": -3.5,
+        "odds": -115,
+        "market_probability": 0.510834
+      }
+    },
+    {
+      "event_id": "a05c295062d5e2b8e9fa633c2797880e",
+      "home": "Charlotte Hornets",
+      "away": "Brooklyn Nets",
+      "start": "2026-11-28T23:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Charlotte Hornets",
+      "line": null,
+      "odds": -248,
+      "market_probability": 0.684897,
+      "projected_margin": 3.07,
+      "model_probability": 0.601027,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 17,
+      "shadow_margin": 3.8,
+      "shadow_probability": 0.624111,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": -0.28,
+      "efficiency_margin": 3.03,
+      "efficiency_probability": 0.599732,
+      "efficiency_push": 0,
+      "efficiency_off": 106.13,
+      "efficiency_def": 112.69,
+      "efficiency_pace": 99.48,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Charlotte Hornets",
+        "line": null,
+        "odds": -248,
+        "market_probability": 0.684897
+      }
+    },
+    {
+      "event_id": "a05c295062d5e2b8e9fa633c2797880e",
+      "home": "Charlotte Hornets",
+      "away": "Brooklyn Nets",
+      "start": "2026-11-28T23:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Brooklyn Nets",
+      "line": 5.5,
+      "odds": -102,
+      "market_probability": 0.481672,
+      "projected_margin": -3.07,
+      "model_probability": 0.580169,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 17,
+      "shadow_margin": -3.8,
+      "shadow_probability": 0.556475,
+      "shadow_rest_adjustment": -1,
+      "shadow_venue_adjustment": 0.28,
+      "efficiency_margin": -3.03,
+      "efficiency_probability": 0.581479,
+      "efficiency_push": 0,
+      "efficiency_off": 109.64,
+      "efficiency_def": 116.73,
+      "efficiency_pace": 99.48,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Charlotte Hornets",
+        "line": -5.5,
+        "odds": -119,
+        "market_probability": 0.518328
+      }
+    },
+    {
+      "event_id": "1ef1f5b9c8c88c584772f64a0d9a9435",
+      "home": "Chicago Bulls",
+      "away": "Indiana Pacers",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "Chicago Bulls",
+      "line": null,
+      "odds": -134,
+      "market_probability": 0.550657,
+      "projected_margin": 3.91,
+      "model_probability": 0.627878,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 4.43,
+      "shadow_probability": 0.643875,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": -0.49,
+      "efficiency_margin": 4.38,
+      "efficiency_probability": 0.642585,
+      "efficiency_push": 0,
+      "efficiency_off": 111.81,
+      "efficiency_def": 113.82,
+      "efficiency_pace": 102.51,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Chicago Bulls",
+        "line": null,
+        "odds": -134,
+        "market_probability": 0.550657
+      }
+    },
+    {
+      "event_id": "1ef1f5b9c8c88c584772f64a0d9a9435",
+      "home": "Chicago Bulls",
+      "away": "Indiana Pacers",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Chicago Bulls",
+      "line": -2.5,
+      "odds": -108,
+      "market_probability": 0.49567,
+      "projected_margin": 3.91,
+      "model_probability": 0.546928,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 4.43,
+      "shadow_probability": 0.563757,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": -0.49,
+      "efficiency_margin": 4.38,
+      "efficiency_probability": 0.562394,
+      "efficiency_push": 0,
+      "efficiency_off": 111.81,
+      "efficiency_def": 113.82,
+      "efficiency_pace": 102.51,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Indiana Pacers",
+        "line": 2.5,
+        "odds": -112,
+        "market_probability": 0.50433
+      }
+    },
+    {
+      "event_id": "1ef1f5b9c8c88c584772f64a0d9a9435",
+      "home": "Chicago Bulls",
+      "away": "Indiana Pacers",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Chicago Bulls",
+      "line": null,
+      "odds": -130,
+      "market_probability": 0.542744,
+      "projected_margin": 3.91,
+      "model_probability": 0.627878,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 4.43,
+      "shadow_probability": 0.643875,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": -0.49,
+      "efficiency_margin": 4.38,
+      "efficiency_probability": 0.642585,
+      "efficiency_push": 0,
+      "efficiency_off": 111.81,
+      "efficiency_def": 113.82,
+      "efficiency_pace": 102.51,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Chicago Bulls",
+        "line": null,
+        "odds": -130,
+        "market_probability": 0.542744
+      }
+    },
+    {
+      "event_id": "1ef1f5b9c8c88c584772f64a0d9a9435",
+      "home": "Chicago Bulls",
+      "away": "Indiana Pacers",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Chicago Bulls",
+      "line": -2.5,
+      "odds": -103,
+      "market_probability": 0.483839,
+      "projected_margin": 3.91,
+      "model_probability": 0.546928,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 4.43,
+      "shadow_probability": 0.563757,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": -0.49,
+      "efficiency_margin": 4.38,
+      "efficiency_probability": 0.562394,
+      "efficiency_push": 0,
+      "efficiency_off": 111.81,
+      "efficiency_def": 113.82,
+      "efficiency_pace": 102.51,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Indiana Pacers",
+        "line": 2.5,
+        "odds": -118,
+        "market_probability": 0.516161
+      }
+    },
+    {
+      "event_id": "638cefeed67cdd691e1686e024981563",
+      "home": "Milwaukee Bucks",
+      "away": "Oklahoma City Thunder",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Oklahoma City Thunder",
+      "line": null,
+      "odds": -561,
+      "market_probability": 0.81527,
+      "projected_margin": 6.21,
+      "model_probability": 0.697623,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 8.09,
+      "shadow_probability": 0.750025,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": 0.88,
+      "efficiency_margin": 6.66,
+      "efficiency_probability": 0.710599,
+      "efficiency_push": 0,
+      "efficiency_off": 111.35,
+      "efficiency_def": 110.31,
+      "efficiency_pace": 101.65,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Oklahoma City Thunder",
+        "line": null,
+        "odds": -561,
+        "market_probability": 0.81527
+      }
+    },
+    {
+      "event_id": "638cefeed67cdd691e1686e024981563",
+      "home": "Milwaukee Bucks",
+      "away": "Oklahoma City Thunder",
+      "start": "2026-11-29T01:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Milwaukee Bucks",
+      "line": 12.5,
+      "odds": -114,
+      "market_probability": 0.508664,
+      "projected_margin": -6.21,
+      "model_probability": 0.699892,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -8.09,
+      "shadow_probability": 0.643227,
+      "shadow_rest_adjustment": -1,
+      "shadow_venue_adjustment": -0.88,
+      "efficiency_margin": -6.66,
+      "efficiency_probability": 0.686705,
+      "efficiency_push": 0,
+      "efficiency_off": 107.35,
+      "efficiency_def": 115.33,
+      "efficiency_pace": 101.65,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Milwaukee Bucks",
+        "line": 12.5,
+        "odds": -114,
+        "market_probability": 0.508664
+      }
+    },
+    {
+      "event_id": "c4b53c6aebbd7b81fd821526ad9503e8",
+      "home": "Houston Rockets",
+      "away": "Philadelphia 76ers",
+      "start": "2026-11-29T01:40:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "Houston Rockets",
+      "line": null,
+      "odds": -520,
+      "market_probability": 0.807453,
+      "projected_margin": 6.06,
+      "model_probability": 0.693179,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 7.51,
+      "shadow_probability": 0.734322,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": 0.45,
+      "efficiency_margin": 5.54,
+      "efficiency_probability": 0.677914,
+      "efficiency_push": 0,
+      "efficiency_off": 116.51,
+      "efficiency_def": 110.92,
+      "efficiency_pace": 100.33,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Houston Rockets",
+        "line": null,
+        "odds": -520,
+        "market_probability": 0.807453
+      }
+    },
+    {
+      "event_id": "c4b53c6aebbd7b81fd821526ad9503e8",
+      "home": "Houston Rockets",
+      "away": "Philadelphia 76ers",
+      "start": "2026-11-29T01:40:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Philadelphia 76ers",
+      "line": 12.5,
+      "odds": -110,
+      "market_probability": 0.5,
+      "projected_margin": -6.06,
+      "model_probability": 0.704292,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -7.51,
+      "shadow_probability": 0.661196,
+      "shadow_rest_adjustment": -1,
+      "shadow_venue_adjustment": -0.45,
+      "efficiency_margin": -5.54,
+      "efficiency_probability": 0.718973,
+      "efficiency_push": 0,
+      "efficiency_off": 114.23,
+      "efficiency_def": 111.68,
+      "efficiency_pace": 100.33,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Philadelphia 76ers",
+        "line": 12.5,
+        "odds": -110,
+        "market_probability": 0.5
+      }
+    },
+    {
+      "event_id": "c4b53c6aebbd7b81fd821526ad9503e8",
+      "home": "Houston Rockets",
+      "away": "Philadelphia 76ers",
+      "start": "2026-11-29T01:40:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Houston Rockets",
+      "line": null,
+      "odds": -545,
+      "market_probability": 0.811951,
+      "projected_margin": 6.06,
+      "model_probability": 0.693179,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 7.51,
+      "shadow_probability": 0.734322,
+      "shadow_rest_adjustment": 1,
+      "shadow_venue_adjustment": 0.45,
+      "efficiency_margin": 5.54,
+      "efficiency_probability": 0.677914,
+      "efficiency_push": 0,
+      "efficiency_off": 116.51,
+      "efficiency_def": 110.92,
+      "efficiency_pace": 100.33,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Houston Rockets",
+        "line": null,
+        "odds": -545,
+        "market_probability": 0.811951
+      }
+    },
+    {
+      "event_id": "c4b53c6aebbd7b81fd821526ad9503e8",
+      "home": "Houston Rockets",
+      "away": "Philadelphia 76ers",
+      "start": "2026-11-29T01:40:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Philadelphia 76ers",
+      "line": 13.5,
+      "odds": -116,
+      "market_probability": 0.513007,
+      "projected_margin": -6.06,
+      "model_probability": 0.73241,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -7.51,
+      "shadow_probability": 0.691132,
+      "shadow_rest_adjustment": -1,
+      "shadow_venue_adjustment": -0.45,
+      "efficiency_margin": -5.54,
+      "efficiency_probability": 0.746375,
+      "efficiency_push": 0,
+      "efficiency_off": 114.23,
+      "efficiency_def": 111.68,
+      "efficiency_pace": 100.33,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Philadelphia 76ers",
+        "line": 13.5,
+        "odds": -116,
+        "market_probability": 0.513007
+      }
+    },
+    {
+      "event_id": "9a5909940102f54ed4492ad19236373b",
+      "home": "Atlanta Hawks",
+      "away": "Philadelphia 76ers",
+      "start": "2026-12-05T00:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Atlanta Hawks",
+      "line": null,
+      "odds": -101,
+      "market_probability": 0.482392,
+      "projected_margin": 2.42,
+      "model_probability": 0.579855,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 2.38,
+      "shadow_probability": 0.578762,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.03,
+      "efficiency_margin": 2.28,
+      "efficiency_probability": 0.575469,
+      "efficiency_push": 0,
+      "efficiency_off": 109.15,
+      "efficiency_def": 106.81,
+      "efficiency_pace": 101.79,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Philadelphia 76ers",
+        "line": null,
+        "odds": -117,
+        "market_probability": 0.517608
+      }
+    },
+    {
+      "event_id": "9a5909940102f54ed4492ad19236373b",
+      "home": "Atlanta Hawks",
+      "away": "Philadelphia 76ers",
+      "start": "2026-12-05T00:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Atlanta Hawks",
+      "line": 1.5,
+      "odds": -111,
+      "market_probability": 0.502165,
+      "projected_margin": 2.42,
+      "model_probability": 0.627985,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 2.38,
+      "shadow_probability": 0.626928,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.03,
+      "efficiency_margin": 2.28,
+      "efficiency_probability": 0.623738,
+      "efficiency_push": 0,
+      "efficiency_off": 109.15,
+      "efficiency_def": 106.81,
+      "efficiency_pace": 101.79,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Atlanta Hawks",
+        "line": 1.5,
+        "odds": -111,
+        "market_probability": 0.502165
+      }
+    },
+    {
+      "event_id": "9a5909940102f54ed4492ad19236373b",
+      "home": "Atlanta Hawks",
+      "away": "Philadelphia 76ers",
+      "start": "2026-12-05T00:10:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "Atlanta Hawks",
+      "line": null,
+      "odds": -106,
+      "market_probability": 0.495548,
+      "projected_margin": 2.42,
+      "model_probability": 0.579855,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 2.38,
+      "shadow_probability": 0.578762,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.03,
+      "efficiency_margin": 2.28,
+      "efficiency_probability": 0.575469,
+      "efficiency_push": 0,
+      "efficiency_off": 109.15,
+      "efficiency_def": 106.81,
+      "efficiency_pace": 101.79,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Philadelphia 76ers",
+        "line": null,
+        "odds": -110,
+        "market_probability": 0.504452
+      }
+    },
+    {
+      "event_id": "9a5909940102f54ed4492ad19236373b",
+      "home": "Atlanta Hawks",
+      "away": "Philadelphia 76ers",
+      "start": "2026-12-05T00:10:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Atlanta Hawks",
+      "line": -1.5,
+      "odds": -105,
+      "market_probability": 0.489166,
+      "projected_margin": 2.42,
+      "model_probability": 0.530498,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 2.38,
+      "shadow_probability": 0.529387,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.03,
+      "efficiency_margin": 2.28,
+      "efficiency_probability": 0.526038,
+      "efficiency_push": 0,
+      "efficiency_off": 109.15,
+      "efficiency_def": 106.81,
+      "efficiency_pace": 101.79,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Philadelphia 76ers",
+        "line": 1.5,
+        "odds": -115,
+        "market_probability": 0.510834
+      }
+    },
+    {
+      "event_id": "efc7c7c4a8de1f77ebb8ecd5d7282038",
+      "home": "Dallas Mavericks",
+      "away": "San Antonio Spurs",
+      "start": "2026-12-05T02:40:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "San Antonio Spurs",
+      "line": null,
+      "odds": -336,
+      "market_probability": 0.740353,
+      "projected_margin": 3.46,
+      "model_probability": 0.613295,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 3.88,
+      "shadow_probability": 0.626856,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": 0.43,
+      "efficiency_margin": 4.34,
+      "efficiency_probability": 0.641326,
+      "efficiency_push": 0,
+      "efficiency_off": 113.89,
+      "efficiency_def": 105.84,
+      "efficiency_pace": 100.83,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "San Antonio Spurs",
+        "line": null,
+        "odds": -336,
+        "market_probability": 0.740353
+      }
+    },
+    {
+      "event_id": "efc7c7c4a8de1f77ebb8ecd5d7282038",
+      "home": "Dallas Mavericks",
+      "away": "San Antonio Spurs",
+      "start": "2026-12-05T02:40:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Dallas Mavericks",
+      "line": 8.5,
+      "odds": -105,
+      "market_probability": 0.489166,
+      "projected_margin": -3.46,
+      "model_probability": 0.662909,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -3.88,
+      "shadow_probability": 0.649805,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.43,
+      "efficiency_margin": -4.34,
+      "efficiency_probability": 0.635452,
+      "efficiency_push": 0,
+      "efficiency_off": 111.33,
+      "efficiency_def": 110.07,
+      "efficiency_pace": 100.83,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "San Antonio Spurs",
+        "line": -8.5,
+        "odds": -115,
+        "market_probability": 0.510834
+      }
+    },
+    {
+      "event_id": "efc7c7c4a8de1f77ebb8ecd5d7282038",
+      "home": "Dallas Mavericks",
+      "away": "San Antonio Spurs",
+      "start": "2026-12-05T02:40:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "San Antonio Spurs",
+      "line": null,
+      "odds": -320,
+      "market_probability": 0.732824,
+      "projected_margin": 3.46,
+      "model_probability": 0.613295,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 3.88,
+      "shadow_probability": 0.626856,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": 0.43,
+      "efficiency_margin": 4.34,
+      "efficiency_probability": 0.641326,
+      "efficiency_push": 0,
+      "efficiency_off": 113.89,
+      "efficiency_def": 105.84,
+      "efficiency_pace": 100.83,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "San Antonio Spurs",
+        "line": null,
+        "odds": -320,
+        "market_probability": 0.732824
+      }
+    },
+    {
+      "event_id": "efc7c7c4a8de1f77ebb8ecd5d7282038",
+      "home": "Dallas Mavericks",
+      "away": "San Antonio Spurs",
+      "start": "2026-12-05T02:40:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Dallas Mavericks",
+      "line": 8.5,
+      "odds": -115,
+      "market_probability": 0.510834,
+      "projected_margin": -3.46,
+      "model_probability": 0.662909,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -3.88,
+      "shadow_probability": 0.649805,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.43,
+      "efficiency_margin": -4.34,
+      "efficiency_probability": 0.635452,
+      "efficiency_push": 0,
+      "efficiency_off": 111.33,
+      "efficiency_def": 110.07,
+      "efficiency_pace": 100.83,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Dallas Mavericks",
+        "line": 8.5,
+        "odds": -115,
+        "market_probability": 0.510834
+      }
+    },
+    {
+      "event_id": "660e53501179ad96e6e960f9b259529e",
+      "home": "Detroit Pistons",
+      "away": "Boston Celtics",
+      "start": "2026-12-06T00:40:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Detroit Pistons",
+      "line": null,
+      "odds": 146,
+      "market_probability": 0.390291,
+      "projected_margin": 1.0,
+      "model_probability": 0.533142,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 0.93,
+      "shadow_probability": 0.530857,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.07,
+      "efficiency_margin": 0.6,
+      "efficiency_probability": 0.520055,
+      "efficiency_push": 0,
+      "efficiency_off": 111.64,
+      "efficiency_def": 107.38,
+      "efficiency_pace": 99.18,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Boston Celtics",
+        "line": null,
+        "odds": -174,
+        "market_probability": 0.609709
+      }
+    },
+    {
+      "event_id": "660e53501179ad96e6e960f9b259529e",
+      "home": "Detroit Pistons",
+      "away": "Boston Celtics",
+      "start": "2026-12-06T00:40:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Detroit Pistons",
+      "line": 4.5,
+      "odds": -115,
+      "market_probability": 0.510834,
+      "projected_margin": 1.0,
+      "model_probability": 0.676585,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 0.93,
+      "shadow_probability": 0.674518,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.07,
+      "efficiency_margin": 0.6,
+      "efficiency_probability": 0.664688,
+      "efficiency_push": 0,
+      "efficiency_off": 111.64,
+      "efficiency_def": 107.38,
+      "efficiency_pace": 99.18,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Detroit Pistons",
+        "line": 4.5,
+        "odds": -115,
+        "market_probability": 0.510834
+      }
+    },
+    {
+      "event_id": "660e53501179ad96e6e960f9b259529e",
+      "home": "Detroit Pistons",
+      "away": "Boston Celtics",
+      "start": "2026-12-06T00:40:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "Detroit Pistons",
+      "line": null,
+      "odds": 164,
+      "market_probability": 0.363887,
+      "projected_margin": 1.0,
+      "model_probability": 0.533142,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 0.93,
+      "shadow_probability": 0.530857,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.07,
+      "efficiency_margin": 0.6,
+      "efficiency_probability": 0.520055,
+      "efficiency_push": 0,
+      "efficiency_off": 111.64,
+      "efficiency_def": 107.38,
+      "efficiency_pace": 99.18,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Boston Celtics",
+        "line": null,
+        "odds": -196,
+        "market_probability": 0.636113
+      }
+    },
+    {
+      "event_id": "660e53501179ad96e6e960f9b259529e",
+      "home": "Detroit Pistons",
+      "away": "Boston Celtics",
+      "start": "2026-12-06T00:40:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Detroit Pistons",
+      "line": 5.5,
+      "odds": -114,
+      "market_probability": 0.508664,
+      "projected_margin": 1.0,
+      "model_probability": 0.705919,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 18,
+      "shadow_margin": 0.93,
+      "shadow_probability": 0.703937,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.07,
+      "efficiency_margin": 0.6,
+      "efficiency_probability": 0.694493,
+      "efficiency_push": 0,
+      "efficiency_off": 111.64,
+      "efficiency_def": 107.38,
+      "efficiency_pace": 99.18,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Detroit Pistons",
+        "line": 5.5,
+        "odds": -114,
+        "market_probability": 0.508664
+      }
+    },
+    {
+      "event_id": "c831f17ecf92e2899770e70dd077daad",
+      "home": "Portland Trail Blazers",
+      "away": "Memphis Grizzlies",
+      "start": "2026-12-06T03:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Portland Trail Blazers",
+      "line": null,
+      "odds": -212,
+      "market_probability": 0.65304,
+      "projected_margin": 3.58,
+      "model_probability": 0.617258,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 3.7,
+      "shadow_probability": 0.621072,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": 0.12,
+      "efficiency_margin": 0.97,
+      "efficiency_probability": 0.532164,
+      "efficiency_push": 0,
+      "efficiency_off": 113.09,
+      "efficiency_def": 107.79,
+      "efficiency_pace": 101.12,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Portland Trail Blazers",
+        "line": null,
+        "odds": -212,
+        "market_probability": 0.65304
+      }
+    },
+    {
+      "event_id": "c831f17ecf92e2899770e70dd077daad",
+      "home": "Portland Trail Blazers",
+      "away": "Memphis Grizzlies",
+      "start": "2026-12-06T03:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Memphis Grizzlies",
+      "line": 5.5,
+      "odds": -108,
+      "market_probability": 0.49567,
+      "projected_margin": -3.58,
+      "model_probability": 0.563578,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -3.7,
+      "shadow_probability": 0.559632,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.12,
+      "efficiency_margin": -0.97,
+      "efficiency_probability": 0.647145,
+      "efficiency_push": 0,
+      "efficiency_off": 116.54,
+      "efficiency_def": 109.73,
+      "efficiency_pace": 101.12,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Portland Trail Blazers",
+        "line": -5.5,
+        "odds": -112,
+        "market_probability": 0.50433
+      }
+    },
+    {
+      "event_id": "c831f17ecf92e2899770e70dd077daad",
+      "home": "Portland Trail Blazers",
+      "away": "Memphis Grizzlies",
+      "start": "2026-12-06T03:10:00Z",
+      "book": "fanduel",
+      "market": "h2h",
+      "team": "Portland Trail Blazers",
+      "line": null,
+      "odds": -240,
+      "market_probability": 0.677786,
+      "projected_margin": 3.58,
+      "model_probability": 0.617258,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": 3.7,
+      "shadow_probability": 0.621072,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": 0.12,
+      "efficiency_margin": 0.97,
+      "efficiency_probability": 0.532164,
+      "efficiency_push": 0,
+      "efficiency_off": 113.09,
+      "efficiency_def": 107.79,
+      "efficiency_pace": 101.12,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Portland Trail Blazers",
+        "line": null,
+        "odds": -240,
+        "market_probability": 0.677786
+      }
+    },
+    {
+      "event_id": "c831f17ecf92e2899770e70dd077daad",
+      "home": "Portland Trail Blazers",
+      "away": "Memphis Grizzlies",
+      "start": "2026-12-06T03:10:00Z",
+      "book": "fanduel",
+      "market": "spreads",
+      "team": "Memphis Grizzlies",
+      "line": 6.5,
+      "odds": -110,
+      "market_probability": 0.5,
+      "projected_margin": -3.58,
+      "model_probability": 0.596145,
+      "push_probability": 0.0,
+      "model_status": "Experimental; uncalibrated",
+      "history_games": 19,
+      "shadow_margin": -3.7,
+      "shadow_probability": 0.592263,
+      "shadow_rest_adjustment": 0,
+      "shadow_venue_adjustment": -0.12,
+      "efficiency_margin": -0.97,
+      "efficiency_probability": 0.677585,
+      "efficiency_push": 0,
+      "efficiency_off": 116.54,
+      "efficiency_def": 109.73,
+      "efficiency_pace": 101.12,
+      "sport": "NBA",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Portland Trail Blazers",
+        "line": -6.5,
+        "odds": -110,
+        "market_probability": 0.5
+      }
+    },
+    {
+      "event_id": "2e9a7d84e410bdc748e3ae873274abe8",
+      "home": "Chicago Blackhawks",
+      "away": "Minnesota Wild",
+      "start": "2026-11-29T19:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Minnesota Wild",
+      "line": null,
+      "odds": -238,
+      "market_probability": 0.675031,
+      "projected_margin": 1.04,
+      "model_probability": 0.657569,
+      "push_probability": 0,
+      "history_games": 26,
+      "model_status": "Experimental; uncalibrated",
+      "shadow_margin": 1.04,
+      "shadow_probability": 0.657569,
+      "shadow_push_probability": 0,
+      "shadow_rest_adjustment": 0,
+      "xg_for": 3.32,
+      "xg_against": 2.78,
+      "xg_saved_proxy": 0.22,
+      "xg_margin": 0.35,
+      "xg_probability": 0.554768,
+      "xg_push": 0,
+      "goalie_home": {
+        "name": "Spencer Knight",
+        "player_id": "4565234",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8481519",
+          "gsax60": 0.122,
+          "effective_hours": 47.49,
+          "season_hours": 20.56,
+          "season_gsax": 2.2,
+          "season_gsax60": 0.107,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Chicago Blackhawks"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": -0.081,
+          "relative_gsax60": 0.203
+        }
+      },
+      "goalie_away": {
+        "name": "Jesper Wallstedt",
+        "player_id": "4874737",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8482661",
+          "gsax60": 0.349,
+          "effective_hours": 40.85,
+          "season_hours": 24.21,
+          "season_gsax": 16.39,
+          "season_gsax60": 0.677,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Minnesota Wild"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": 0.318,
+          "relative_gsax60": 0.031
+        }
+      },
+      "goalie_probability": 0.651983,
+      "goalie_push": 0,
+      "goalie_margin": 0.995,
+      "goalie_baseline_probability": 0.657568,
+      "goalie_probability_delta": -0.005585,
+      "goalie_home_rate": 2.633,
+      "goalie_away_rate": 3.628,
+      "goalie_home_adjustment": 0.051,
+      "goalie_away_adjustment": 0.008,
+      "goalie_model_status": "experimental_projected",
+      "sport": "NHL",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Minnesota Wild",
+        "line": null,
+        "odds": -238,
+        "market_probability": 0.675031
+      }
+    },
+    {
+      "event_id": "2e9a7d84e410bdc748e3ae873274abe8",
+      "home": "Chicago Blackhawks",
+      "away": "Minnesota Wild",
+      "start": "2026-11-29T19:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Chicago Blackhawks",
+      "line": 1.5,
+      "odds": -122,
+      "market_probability": 0.526087,
+      "projected_margin": -1.04,
+      "model_probability": 0.579423,
+      "push_probability": 0,
+      "history_games": 26,
+      "model_status": "Experimental; uncalibrated",
+      "shadow_margin": -1.04,
+      "shadow_probability": 0.579423,
+      "shadow_push_probability": 0,
+      "shadow_rest_adjustment": 0,
+      "xg_for": 2.9,
+      "xg_against": 3.37,
+      "xg_saved_proxy": -0.06,
+      "xg_margin": -0.35,
+      "xg_probability": 0.685308,
+      "xg_push": 0,
+      "goalie_home": {
+        "name": "Spencer Knight",
+        "player_id": "4565234",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8481519",
+          "gsax60": 0.122,
+          "effective_hours": 47.49,
+          "season_hours": 20.56,
+          "season_gsax": 2.2,
+          "season_gsax60": 0.107,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Chicago Blackhawks"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": -0.081,
+          "relative_gsax60": 0.203
+        }
+      },
+      "goalie_away": {
+        "name": "Jesper Wallstedt",
+        "player_id": "4874737",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8482661",
+          "gsax60": 0.349,
+          "effective_hours": 40.85,
+          "season_hours": 24.21,
+          "season_gsax": 16.39,
+          "season_gsax60": 0.677,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Minnesota Wild"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": 0.318,
+          "relative_gsax60": 0.031
+        }
+      },
+      "goalie_probability": 0.586524,
+      "goalie_push": 0,
+      "goalie_margin": -0.995,
+      "goalie_baseline_probability": 0.579423,
+      "goalie_probability_delta": 0.007101,
+      "goalie_home_rate": 2.633,
+      "goalie_away_rate": 3.628,
+      "goalie_home_adjustment": 0.051,
+      "goalie_away_adjustment": 0.008,
+      "goalie_model_status": "experimental_projected",
+      "sport": "NHL",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Chicago Blackhawks",
+        "line": 1.5,
+        "odds": -122,
+        "market_probability": 0.526087
+      }
+    },
+    {
+      "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+      "home": "Boston Bruins",
+      "away": "Vancouver Canucks",
+      "start": "2026-11-29T22:10:00Z",
+      "book": "draftkings",
+      "market": "h2h",
+      "team": "Boston Bruins",
+      "line": null,
+      "odds": -265,
+      "market_probability": 0.69577,
+      "projected_margin": 1.64,
+      "model_probability": 0.735591,
+      "push_probability": 0,
+      "history_games": 25,
+      "model_status": "Experimental; uncalibrated",
+      "shadow_margin": 1.64,
+      "shadow_probability": 0.735591,
+      "shadow_push_probability": 0,
+      "shadow_rest_adjustment": 0,
+      "xg_for": 3.17,
+      "xg_against": 3.16,
+      "xg_saved_proxy": 0.12,
+      "xg_margin": 0.9,
+      "xg_probability": 0.636244,
+      "xg_push": 0,
+      "goalie_home": {
+        "name": "Jeremy Swayman",
+        "player_id": "4712036",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8480280",
+          "gsax60": 0.321,
+          "effective_hours": 45.48,
+          "season_hours": 18.52,
+          "season_gsax": 5.03,
+          "season_gsax60": 0.272,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Boston Bruins"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": 0.265,
+          "relative_gsax60": 0.056
+        }
+      },
+      "goalie_away": {
+        "name": "Leevi Merilainen",
+        "player_id": "4894703",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00"
+      },
+      "sport": "NHL",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "All agree",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Boston Bruins",
+        "line": null,
+        "odds": -265,
+        "market_probability": 0.69577
+      }
+    },
+    {
+      "event_id": "181ab785c9c2ca31d695c5e51238f74e",
+      "home": "Boston Bruins",
+      "away": "Vancouver Canucks",
+      "start": "2026-11-29T22:10:00Z",
+      "book": "draftkings",
+      "market": "spreads",
+      "team": "Boston Bruins",
+      "line": -1.5,
+      "odds": -118,
+      "market_probability": 0.517364,
+      "projected_margin": 1.64,
+      "model_probability": 0.515958,
+      "push_probability": 0,
+      "history_games": 25,
+      "model_status": "Experimental; uncalibrated",
+      "shadow_margin": 1.64,
+      "shadow_probability": 0.515958,
+      "shadow_push_probability": 0,
+      "shadow_rest_adjustment": 0,
+      "xg_for": 3.17,
+      "xg_against": 3.16,
+      "xg_saved_proxy": 0.12,
+      "xg_margin": 0.9,
+      "xg_probability": 0.400577,
+      "xg_push": 0,
+      "goalie_home": {
+        "name": "Jeremy Swayman",
+        "player_id": "4712036",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00",
+        "rating": {
+          "moneypuck_id": "8480280",
+          "gsax60": 0.321,
+          "effective_hours": 45.48,
+          "season_hours": 18.52,
+          "season_gsax": 5.03,
+          "season_gsax60": 0.272,
+          "recent_gsax60": null,
+          "rating_eligible": true,
+          "teams": [
+            "Boston Bruins"
+          ],
+          "method": "season_weighted_shrinkage",
+          "team_gsax60": 0.265,
+          "relative_gsax60": 0.056
+        }
+      },
+      "goalie_away": {
+        "name": "Leevi Merilainen",
+        "player_id": "4894703",
+        "status": "projected",
+        "source": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard",
+        "reported_at": null,
+        "checked_at": "2026-11-28T15:58:07.295015+00:00"
+      },
+      "sport": "NHL",
+      "captured": "2026-11-28T15:58:08.105386+00:00",
+      "result": "pending",
+      "archived_agreement": "Mixed or tied",
+      "archived_challenger_count": 2,
+      "market_reference": {
+        "team": "Boston Bruins",
+        "line": -1.5,
+        "odds": -118,
+        "market_probability": 0.517364
+      }
     }
   ],
   "summary": [
@@ -10182,7 +11654,7 @@
       "wins": 5,
       "losses": 6,
       "pushes": 0,
-      "pending": 0,
+      "pending": 9,
       "accuracy": 0.45454545454545453,
       "brier": 0.5054663739763637
     },
@@ -10193,7 +11665,7 @@
       "wins": 5,
       "losses": 6,
       "pushes": 0,
-      "pending": 3,
+      "pending": 9,
       "accuracy": 0.45454545454545453,
       "brier": 0.5054663739763637
     },
@@ -10204,7 +11676,7 @@
       "wins": 3,
       "losses": 8,
       "pushes": 0,
-      "pending": 0,
+      "pending": 9,
       "accuracy": 0.2727272727272727,
       "brier": 0.5898528136627272
     },
@@ -10215,7 +11687,7 @@
       "wins": 5,
       "losses": 6,
       "pushes": 0,
-      "pending": 3,
+      "pending": 9,
       "accuracy": 0.45454545454545453,
       "brier": 0.570373753148909
     },
@@ -10270,7 +11742,7 @@
       "wins": 4,
       "losses": 11,
       "pushes": 0,
-      "pending": 12,
+      "pending": 14,
       "accuracy": 0.26666666666666666,
       "brier": 0.6053058750464
     },
@@ -10292,7 +11764,7 @@
       "wins": 12,
       "losses": 3,
       "pushes": 0,
-      "pending": 12,
+      "pending": 14,
       "accuracy": 0.8,
       "brier": 0.34873076963826666
     },
@@ -10353,6 +11825,17 @@
           "roi": -0.5995975855130785
         },
         {
+          "low": 0.55,
+          "high": 0.6,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
           "low": 0.6,
           "high": 0.7,
           "settled": 3,
@@ -10389,6 +11872,18 @@
       "segments": [
         {
           "dimension": "Challenger direction",
+          "label": "All agree",
+          "forecasts": 9,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
           "settled": 11,
@@ -10402,7 +11897,7 @@
         {
           "dimension": "Market side",
           "label": "Favorite",
-          "forecasts": 10,
+          "forecasts": 16,
           "settled": 10,
           "wins": 5,
           "losses": 5,
@@ -10414,7 +11909,7 @@
         {
           "dimension": "Market side",
           "label": "Underdog",
-          "forecasts": 1,
+          "forecasts": 4,
           "settled": 1,
           "wins": 0,
           "losses": 1,
@@ -10437,8 +11932,20 @@
         },
         {
           "dimension": "Model minus no-vig market",
+          "label": "10+ pp",
+          "forecasts": 2,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
-          "forecasts": 4,
+          "forecasts": 6,
           "settled": 4,
           "wins": 2,
           "losses": 2,
@@ -10450,7 +11957,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
-          "forecasts": 4,
+          "forecasts": 9,
           "settled": 4,
           "wins": 2,
           "losses": 2,
@@ -10461,8 +11968,20 @@
         },
         {
           "dimension": "Model probability",
+          "label": "55\u201359%",
+          "forecasts": 2,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "dimension": "Model probability",
           "label": "60\u201369%",
-          "forecasts": 3,
+          "forecasts": 9,
           "settled": 3,
           "wins": 0,
           "losses": 3,
@@ -10498,7 +12017,7 @@
         {
           "dimension": "Model probability",
           "label": "Below 55%",
-          "forecasts": 3,
+          "forecasts": 4,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -10510,7 +12029,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 6,
+          "forecasts": 10,
           "settled": 6,
           "wins": 2,
           "losses": 4,
@@ -10522,7 +12041,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Below",
-          "forecasts": 5,
+          "forecasts": 10,
           "settled": 5,
           "wins": 3,
           "losses": 2,
@@ -10534,7 +12053,7 @@
         {
           "dimension": "Venue",
           "label": "Away",
-          "forecasts": 1,
+          "forecasts": 3,
           "settled": 1,
           "wins": 1,
           "losses": 0,
@@ -10546,7 +12065,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 10,
+          "forecasts": 17,
           "settled": 10,
           "wins": 4,
           "losses": 6,
@@ -10649,7 +12168,7 @@
         {
           "dimension": "Challenger direction",
           "label": "All agree",
-          "forecasts": 3,
+          "forecasts": 9,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -10673,7 +12192,7 @@
         {
           "dimension": "Market side",
           "label": "Favorite",
-          "forecasts": 12,
+          "forecasts": 16,
           "settled": 10,
           "wins": 5,
           "losses": 5,
@@ -10685,7 +12204,7 @@
         {
           "dimension": "Market side",
           "label": "Underdog",
-          "forecasts": 2,
+          "forecasts": 4,
           "settled": 1,
           "wins": 0,
           "losses": 1,
@@ -10709,7 +12228,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 1,
           "wins": 1,
           "losses": 0,
@@ -10721,7 +12240,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
-          "forecasts": 3,
+          "forecasts": 5,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -10733,7 +12252,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
-          "forecasts": 6,
+          "forecasts": 9,
           "settled": 4,
           "wins": 2,
           "losses": 2,
@@ -10745,7 +12264,7 @@
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -10757,7 +12276,7 @@
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
-          "forecasts": 4,
+          "forecasts": 8,
           "settled": 3,
           "wins": 0,
           "losses": 3,
@@ -10793,7 +12312,7 @@
         {
           "dimension": "Model probability",
           "label": "Below 55%",
-          "forecasts": 3,
+          "forecasts": 4,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -10805,7 +12324,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 7,
+          "forecasts": 10,
           "settled": 6,
           "wins": 2,
           "losses": 4,
@@ -10817,7 +12336,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Below",
-          "forecasts": 7,
+          "forecasts": 10,
           "settled": 5,
           "wins": 3,
           "losses": 2,
@@ -10829,7 +12348,7 @@
         {
           "dimension": "Venue",
           "label": "Away",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 1,
           "wins": 1,
           "losses": 0,
@@ -10841,7 +12360,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 12,
+          "forecasts": 17,
           "settled": 10,
           "wins": 4,
           "losses": 6,
@@ -10932,6 +12451,18 @@
       "segments": [
         {
           "dimension": "Challenger direction",
+          "label": "All agree",
+          "forecasts": 9,
+          "settled": 0,
+          "wins": 0,
+          "losses": 0,
+          "pushes": 0,
+          "accuracy": null,
+          "units": 0,
+          "roi": null
+        },
+        {
+          "dimension": "Challenger direction",
           "label": "Not recorded",
           "forecasts": 11,
           "settled": 11,
@@ -10945,7 +12476,7 @@
         {
           "dimension": "Market side",
           "label": "Giving points",
-          "forecasts": 5,
+          "forecasts": 6,
           "settled": 5,
           "wins": 1,
           "losses": 4,
@@ -10957,7 +12488,7 @@
         {
           "dimension": "Market side",
           "label": "Receiving points",
-          "forecasts": 6,
+          "forecasts": 14,
           "settled": 6,
           "wins": 2,
           "losses": 4,
@@ -10981,7 +12512,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
-          "forecasts": 3,
+          "forecasts": 9,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -10993,7 +12524,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
-          "forecasts": 3,
+          "forecasts": 6,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -11005,7 +12536,7 @@
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
-          "forecasts": 3,
+          "forecasts": 5,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -11017,7 +12548,7 @@
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
-          "forecasts": 2,
+          "forecasts": 7,
           "settled": 2,
           "wins": 1,
           "losses": 1,
@@ -11029,7 +12560,7 @@
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
-          "forecasts": 1,
+          "forecasts": 2,
           "settled": 1,
           "wins": 0,
           "losses": 1,
@@ -11041,7 +12572,7 @@
         {
           "dimension": "Model probability",
           "label": "Below 55%",
-          "forecasts": 5,
+          "forecasts": 6,
           "settled": 5,
           "wins": 1,
           "losses": 4,
@@ -11053,7 +12584,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 10,
+          "forecasts": 19,
           "settled": 10,
           "wins": 3,
           "losses": 7,
@@ -11077,7 +12608,7 @@
         {
           "dimension": "Venue",
           "label": "Away",
-          "forecasts": 4,
+          "forecasts": 7,
           "settled": 4,
           "wins": 2,
           "losses": 2,
@@ -11089,7 +12620,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 7,
+          "forecasts": 13,
           "settled": 7,
           "wins": 1,
           "losses": 6,
@@ -11181,7 +12712,7 @@
         {
           "dimension": "Challenger direction",
           "label": "All agree",
-          "forecasts": 3,
+          "forecasts": 9,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -11205,7 +12736,7 @@
         {
           "dimension": "Market side",
           "label": "Giving points",
-          "forecasts": 5,
+          "forecasts": 7,
           "settled": 5,
           "wins": 2,
           "losses": 3,
@@ -11217,7 +12748,7 @@
         {
           "dimension": "Market side",
           "label": "Receiving points",
-          "forecasts": 9,
+          "forecasts": 13,
           "settled": 6,
           "wins": 3,
           "losses": 3,
@@ -11229,7 +12760,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
-          "forecasts": 5,
+          "forecasts": 6,
           "settled": 5,
           "wins": 2,
           "losses": 3,
@@ -11241,7 +12772,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "10+ pp",
-          "forecasts": 5,
+          "forecasts": 8,
           "settled": 2,
           "wins": 1,
           "losses": 1,
@@ -11253,7 +12784,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
-          "forecasts": 3,
+          "forecasts": 5,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -11277,7 +12808,7 @@
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
-          "forecasts": 3,
+          "forecasts": 4,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -11289,7 +12820,7 @@
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
-          "forecasts": 4,
+          "forecasts": 5,
           "settled": 1,
           "wins": 1,
           "losses": 0,
@@ -11301,7 +12832,7 @@
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
-          "forecasts": 1,
+          "forecasts": 3,
           "settled": 1,
           "wins": 0,
           "losses": 1,
@@ -11313,7 +12844,7 @@
         {
           "dimension": "Model probability",
           "label": "Below 55%",
-          "forecasts": 6,
+          "forecasts": 8,
           "settled": 6,
           "wins": 3,
           "losses": 3,
@@ -11325,7 +12856,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 12,
+          "forecasts": 18,
           "settled": 9,
           "wins": 3,
           "losses": 6,
@@ -11349,7 +12880,7 @@
         {
           "dimension": "Venue",
           "label": "Away",
-          "forecasts": 5,
+          "forecasts": 7,
           "settled": 4,
           "wins": 3,
           "losses": 1,
@@ -11361,7 +12892,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 9,
+          "forecasts": 13,
           "settled": 7,
           "wins": 2,
           "losses": 5,
@@ -12528,7 +14059,7 @@
         {
           "dimension": "Challenger direction",
           "label": "All agree",
-          "forecasts": 9,
+          "forecasts": 11,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -12564,7 +14095,7 @@
         {
           "dimension": "Market side",
           "label": "Favorite",
-          "forecasts": 22,
+          "forecasts": 24,
           "settled": 12,
           "wins": 3,
           "losses": 9,
@@ -12588,7 +14119,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "0\u2013<5 pp",
-          "forecasts": 7,
+          "forecasts": 8,
           "settled": 4,
           "wins": 1,
           "losses": 3,
@@ -12624,7 +14155,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
-          "forecasts": 12,
+          "forecasts": 13,
           "settled": 6,
           "wins": 2,
           "losses": 4,
@@ -12648,7 +14179,7 @@
         {
           "dimension": "Model probability",
           "label": "60\u201369%",
-          "forecasts": 9,
+          "forecasts": 10,
           "settled": 7,
           "wins": 2,
           "losses": 5,
@@ -12660,7 +14191,7 @@
         {
           "dimension": "Model probability",
           "label": "70\u201379%",
-          "forecasts": 1,
+          "forecasts": 2,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -12696,7 +14227,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 12,
+          "forecasts": 13,
           "settled": 6,
           "wins": 1,
           "losses": 5,
@@ -12708,7 +14239,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Below",
-          "forecasts": 15,
+          "forecasts": 16,
           "settled": 9,
           "wins": 3,
           "losses": 6,
@@ -12720,7 +14251,7 @@
         {
           "dimension": "Venue",
           "label": "Away",
-          "forecasts": 6,
+          "forecasts": 7,
           "settled": 3,
           "wins": 1,
           "losses": 2,
@@ -12732,7 +14263,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 21,
+          "forecasts": 22,
           "settled": 12,
           "wins": 3,
           "losses": 9,
@@ -13154,7 +14685,7 @@
         {
           "dimension": "Challenger direction",
           "label": "All agree",
-          "forecasts": 10,
+          "forecasts": 11,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -13166,7 +14697,7 @@
         {
           "dimension": "Challenger direction",
           "label": "Mixed or tied",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -13190,7 +14721,7 @@
         {
           "dimension": "Market side",
           "label": "Giving points",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 0,
           "wins": 0,
           "losses": 0,
@@ -13202,7 +14733,7 @@
         {
           "dimension": "Market side",
           "label": "Receiving points",
-          "forecasts": 25,
+          "forecasts": 26,
           "settled": 15,
           "wins": 12,
           "losses": 3,
@@ -13238,7 +14769,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "5\u2013<10 pp",
-          "forecasts": 8,
+          "forecasts": 9,
           "settled": 1,
           "wins": 1,
           "losses": 0,
@@ -13250,7 +14781,7 @@
         {
           "dimension": "Model minus no-vig market",
           "label": "Below market",
-          "forecasts": 5,
+          "forecasts": 6,
           "settled": 4,
           "wins": 4,
           "losses": 0,
@@ -13262,7 +14793,7 @@
         {
           "dimension": "Model probability",
           "label": "55\u201359%",
-          "forecasts": 6,
+          "forecasts": 7,
           "settled": 4,
           "wins": 3,
           "losses": 1,
@@ -13310,7 +14841,7 @@
         {
           "dimension": "Model probability",
           "label": "Below 55%",
-          "forecasts": 2,
+          "forecasts": 3,
           "settled": 1,
           "wins": 0,
           "losses": 1,
@@ -13322,7 +14853,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Above",
-          "forecasts": 18,
+          "forecasts": 19,
           "settled": 8,
           "wins": 5,
           "losses": 3,
@@ -13334,7 +14865,7 @@
         {
           "dimension": "Model vs break-even",
           "label": "Below",
-          "forecasts": 9,
+          "forecasts": 10,
           "settled": 7,
           "wins": 7,
           "losses": 0,
@@ -13358,7 +14889,7 @@
         {
           "dimension": "Venue",
           "label": "Home",
-          "forecasts": 11,
+          "forecasts": 13,
           "settled": 6,
           "wins": 5,
           "losses": 1,
@@ -13822,6 +15353,5 @@
       "positive_rate": 0.4666666666666667,
       "avg_minutes_before_start": 197.3524432
     }
-  ],
-  "settlement_updated": "2026-11-28T14:09:25.708518+00:00"
+  ]
 }
